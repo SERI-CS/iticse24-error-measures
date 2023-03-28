@@ -1,3 +1,38 @@
+"""
+Purpose: Compute Jadud's error quotient (EQ) for every student based on their compilation logs and errors.
+
+Input/prerequisites: Two CSV files, one with all compilation events, the other with all compilation errors. Join attribute: student_id.
+Output: Jadud's EQ for every student in the logs.
+
+Author: Valdemar Švábenský <valdemar@upenn.edu>, University of Pennsylvania, 2023.
+Reviewed by: TODO: We need to assign a code reviewer.
+License: MIT.
+
+Unit test documentation: For testing, use the files 'hwtestfile-complete_snapshots.csv' and 'hwtestfile-compiler-errors.csv'.
+The files were designed as follows:
+
+Student A compiled at times 3, 4. Made no errors.
+Student B compiled at times 1, 3, 5. Made errors in 1, 5 (not consecutive, different error types).
+Student C compiled at times 1, 3, 4. Made errors in 1, 4 (not consecutive, same error types).
+Student D compiled at times 5, 6. Made errors in 5, 6 (consecutive, different error types).
+Student E compiled at times 4, 5. Made errors in 4, 5 (consecutive, same error types).
+Student F compiled at times 1, 3, 4. Made errors in 1, 3, 4 (consecutive, first pair same error, second pair same error).
+Student G compiled at times 1, 3, 4. Made errors in 1, 3, 4 (consecutive, first pair same error, second pair different error).
+Student H compiled at times 1, 3, 4. Made errors in 1, 3, 4 (consecutive, first pair different error, second pair same error).
+Student I compiled at times 1, 3, 4. Made errors in 1, 3, 4 (consecutive, first pair different error, second pair different error).
+
+Expected output for the Jadud's EQ:
+A 0.0
+B 0.0
+C 0.0
+D 0.7272727272727273
+E 1.0
+F 1.0
+G 0.8636363636363636
+H 0.8636363636363636
+I 0.7272727272727273
+"""
+
 import csv
 
 
@@ -25,6 +60,8 @@ def process_data_errors(hw_name='03'):
         student_id, timestamp, error_message = row[0], row[1], row[4]
         timestamp = timestamp.replace('_', ':')  # For compatibility with the different timestamp format in the snapshots file
         linebreak_index_in_error_message = error_message.find('\n')  # The messages span multiple lines, we want only the first line
+        if linebreak_index_in_error_message == -1:
+            linebreak_index_in_error_message = len(error_message)
         error_type = error_message[:linebreak_index_in_error_message].strip()
         if student_id not in all_errors:
             all_errors[student_id] = {}
@@ -93,6 +130,7 @@ def compute_jadud_eq(hw_name='03'):
     :return: None.
     """
     all_students = process_data_snapshots(hw_name)
+    print(all_students)
     for student_id, student_session in all_students.items():
         student_total_eq = 0
         num_event_pairs_per_student = 0
@@ -117,4 +155,4 @@ def compute_jadud_eq(hw_name='03'):
 
 
 if __name__ == '__main__':
-    compute_jadud_eq()
+    compute_jadud_eq('testfile')
