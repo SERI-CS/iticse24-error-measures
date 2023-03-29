@@ -1,0 +1,257 @@
+---
+title: "SRL-use total error counts to predict learning outcomes"
+author: "Joyce Zhang"
+date: '2023-03-29'
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE)
+
+library(dplyr)
+library(reshape2)
+library(stats)
+library(moments)
+library(tidyr)
+library(kableExtra)
+library(data.table)
+
+setwd("~/Documents/Documents/Penn GSE/PCLA/SRL/learning trajectory/coding trajectory/data/snapshot summary")
+
+Sys.setlocale( 'LC_ALL','C' ) 
+```
+# 1. import data
+## 1.1 import data from "hwXX-snapshot-summary.csv" for HW0-8 (except for HW1, HW2)
+create dataframe df. Each row shows the following 4 measures for each snapahot (see example below)
+- c_error: 1: snapshot with a compiler error, 0: snapshot compiled
+- r_error: the number of runtime errors in a snapshot
+- t_failed: the number of tests that failed (includes tests that failed because of the runtime error)
+- t_success: the number of tests that ended with success
+
+```{r import data}
+df <- 
+  rbind(read.csv("hw00-snapshot-summary.csv") %>% mutate(HW = "HW0"),
+        read.csv("hw03-snapshot-summary.csv") %>% mutate(HW = "HW3"),
+        read.csv("hw04-snapshot-summary.csv") %>% mutate(HW = "HW4"),
+        read.csv("hw05-snapshot-summary.csv") %>% mutate(HW = "HW5"),
+        read.csv("hw06-snapshot-summary.csv") %>% mutate(HW = "HW6"),
+        read.csv("hw07-snapshot-summary.csv") %>% mutate(HW = "HW7"),
+        read.csv("hw08-snapshot-summary.csv") %>% mutate(HW = "HW8"))
+
+colnames(df)[1] <- "colName"
+
+df <- 
+  separate(
+    df,
+    colName,
+    c("student","snapshot","c_error","r_error","t_failed","t_success"),
+    sep = ";")
+
+df[3:6] <- apply(df[3:6],2,as.character)
+df[3:6] <- apply(df[3:6],2,as.numeric)
+
+kable(df[c(1:5),])
+
+```
+
+
+**agggregate df to student level**
+
+create dataframe 'df_student'. each row shows for each student and HW, the total number of snapshots captured (N_snaphot), total number of snapshots containing compiler errors (C_totalSnap), its percentage (C_perc), total number of snapshot containing runtime errors (R_totalSnap) and its percentages (R_perc), total number of runtime errors (a snapshot can have more than 1 runtime error)(R_totalError), and the average number of runtime errors (R_avgError). See the top 5 rows of df_student dataframe below  
+
+```{r error measures}
+df_student <- 
+  df %>% 
+  group_by(student,HW) %>% 
+  summarise(
+    N_snapshot = n(),
+    C_totalSnap = sum(c_error),
+    C_perc = C_totalSnap/N_snapshot,
+    R_totalSnap = sum(r_error>0),
+    R_perc = sum(r_error>0)/N_snapshot,
+    R_totalError = sum(r_error),
+    R_avgError = mean(r_error)
+  )
+
+kable(df_student[1:5,])
+
+```
+
+## 1.2 import data from "hwXX-compiler-errors.csv"files for the same HW
+similarly, we imported the compiler errors from the "hwXX-compiler-errors.csv" files. aggregated them to the student level, creating a dataframe (df_c_student). This dataframe the total number of compiler errors a student has made for each HW. see table below
+
+```{r number of compiler errors}
+
+compiler = read.csv("compiler errors/hw00-compiler-errors.csv")
+
+df_c <- 
+  rbind(
+    read.csv("compiler errors/hw00-compiler-errors.csv") %>% mutate(HW = "HW0"),
+    read.csv("compiler errors/hw03-compiler-errors.csv") %>% mutate(HW = "HW3"),
+    read.csv("compiler errors/hw04-compiler-errors.csv") %>% mutate(HW = "HW4"),
+    read.csv("compiler errors/hw05-compiler-errors.csv") %>% mutate(HW = "HW5"),
+    read.csv("compiler errors/hw06-compiler-errors.csv") %>% mutate(HW = "HW6"),
+    read.csv("compiler errors/hw07-compiler-errors.csv") %>% mutate(HW = "HW7"),
+    read.csv("compiler errors/hw08-compiler-errors.csv") %>% mutate(HW = "HW8"))
+
+colnames(df_c)[1] <- "colName"
+
+df_c <- 
+  separate(
+    df_c,
+    colName,
+    c("student","snapshot","file","line","error"),
+    sep = ";")
+
+df_c_student <- 
+  df_c %>% 
+  group_by(HW,student) %>% 
+  summarise(C_totalError = n())
+
+kable(df_c_student[1:5,])
+```
+
+**combine df_student with df_c_student**
+see the top 5 rows below.
+```{r combine runtime and compiler errors}
+df_error <- left_join(df_student, df_c_student, by = c("student","HW"))
+df_error$C_totalError <- ifelse(is.na(df_error$C_totalError),0,df_error$C_totalError)
+
+
+kable(df_error[1:5,])
+
+```
+
+# 2 descriptive stats for error rate by HW
+```{r descriptive stats by HW}
+df_summary_byHW <- 
+  df_error %>% 
+  group_by(HW) %>% 
+  summarise(
+    N_student = n(),
+    avg_N_snapshot = mean(N_snapshot,1),
+    avg_N_runtime = mean(R_totalError,1),
+    avg_N_compiler = mean(C_totalError,1)
+  )
+
+kable(df_summary_byHW) %>% 
+  kable_classic(full_width = F, html_font = "Cambria")
+```
+
+# 3 use totalt number of runtime/compiler errors to predict HW performance
+the following regression is used to estimate the relationship between the total number of errors and HW performance (rank). The results show that controlling for HW number, total number of runtime and compiler errors are negatively associated with the ranking in HW performance. number of compiler errors is more significantly as well as has higher impact than the numner of runtime errors.
+
+**lm_HWgrade <- summary(lm(rank~HW+R_totalError+C_totalError, data = df_grade))**
+```{r predicting HW performance}
+grade <- 
+  read.csv("df_HWGrades_grade.csv") %>% 
+  melt("HashedId") %>% 
+  group_by(variable) %>% 
+  mutate(rank = rank(value))
+
+colnames(grade)[3] <- "score"
+df_grade <- inner_join(df_error,grade, by = c("student" = "HashedId", "HW"= "variable"))
+lm_HWgrade <- summary(lm(rank~HW+R_totalError+C_totalError, data = df_grade))
+
+lm_HWgrade
+
+```
+
+# 4 use totalt number of runtime/compiler errors to predict mid-term 1 & 2 grades
+## 4.1 the distribution of midterm1 & 2
+
+```{r predicting mid-term grade}
+midterm <- 
+  full_join(read.csv("Midterm1_Fall_2020.csv"),read.csv("Midterm2_Fall_2020.csv"), by = "HASH_ID") %>% 
+  subset(!is.na(Midterm1) & !is.na(Midterm2))
+
+# transform the df to wide format
+runtimeError <- df_error %>% select(student, HW,R_totalError) %>% spread(key = HW, value = R_totalError)
+
+compilerError <- df_error %>% select(student, HW,C_totalError) %>% spread(key = HW, value = C_totalError)
+
+Error <- 
+  df_error %>% 
+  select(student, HW, R_totalError, C_totalError) %>% 
+  pivot_wider(
+    id_cols = student,
+    names_from = HW,
+    values_from = c("R_totalError", "C_totalError")
+  )
+
+Error[is.na(Error)] <- 0
+  
+# #join with midterm grades
+# # runtime error ----
+# runtimeError <- left_join(midterm,runtimeError, by = c("HASH_ID" = "student"))
+# runtimeError$total_HW04 <- apply(runtimeError[,c(4:6)],1,sum)
+# runtimeError$total_HW08 <- apply(runtimeError[,c(4:10)],1,sum)
+# 
+# # predict midterm1
+# summary(lm(Midterm1 ~ HW0 + HW3 + HW4, data = runtimeError))
+# summary(lm(Midterm1 ~ total_HW04, data = runtimeError))
+# 
+# # predict midterm2
+# summary(lm(Midterm2 ~ HW0 + HW3 + HW4 + HW5 + HW6 + HW7 + HW8, data = runtimeError))
+# summary(lm(Midterm2 ~ total_HW08, data = runtimeError))
+# 
+# # compile time errors
+# compilerError <- left_join(midterm,compilerError, by = c("HASH_ID" = "student"))
+# compilerError$total_HW04 <- apply(compilerError[,c(4:6)],1,sum)
+# compilerError$total_HW08 <- apply(compilerError[,c(4:10)],1,sum)
+# 
+# # predict midterm1
+# summary(lm(Midterm1 ~ HW0 + HW3 + HW4, data = compilerError))
+# summary(lm(Midterm1 ~ total_HW04, data = compilerError))
+# 
+# # predict midterm2
+# summary(lm(Midterm2 ~ HW0 + HW3 + HW4 + HW5 + HW6 + HW7 + HW8, data = compilerError))
+# summary(lm(Midterm2 ~ total_HW08, data = compilerError))
+
+# both runtime and compile time errors ----
+allError <- left_join(midterm,Error, by = c("HASH_ID" = "student"))
+allError$totalRuntime_HW04 <- apply(allError[,c(2:4)],1,sum)
+allError$totalRuntime_HW08 <- apply(allError[,c(2:8)],1,sum)
+allError$totalcompile_HW04 <- apply(allError[,c(9:11)],1,sum)
+allError$totalcompile_HW08 <- apply(allError[,c(9:15)],1,sum)
+```
+
+midterm 1 histogram (skewness = -1.24; kurtosis = 4.32)
+```{r}
+hist(midterm$Midterm1)
+```
+
+midterm 2 histogram (skewness = -1.23; kurtosis = 3.83)
+```{r}
+hist(midterm$Midterm2)
+```
+
+Because both grades not heavily skewed, in the following analyses we did not transform the grades into ranks.
+
+## 4.2 predicting mid-term 1 grades
+I tried two approaches to predict mid-term 1 grades (individual HW errors vs. aggregated errors for HW0-4)
+```{r, echo=TRUE}
+# predict midterm1
+# model 1
+summary(lm(Midterm1 ~
+             R_totalError_HW0+R_totalError_HW3+R_totalError_HW4+
+             C_totalError_HW0+C_totalError_HW3+C_totalError_HW4,
+           data = allError))
+#model 2
+summary(lm(Midterm1~totalRuntime_HW04+totalcompile_HW04,data = allError))
+```
+
+## 4.3 predicting mid-term 2 grades
+
+```{r echo=TRUE}
+#model 1
+summary(lm(Midterm2 ~
+             R_totalError_HW0+R_totalError_HW3+R_totalError_HW4 +
+             R_totalError_HW5+R_totalError_HW6+R_totalError_HW7+R_totalError_HW8+
+             C_totalError_HW0+C_totalError_HW3+C_totalError_HW4+
+             C_totalError_HW5+C_totalError_HW6+C_totalError_HW7++C_totalError_HW8,
+           data = allError))
+#model 2
+summary(lm(Midterm2 ~ totalRuntime_HW08 + totalcompile_HW08, data = allError))
+```
+
