@@ -6,5 +6,6 @@ Compute error metrics in the logs of student compilation events.
 
 * `data-snapshots`: Complete snapshots of all compilation events. *Author: Maciej Pankiewicz.*
 * `data-errors`: All compilation errors. *Author: Maciej Pankiewicz.*
-* `jadud.py`: Compute Jadud's EQ for each student using the data about snapshots and errors. *Author: Valdemar Švábenský.*
+* `results`: Output of `jadud.py`. *Author: Valdemar Švábenský.*
+* `jadud.py`: Compute Jadud's EQ for each student using `data-snapshots` and `data-errors`. *Author: Valdemar Švábenský.*
 * `use error count to pred grades.Rmd`: SRL-use total error counts to predict learning outcomes. *Author: Joyce Zhang.*

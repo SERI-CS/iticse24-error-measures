@@ -36,6 +36,7 @@ I 0.7272727272727273
 """
 
 import csv
+from statistics import mean, stdev
 
 
 def process_data_errors(hw_name='03'):
@@ -61,8 +62,10 @@ def process_data_errors(hw_name='03'):
     all_errors = {}  # The dictionary
     for row in reader:
         student_id, timestamp, error_message = row[0], row[1], row[4]
-        timestamp = timestamp.replace('_', ':')  # For compatibility with the different timestamp format in the snapshots file
-        linebreak_index_in_error_message = error_message.find('\n')  # The messages span multiple lines, we want only the first line
+        timestamp = timestamp.replace('_',
+                                      ':')  # For compatibility with the different timestamp format in the snapshots file
+        linebreak_index_in_error_message = error_message.find(
+            '\n')  # The messages span multiple lines, we want only the first line
         if linebreak_index_in_error_message == -1:
             linebreak_index_in_error_message = len(error_message)
         error_type = error_message[:linebreak_index_in_error_message].strip()
@@ -115,7 +118,7 @@ def process_data_snapshots(hw_name='03'):
     return all_students
 
 
-def compute_jadud_eq(hw_name='03'):
+def compute_jadud_eq(hw_name='03', writer=None):
     """
     Calculate the Jadud's error quotient (EQ) for each student in the logs for the given homework files.
     The algorithm is described in the following publication on page 6:
@@ -123,12 +126,13 @@ def compute_jadud_eq(hw_name='03'):
         In Proceedings of the second international workshop on Computing education research (ICER '06).
         ACM, New York, NY, USA, 73–84. https://dl.acm.org/doi/pdf/10.1145/1151588.1151600
 
-    Then, print the student_id with their error quotient, for example:
-        008a13042777e1aaca446a68fbc5b3877e6ed232 0.17272727272727273
-        0106f488719b5b6dec8020fdf6c9e2e6d2059227 0.07142857142857142
-        025e11c5a647be6af45e5040241901ecd65080f3 0.0
+    Then, write into a file the student_id with their error quotient, grouped by homework name, e.g.:
+        03, 008a13042777e1aaca446a68fbc5b3877e6ed232, 0.17272727272727273
+        03, 0106f488719b5b6dec8020fdf6c9e2e6d2059227, 0.07142857142857142
+        03, 025e11c5a647be6af45e5040241901ecd65080f3, 0.0
 
     :param hw_name: str. Number of the homework assignment.
+    :param writer: object. Handle for the CSV writer for exporting the computation results into a file.
     :return: None.
     """
     all_students = process_data_snapshots(hw_name)
@@ -138,7 +142,7 @@ def compute_jadud_eq(hw_name='03'):
         for i in range(len(student_session) - 1):  # 1. COLLATE: Create consecutive pairs from the events in the session
             num_event_pairs_per_student += 1
             current_event_errors = set(student_session[i])  # Create a set to ignore multiple errors of the same type
-            next_event_errors = set(student_session[i+1])
+            next_event_errors = set(student_session[i + 1])
 
             eq_per_event_pair = 0  # Error score (quotient) for the pair of the current and next event
             if current_event_errors and next_event_errors:  # 2. CALCULATE: Score the event pair according to the algorithm
@@ -152,9 +156,82 @@ def compute_jadud_eq(hw_name='03'):
         assert num_event_pairs_per_student > 0, 'This should not happen because it indicates no compilation events.'
         student_total_eq /= num_event_pairs_per_student  # 4b. AVERAGE: ... and divide by the number of pairs
         assert 0 <= student_total_eq <= 1, 'The EQ must be between 0 and 1'
-        print(student_id, student_total_eq)
+
+        output = [hw_name, student_id, student_total_eq]
+        writer.writerow(output) if writer else print(output)
+
+
+def export_results(results_filename='results/jadud.csv'):
+    """
+    Compute Jadud's EQs for all students in all log files and export the EQs into the specified CSV file.
+    :param results_filename: str. Name of the output file with the computed results.
+    :return: None.
+    """
+    with open(results_filename, 'w', newline='', encoding='utf-8') as file_handle:
+        writer = csv.writer(file_handle)
+        writer.writerow(['hw_name', 'student_id', 'student_jadud_eq'])  # Write the CSV header
+        for hw_name in ['03', '04', '05', '06', '07', '08']:
+            compute_jadud_eq(hw_name, writer)
+
+
+def read_results(results_filename='results/jadud.csv'):
+    """
+    Read the contents of the file created by the function export_results().
+    :param results_filename: str. Name of the input file with the computed results.
+    :return: (Dict, Dict). Two dictionaries for grouping the EQs per homework and per student.
+    """
+    all_scores_per_homework = {}
+    all_scores_per_student = {}
+    with open(results_filename, 'r', newline='', encoding='utf-8') as file_handle:
+        reader = csv.reader(file_handle)
+        next(reader)  # Skip the CSV header
+        for row in reader:
+            hw_name, student_id, student_total_eq = row[0], row[1], float(row[2])
+            if hw_name not in all_scores_per_homework:
+                all_scores_per_homework[hw_name] = [student_total_eq]
+            else:
+                all_scores_per_homework[hw_name].append(student_total_eq)
+            if student_id not in all_scores_per_student:
+                all_scores_per_student[student_id] = [student_total_eq]
+            else:
+                all_scores_per_student[student_id].append(student_total_eq)
+    return all_scores_per_homework, all_scores_per_student
+
+
+def descriptive_statistics(numbers):
+    """
+    Compute the min, max, avg, and stdev of a given list of floats.
+    :param numbers: List<float>. Any list of floating point numbers.
+    :return: List<float>. A list of the four descriptive statistics rounded to 4 decimal places.
+    """
+    results = [min(numbers), max(numbers), mean(numbers)]
+    results.append(stdev(numbers)) if len(numbers) > 1 else results.append(0)
+    results = list(map(lambda x: round(x, 4), results))
+    return results
+
+
+def analyze_results(results_analysis_filename='results/jadud-analysis.csv'):
+    """
+    Compute the average and standard deviation of EQs per each homework and per each student.
+    :param results_analysis_filename: str. Name of the output file with the computed results of the analysis.
+    :return: None.
+    """
+    all_scores_per_homework, all_scores_per_student = read_results()
+    with open(results_analysis_filename, 'w', newline='', encoding='utf-8') as file_handle:
+        writer = csv.writer(file_handle)
+        writer.writerow(['hw_name/student_id', 'min_jadud_eq', 'max_jadud_eq', 'avg_jadud_eq', 'stdev_jadud_eq'])
+        for hw_name in all_scores_per_homework:
+            all_scores = all_scores_per_homework[hw_name]
+            output = [hw_name]
+            output.extend(descriptive_statistics(all_scores))
+            writer.writerow(output)
+        for student_id in all_scores_per_student:
+            all_scores = all_scores_per_student[student_id]
+            output = [student_id]
+            output.extend(descriptive_statistics(all_scores))
+            writer.writerow(output)
 
 
 if __name__ == '__main__':
-    for hw in ['testfile', '03', '04', '05', '06', '07', '08']:
-        compute_jadud_eq(hw)
+    export_results()
+    analyze_results()
