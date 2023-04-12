@@ -36,6 +36,7 @@ I 0.7272727272727273
 """
 
 import csv
+import pandas as pd
 from statistics import mean, stdev
 
 
@@ -118,7 +119,7 @@ def process_data_snapshots(hw_name='03'):
     return all_students
 
 
-def compute_jadud_eq(hw_name='03', writer=None):
+def compute_jadud_eq(hw_name='03'):
     """
     Calculate the Jadud's error quotient (EQ) for each student in the logs for the given homework files.
     The algorithm is described in the following publication on page 6:
@@ -126,16 +127,11 @@ def compute_jadud_eq(hw_name='03', writer=None):
         In Proceedings of the second international workshop on Computing education research (ICER '06).
         ACM, New York, NY, USA, 73–84. https://dl.acm.org/doi/pdf/10.1145/1151588.1151600
 
-    Then, write into a file the student_id with their error quotient, grouped by homework name, e.g.:
-        03, 008a13042777e1aaca446a68fbc5b3877e6ed232, 0.17272727272727273
-        03, 0106f488719b5b6dec8020fdf6c9e2e6d2059227, 0.07142857142857142
-        03, 025e11c5a647be6af45e5040241901ecd65080f3, 0.0
-
     :param hw_name: str. Number of the homework assignment.
-    :param writer: object. Handle for the CSV writer for exporting the computation results into a file.
-    :return: None.
+    :return: dict. Dictionary with the structure { student_id : jadud_eq_for_this_hw }.
     """
     all_students = process_data_snapshots(hw_name)
+    all_scores_per_student = {}
     for student_id, student_session in all_students.items():
         student_total_eq = 0
         num_event_pairs_per_student = 0
@@ -156,22 +152,24 @@ def compute_jadud_eq(hw_name='03', writer=None):
         assert num_event_pairs_per_student > 0, 'This should not happen because it indicates no compilation events.'
         student_total_eq /= num_event_pairs_per_student  # 4b. AVERAGE: ... and divide by the number of pairs
         assert 0 <= student_total_eq <= 1, 'The EQ must be between 0 and 1'
+        all_scores_per_student[student_id] = student_total_eq
 
-        output = [hw_name, student_id, student_total_eq]
-        writer.writerow(output) if writer else print(output)
+    return all_scores_per_student
 
 
-def export_results(results_filename='results/jadud.csv'):
+def get_results(results_filename='results/jadud.csv'):
     """
     Compute Jadud's EQs for all students in all log files and export the EQs into the specified CSV file.
     :param results_filename: str. Name of the output file with the computed results.
     :return: None.
     """
-    with open(results_filename, 'w', newline='', encoding='utf-8') as file_handle:
-        writer = csv.writer(file_handle)
-        writer.writerow(['hw_name', 'student_id', 'student_jadud_eq'])  # Write the CSV header
-        for hw_name in ['03', '04', '05', '06', '07', '08']:
-            compute_jadud_eq(hw_name, writer)
+    df_all = pd.DataFrame(columns=['student_id']).set_index('student_id')
+    for hw_name in ['03', '04', '05', '06', '07', '08']:
+        all_scores_per_student = compute_jadud_eq(hw_name)
+        df_hw = pd.DataFrame.from_dict(all_scores_per_student, columns=['jadud_hw_' + hw_name], orient='index')
+        df_all = df_all.join(df_hw, how='outer')
+    df_all.to_csv(results_filename, encoding='utf-8', index_label='student_id')
+    exit()  # TODO continue here
 
 
 def read_results(results_filename='results/jadud.csv'):
@@ -210,14 +208,14 @@ def descriptive_statistics(numbers):
     return results
 
 
-def analyze_results(results_analysis_filename='results/jadud-analysis.csv'):
+def analyze_results(results_filename='results/jadud-analysis.csv'):
     """
-    Compute the average and standard deviation of EQs per each homework and per each student.
-    :param results_analysis_filename: str. Name of the output file with the computed results of the analysis.
+    Compute the descriptive statistics of EQs per each homework and per each student.
+    :param results_filename: str. Name of the output file with the computed results of the analysis.
     :return: None.
     """
     all_scores_per_homework, all_scores_per_student = read_results()
-    with open(results_analysis_filename, 'w', newline='', encoding='utf-8') as file_handle:
+    with open(results_filename, 'w', newline='', encoding='utf-8') as file_handle:
         writer = csv.writer(file_handle)
         writer.writerow(['hw_name/student_id', 'min_jadud_eq', 'max_jadud_eq', 'avg_jadud_eq', 'stdev_jadud_eq'])
         for hw_name in all_scores_per_homework:
@@ -232,6 +230,30 @@ def analyze_results(results_analysis_filename='results/jadud-analysis.csv'):
             writer.writerow(output)
 
 
+def correlate_results_to_grades(results_filename='results/jadud-correlations.csv'):
+    """
+    Compute the correlations of EQs to student grades per each student.
+    :param results_filename: str. Name of the output file with the computed results of the analysis.
+    :return: None.
+    """
+    _, all_scores_per_student = read_results()
+    for student_id, scores in all_scores_per_student.items():
+        all_scores_per_student[student_id] = [mean(scores)]  # Get average homework score for each student
+    df_all_scores_per_student = pd.DataFrame.from_dict(all_scores_per_student, orient='index')
+    df_all_scores_per_student.columns = ['avg_hw_eq']
+
+    df_midterm1 = pd.read_csv('grades/Midterm1_Fall_2020.csv', index_col=0).dropna()
+    df_midterm1.columns = ['midterm1']
+
+    df_all = df_all_scores_per_student.join(df_midterm1, how='inner')
+    print(df_all)
+
+    with open(results_filename, 'w', newline='', encoding='utf-8') as file_handle:
+        writer = csv.writer(file_handle)
+        #writer.writerow(['student_id', 'TODO'])
+
+
 if __name__ == '__main__':
-    export_results()
+    get_results()
     analyze_results()
+    correlate_results_to_grades()
