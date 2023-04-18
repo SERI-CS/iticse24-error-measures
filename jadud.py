@@ -157,10 +157,9 @@ def compute_jadud_eq(hw_name='03'):
     return all_scores_per_student
 
 
-def get_results(results_filename='results/jadud.csv'):
+def get_results():
     """
-    Compute Jadud's EQs for all students in all log files and export the EQs into the specified CSV file.
-    :param results_filename: str. Name of the output file with the computed results.
+    Compute Jadud's EQs for all students in all log files and export the EQs into CSV files.
     :return: None.
     """
     df_all = pd.DataFrame(columns=['student_id']).set_index('student_id')
@@ -168,13 +167,16 @@ def get_results(results_filename='results/jadud.csv'):
         all_scores_per_student = compute_jadud_eq(hw_name)
         df_hw = pd.DataFrame.from_dict(all_scores_per_student, columns=['jadud_hw_' + hw_name], orient='index')
         df_all = df_all.join(df_hw, how='outer')
-    df_all.to_csv(results_filename, encoding='utf-8', index_label='student_id')
-    exit()  # TODO continue here
+    df_all.to_csv('results/jadud.csv', encoding='utf-8', index_label='student_id')
+
+    # Compute descriptive statistics
+    df_all.describe().to_csv('results/jadud-per-homework.csv', encoding='utf-8')
+    df_all.apply(pd.Series.describe, axis=1).to_csv('results/jadud-per-student.csv', encoding='utf-8')
 
 
 def read_results(results_filename='results/jadud.csv'):
     """
-    Read the contents of the file created by the function export_results().
+    Read the contents of the file created by the function get_results().
     :param results_filename: str. Name of the input file with the computed results.
     :return: (Dict, Dict). Two dictionaries for grouping the EQs per homework and per student.
     """
@@ -184,7 +186,7 @@ def read_results(results_filename='results/jadud.csv'):
         reader = csv.reader(file_handle)
         next(reader)  # Skip the CSV header
         for row in reader:
-            hw_name, student_id, student_total_eq = row[0], row[1], float(row[2])
+            student_id, student_total_eq = row[0], row[1], float(row[2])
             if hw_name not in all_scores_per_homework:
                 all_scores_per_homework[hw_name] = [student_total_eq]
             else:
@@ -196,46 +198,13 @@ def read_results(results_filename='results/jadud.csv'):
     return all_scores_per_homework, all_scores_per_student
 
 
-def descriptive_statistics(numbers):
-    """
-    Compute the min, max, avg, and stdev of a given list of floats.
-    :param numbers: List<float>. Any list of floating point numbers.
-    :return: List<float>. A list of the four descriptive statistics rounded to 4 decimal places.
-    """
-    results = [min(numbers), max(numbers), mean(numbers)]
-    results.append(stdev(numbers)) if len(numbers) > 1 else results.append(0)
-    results = list(map(lambda x: round(x, 4), results))
-    return results
-
-
-def analyze_results(results_filename='results/jadud-analysis.csv'):
-    """
-    Compute the descriptive statistics of EQs per each homework and per each student.
-    :param results_filename: str. Name of the output file with the computed results of the analysis.
-    :return: None.
-    """
-    all_scores_per_homework, all_scores_per_student = read_results()
-    with open(results_filename, 'w', newline='', encoding='utf-8') as file_handle:
-        writer = csv.writer(file_handle)
-        writer.writerow(['hw_name/student_id', 'min_jadud_eq', 'max_jadud_eq', 'avg_jadud_eq', 'stdev_jadud_eq'])
-        for hw_name in all_scores_per_homework:
-            all_scores = all_scores_per_homework[hw_name]
-            output = [hw_name]
-            output.extend(descriptive_statistics(all_scores))
-            writer.writerow(output)
-        for student_id in all_scores_per_student:
-            all_scores = all_scores_per_student[student_id]
-            output = [student_id]
-            output.extend(descriptive_statistics(all_scores))
-            writer.writerow(output)
-
-
 def correlate_results_to_grades(results_filename='results/jadud-correlations.csv'):
     """
     Compute the correlations of EQs to student grades per each student.
     :param results_filename: str. Name of the output file with the computed results of the analysis.
     :return: None.
     """
+    exit()  # TODO continue here
     _, all_scores_per_student = read_results()
     for student_id, scores in all_scores_per_student.items():
         all_scores_per_student[student_id] = [mean(scores)]  # Get average homework score for each student
@@ -255,5 +224,4 @@ def correlate_results_to_grades(results_filename='results/jadud-correlations.csv
 
 if __name__ == '__main__':
     get_results()
-    analyze_results()
     correlate_results_to_grades()
