@@ -37,7 +37,6 @@ I 0.7272727272727273
 
 import csv
 import pandas as pd
-from statistics import mean, stdev
 
 
 def process_data_errors(hw_name='03'):
@@ -174,38 +173,16 @@ def get_results():
     df_all.apply(pd.Series.describe, axis=1).to_csv('results/jadud-per-student.csv', encoding='utf-8')
 
 
-def read_results(results_filename='results/jadud.csv'):
-    """
-    Read the contents of the file created by the function get_results().
-    :param results_filename: str. Name of the input file with the computed results.
-    :return: (Dict, Dict). Two dictionaries for grouping the EQs per homework and per student.
-    """
-    all_scores_per_homework = {}
-    all_scores_per_student = {}
-    with open(results_filename, 'r', newline='', encoding='utf-8') as file_handle:
-        reader = csv.reader(file_handle)
-        next(reader)  # Skip the CSV header
-        for row in reader:
-            student_id, student_total_eq = row[0], row[1], float(row[2])
-            if hw_name not in all_scores_per_homework:
-                all_scores_per_homework[hw_name] = [student_total_eq]
-            else:
-                all_scores_per_homework[hw_name].append(student_total_eq)
-            if student_id not in all_scores_per_student:
-                all_scores_per_student[student_id] = [student_total_eq]
-            else:
-                all_scores_per_student[student_id].append(student_total_eq)
-    return all_scores_per_homework, all_scores_per_student
-
-
 def correlate_results_to_grades(results_filename='results/jadud-correlations.csv'):
     """
     Compute the correlations of EQs to student grades per each student.
     :param results_filename: str. Name of the output file with the computed results of the analysis.
     :return: None.
     """
-    exit()  # TODO continue here
-    _, all_scores_per_student = read_results()
+    # TODO finish this function if necessary, doesn't seem to be needed at this moment.
+    exit()
+    df_all = pd.read_csv('results/jadud.csv', index_col=0).dropna()
+
     for student_id, scores in all_scores_per_student.items():
         all_scores_per_student[student_id] = [mean(scores)]  # Get average homework score for each student
     df_all_scores_per_student = pd.DataFrame.from_dict(all_scores_per_student, orient='index')
@@ -214,12 +191,8 @@ def correlate_results_to_grades(results_filename='results/jadud-correlations.csv
     df_midterm1 = pd.read_csv('grades/Midterm1_Fall_2020.csv', index_col=0).dropna()
     df_midterm1.columns = ['midterm1']
 
-    df_all = df_all_scores_per_student.join(df_midterm1, how='inner')
-    print(df_all)
-
-    with open(results_filename, 'w', newline='', encoding='utf-8') as file_handle:
-        writer = csv.writer(file_handle)
-        #writer.writerow(['student_id', 'TODO'])
+    df_final = df_all_scores_per_student.join(df_midterm1, how='inner')
+    print(df_final)
 
 
 if __name__ == '__main__':
