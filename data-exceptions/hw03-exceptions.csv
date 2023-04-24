@@ -1,0 +1,24 @@
+student;snapshot;datetime;exception;class;method;line;secondary_class;secondary_method;secondary_line
+0b2b215d3895dc070ff308ca5d5733bb0abda40f;2020-10-08T22_54_42.771Z;2020-10-08 22:54:42;java.lang.ArrayIndexOutOfBoundsException;Caesar;findFrequencies;136;;;
+0b2b215d3895dc070ff308ca5d5733bb0abda40f;2020-10-08T22_54_42.771Z;2020-10-08 22:54:42;java.lang.ArrayIndexOutOfBoundsException;Caesar;findFrequencies;136;;;
+0b2b215d3895dc070ff308ca5d5733bb0abda40f;2020-10-08T22_54_42.771Z;2020-10-08 22:54:42;java.lang.ArrayIndexOutOfBoundsException;Caesar;findFrequencies;136;;;
+0ca06f2f6d203a8c20ee3d33c95ce3a1c9550356;2020-10-08T17_49_31.376Z;2020-10-08 17:49:31;java.lang.ArrayIndexOutOfBoundsException;Caesar;scoreFrequencies;182;;;
+0ca06f2f6d203a8c20ee3d33c95ce3a1c9550356;2020-10-08T17_49_31.376Z;2020-10-08 17:49:31;java.lang.ArrayIndexOutOfBoundsException;Caesar;scoreFrequencies;182;;;
+0ca06f2f6d203a8c20ee3d33c95ce3a1c9550356;2020-10-08T17_49_31.376Z;2020-10-08 17:49:31;java.lang.ArrayIndexOutOfBoundsException;Caesar;scoreFrequencies;182;;;
+0ca06f2f6d203a8c20ee3d33c95ce3a1c9550356;2020-10-08T20_37_02.021Z;2020-10-08 20:37:02;java.lang.IllegalArgumentException;In;<init>;194;;;
+0ca06f2f6d203a8c20ee3d33c95ce3a1c9550356;2020-10-08T20_37_02.021Z;2020-10-08 20:37:02;java.lang.IllegalArgumentException;In;<init>;194;;;
+0ca06f2f6d203a8c20ee3d33c95ce3a1c9550356;2020-10-08T22_04_45.570Z;2020-10-08 22:04:45;java.lang.ArrayIndexOutOfBoundsException;Caesar;main;244;;;
+0ca06f2f6d203a8c20ee3d33c95ce3a1c9550356;2020-10-08T22_04_45.570Z;2020-10-08 22:04:45;java.lang.ArrayIndexOutOfBoundsException;Caesar;main;244;;;
+0ca06f2f6d203a8c20ee3d33c95ce3a1c9550356;2020-10-08T22_04_45.570Z;2020-10-08 22:04:45;java.lang.ArrayIndexOutOfBoundsException;Caesar;main;244;;;
+0ca06f2f6d203a8c20ee3d33c95ce3a1c9550356;2020-10-08T22_42_54.219Z;2020-10-08 22:42:54;java.lang.ArrayIndexOutOfBoundsException;Caesar;main;243;;;
+0ca06f2f6d203a8c20ee3d33c95ce3a1c9550356;2020-10-08T22_42_54.219Z;2020-10-08 22:42:54;java.lang.ArrayIndexOutOfBoundsException;Caesar;main;243;;;
+0ca06f2f6d203a8c20ee3d33c95ce3a1c9550356;2020-10-08T22_42_54.219Z;2020-10-08 22:42:54;java.lang.ArrayIndexOutOfBoundsException;Caesar;main;243;;;
+0cec4107a713477189bb82d9d34b81190cb1201b;2020-10-08T22_56_42.727Z;2020-10-08 22:56:42;java.lang.ArrayIndexOutOfBoundsException;Caesar;main;189;;;
+0cec4107a713477189bb82d9d34b81190cb1201b;2020-10-08T22_56_42.727Z;2020-10-08 22:56:42;java.lang.ArrayIndexOutOfBoundsException;Caesar;main;189;;;
+0cec4107a713477189bb82d9d34b81190cb1201b;2020-10-08T22_56_42.727Z;2020-10-08 22:56:42;java.lang.ArrayIndexOutOfBoundsException;Caesar;main;189;;;
+0e5e2419246434693bfda4a7c0c42bf8f6a75339;2020-10-05T22_24_51.062Z;2020-10-05 22:24:51;java.lang.NumberFormatException;java;lang;65;;;
+0e5e2419246434693bfda4a7c0c42bf8f6a75339;2020-10-05T22_24_51.062Z;2020-10-05 22:24:51;java.lang.NumberFormatException;java;lang;65;;;
+0e5e2419246434693bfda4a7c0c42bf8f6a75339;2020-10-05T23_26_25.400Z;2020-10-05 23:26:25;java.lang.NumberFormatException;java;lang;65;;;
+0e5e2419246434693bfda4a7c0c42bf8f6a75339;2020-10-05T23_26_25.400Z;2020-10-05 23:26:25;java.lang.NumberFormatException;java;lang;65;;;
+0e5e2419246434693bfda4a7c0c42bf8f6a75339;2020-10-08T21_14_25.685Z;2020-10-08 21:14:25;java.lang.NumberFormatException;java;lang;65;;;
+0e5e2419246434693bfda4a7c0c42bf8f6a75339;2020-10-08T21_14_25.685Z;2020-10-08 21:14:25;java.lang.NumberFormatException;java;lang;65;;;

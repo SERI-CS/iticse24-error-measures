@@ -1,0 +1,864 @@
+student;snapshot;datetime;exception;class;method;line;secondary_class;secondary_method;secondary_line
+008a13042777e1aaca446a68fbc5b3877e6ed232;2020-10-11T16_12_53.421Z;2020-10-11 16:12:53; java.lang.StackOverflowError;FingerExercises;countWaysToClimb;17;FingerExercisesTest;testClimbStairsZero;1092
+008a13042777e1aaca446a68fbc5b3877e6ed232;2020-10-11T17_51_44.597Z;2020-10-11 17:51:44; java.lang.StackOverflowError;FingerExercises;countWaysToClimb;18;FingerExercisesTest;testClimbStairsZero;1092
+008a13042777e1aaca446a68fbc5b3877e6ed232;2020-10-12T22_02_43.994Z;2020-10-12 22:02:43; java.lang.StackOverflowError;FingerExercises;countWaysToClimb;120;FingerExercisesTest;testClimbStairsZero;1092
+008a13042777e1aaca446a68fbc5b3877e6ed232;2020-10-12T23_52_25.139Z;2020-10-12 23:52:25; java.lang.StackOverflowError;FingerExercises;countWaysToClimb;160;FingerExercisesTest;testClimbStairsZero;1092
+008a13042777e1aaca446a68fbc5b3877e6ed232;2020-10-14T13_46_09.554Z;2020-10-14 13:46:09; java.lang.StackOverflowError;FingerExercises;countWaysToClimb;130;FingerExercisesTest;testClimbStairsZero;1092
+03ca17c101841d13b549bea0ce51f4e0fe320d0c;2020-10-15T02_00_00.375Z;2020-10-15 02:00:00; java.lang.StackOverflowError;FingerExercises;gcd;29;FingerExercisesTest;testGcdAZero;137
+03ca17c101841d13b549bea0ce51f4e0fe320d0c;2020-10-15T02_00_00.375Z;2020-10-15 02:00:00; java.lang.StackOverflowError;FingerExercises;gcd;29;FingerExercisesTest;testGcdBZero;184
+0ca06f2f6d203a8c20ee3d33c95ce3a1c9550356;2020-10-13T04_33_49.196Z;2020-10-13 04:33:49; java.lang.StackOverflowError;FingerExercises;log;39;FingerExercisesTest;testLogInexact;1469
+0ca06f2f6d203a8c20ee3d33c95ce3a1c9550356;2020-10-13T04_33_49.196Z;2020-10-13 04:33:49; java.lang.StackOverflowError;FingerExercises;log;39;FingerExercisesTest;testLogExact;1422
+0ca06f2f6d203a8c20ee3d33c95ce3a1c9550356;2020-10-13T04_33_49.196Z;2020-10-13 04:33:49; java.lang.StackOverflowError;FingerExercises;log;39;FingerExercisesTest;testLogInexactLarger;1516
+0ca06f2f6d203a8c20ee3d33c95ce3a1c9550356;2020-10-13T04_33_49.196Z;2020-10-13 04:33:49; java.lang.StackOverflowError;FingerExercises;log;39;FingerExercisesTest;testLog;1328
+0f88be4b4d0a31605c539532fce08ed600190170;2020-10-11T22_48_04.425Z;2020-10-11 22:48:04; java.lang.ArithmeticException;FingerExercises;gcd;12;FingerExercisesTest;testGcdBZero;184
+0f88be4b4d0a31605c539532fce08ed600190170;2020-10-12T23_43_49.551Z;2020-10-12 23:43:49; java.lang.ArithmeticException;FingerExercises;gcd;12;FingerExercisesTest;testGcdBZero;184
+0f88be4b4d0a31605c539532fce08ed600190170;2020-10-13T12_23_52.619Z;2020-10-13 12:23:52; java.lang.ArithmeticException;FingerExercises;gcd;12;FingerExercisesTest;testGcdBZero;184
+1390c5e2235f7bf89d0e6af7570654c3fa81a50e;2020-10-14T14_46_55.269Z;2020-10-14 14:46:55; java.lang.StackOverflowError;FingerExercises;sumOfDigits;43;FingerExercisesTest;testSumOfDigitsZero;851
+1390c5e2235f7bf89d0e6af7570654c3fa81a50e;2020-10-14T14_46_55.269Z;2020-10-14 14:46:55; java.lang.StackOverflowError;FingerExercises;sumOfDigits;43;FingerExercisesTest;testSumOfDigits;945
+1390c5e2235f7bf89d0e6af7570654c3fa81a50e;2020-10-14T14_46_55.269Z;2020-10-14 14:46:55; java.lang.StackOverflowError;FingerExercises;sumOfDigits;43;FingerExercisesTest;testSumOfDigitsSingle;898
+1390c5e2235f7bf89d0e6af7570654c3fa81a50e;2020-10-14T14_46_55.269Z;2020-10-14 14:46:55; java.lang.StackOverflowError;FingerExercises;sumOfDigits;43;FingerExercisesTest;testSumOfDigitsTriple;1039
+1390c5e2235f7bf89d0e6af7570654c3fa81a50e;2020-10-14T14_46_55.269Z;2020-10-14 14:46:55;java.lang.NullPointerException;FingerExercisesTest;testSumTo;524;FingerExercisesTest;testSumTo;562
+1390c5e2235f7bf89d0e6af7570654c3fa81a50e;2020-10-14T14_46_55.269Z;2020-10-14 14:46:55;java.lang.NullPointerException;FingerExercisesTest;testSumToOne;477;FingerExercisesTest;testSumToOne;515
+1390c5e2235f7bf89d0e6af7570654c3fa81a50e;2020-10-14T14_46_55.269Z;2020-10-14 14:46:55; java.lang.StackOverflowError;FingerExercises;sumOfDigits;43;FingerExercisesTest;testSumOfDigitsShort;992
+139c29eaf2bf6ea4e53e4a9f895ad1199b063548;2020-10-11T18_57_25.914Z;2020-10-11 18:57:25; java.lang.ArithmeticException;FingerExercises;gcd;26;;;
+139c29eaf2bf6ea4e53e4a9f895ad1199b063548;2020-10-11T19_57_10.795Z;2020-10-11 19:57:10; java.lang.ArithmeticException;FingerExercises;gcd;30;;;
+139c29eaf2bf6ea4e53e4a9f895ad1199b063548;2020-10-11T19_57_10.795Z;2020-10-11 19:57:10; java.lang.StackOverflowError;FingerExercises;sumOfDigits;41;FingerExercisesTest;testSumOfDigits;945
+139c29eaf2bf6ea4e53e4a9f895ad1199b063548;2020-10-11T22_17_07.946Z;2020-10-11 22:17:07; java.lang.ArithmeticException;FingerExercises;gcd;46;;;
+139c29eaf2bf6ea4e53e4a9f895ad1199b063548;2020-10-11T23_52_23.820Z;2020-10-11 23:52:23; java.lang.ArithmeticException;FingerExercises;gcd;46;;;
+139c29eaf2bf6ea4e53e4a9f895ad1199b063548;2020-10-12T01_02_28.677Z;2020-10-12 01:02:28; java.lang.ArithmeticException;FingerExercises;gcd;52;;;
+139c29eaf2bf6ea4e53e4a9f895ad1199b063548;2020-10-12T02_51_45.364Z;2020-10-12 02:51:45; java.lang.ArithmeticException;FingerExercises;gcd;53;;;
+139c29eaf2bf6ea4e53e4a9f895ad1199b063548;2020-10-13T15_43_39.008Z;2020-10-13 15:43:39; java.lang.ArithmeticException;FingerExercises;gcd;53;;;
+139c29eaf2bf6ea4e53e4a9f895ad1199b063548;2020-10-13T16_09_22.612Z;2020-10-13 16:09:22; java.lang.ArithmeticException;FingerExercises;gcd;53;;;
+15a781a47074cd944066e0eae974606082fc9788;2020-10-10T15_35_15.446Z;2020-10-10 15:35:15;java.lang.NullPointerException;FingerExercisesTest;testSumTo;524;FingerExercisesTest;testSumTo;562
+15a781a47074cd944066e0eae974606082fc9788;2020-10-10T15_35_15.446Z;2020-10-10 15:35:15;java.lang.NullPointerException;FingerExercisesTest;testSumToOne;477;FingerExercisesTest;testSumToOne;515
+15b943b08735673bf26c83a3211e0dcdbe4014e0;2020-10-13T20_50_54.945Z;2020-10-13 20:50:54; java.lang.StackOverflowError;FingerExercises;countWaysToClimb;49;FingerExercisesTest;testClimbStairsZero;1092
+15c790d885b3c3fbf73e766b09fe14cb31b34d63;2020-10-14T23_59_46.981Z;2020-10-14 23:59:46;java.lang.NullPointerException;FingerExercisesTest;testSumTo;524;FingerExercisesTest;testSumTo;562
+15c790d885b3c3fbf73e766b09fe14cb31b34d63;2020-10-14T23_59_46.981Z;2020-10-14 23:59:46;java.lang.NullPointerException;FingerExercisesTest;testSumToOne;477;FingerExercisesTest;testSumToOne;515
+1655907b46332e9bf59fd3792dffea88f661da4d;2020-10-11T01_00_04.457Z;2020-10-11 01:00:04; java.lang.ArithmeticException;FingerExercises;gcd;13;;;
+1655907b46332e9bf59fd3792dffea88f661da4d;2020-10-11T01_38_54.154Z;2020-10-11 01:38:54; java.lang.ArithmeticException;FingerExercises;gcd;13;;;
+1655907b46332e9bf59fd3792dffea88f661da4d;2020-10-11T07_00_08.981Z;2020-10-11 07:00:08; java.lang.ArithmeticException;FingerExercises;gcd;13;;;
+1655907b46332e9bf59fd3792dffea88f661da4d;2020-10-11T07_43_05.382Z;2020-10-11 07:43:05; java.lang.ArithmeticException;FingerExercises;gcd;13;;;
+1655907b46332e9bf59fd3792dffea88f661da4d;2020-10-11T15_01_30.778Z;2020-10-11 15:01:30; java.lang.StackOverflowError;FingerExercises;log;84;FingerExercisesTest;testLogInexact;1469
+1655907b46332e9bf59fd3792dffea88f661da4d;2020-10-11T15_01_30.778Z;2020-10-11 15:01:30; java.lang.StackOverflowError;FingerExercises;log;84;FingerExercisesTest;testLogExact;1422
+1655907b46332e9bf59fd3792dffea88f661da4d;2020-10-11T15_01_30.778Z;2020-10-11 15:01:30; java.lang.ArithmeticException;FingerExercises;gcd;17;;;
+1655907b46332e9bf59fd3792dffea88f661da4d;2020-10-11T15_01_30.778Z;2020-10-11 15:01:30; java.lang.StackOverflowError;FingerExercises;log;84;FingerExercisesTest;testLogInexactLarger;1516
+1655907b46332e9bf59fd3792dffea88f661da4d;2020-10-11T15_01_30.778Z;2020-10-11 15:01:30; java.lang.StackOverflowError;FingerExercises;log;84;FingerExercisesTest;testLog;1328
+1655907b46332e9bf59fd3792dffea88f661da4d;2020-10-11T23_05_30.513Z;2020-10-11 23:05:30; java.lang.StackOverflowError;FingerExercises;log;84;FingerExercisesTest;testLogInexact;1469
+1655907b46332e9bf59fd3792dffea88f661da4d;2020-10-11T23_05_30.513Z;2020-10-11 23:05:30; java.lang.StackOverflowError;FingerExercises;log;84;FingerExercisesTest;testLogExact;1422
+1655907b46332e9bf59fd3792dffea88f661da4d;2020-10-11T23_05_30.513Z;2020-10-11 23:05:30; java.lang.ArithmeticException;FingerExercises;gcd;17;;;
+1655907b46332e9bf59fd3792dffea88f661da4d;2020-10-11T23_05_30.513Z;2020-10-11 23:05:30; java.lang.StackOverflowError;FingerExercises;log;84;FingerExercisesTest;testLogInexactLarger;1516
+1655907b46332e9bf59fd3792dffea88f661da4d;2020-10-11T23_05_30.513Z;2020-10-11 23:05:30; java.lang.StackOverflowError;FingerExercises;log;84;FingerExercisesTest;testLog;1328
+1655907b46332e9bf59fd3792dffea88f661da4d;2020-10-12T00_32_50.990Z;2020-10-12 00:32:50; java.lang.StackOverflowError;FingerExercises;log;84;FingerExercisesTest;testLogInexact;1469
+1655907b46332e9bf59fd3792dffea88f661da4d;2020-10-12T00_32_50.990Z;2020-10-12 00:32:50; java.lang.StackOverflowError;FingerExercises;log;84;FingerExercisesTest;testLogExact;1422
+1655907b46332e9bf59fd3792dffea88f661da4d;2020-10-12T00_32_50.990Z;2020-10-12 00:32:50; java.lang.ArithmeticException;FingerExercises;gcd;17;;;
+1655907b46332e9bf59fd3792dffea88f661da4d;2020-10-12T00_32_50.990Z;2020-10-12 00:32:50; java.lang.StackOverflowError;FingerExercises;log;84;FingerExercisesTest;testLogInexactLarger;1516
+1655907b46332e9bf59fd3792dffea88f661da4d;2020-10-12T00_32_50.990Z;2020-10-12 00:32:50; java.lang.StackOverflowError;FingerExercises;log;84;FingerExercisesTest;testLog;1328
+1655907b46332e9bf59fd3792dffea88f661da4d;2020-10-12T00_48_27.967Z;2020-10-12 00:48:27; java.lang.StackOverflowError;FingerExercises;log;84;FingerExercisesTest;testLogInexact;1469
+1655907b46332e9bf59fd3792dffea88f661da4d;2020-10-12T00_48_27.967Z;2020-10-12 00:48:27; java.lang.StackOverflowError;FingerExercises;log;84;FingerExercisesTest;testLogExact;1422
+1655907b46332e9bf59fd3792dffea88f661da4d;2020-10-12T00_48_27.967Z;2020-10-12 00:48:27; java.lang.ArithmeticException;FingerExercises;gcd;17;;;
+1655907b46332e9bf59fd3792dffea88f661da4d;2020-10-12T00_48_27.967Z;2020-10-12 00:48:27; java.lang.StackOverflowError;FingerExercises;log;84;FingerExercisesTest;testLogInexactLarger;1516
+1655907b46332e9bf59fd3792dffea88f661da4d;2020-10-12T00_48_27.967Z;2020-10-12 00:48:27; java.lang.StackOverflowError;FingerExercises;log;84;FingerExercisesTest;testLog;1328
+1655907b46332e9bf59fd3792dffea88f661da4d;2020-10-12T13_40_28.115Z;2020-10-12 13:40:28; java.lang.StackOverflowError;FingerExercises;log;84;FingerExercisesTest;testLogInexact;1469
+1655907b46332e9bf59fd3792dffea88f661da4d;2020-10-12T13_40_28.115Z;2020-10-12 13:40:28; java.lang.StackOverflowError;FingerExercises;log;84;FingerExercisesTest;testLogExact;1422
+1655907b46332e9bf59fd3792dffea88f661da4d;2020-10-12T13_40_28.115Z;2020-10-12 13:40:28; java.lang.ArithmeticException;FingerExercises;gcd;17;;;
+1655907b46332e9bf59fd3792dffea88f661da4d;2020-10-12T13_40_28.115Z;2020-10-12 13:40:28; java.lang.StackOverflowError;FingerExercises;log;84;FingerExercisesTest;testLogInexactLarger;1516
+1655907b46332e9bf59fd3792dffea88f661da4d;2020-10-12T13_40_28.115Z;2020-10-12 13:40:28; java.lang.StackOverflowError;FingerExercises;log;84;FingerExercisesTest;testLog;1328
+1655907b46332e9bf59fd3792dffea88f661da4d;2020-10-12T17_50_58.936Z;2020-10-12 17:50:58; java.lang.ArithmeticException;FingerExercises;gcd;17;;;
+1655907b46332e9bf59fd3792dffea88f661da4d;2020-10-12T18_01_40.801Z;2020-10-12 18:01:40; java.lang.ArithmeticException;FingerExercises;gcd;17;;;
+1655907b46332e9bf59fd3792dffea88f661da4d;2020-10-12T19_18_34.750Z;2020-10-12 19:18:34; java.lang.ArithmeticException;FingerExercises;gcd;17;;;
+1933eef337e0dad01d6f7dadc966c42abda9d7a5;2020-10-11T18_22_04.622Z;2020-10-11 18:22:04; java.lang.ArithmeticException;FingerExercises;gcd;24;;;
+1933eef337e0dad01d6f7dadc966c42abda9d7a5;2020-10-12T23_55_10.451Z;2020-10-12 23:55:10; java.lang.StringIndexOutOfBoundsException;FingerExercises;howDifferent;96;FingerExercisesTest;testMoreSteps;1800
+24d8a641417c3d9b096f69b4afc2f647c5dc1265;2020-10-10T19_22_03.604Z;2020-10-10 19:22:03; java.lang.StackOverflowError;FingerExercises;gcd;43;FingerExercisesTest;testGcdAZero;137
+24d8a641417c3d9b096f69b4afc2f647c5dc1265;2020-10-10T19_22_03.604Z;2020-10-10 19:22:03; java.lang.StackOverflowError;FingerExercises;gcd;43;FingerExercisesTest;testGcdLarger;325
+24d8a641417c3d9b096f69b4afc2f647c5dc1265;2020-10-10T19_22_03.604Z;2020-10-10 19:22:03; java.lang.StackOverflowError;FingerExercises;gcd;43;FingerExercisesTest;testGcd;231
+24d8a641417c3d9b096f69b4afc2f647c5dc1265;2020-10-10T20_41_06.532Z;2020-10-10 20:41:06; java.lang.StackOverflowError;FingerExercises;countSubstrings;119;FingerExercisesTest;testSubstringDouble;1611
+24d8a641417c3d9b096f69b4afc2f647c5dc1265;2020-10-10T20_41_06.532Z;2020-10-10 20:41:06; java.lang.StackOverflowError;FingerExercises;countSubstrings;119;FingerExercisesTest;testSubstringMiddle;1752
+24d8a641417c3d9b096f69b4afc2f647c5dc1265;2020-10-10T20_41_06.532Z;2020-10-10 20:41:06; java.lang.StackOverflowError;FingerExercises;countSubstrings;119;FingerExercisesTest;testSubstringSingle;1564
+24d8a641417c3d9b096f69b4afc2f647c5dc1265;2020-10-10T20_41_06.532Z;2020-10-10 20:41:06; java.lang.StackOverflowError;FingerExercises;gcd;47;FingerExercisesTest;testGcdAZero;137
+24d8a641417c3d9b096f69b4afc2f647c5dc1265;2020-10-10T20_41_06.532Z;2020-10-10 20:41:06; java.lang.StackOverflowError;FingerExercises;gcd;47;FingerExercisesTest;testGcdLarger;325
+24d8a641417c3d9b096f69b4afc2f647c5dc1265;2020-10-10T20_41_06.532Z;2020-10-10 20:41:06; java.lang.StackOverflowError;FingerExercises;gcd;47;FingerExercisesTest;testGcd;231
+24d8a641417c3d9b096f69b4afc2f647c5dc1265;2020-10-10T22_32_24.006Z;2020-10-10 22:32:24; java.lang.StackOverflowError;FingerExercises;gcd;47;FingerExercisesTest;testGcdAZero;137
+24d8a641417c3d9b096f69b4afc2f647c5dc1265;2020-10-10T22_32_24.006Z;2020-10-10 22:32:24; java.lang.StackOverflowError;FingerExercises;gcd;47;FingerExercisesTest;testGcdLarger;325
+24d8a641417c3d9b096f69b4afc2f647c5dc1265;2020-10-10T22_32_24.006Z;2020-10-10 22:32:24; java.lang.StackOverflowError;FingerExercises;gcd;47;FingerExercisesTest;testGcd;231
+24d8a641417c3d9b096f69b4afc2f647c5dc1265;2020-10-13T17_34_25.404Z;2020-10-13 17:34:25; java.lang.StackOverflowError;FingerExercises;gcd;52;FingerExercisesTest;testGcdAZero;137
+24d8a641417c3d9b096f69b4afc2f647c5dc1265;2020-10-13T17_34_25.404Z;2020-10-13 17:34:25; java.lang.StackOverflowError;FingerExercises;gcd;52;FingerExercisesTest;testGcdLarger;325
+24d8a641417c3d9b096f69b4afc2f647c5dc1265;2020-10-13T17_34_25.404Z;2020-10-13 17:34:25; java.lang.StackOverflowError;FingerExercises;gcd;52;FingerExercisesTest;testGcd;231
+24d8a641417c3d9b096f69b4afc2f647c5dc1265;2020-10-13T18_45_52.385Z;2020-10-13 18:45:52; java.lang.StackOverflowError;FingerExercises;gcd;52;FingerExercisesTest;testGcdAZero;137
+24d8a641417c3d9b096f69b4afc2f647c5dc1265;2020-10-13T18_45_52.385Z;2020-10-13 18:45:52; java.lang.StackOverflowError;FingerExercises;gcd;52;FingerExercisesTest;testGcdLarger;325
+24d8a641417c3d9b096f69b4afc2f647c5dc1265;2020-10-13T18_45_52.385Z;2020-10-13 18:45:52; java.lang.StackOverflowError;FingerExercises;gcd;52;FingerExercisesTest;testGcd;231
+24d8a641417c3d9b096f69b4afc2f647c5dc1265;2020-10-13T19_07_55.728Z;2020-10-13 19:07:55; java.lang.StackOverflowError;FingerExercises;gcd;52;FingerExercisesTest;testGcdAZero;137
+24d8a641417c3d9b096f69b4afc2f647c5dc1265;2020-10-13T19_07_55.728Z;2020-10-13 19:07:55; java.lang.StackOverflowError;FingerExercises;gcd;52;FingerExercisesTest;testGcdLarger;325
+24d8a641417c3d9b096f69b4afc2f647c5dc1265;2020-10-13T19_07_55.728Z;2020-10-13 19:07:55; java.lang.StackOverflowError;FingerExercises;gcd;52;FingerExercisesTest;testGcd;231
+260bb5e515632f23d4a975dca9caff206e84bb87;2020-10-12T04_34_26.330Z;2020-10-12 04:34:26; java.lang.StringIndexOutOfBoundsException;java;lang;1967;FingerExercisesTest;testSumOfDigitsZero;851
+260bb5e515632f23d4a975dca9caff206e84bb87;2020-10-12T04_34_26.330Z;2020-10-12 04:34:26; java.lang.StringIndexOutOfBoundsException;java;lang;1967;FingerExercisesTest;testSumOfDigits;945
+260bb5e515632f23d4a975dca9caff206e84bb87;2020-10-12T04_34_26.330Z;2020-10-12 04:34:26; java.lang.StringIndexOutOfBoundsException;java;lang;1967;FingerExercisesTest;testSumOfDigitsSingle;898
+260bb5e515632f23d4a975dca9caff206e84bb87;2020-10-12T04_34_26.330Z;2020-10-12 04:34:26; java.lang.StringIndexOutOfBoundsException;java;lang;1967;FingerExercisesTest;testSumOfDigitsTriple;1039
+260bb5e515632f23d4a975dca9caff206e84bb87;2020-10-12T04_34_26.330Z;2020-10-12 04:34:26; java.lang.StringIndexOutOfBoundsException;java;lang;1967;FingerExercisesTest;testSumOfDigitsShort;992
+260bb5e515632f23d4a975dca9caff206e84bb87;2020-10-13T19_29_59.752Z;2020-10-13 19:29:59; java.lang.StackOverflowError;FingerExercises;countWaysToClimb;94;FingerExercisesTest;testClimbStairsZero;1092
+260bb5e515632f23d4a975dca9caff206e84bb87;2020-10-13T22_40_29.120Z;2020-10-13 22:40:29; java.lang.StackOverflowError;FingerExercises;countWaysToClimb;128;FingerExercisesTest;testClimbStairsZero;1092
+26455cd1ecb5229a5e1d69f5c4c845da30ed54c9;2020-10-13T01_09_58.775Z;2020-10-13 01:09:58; java.lang.StackOverflowError;FingerExercises;sumBetween;20;FingerExercisesTest;testSumBetween;467
+26455cd1ecb5229a5e1d69f5c4c845da30ed54c9;2020-10-13T01_09_58.775Z;2020-10-13 01:09:58; java.lang.StackOverflowError;FingerExercises;sumBetween;20;FingerExercisesTest;testSumBetweenSame;420
+26455cd1ecb5229a5e1d69f5c4c845da30ed54c9;2020-10-13T01_09_58.775Z;2020-10-13 01:09:58;java.lang.NullPointerException;FingerExercisesTest;testSumTo;524;FingerExercisesTest;testSumTo;562
+26455cd1ecb5229a5e1d69f5c4c845da30ed54c9;2020-10-13T01_09_58.775Z;2020-10-13 01:09:58;java.lang.NullPointerException;FingerExercisesTest;testSumToOne;477;FingerExercisesTest;testSumToOne;515
+26455cd1ecb5229a5e1d69f5c4c845da30ed54c9;2020-10-15T19_35_26.997Z;2020-10-15 19:35:26; java.lang.ArrayIndexOutOfBoundsException;FingerExercises;findSecondLargestHelper;58;FingerExercisesTest;testSecondLargestFirst;659
+26455cd1ecb5229a5e1d69f5c4c845da30ed54c9;2020-10-15T19_35_26.997Z;2020-10-15 19:35:26; java.lang.ArrayIndexOutOfBoundsException;FingerExercises;findSecondLargestHelper;58;FingerExercisesTest;testSecondLargestLast;707
+26455cd1ecb5229a5e1d69f5c4c845da30ed54c9;2020-10-15T19_35_26.997Z;2020-10-15 19:35:26; java.lang.ArrayIndexOutOfBoundsException;FingerExercises;findSecondLargestHelper;58;FingerExercisesTest;testSecondLargestSame;611
+26455cd1ecb5229a5e1d69f5c4c845da30ed54c9;2020-10-15T19_35_26.997Z;2020-10-15 19:35:26; java.lang.ArrayIndexOutOfBoundsException;FingerExercises;findSecondLargestHelper;58;FingerExercisesTest;testSecondLargestRepeats;803
+26455cd1ecb5229a5e1d69f5c4c845da30ed54c9;2020-10-15T19_35_26.997Z;2020-10-15 19:35:26; java.lang.ArrayIndexOutOfBoundsException;FingerExercises;findSecondLargestHelper;58;FingerExercisesTest;testSecondLargestMiddle;755
+270e0b07846ed7becbdb27ff75dffe53de21d3e0;2020-10-14T00_02_22.071Z;2020-10-14 00:02:22; java.lang.ArithmeticException;FingerExercises;gcd;7;FingerExercisesTest;testGcdBZero;184
+270e0b07846ed7becbdb27ff75dffe53de21d3e0;2020-10-14T00_44_11.577Z;2020-10-14 00:44:11; java.lang.ArithmeticException;FingerExercises;gcd;7;FingerExercisesTest;testGcdBZero;184
+2c22b20e671dbf5ab6f9c84da21690f72cbed8ef;2020-10-13T06_27_37.404Z;2020-10-13 06:27:37;java.lang.NullPointerException;FingerExercisesTest;testSumTo;524;FingerExercisesTest;testSumTo;562
+2c22b20e671dbf5ab6f9c84da21690f72cbed8ef;2020-10-13T06_27_37.404Z;2020-10-13 06:27:37;java.lang.NullPointerException;FingerExercisesTest;testSumToOne;477;FingerExercisesTest;testSumToOne;515
+2d1e7e329d49709107b3cc3a54e79ecd10734d88;2020-10-13T02_52_21.995Z;2020-10-13 02:52:21; java.lang.StackOverflowError;FingerExercises;gcd;7;FingerExercisesTest;testGcdBZero;184
+2d1e7e329d49709107b3cc3a54e79ecd10734d88;2020-10-13T15_25_03.640Z;2020-10-13 15:25:03; java.lang.StackOverflowError;FingerExercises;gcd;7;FingerExercisesTest;testGcdBZero;184
+2d1e7e329d49709107b3cc3a54e79ecd10734d88;2020-10-14T03_11_31.125Z;2020-10-14 03:11:31; java.lang.StackOverflowError;FingerExercises;gcd;7;FingerExercisesTest;testGcdBZero;184
+2d1e7e329d49709107b3cc3a54e79ecd10734d88;2020-10-15T04_43_08.246Z;2020-10-15 04:43:08; java.lang.ArrayIndexOutOfBoundsException;FingerExercises;findSecondLargestHelper;74;FingerExercisesTest;testSecondLargestFirst;659
+2d1e7e329d49709107b3cc3a54e79ecd10734d88;2020-10-15T04_43_08.246Z;2020-10-15 04:43:08; java.lang.ArrayIndexOutOfBoundsException;FingerExercises;findSecondLargestHelper;74;FingerExercisesTest;testSecondLargestLast;707
+2d1e7e329d49709107b3cc3a54e79ecd10734d88;2020-10-15T04_43_08.246Z;2020-10-15 04:43:08; java.lang.ArrayIndexOutOfBoundsException;FingerExercises;findSecondLargestHelper;74;FingerExercisesTest;testSecondLargestSame;611
+2d1e7e329d49709107b3cc3a54e79ecd10734d88;2020-10-15T04_43_08.246Z;2020-10-15 04:43:08; java.lang.ArrayIndexOutOfBoundsException;FingerExercises;findSecondLargestHelper;74;FingerExercisesTest;testSecondLargestMiddle;755
+2d1e7e329d49709107b3cc3a54e79ecd10734d88;2020-10-15T05_12_33.448Z;2020-10-15 05:12:33; java.lang.ArrayIndexOutOfBoundsException;FingerExercises;findSecondLargestHelper;75;FingerExercisesTest;testSecondLargestFirst;659
+2d1e7e329d49709107b3cc3a54e79ecd10734d88;2020-10-15T05_12_33.448Z;2020-10-15 05:12:33; java.lang.ArrayIndexOutOfBoundsException;FingerExercises;findSecondLargestHelper;75;FingerExercisesTest;testSecondLargestLast;707
+2d1e7e329d49709107b3cc3a54e79ecd10734d88;2020-10-15T05_12_33.448Z;2020-10-15 05:12:33; java.lang.ArrayIndexOutOfBoundsException;FingerExercises;findSecondLargestHelper;75;FingerExercisesTest;testSecondLargestSame;611
+2d1e7e329d49709107b3cc3a54e79ecd10734d88;2020-10-15T05_12_33.448Z;2020-10-15 05:12:33; java.lang.ArrayIndexOutOfBoundsException;FingerExercises;findSecondLargestHelper;75;FingerExercisesTest;testSecondLargestMiddle;755
+2d8ae2ab222603a73f98853020208a89c7cef84d;2020-10-14T04_02_26.503Z;2020-10-14 04:02:26; java.lang.StringIndexOutOfBoundsException;FingerExercises;howDifferent;178;FingerExercisesTest;testMoreSteps;1800
+2fcd57e994ce4e99ea705980aa0f47d3307e3ab7;2020-10-15T23_41_48.921Z;2020-10-15 23:41:48; java.lang.StringIndexOutOfBoundsException;FingerExercises;countSubstrings;80;FingerExercisesTest;testSubstringMiddle;1752
+2fcd57e994ce4e99ea705980aa0f47d3307e3ab7;2020-10-16T00_25_40.537Z;2020-10-16 00:25:40; java.lang.StringIndexOutOfBoundsException;FingerExercises;countSubstrings;108;FingerExercisesTest;testSubstringMiddle;1752
+2fcd57e994ce4e99ea705980aa0f47d3307e3ab7;2020-10-16T01_09_58.748Z;2020-10-16 01:09:58; java.lang.StringIndexOutOfBoundsException;FingerExercises;countSubstrings;104;FingerExercisesTest;testSubstringMiddle;1752
+347d33b6e5785dc56109485ce720e361d0a4a675;2020-10-15T01_52_44.160Z;2020-10-15 01:52:44; java.lang.ArithmeticException;FingerExercises;gcd;10;FingerExercisesTest;testGcdAZero;137
+34be5a53134a4e68dae61bf2fac1ba4c91030569;2020-10-14T23_22_42.170Z;2020-10-14 23:22:42;java.lang.NullPointerException;FingerExercisesTest;testSumTo;524;FingerExercisesTest;testSumTo;562
+34be5a53134a4e68dae61bf2fac1ba4c91030569;2020-10-14T23_22_42.170Z;2020-10-14 23:22:42;java.lang.NullPointerException;FingerExercisesTest;testSumToOne;477;FingerExercisesTest;testSumToOne;515
+34be5a53134a4e68dae61bf2fac1ba4c91030569;2020-10-15T13_55_02.317Z;2020-10-15 13:55:02; java.lang.ArrayIndexOutOfBoundsException;FingerExercises;findSecondLargestHelper;87;FingerExercisesTest;testSecondLargestFirst;659
+34be5a53134a4e68dae61bf2fac1ba4c91030569;2020-10-15T13_55_02.317Z;2020-10-15 13:55:02; java.lang.ArrayIndexOutOfBoundsException;FingerExercises;findSecondLargestHelper;87;FingerExercisesTest;testSecondLargestSame;611
+34be5a53134a4e68dae61bf2fac1ba4c91030569;2020-10-15T14_27_01.691Z;2020-10-15 14:27:01; java.lang.ArrayIndexOutOfBoundsException;FingerExercises;findSecondLargestHelper;92;FingerExercisesTest;testSecondLargestFirst;659
+34be5a53134a4e68dae61bf2fac1ba4c91030569;2020-10-15T14_27_01.691Z;2020-10-15 14:27:01; java.lang.ArrayIndexOutOfBoundsException;FingerExercises;findSecondLargestHelper;92;FingerExercisesTest;testSecondLargestSame;611
+34be5a53134a4e68dae61bf2fac1ba4c91030569;2020-10-15T15_54_03.720Z;2020-10-15 15:54:03; java.lang.ArrayIndexOutOfBoundsException;FingerExercises;findSecondLargestHelper;98;FingerExercisesTest;testSecondLargestFirst;659
+34be5a53134a4e68dae61bf2fac1ba4c91030569;2020-10-15T15_54_03.720Z;2020-10-15 15:54:03; java.lang.ArrayIndexOutOfBoundsException;FingerExercises;findSecondLargestHelper;98;FingerExercisesTest;testSecondLargestSame;611
+36e1da1b027e8da8c46ffbb07b0a8d1e7d197a86;2020-10-14T18_54_08.843Z;2020-10-14 18:54:08; java.lang.ArithmeticException;FingerExercises;gcd;15;FingerExercisesTest;testGcdAZero;137
+36e1da1b027e8da8c46ffbb07b0a8d1e7d197a86;2020-10-14T18_54_08.843Z;2020-10-14 18:54:08; java.lang.ArithmeticException;FingerExercises;gcd;15;;;
+36e1da1b027e8da8c46ffbb07b0a8d1e7d197a86;2020-10-14T19_14_18.281Z;2020-10-14 19:14:18; java.lang.ArithmeticException;FingerExercises;gcd;15;FingerExercisesTest;testGcdAZero;137
+36e1da1b027e8da8c46ffbb07b0a8d1e7d197a86;2020-10-14T19_14_18.281Z;2020-10-14 19:14:18; java.lang.ArithmeticException;FingerExercises;gcd;15;;;
+36e1da1b027e8da8c46ffbb07b0a8d1e7d197a86;2020-10-14T19_24_46.158Z;2020-10-14 19:24:46; java.lang.ArithmeticException;FingerExercises;gcd;15;FingerExercisesTest;testGcdAZero;137
+36e1da1b027e8da8c46ffbb07b0a8d1e7d197a86;2020-10-14T19_24_46.158Z;2020-10-14 19:24:46; java.lang.ArithmeticException;FingerExercises;gcd;15;;;
+36e1da1b027e8da8c46ffbb07b0a8d1e7d197a86;2020-10-15T05_30_58.652Z;2020-10-15 05:30:58; java.lang.ArithmeticException;FingerExercises;gcd;15;FingerExercisesTest;testGcdAZero;137
+36e1da1b027e8da8c46ffbb07b0a8d1e7d197a86;2020-10-15T05_30_58.652Z;2020-10-15 05:30:58; java.lang.ArithmeticException;FingerExercises;gcd;15;;;
+36e1da1b027e8da8c46ffbb07b0a8d1e7d197a86;2020-10-15T05_50_40.310Z;2020-10-15 05:50:40; java.lang.ArithmeticException;FingerExercises;gcd;15;FingerExercisesTest;testGcdAZero;137
+36e1da1b027e8da8c46ffbb07b0a8d1e7d197a86;2020-10-15T05_50_40.310Z;2020-10-15 05:50:40; java.lang.ArithmeticException;FingerExercises;gcd;15;;;
+36e1da1b027e8da8c46ffbb07b0a8d1e7d197a86;2020-10-15T06_42_29.839Z;2020-10-15 06:42:29; java.lang.ArithmeticException;FingerExercises;gcd;15;FingerExercisesTest;testGcdAZero;137
+36e1da1b027e8da8c46ffbb07b0a8d1e7d197a86;2020-10-15T06_42_29.839Z;2020-10-15 06:42:29; java.lang.ArithmeticException;FingerExercises;gcd;15;;;
+36e1da1b027e8da8c46ffbb07b0a8d1e7d197a86;2020-10-15T20_28_31.362Z;2020-10-15 20:28:31; java.lang.ArithmeticException;FingerExercises;gcd;16;FingerExercisesTest;testGcdAZero;137
+36e1da1b027e8da8c46ffbb07b0a8d1e7d197a86;2020-10-15T20_28_31.362Z;2020-10-15 20:28:31; java.lang.ArithmeticException;FingerExercises;gcd;16;;;
+36e1da1b027e8da8c46ffbb07b0a8d1e7d197a86;2020-10-15T21_16_54.471Z;2020-10-15 21:16:54; java.lang.ArithmeticException;FingerExercises;gcd;28;FingerExercisesTest;testGcdAZero;137
+36e1da1b027e8da8c46ffbb07b0a8d1e7d197a86;2020-10-15T21_16_54.471Z;2020-10-15 21:16:54; java.lang.ArithmeticException;FingerExercises;gcd;28;;;
+38a2e1976989130b93cd07a1336fb4a7f6d78ccd;2020-10-12T02_41_28.374Z;2020-10-12 02:41:28; java.lang.StackOverflowError;FingerExercises;countWaysToClimb;75;FingerExercisesTest;testClimbStairsLarger;1233
+38a2e1976989130b93cd07a1336fb4a7f6d78ccd;2020-10-12T02_41_28.374Z;2020-10-12 02:41:28; java.lang.StackOverflowError;FingerExercises;countWaysToClimb;75;FingerExercisesTest;testClimbStairsThree;1280
+38a2e1976989130b93cd07a1336fb4a7f6d78ccd;2020-10-12T02_41_28.374Z;2020-10-12 02:41:28; java.lang.StackOverflowError;FingerExercises;countWaysToClimb;75;FingerExercisesTest;testClimbStairsOne;1139
+38a2e1976989130b93cd07a1336fb4a7f6d78ccd;2020-10-12T02_41_28.374Z;2020-10-12 02:41:28; java.lang.StackOverflowError;FingerExercises;countWaysToClimb;75;FingerExercisesTest;testClimbStairsTwo;1186
+38da134c1fae87f8777176da8840445f10def983;2020-10-11T23_56_35.036Z;2020-10-11 23:56:35;java.lang.NullPointerException;FingerExercisesTest;testSumTo;524;FingerExercisesTest;testSumTo;562
+38da134c1fae87f8777176da8840445f10def983;2020-10-11T23_56_35.036Z;2020-10-11 23:56:35;java.lang.NullPointerException;FingerExercisesTest;testSumToOne;477;FingerExercisesTest;testSumToOne;515
+38da134c1fae87f8777176da8840445f10def983;2020-10-12T03_29_07.373Z;2020-10-12 03:29:07;java.lang.NullPointerException;FingerExercisesTest;testSumTo;524;FingerExercisesTest;testSumTo;562
+38da134c1fae87f8777176da8840445f10def983;2020-10-12T03_29_07.373Z;2020-10-12 03:29:07;java.lang.NullPointerException;FingerExercisesTest;testSumToOne;477;FingerExercisesTest;testSumToOne;515
+38da134c1fae87f8777176da8840445f10def983;2020-10-12T03_50_00.193Z;2020-10-12 03:50:00;java.lang.NullPointerException;FingerExercisesTest;testSumTo;524;FingerExercisesTest;testSumTo;562
+38da134c1fae87f8777176da8840445f10def983;2020-10-12T03_50_00.193Z;2020-10-12 03:50:00;java.lang.NullPointerException;FingerExercisesTest;testSumToOne;477;FingerExercisesTest;testSumToOne;515
+3d5924dc0067c7236dc1c9317ce16d9c52cd3c14;2020-10-15T00_59_32.540Z;2020-10-15 00:59:32;java.lang.NullPointerException;FingerExercisesTest;testSumTo;524;FingerExercisesTest;testSumTo;562
+3d5924dc0067c7236dc1c9317ce16d9c52cd3c14;2020-10-15T00_59_32.540Z;2020-10-15 00:59:32;java.lang.NullPointerException;FingerExercisesTest;testSumToOne;477;FingerExercisesTest;testSumToOne;515
+3e11348b68914f93fc74cde47fbcf05cc4b2867d;2020-10-15T22_32_31.476Z;2020-10-15 22:32:31; java.lang.StringIndexOutOfBoundsException;FingerExercises;countSubstrings;88;FingerExercisesTest;testSubstringOverlap;1658
+3e11348b68914f93fc74cde47fbcf05cc4b2867d;2020-10-15T22_32_31.476Z;2020-10-15 22:32:31; java.lang.StringIndexOutOfBoundsException;FingerExercises;countSubstrings;90;FingerExercisesTest;testSubstringSame;1705
+406d5a7eb8631d2290294c40711318b956ed54fd;2020-10-13T15_17_47.239Z;2020-10-13 15:17:47; java.lang.ArithmeticException;FingerExercises;gcd;8;;;
+406d5a7eb8631d2290294c40711318b956ed54fd;2020-10-14T11_28_52.260Z;2020-10-14 11:28:52; java.lang.ArrayIndexOutOfBoundsException;FingerExercises;findSecondLargestHelper;111;FingerExercisesTest;testSecondLargestFirst;659
+406d5a7eb8631d2290294c40711318b956ed54fd;2020-10-14T11_28_52.260Z;2020-10-14 11:28:52; java.lang.ArrayIndexOutOfBoundsException;FingerExercises;findSecondLargestHelper;111;FingerExercisesTest;testSecondLargestLast;707
+406d5a7eb8631d2290294c40711318b956ed54fd;2020-10-14T11_28_52.260Z;2020-10-14 11:28:52; java.lang.ArrayIndexOutOfBoundsException;FingerExercises;findSecondLargestHelper;111;FingerExercisesTest;testSecondLargestSame;611
+406d5a7eb8631d2290294c40711318b956ed54fd;2020-10-14T11_28_52.260Z;2020-10-14 11:28:52; java.lang.ArrayIndexOutOfBoundsException;FingerExercises;findSecondLargestHelper;111;FingerExercisesTest;testSecondLargestRepeats;803
+406d5a7eb8631d2290294c40711318b956ed54fd;2020-10-14T11_28_52.260Z;2020-10-14 11:28:52; java.lang.ArrayIndexOutOfBoundsException;FingerExercises;findSecondLargestHelper;111;FingerExercisesTest;testSecondLargestMiddle;755
+406d5a7eb8631d2290294c40711318b956ed54fd;2020-10-14T12_12_55.749Z;2020-10-14 12:12:55; java.lang.ArrayIndexOutOfBoundsException;FingerExercises;findSecondLargestHelper;106;FingerExercisesTest;testSecondLargestFirst;659
+406d5a7eb8631d2290294c40711318b956ed54fd;2020-10-14T12_12_55.749Z;2020-10-14 12:12:55; java.lang.ArrayIndexOutOfBoundsException;FingerExercises;findSecondLargestHelper;106;FingerExercisesTest;testSecondLargestLast;707
+406d5a7eb8631d2290294c40711318b956ed54fd;2020-10-14T12_12_55.749Z;2020-10-14 12:12:55; java.lang.ArrayIndexOutOfBoundsException;FingerExercises;findSecondLargestHelper;106;FingerExercisesTest;testSecondLargestSame;611
+4128c27a816942a5871946e8691a7183b59429a9;2020-10-14T03_18_20.225Z;2020-10-14 03:18:20; java.lang.StackOverflowError;FingerExercises;countSubstrings;74;FingerExercisesTest;testSubstringDouble;1611
+4128c27a816942a5871946e8691a7183b59429a9;2020-10-14T03_18_20.225Z;2020-10-14 03:18:20; java.lang.StackOverflowError;FingerExercises;countSubstrings;74;FingerExercisesTest;testSubstringMiddle;1752
+4128c27a816942a5871946e8691a7183b59429a9;2020-10-14T03_18_20.225Z;2020-10-14 03:18:20; java.lang.StackOverflowError;FingerExercises;countSubstrings;74;FingerExercisesTest;testSubstringSingle;1564
+4128c27a816942a5871946e8691a7183b59429a9;2020-10-14T03_18_20.225Z;2020-10-14 03:18:20; java.lang.StackOverflowError;FingerExercises;countSubstrings;74;FingerExercisesTest;testSubstringOverlap;1658
+42fe0cd21665026551f4802887b10b11b48e883a;2020-10-13T16_55_58.313Z;2020-10-13 16:55:58; java.lang.StringIndexOutOfBoundsException;FingerExercises;countSubstrings;48;FingerExercisesTest;testSubstringDouble;1611
+42fe0cd21665026551f4802887b10b11b48e883a;2020-10-13T17_28_31.986Z;2020-10-13 17:28:31; java.lang.StringIndexOutOfBoundsException;FingerExercises;countSubstrings;46;FingerExercisesTest;testSubstringMiddle;1752
+42fe0cd21665026551f4802887b10b11b48e883a;2020-10-16T02_56_10.974Z;2020-10-16 02:56:10; java.lang.StringIndexOutOfBoundsException;FingerExercises;countSubstrings;93;FingerExercisesTest;testSubstringMiddle;1752
+42fe0cd21665026551f4802887b10b11b48e883a;2020-10-16T03_16_22.870Z;2020-10-16 03:16:22; java.lang.StringIndexOutOfBoundsException;FingerExercises;countSubstrings;97;FingerExercisesTest;testSubstringMiddle;1752
+43ddbe9de85fe609a1ecc56a76dbcddb0f52d8c1;2020-10-12T23_19_19.174Z;2020-10-12 23:19:19;java.lang.NullPointerException;FingerExercisesTest;testSumTo;524;FingerExercisesTest;testSumTo;562
+43ddbe9de85fe609a1ecc56a76dbcddb0f52d8c1;2020-10-12T23_19_19.174Z;2020-10-12 23:19:19;java.lang.NullPointerException;FingerExercisesTest;testSumToOne;477;FingerExercisesTest;testSumToOne;515
+43ddbe9de85fe609a1ecc56a76dbcddb0f52d8c1;2020-10-13T00_49_23.919Z;2020-10-13 00:49:23; java.lang.StackOverflowError;FingerExercises;gcd;13;FingerExercisesTest;testGcdBZero;184
+43ddbe9de85fe609a1ecc56a76dbcddb0f52d8c1;2020-10-13T01_28_28.745Z;2020-10-13 01:28:28; java.lang.StackOverflowError;FingerExercises;gcd;13;FingerExercisesTest;testGcdBZero;184
+444500e9b1f9ba58a2d0653d8ccdb0cf46debca7;2020-10-16T01_17_53.850Z;2020-10-16 01:17:53; java.lang.StringIndexOutOfBoundsException;FingerExercises;howDifferent;199;FingerExercisesTest;testMoreSteps;1800
+444500e9b1f9ba58a2d0653d8ccdb0cf46debca7;2020-10-16T01_59_32.547Z;2020-10-16 01:59:32; java.lang.StringIndexOutOfBoundsException;FingerExercises;howDifferent;194;FingerExercisesTest;testMoreSteps;1800
+4a181b8a0daafd8c1c8b971d48fb20139cc2e58e;2020-10-12T19_19_06.591Z;2020-10-12 19:19:06; java.lang.ArithmeticException;FingerExercises;gcd;35;FingerExercisesTest;testGcdAZero;137
+4a181b8a0daafd8c1c8b971d48fb20139cc2e58e;2020-10-12T19_19_06.591Z;2020-10-12 19:19:06; java.lang.ArithmeticException;FingerExercises;gcd;35;;;
+4a181b8a0daafd8c1c8b971d48fb20139cc2e58e;2020-10-12T19_19_06.591Z;2020-10-12 19:19:06; java.lang.ArithmeticException;FingerExercises;gcd;35;FingerExercisesTest;testGcdLarger;325
+4a181b8a0daafd8c1c8b971d48fb20139cc2e58e;2020-10-12T19_19_06.591Z;2020-10-12 19:19:06; java.lang.ArithmeticException;FingerExercises;gcd;35;FingerExercisesTest;testGcd;231
+4b1bdce4f691e61e6694450ed8852dd984473389;2020-10-17T00_33_45.471Z;2020-10-17 00:33:45; java.lang.StackOverflowError;FingerExercises;gcd;22;FingerExercisesTest;testGcdAZero;137
+4b1bdce4f691e61e6694450ed8852dd984473389;2020-10-17T00_33_45.471Z;2020-10-17 00:33:45; java.lang.StackOverflowError;FingerExercises;gcd;22;FingerExercisesTest;testGcdLarger;325
+4b1bdce4f691e61e6694450ed8852dd984473389;2020-10-17T00_33_45.471Z;2020-10-17 00:33:45; java.lang.StackOverflowError;FingerExercises;gcd;22;FingerExercisesTest;testGcd;231
+4b1bdce4f691e61e6694450ed8852dd984473389;2020-10-17T02_02_03.266Z;2020-10-17 02:02:03; java.lang.StackOverflowError;FingerExercises;gcd;23;FingerExercisesTest;testGcdAZero;137
+4b1bdce4f691e61e6694450ed8852dd984473389;2020-10-17T02_02_03.266Z;2020-10-17 02:02:03; java.lang.StackOverflowError;FingerExercises;gcd;23;FingerExercisesTest;testGcdLarger;325
+4b1bdce4f691e61e6694450ed8852dd984473389;2020-10-17T02_02_03.266Z;2020-10-17 02:02:03; java.lang.StackOverflowError;FingerExercises;gcd;23;FingerExercisesTest;testGcd;231
+4b1bdce4f691e61e6694450ed8852dd984473389;2020-10-17T03_56_20.037Z;2020-10-17 03:56:20; java.lang.StackOverflowError;FingerExercises;gcd;24;FingerExercisesTest;testGcdAZero;137
+4b1bdce4f691e61e6694450ed8852dd984473389;2020-10-17T03_56_20.037Z;2020-10-17 03:56:20; java.lang.StackOverflowError;FingerExercises;gcd;24;FingerExercisesTest;testGcdLarger;325
+4b1bdce4f691e61e6694450ed8852dd984473389;2020-10-17T03_56_20.037Z;2020-10-17 03:56:20; java.lang.StackOverflowError;FingerExercises;gcd;24;FingerExercisesTest;testGcd;231
+4b8cafbb2f0acbe010290da14340378e9c684d75;2020-10-13T22_58_06.466Z;2020-10-13 22:58:06; java.lang.ArrayIndexOutOfBoundsException;FingerExercises;findSecondLargestHelper;67;FingerExercisesTest;testSecondLargestFirst;659
+4b8cafbb2f0acbe010290da14340378e9c684d75;2020-10-13T22_58_06.466Z;2020-10-13 22:58:06; java.lang.ArrayIndexOutOfBoundsException;FingerExercises;findSecondLargestHelper;67;FingerExercisesTest;testSecondLargestLast;707
+4b8cafbb2f0acbe010290da14340378e9c684d75;2020-10-13T22_58_06.466Z;2020-10-13 22:58:06; java.lang.ArrayIndexOutOfBoundsException;FingerExercises;findSecondLargestHelper;67;FingerExercisesTest;testSecondLargestSame;611
+4b8cafbb2f0acbe010290da14340378e9c684d75;2020-10-13T22_58_06.466Z;2020-10-13 22:58:06; java.lang.ArrayIndexOutOfBoundsException;FingerExercises;findSecondLargestHelper;67;FingerExercisesTest;testSecondLargestRepeats;803
+4b8cafbb2f0acbe010290da14340378e9c684d75;2020-10-13T22_58_06.466Z;2020-10-13 22:58:06; java.lang.ArrayIndexOutOfBoundsException;FingerExercises;findSecondLargestHelper;67;FingerExercisesTest;testSecondLargestMiddle;755
+4c0e060545d21fcedf84f937c59a97bbc71a69e3;2020-10-22T15_13_28.477Z;2020-10-22 15:13:28; java.lang.ArrayIndexOutOfBoundsException;FingerExercises;findSecondLargestHelper;83;FingerExercisesTest;testSecondLargestLast;707
+4c0e060545d21fcedf84f937c59a97bbc71a69e3;2020-10-22T15_13_28.477Z;2020-10-22 15:13:28; java.lang.ArrayIndexOutOfBoundsException;FingerExercises;findSecondLargestHelper;83;FingerExercisesTest;testSecondLargestRepeats;803
+4c0e060545d21fcedf84f937c59a97bbc71a69e3;2020-10-22T15_13_28.477Z;2020-10-22 15:13:28; java.lang.ArrayIndexOutOfBoundsException;FingerExercises;findSecondLargestHelper;83;FingerExercisesTest;testSecondLargestMiddle;755
+4d3e16e24096cd5e30e393ecb9f049662806f603;2020-10-15T21_14_15.595Z;2020-10-15 21:14:15;java.lang.NullPointerException;FingerExercisesTest;testSumTo;524;FingerExercisesTest;testSumTo;562
+4d3e16e24096cd5e30e393ecb9f049662806f603;2020-10-15T21_14_15.595Z;2020-10-15 21:14:15;java.lang.NullPointerException;FingerExercisesTest;testSumToOne;477;FingerExercisesTest;testSumToOne;515
+4d3e16e24096cd5e30e393ecb9f049662806f603;2020-10-16T01_43_25.382Z;2020-10-16 01:43:25; java.lang.StackOverflowError;FingerExercises;log;60;FingerExercisesTest;testLogInexact;1469
+4d3e16e24096cd5e30e393ecb9f049662806f603;2020-10-16T01_43_25.382Z;2020-10-16 01:43:25; java.lang.StackOverflowError;FingerExercises;log;60;FingerExercisesTest;testLogExact;1422
+4d3e16e24096cd5e30e393ecb9f049662806f603;2020-10-16T01_43_25.382Z;2020-10-16 01:43:25; java.lang.StackOverflowError;FingerExercises;log;60;FingerExercisesTest;testLogInexactLarger;1516
+4d3e16e24096cd5e30e393ecb9f049662806f603;2020-10-16T01_43_25.382Z;2020-10-16 01:43:25; java.lang.StackOverflowError;FingerExercises;countWaysToClimb;26;FingerExercisesTest;testClimbStairsZero;1092
+4d3e16e24096cd5e30e393ecb9f049662806f603;2020-10-16T01_43_25.382Z;2020-10-16 01:43:25; java.lang.StackOverflowError;FingerExercises;log;60;FingerExercisesTest;testLog;1328
+4d3e16e24096cd5e30e393ecb9f049662806f603;2020-10-16T02_46_04.773Z;2020-10-16 02:46:04; java.lang.StackOverflowError;FingerExercises;countWaysToClimb;44;FingerExercisesTest;testClimbStairsZero;1092
+4e6375572baa7b596e96b115bbff4f03ff44ed9a;2020-10-11T12_58_54.724Z;2020-10-11 12:58:54; java.lang.ArithmeticException;FingerExercises;gcd;23;FingerExercisesTest;testGcdAZero;137
+4e6375572baa7b596e96b115bbff4f03ff44ed9a;2020-10-11T12_58_54.724Z;2020-10-11 12:58:54; java.lang.ArithmeticException;FingerExercises;gcd;23;;;
+4e6375572baa7b596e96b115bbff4f03ff44ed9a;2020-10-11T13_33_09.673Z;2020-10-11 13:33:09; java.lang.ArithmeticException;FingerExercises;gcd;23;FingerExercisesTest;testGcdAZero;137
+4e6375572baa7b596e96b115bbff4f03ff44ed9a;2020-10-11T13_33_09.673Z;2020-10-11 13:33:09; java.lang.ArithmeticException;FingerExercises;gcd;23;;;
+4e6375572baa7b596e96b115bbff4f03ff44ed9a;2020-10-11T13_33_09.673Z;2020-10-11 13:33:09;java.lang.NullPointerException;FingerExercisesTest;testSumTo;524;FingerExercisesTest;testSumTo;562
+4e6375572baa7b596e96b115bbff4f03ff44ed9a;2020-10-11T13_33_09.673Z;2020-10-11 13:33:09;java.lang.NullPointerException;FingerExercisesTest;testSumToOne;477;FingerExercisesTest;testSumToOne;515
+4e6375572baa7b596e96b115bbff4f03ff44ed9a;2020-10-11T13_53_02.697Z;2020-10-11 13:53:02; java.lang.ArithmeticException;FingerExercises;gcd;19;FingerExercisesTest;testGcdAZero;137
+4e6375572baa7b596e96b115bbff4f03ff44ed9a;2020-10-11T13_53_02.697Z;2020-10-11 13:53:02; java.lang.ArithmeticException;FingerExercises;gcd;19;;;
+4e6375572baa7b596e96b115bbff4f03ff44ed9a;2020-10-11T14_34_40.327Z;2020-10-11 14:34:40; java.lang.ArithmeticException;FingerExercises;gcd;19;FingerExercisesTest;testGcdAZero;137
+4e6375572baa7b596e96b115bbff4f03ff44ed9a;2020-10-11T14_34_40.327Z;2020-10-11 14:34:40; java.lang.ArithmeticException;FingerExercises;gcd;19;;;
+4e6375572baa7b596e96b115bbff4f03ff44ed9a;2020-10-11T16_13_01.696Z;2020-10-11 16:13:01; java.lang.ArithmeticException;FingerExercises;gcd;19;FingerExercisesTest;testGcdAZero;137
+4e6375572baa7b596e96b115bbff4f03ff44ed9a;2020-10-11T16_13_01.696Z;2020-10-11 16:13:01; java.lang.ArithmeticException;FingerExercises;gcd;19;;;
+4ee624ba618e49234700248189f5f77acf310f5a;2020-10-13T19_53_29.691Z;2020-10-13 19:53:29; java.lang.ArithmeticException;FingerExercises;gcd;21;FingerExercisesTest;testGcdAZero;137
+4ee624ba618e49234700248189f5f77acf310f5a;2020-10-13T19_53_29.691Z;2020-10-13 19:53:29; java.lang.ArithmeticException;FingerExercises;gcd;21;;;
+556833fe62464359391055ea2e18e848d48ad897;2020-10-14T18_05_56.589Z;2020-10-14 18:05:56;java.lang.StringIndexOutOfBoundsException;java;lang;1967 (String.java;FingerExercisesTest;testSecondLargestFirst;635
+556833fe62464359391055ea2e18e848d48ad897;2020-10-14T18_05_56.589Z;2020-10-14 18:05:56;java.lang.StringIndexOutOfBoundsException;java;lang;1967 (String.java;FingerExercisesTest;testGcdSame;254
+556833fe62464359391055ea2e18e848d48ad897;2020-10-14T18_05_56.589Z;2020-10-14 18:05:56;java.lang.StringIndexOutOfBoundsException;java;lang;1967 (String.java;FingerExercisesTest;testSecondLargestLast;683
+556833fe62464359391055ea2e18e848d48ad897;2020-10-14T18_05_56.589Z;2020-10-14 18:05:56;java.lang.StringIndexOutOfBoundsException;java;lang;1967 (String.java;FingerExercisesTest;testSecondLargestSame;587
+556833fe62464359391055ea2e18e848d48ad897;2020-10-14T18_05_56.589Z;2020-10-14 18:05:56;java.lang.StringIndexOutOfBoundsException;java;lang;1967 (String.java;FingerExercisesTest;testGcdLarger;301
+556833fe62464359391055ea2e18e848d48ad897;2020-10-14T18_05_56.589Z;2020-10-14 18:05:56;java.lang.StringIndexOutOfBoundsException;java;lang;1967 (String.java;FingerExercisesTest;testSecondLargestRepeats;779
+556833fe62464359391055ea2e18e848d48ad897;2020-10-14T18_05_56.589Z;2020-10-14 18:05:56;java.lang.StringIndexOutOfBoundsException;java;lang;1967 (String.java;FingerExercisesTest;testSecondLargestMiddle;731
+556833fe62464359391055ea2e18e848d48ad897;2020-10-14T18_05_56.589Z;2020-10-14 18:05:56;java.lang.StringIndexOutOfBoundsException;java;lang;1967 (String.java;FingerExercisesTest;testGcd;207
+556833fe62464359391055ea2e18e848d48ad897;2020-10-15T15_25_21.916Z;2020-10-15 15:25:21;java.lang.StringIndexOutOfBoundsException;java;lang;1967 (String.java;FingerExercisesTest;testSecondLargestFirst;635
+556833fe62464359391055ea2e18e848d48ad897;2020-10-15T15_25_21.916Z;2020-10-15 15:25:21;java.lang.StringIndexOutOfBoundsException;java;lang;1967 (String.java;FingerExercisesTest;testGcdSame;254
+556833fe62464359391055ea2e18e848d48ad897;2020-10-15T15_25_21.916Z;2020-10-15 15:25:21;java.lang.StringIndexOutOfBoundsException;java;lang;1967 (String.java;FingerExercisesTest;testSecondLargestLast;683
+556833fe62464359391055ea2e18e848d48ad897;2020-10-15T15_25_21.916Z;2020-10-15 15:25:21;java.lang.StringIndexOutOfBoundsException;java;lang;1967 (String.java;FingerExercisesTest;testSecondLargestSame;587
+556833fe62464359391055ea2e18e848d48ad897;2020-10-15T15_25_21.916Z;2020-10-15 15:25:21;java.lang.StringIndexOutOfBoundsException;java;lang;1967 (String.java;FingerExercisesTest;testGcdLarger;301
+556833fe62464359391055ea2e18e848d48ad897;2020-10-15T15_25_21.916Z;2020-10-15 15:25:21;java.lang.StringIndexOutOfBoundsException;java;lang;1967 (String.java;FingerExercisesTest;testSecondLargestRepeats;779
+556833fe62464359391055ea2e18e848d48ad897;2020-10-15T15_25_21.916Z;2020-10-15 15:25:21;java.lang.StringIndexOutOfBoundsException;java;lang;1967 (String.java;FingerExercisesTest;testSecondLargestMiddle;731
+556833fe62464359391055ea2e18e848d48ad897;2020-10-15T15_25_21.916Z;2020-10-15 15:25:21;java.lang.StringIndexOutOfBoundsException;java;lang;1967 (String.java;FingerExercisesTest;testGcd;207
+556833fe62464359391055ea2e18e848d48ad897;2020-10-15T22_14_34.045Z;2020-10-15 22:14:34;java.lang.StringIndexOutOfBoundsException;java;lang;1967 (String.java;FingerExercisesTest;testSecondLargestFirst;635
+556833fe62464359391055ea2e18e848d48ad897;2020-10-15T22_14_34.045Z;2020-10-15 22:14:34;java.lang.StringIndexOutOfBoundsException;java;lang;1967 (String.java;FingerExercisesTest;testGcdSame;254
+556833fe62464359391055ea2e18e848d48ad897;2020-10-15T22_14_34.045Z;2020-10-15 22:14:34;java.lang.StringIndexOutOfBoundsException;java;lang;1967 (String.java;FingerExercisesTest;testSecondLargestLast;683
+556833fe62464359391055ea2e18e848d48ad897;2020-10-15T22_14_34.045Z;2020-10-15 22:14:34;java.lang.StringIndexOutOfBoundsException;java;lang;1967 (String.java;FingerExercisesTest;testSecondLargestSame;587
+556833fe62464359391055ea2e18e848d48ad897;2020-10-15T22_14_34.045Z;2020-10-15 22:14:34;java.lang.StringIndexOutOfBoundsException;java;lang;1967 (String.java;FingerExercisesTest;testGcdLarger;301
+556833fe62464359391055ea2e18e848d48ad897;2020-10-15T22_14_34.045Z;2020-10-15 22:14:34;java.lang.StringIndexOutOfBoundsException;java;lang;1967 (String.java;FingerExercisesTest;testSecondLargestRepeats;779
+556833fe62464359391055ea2e18e848d48ad897;2020-10-15T22_14_34.045Z;2020-10-15 22:14:34;java.lang.StringIndexOutOfBoundsException;java;lang;1967 (String.java;FingerExercisesTest;testSecondLargestMiddle;731
+556833fe62464359391055ea2e18e848d48ad897;2020-10-15T22_14_34.045Z;2020-10-15 22:14:34;java.lang.StringIndexOutOfBoundsException;java;lang;1967 (String.java;FingerExercisesTest;testGcd;207
+55c22b2f9d6817c1fe72d44c330abca86d474e26;2020-10-12T22_06_00.802Z;2020-10-12 22:06:00; java.lang.StackOverflowError;FingerExercises;sumBetween;14;FingerExercisesTest;testSumBetween;467
+55c22b2f9d6817c1fe72d44c330abca86d474e26;2020-10-12T22_06_00.802Z;2020-10-12 22:06:00; java.lang.ArithmeticException;FingerExercises;gcd;3;;;
+55c22b2f9d6817c1fe72d44c330abca86d474e26;2020-10-12T22_06_00.802Z;2020-10-12 22:06:00; java.lang.StackOverflowError;FingerExercises;sumTo;22;FingerExercisesTest;testSumTo;562
+55c22b2f9d6817c1fe72d44c330abca86d474e26;2020-10-12T22_06_00.802Z;2020-10-12 22:06:00; java.lang.StackOverflowError;FingerExercises;sumTo;22;FingerExercisesTest;testSumToOne;515
+55c22b2f9d6817c1fe72d44c330abca86d474e26;2020-10-12T22_31_16.303Z;2020-10-12 22:31:16; java.lang.StackOverflowError;FingerExercises;sumBetween;14;FingerExercisesTest;testSumBetween;467
+55c22b2f9d6817c1fe72d44c330abca86d474e26;2020-10-12T22_31_16.303Z;2020-10-12 22:31:16; java.lang.ArithmeticException;FingerExercises;gcd;3;;;
+55c22b2f9d6817c1fe72d44c330abca86d474e26;2020-10-12T22_31_16.303Z;2020-10-12 22:31:16; java.lang.StackOverflowError;FingerExercises;sumTo;22;FingerExercisesTest;testSumTo;562
+55c22b2f9d6817c1fe72d44c330abca86d474e26;2020-10-12T22_31_16.303Z;2020-10-12 22:31:16; java.lang.StackOverflowError;FingerExercises;sumTo;22;FingerExercisesTest;testSumToOne;515
+58247ed7f5f7ef58de87e5c75e111bb8c1319e5f;2020-10-12T00_45_35.965Z;2020-10-12 00:45:35; java.lang.StringIndexOutOfBoundsException;FingerExercises;countSubstrings;115;FingerExercisesTest;testSubstringDouble;1611
+58247ed7f5f7ef58de87e5c75e111bb8c1319e5f;2020-10-12T00_45_35.965Z;2020-10-12 00:45:35; java.lang.StringIndexOutOfBoundsException;FingerExercises;countSubstrings;115;FingerExercisesTest;testSubstringMiddle;1752
+58247ed7f5f7ef58de87e5c75e111bb8c1319e5f;2020-10-12T00_45_35.965Z;2020-10-12 00:45:35; java.lang.StringIndexOutOfBoundsException;FingerExercises;countSubstrings;115;FingerExercisesTest;testSubstringOverlap;1658
+58247ed7f5f7ef58de87e5c75e111bb8c1319e5f;2020-10-12T00_45_35.965Z;2020-10-12 00:45:35; java.lang.StringIndexOutOfBoundsException;FingerExercises;countSubstrings;112;FingerExercisesTest;testSubstringSame;1705
+585e11bbcd145d378d188bde0220988e63005f64;2020-10-11T20_38_14.853Z;2020-10-11 20:38:14; java.lang.ArithmeticException;FingerExercises;sumOfDigits;37;;;
+585e11bbcd145d378d188bde0220988e63005f64;2020-10-11T20_38_14.853Z;2020-10-11 20:38:14; java.lang.ArithmeticException;FingerExercises;gcd;4;;;
+585e11bbcd145d378d188bde0220988e63005f64;2020-10-11T22_05_44.634Z;2020-10-11 22:05:44; java.lang.ArithmeticException;FingerExercises;gcd;4;;;
+585e11bbcd145d378d188bde0220988e63005f64;2020-10-11T22_05_44.634Z;2020-10-11 22:05:44; java.lang.StackOverflowError;FingerExercises;countWaysToClimb;42;FingerExercisesTest;testClimbStairsZero;1092
+5950ad0df7ed21fc66a3af04ed8cb667e6051a02;2020-10-13T03_29_41.194Z;2020-10-13 03:29:41; java.lang.StackOverflowError;FingerExercises;gcd;10;FingerExercisesTest;testGcdAZero;137
+5950ad0df7ed21fc66a3af04ed8cb667e6051a02;2020-10-13T03_29_41.194Z;2020-10-13 03:29:41; java.lang.StackOverflowError;FingerExercises;gcd;8;FingerExercisesTest;testGcdBZero;184
+5950ad0df7ed21fc66a3af04ed8cb667e6051a02;2020-10-14T03_52_12.310Z;2020-10-14 03:52:12; java.lang.StackOverflowError;FingerExercises;gcd;10;FingerExercisesTest;testGcdAZero;137
+5950ad0df7ed21fc66a3af04ed8cb667e6051a02;2020-10-14T03_52_12.310Z;2020-10-14 03:52:12; java.lang.StackOverflowError;FingerExercises;gcd;8;FingerExercisesTest;testGcdBZero;184
+5bd06d8ef939a24e4be9a8a295565db039cfb173;2020-10-13T01_15_03.810Z;2020-10-13 01:15:03;java.lang.NullPointerException;sun;reflect;1;FingerExercisesTest;testLogInexact;1469
+5bd06d8ef939a24e4be9a8a295565db039cfb173;2020-10-13T01_15_03.810Z;2020-10-13 01:15:03;java.lang.NullPointerException;sun;reflect;1;FingerExercisesTest;testLogSelf;1375
+5bd06d8ef939a24e4be9a8a295565db039cfb173;2020-10-13T01_15_03.810Z;2020-10-13 01:15:03;java.lang.NullPointerException;sun;reflect;1;FingerExercisesTest;testLogExact;1422
+5bd06d8ef939a24e4be9a8a295565db039cfb173;2020-10-13T01_15_03.810Z;2020-10-13 01:15:03;java.lang.NullPointerException;sun;reflect;1;FingerExercisesTest;testLogInexactLarger;1516
+5bd06d8ef939a24e4be9a8a295565db039cfb173;2020-10-13T01_15_03.810Z;2020-10-13 01:15:03;java.lang.NullPointerException;sun;reflect;1;FingerExercisesTest;testLog;1328
+5bd06d8ef939a24e4be9a8a295565db039cfb173;2020-10-13T18_46_21.243Z;2020-10-13 18:46:21;java.lang.NullPointerException;sun;reflect;1;FingerExercisesTest;testLogInexact;1469
+5bd06d8ef939a24e4be9a8a295565db039cfb173;2020-10-13T18_46_21.243Z;2020-10-13 18:46:21;java.lang.NullPointerException;sun;reflect;1;FingerExercisesTest;testLogSelf;1375
+5bd06d8ef939a24e4be9a8a295565db039cfb173;2020-10-13T18_46_21.243Z;2020-10-13 18:46:21;java.lang.NullPointerException;sun;reflect;1;FingerExercisesTest;testLogExact;1422
+5bd06d8ef939a24e4be9a8a295565db039cfb173;2020-10-13T18_46_21.243Z;2020-10-13 18:46:21;java.lang.NullPointerException;sun;reflect;1;FingerExercisesTest;testLogInexactLarger;1516
+5bd06d8ef939a24e4be9a8a295565db039cfb173;2020-10-13T18_46_21.243Z;2020-10-13 18:46:21;java.lang.NullPointerException;sun;reflect;1;FingerExercisesTest;testLog;1328
+5c687dece2a95d9523cd5a32fc08c4818c0997e3;2020-10-13T18_33_01.759Z;2020-10-13 18:33:01; java.lang.StackOverflowError;FingerExercises;logHelper;56;FingerExercisesTest;testLogInexact;1469
+5c687dece2a95d9523cd5a32fc08c4818c0997e3;2020-10-13T18_33_01.759Z;2020-10-13 18:33:01; java.lang.StackOverflowError;FingerExercises;logHelper;56;FingerExercisesTest;testLogExact;1422
+5c687dece2a95d9523cd5a32fc08c4818c0997e3;2020-10-13T18_33_01.759Z;2020-10-13 18:33:01; java.lang.StackOverflowError;FingerExercises;logHelper;56;FingerExercisesTest;testLogInexactLarger;1516
+5c687dece2a95d9523cd5a32fc08c4818c0997e3;2020-10-13T18_33_01.759Z;2020-10-13 18:33:01; java.lang.StackOverflowError;FingerExercises;logHelper;56;FingerExercisesTest;testLog;1328
+5d62f611d889cb7019dd0fc8cf9ef3b15a83c810;2020-10-15T22_04_51.129Z;2020-10-15 22:04:51;java.lang.NullPointerException;FingerExercisesTest;testSumTo;524;FingerExercisesTest;testSumTo;562
+5d62f611d889cb7019dd0fc8cf9ef3b15a83c810;2020-10-15T22_04_51.129Z;2020-10-15 22:04:51;java.lang.NullPointerException;FingerExercisesTest;testSumToOne;477;FingerExercisesTest;testSumToOne;515
+6144b2ccc7cad06963c6033a19657dd7e935b237;2020-10-14T21_58_07.314Z;2020-10-14 21:58:07; java.lang.ArithmeticException;FingerExercises;gcd;12;FingerExercisesTest;testGcdBZero;184
+6144b2ccc7cad06963c6033a19657dd7e935b237;2020-10-15T04_44_10.348Z;2020-10-15 04:44:10; java.lang.ArithmeticException;FingerExercises;gcd;12;FingerExercisesTest;testGcdBZero;184
+6144b2ccc7cad06963c6033a19657dd7e935b237;2020-10-15T20_02_19.500Z;2020-10-15 20:02:19; java.lang.ArithmeticException;FingerExercises;gcd;12;FingerExercisesTest;testGcdBZero;184
+6144b2ccc7cad06963c6033a19657dd7e935b237;2020-10-15T23_16_25.160Z;2020-10-15 23:16:25; java.lang.ArithmeticException;FingerExercises;gcd;12;FingerExercisesTest;testGcdBZero;184
+6144b2ccc7cad06963c6033a19657dd7e935b237;2020-10-16T00_22_52.151Z;2020-10-16 00:22:52; java.lang.ArithmeticException;FingerExercises;gcd;12;FingerExercisesTest;testGcdBZero;184
+6144b2ccc7cad06963c6033a19657dd7e935b237;2020-10-16T03_22_22.827Z;2020-10-16 03:22:22; java.lang.ArithmeticException;FingerExercises;gcd;16;FingerExercisesTest;testGcdBZero;184
+61462cc7f58a084c8e51fbd9ba9623cd545132ad;2020-10-12T01_40_51.792Z;2020-10-12 01:40:51;java.lang.NullPointerException;FingerExercisesTest;testSumTo;524;FingerExercisesTest;testSumTo;562
+61462cc7f58a084c8e51fbd9ba9623cd545132ad;2020-10-12T01_40_51.792Z;2020-10-12 01:40:51;java.lang.NullPointerException;FingerExercisesTest;testSumToOne;477;FingerExercisesTest;testSumToOne;515
+61462cc7f58a084c8e51fbd9ba9623cd545132ad;2020-10-12T02_03_37.322Z;2020-10-12 02:03:37;java.lang.NullPointerException;FingerExercisesTest;testSumTo;524;FingerExercisesTest;testSumTo;562
+61462cc7f58a084c8e51fbd9ba9623cd545132ad;2020-10-12T02_03_37.322Z;2020-10-12 02:03:37;java.lang.NullPointerException;FingerExercisesTest;testSumToOne;477;FingerExercisesTest;testSumToOne;515
+61462cc7f58a084c8e51fbd9ba9623cd545132ad;2020-10-12T03_06_59.459Z;2020-10-12 03:06:59; java.lang.StackOverflowError;FingerExercises;log;85;FingerExercisesTest;testLogInexact;1469
+61462cc7f58a084c8e51fbd9ba9623cd545132ad;2020-10-12T03_06_59.459Z;2020-10-12 03:06:59; java.lang.StackOverflowError;FingerExercises;log;85;FingerExercisesTest;testLogExact;1422
+61462cc7f58a084c8e51fbd9ba9623cd545132ad;2020-10-12T03_06_59.459Z;2020-10-12 03:06:59; java.lang.StackOverflowError;FingerExercises;log;85;FingerExercisesTest;testLogInexactLarger;1516
+61462cc7f58a084c8e51fbd9ba9623cd545132ad;2020-10-12T03_06_59.459Z;2020-10-12 03:06:59; java.lang.StackOverflowError;FingerExercises;log;85;FingerExercisesTest;testLog;1328
+61462cc7f58a084c8e51fbd9ba9623cd545132ad;2020-10-12T03_06_59.459Z;2020-10-12 03:06:59;java.lang.NullPointerException;FingerExercisesTest;testSumTo;524;FingerExercisesTest;testSumTo;562
+61462cc7f58a084c8e51fbd9ba9623cd545132ad;2020-10-12T03_06_59.459Z;2020-10-12 03:06:59;java.lang.NullPointerException;FingerExercisesTest;testSumToOne;477;FingerExercisesTest;testSumToOne;515
+61462cc7f58a084c8e51fbd9ba9623cd545132ad;2020-10-12T05_09_48.457Z;2020-10-12 05:09:48; java.lang.StackOverflowError;FingerExercises;countSubstrings;107;FingerExercisesTest;testSubstringSingle;1564
+61462cc7f58a084c8e51fbd9ba9623cd545132ad;2020-10-12T05_09_48.457Z;2020-10-12 05:09:48;java.lang.NullPointerException;FingerExercisesTest;testSumTo;524;FingerExercisesTest;testSumTo;562
+61462cc7f58a084c8e51fbd9ba9623cd545132ad;2020-10-12T05_09_48.457Z;2020-10-12 05:09:48;java.lang.NullPointerException;FingerExercisesTest;testSumToOne;477;FingerExercisesTest;testSumToOne;515
+61462cc7f58a084c8e51fbd9ba9623cd545132ad;2020-10-13T00_34_28.277Z;2020-10-13 00:34:28; java.lang.StackOverflowError;FingerExercises;countSubstrings;107;FingerExercisesTest;testSubstringSingle;1564
+61462cc7f58a084c8e51fbd9ba9623cd545132ad;2020-10-13T01_10_01.756Z;2020-10-13 01:10:01; java.lang.StackOverflowError;FingerExercises;countSubstrings;110;FingerExercisesTest;testSubstringSingle;1564
+61462cc7f58a084c8e51fbd9ba9623cd545132ad;2020-10-13T01_31_16.006Z;2020-10-13 01:31:16; java.lang.StackOverflowError;FingerExercises;countSubstrings;110;FingerExercisesTest;testSubstringSingle;1564
+61462cc7f58a084c8e51fbd9ba9623cd545132ad;2020-10-13T17_46_36.763Z;2020-10-13 17:46:36; java.lang.StackOverflowError;FingerExercises;countSubstrings;110;FingerExercisesTest;testSubstringSingle;1564
+6441d968337ce853fb844b4be2360a7680bd3d3d;2020-10-15T03_32_15.193Z;2020-10-15 03:32:15; java.lang.ArithmeticException;FingerExercises;gcd;32;FingerExercisesTest;testGcdAZero;137
+6507e9a59c7760b7c7d8d0a3a16ba7eeb9e1ba64;2020-10-10T19_47_07.409Z;2020-10-10 19:47:07; java.lang.StackOverflowError;FingerExercises;gcd;43;FingerExercisesTest;testGcdAZero;137
+6507e9a59c7760b7c7d8d0a3a16ba7eeb9e1ba64;2020-10-10T19_47_07.409Z;2020-10-10 19:47:07; java.lang.StackOverflowError;FingerExercises;gcd;43;FingerExercisesTest;testGcdBZero;184
+6507e9a59c7760b7c7d8d0a3a16ba7eeb9e1ba64;2020-10-10T19_47_07.409Z;2020-10-10 19:47:07;java.lang.NullPointerException;FingerExercisesTest;testSumTo;524;FingerExercisesTest;testSumTo;562
+6507e9a59c7760b7c7d8d0a3a16ba7eeb9e1ba64;2020-10-10T19_47_07.409Z;2020-10-10 19:47:07;java.lang.NullPointerException;FingerExercisesTest;testSumToOne;477;FingerExercisesTest;testSumToOne;515
+6507e9a59c7760b7c7d8d0a3a16ba7eeb9e1ba64;2020-10-10T20_58_13.675Z;2020-10-10 20:58:13; java.lang.StackOverflowError;FingerExercises;gcd;43;FingerExercisesTest;testGcdAZero;137
+6507e9a59c7760b7c7d8d0a3a16ba7eeb9e1ba64;2020-10-10T20_58_13.675Z;2020-10-10 20:58:13; java.lang.StackOverflowError;FingerExercises;gcd;43;FingerExercisesTest;testGcdBZero;184
+6507e9a59c7760b7c7d8d0a3a16ba7eeb9e1ba64;2020-10-10T20_58_13.675Z;2020-10-10 20:58:13;java.lang.NullPointerException;FingerExercisesTest;testSumTo;524;FingerExercisesTest;testSumTo;562
+6507e9a59c7760b7c7d8d0a3a16ba7eeb9e1ba64;2020-10-10T20_58_13.675Z;2020-10-10 20:58:13;java.lang.NullPointerException;FingerExercisesTest;testSumToOne;477;FingerExercisesTest;testSumToOne;515
+6507e9a59c7760b7c7d8d0a3a16ba7eeb9e1ba64;2020-10-10T22_40_45.192Z;2020-10-10 22:40:45; java.lang.StackOverflowError;FingerExercises;gcd;43;FingerExercisesTest;testGcdAZero;137
+6507e9a59c7760b7c7d8d0a3a16ba7eeb9e1ba64;2020-10-10T22_40_45.192Z;2020-10-10 22:40:45; java.lang.StackOverflowError;FingerExercises;gcd;43;FingerExercisesTest;testGcdBZero;184
+6507e9a59c7760b7c7d8d0a3a16ba7eeb9e1ba64;2020-10-11T01_05_56.912Z;2020-10-11 01:05:56; java.lang.StackOverflowError;FingerExercises;gcd;43;FingerExercisesTest;testGcdAZero;137
+6507e9a59c7760b7c7d8d0a3a16ba7eeb9e1ba64;2020-10-11T01_05_56.912Z;2020-10-11 01:05:56; java.lang.StackOverflowError;FingerExercises;gcd;43;FingerExercisesTest;testGcdBZero;184
+65fadf52b477dfc365a46cb400d773792dcb3341;2020-10-14T06_11_55.722Z;2020-10-14 06:11:55;java.lang.NullPointerException;sun;reflect;1;FingerExercisesTest;testSumOfDigitsZero;851
+65fadf52b477dfc365a46cb400d773792dcb3341;2020-10-14T06_11_55.722Z;2020-10-14 06:11:55;java.lang.NullPointerException;sun;reflect;1;FingerExercisesTest;testSumOfDigits;945
+65fadf52b477dfc365a46cb400d773792dcb3341;2020-10-14T06_11_55.722Z;2020-10-14 06:11:55;java.lang.NullPointerException;sun;reflect;1;FingerExercisesTest;testSumOfDigitsSingle;898
+65fadf52b477dfc365a46cb400d773792dcb3341;2020-10-14T06_11_55.722Z;2020-10-14 06:11:55;java.lang.NullPointerException;sun;reflect;1;FingerExercisesTest;testSumOfDigitsTriple;1039
+65fadf52b477dfc365a46cb400d773792dcb3341;2020-10-14T06_11_55.722Z;2020-10-14 06:11:55;java.lang.NullPointerException;sun;reflect;1;FingerExercisesTest;testSumOfDigitsShort;992
+65fadf52b477dfc365a46cb400d773792dcb3341;2020-10-14T11_48_10.419Z;2020-10-14 11:48:10;java.lang.NullPointerException;sun;reflect;1;FingerExercisesTest;testSumOfDigitsZero;851
+65fadf52b477dfc365a46cb400d773792dcb3341;2020-10-14T11_48_10.419Z;2020-10-14 11:48:10;java.lang.NullPointerException;sun;reflect;1;FingerExercisesTest;testSumOfDigits;945
+65fadf52b477dfc365a46cb400d773792dcb3341;2020-10-14T11_48_10.419Z;2020-10-14 11:48:10;java.lang.NullPointerException;sun;reflect;1;FingerExercisesTest;testSumOfDigitsSingle;898
+65fadf52b477dfc365a46cb400d773792dcb3341;2020-10-14T11_48_10.419Z;2020-10-14 11:48:10;java.lang.NullPointerException;sun;reflect;1;FingerExercisesTest;testSumOfDigitsTriple;1039
+65fadf52b477dfc365a46cb400d773792dcb3341;2020-10-14T11_48_10.419Z;2020-10-14 11:48:10;java.lang.NullPointerException;sun;reflect;1;FingerExercisesTest;testSumOfDigitsShort;992
+65fadf52b477dfc365a46cb400d773792dcb3341;2020-10-15T05_15_25.757Z;2020-10-15 05:15:25;java.lang.NullPointerException;sun;reflect;1;FingerExercisesTest;testSumOfDigitsZero;851
+65fadf52b477dfc365a46cb400d773792dcb3341;2020-10-15T05_15_25.757Z;2020-10-15 05:15:25;java.lang.NullPointerException;sun;reflect;1;FingerExercisesTest;testSumOfDigits;945
+65fadf52b477dfc365a46cb400d773792dcb3341;2020-10-15T05_15_25.757Z;2020-10-15 05:15:25;java.lang.NullPointerException;sun;reflect;1;FingerExercisesTest;testSumOfDigitsSingle;898
+65fadf52b477dfc365a46cb400d773792dcb3341;2020-10-15T05_15_25.757Z;2020-10-15 05:15:25;java.lang.NullPointerException;sun;reflect;1;FingerExercisesTest;testSumOfDigitsTriple;1039
+65fadf52b477dfc365a46cb400d773792dcb3341;2020-10-15T05_15_25.757Z;2020-10-15 05:15:25;java.lang.NullPointerException;sun;reflect;1;FingerExercisesTest;testSumOfDigitsShort;992
+67aaf2c30b90ae3ed9eb57c5c86d88bc439f0930;2020-10-15T07_46_46.211Z;2020-10-15 07:46:46; java.lang.StackOverflowError;FingerExercises;gcd;16;FingerExercisesTest;testGcdAZero;137
+67aaf2c30b90ae3ed9eb57c5c86d88bc439f0930;2020-10-15T07_46_46.211Z;2020-10-15 07:46:46; java.lang.StackOverflowError;FingerExercises;gcd;16;FingerExercisesTest;testGcdLarger;325
+67aaf2c30b90ae3ed9eb57c5c86d88bc439f0930;2020-10-15T07_46_46.211Z;2020-10-15 07:46:46; java.lang.StackOverflowError;FingerExercises;gcd;16;FingerExercisesTest;testGcd;231
+68b0463b34364f614b76a8a97ac7c98b37916506;2020-10-13T22_16_19.365Z;2020-10-13 22:16:19;java.lang.NullPointerException;sun;reflect;1;FingerExercisesTest;testSumOfDigitsZero;851
+68b0463b34364f614b76a8a97ac7c98b37916506;2020-10-13T22_16_19.365Z;2020-10-13 22:16:19;java.lang.NullPointerException;sun;reflect;1;FingerExercisesTest;testLogInexact;1469
+68b0463b34364f614b76a8a97ac7c98b37916506;2020-10-13T22_16_19.365Z;2020-10-13 22:16:19;java.lang.NullPointerException;sun;reflect;1;FingerExercisesTest;testLogSelf;1375
+68b0463b34364f614b76a8a97ac7c98b37916506;2020-10-13T22_16_19.365Z;2020-10-13 22:16:19;java.lang.NullPointerException;sun;reflect;1;FingerExercisesTest;testLogExact;1422
+68b0463b34364f614b76a8a97ac7c98b37916506;2020-10-13T22_16_19.365Z;2020-10-13 22:16:19;java.lang.NullPointerException;sun;reflect;1;FingerExercisesTest;testSumOfDigits;945
+68b0463b34364f614b76a8a97ac7c98b37916506;2020-10-13T22_16_19.365Z;2020-10-13 22:16:19;java.lang.NullPointerException;sun;reflect;1;FingerExercisesTest;testLogInexactLarger;1516
+68b0463b34364f614b76a8a97ac7c98b37916506;2020-10-13T22_16_19.365Z;2020-10-13 22:16:19;java.lang.NullPointerException;sun;reflect;1;FingerExercisesTest;testSumOfDigitsSingle;898
+68b0463b34364f614b76a8a97ac7c98b37916506;2020-10-13T22_16_19.365Z;2020-10-13 22:16:19;java.lang.NullPointerException;sun;reflect;1;FingerExercisesTest;testSumOfDigitsTriple;1039
+68b0463b34364f614b76a8a97ac7c98b37916506;2020-10-13T22_16_19.365Z;2020-10-13 22:16:19;java.lang.NullPointerException;sun;reflect;1;FingerExercisesTest;testLog;1328
+68b0463b34364f614b76a8a97ac7c98b37916506;2020-10-13T22_16_19.365Z;2020-10-13 22:16:19;java.lang.NullPointerException;sun;reflect;1;FingerExercisesTest;testSumOfDigitsShort;992
+69b307789e8a056939d00817344cff7b2c6a801f;2020-10-13T21_33_22.010Z;2020-10-13 21:33:22; java.lang.StackOverflowError;FingerExercises;log;95;FingerExercisesTest;testLogInexact;1469
+69b307789e8a056939d00817344cff7b2c6a801f;2020-10-13T21_33_22.010Z;2020-10-13 21:33:22; java.lang.StackOverflowError;FingerExercises;log;95;FingerExercisesTest;testLogExact;1422
+69b307789e8a056939d00817344cff7b2c6a801f;2020-10-13T21_33_22.010Z;2020-10-13 21:33:22; java.lang.StackOverflowError;FingerExercises;log;95;FingerExercisesTest;testLogInexactLarger;1516
+69b307789e8a056939d00817344cff7b2c6a801f;2020-10-13T21_33_22.010Z;2020-10-13 21:33:22; java.lang.StackOverflowError;FingerExercises;log;95;FingerExercisesTest;testLog;1328
+6b36b01b915e6699622925a14d422694d6194be0;2020-10-14T04_06_21.123Z;2020-10-14 04:06:21;java.lang.NullPointerException;sun;reflect;1;FingerExercisesTest;testSumOfDigitsZero;851
+6b36b01b915e6699622925a14d422694d6194be0;2020-10-14T04_06_21.123Z;2020-10-14 04:06:21;java.lang.NullPointerException;sun;reflect;1;FingerExercisesTest;testLogInexact;1469
+6b36b01b915e6699622925a14d422694d6194be0;2020-10-14T04_06_21.123Z;2020-10-14 04:06:21;java.lang.NullPointerException;sun;reflect;1;FingerExercisesTest;testLogSelf;1375
+6b36b01b915e6699622925a14d422694d6194be0;2020-10-14T04_06_21.123Z;2020-10-14 04:06:21;java.lang.NullPointerException;sun;reflect;1;FingerExercisesTest;testLogExact;1422
+6b36b01b915e6699622925a14d422694d6194be0;2020-10-14T04_06_21.123Z;2020-10-14 04:06:21;java.lang.NullPointerException;sun;reflect;1;FingerExercisesTest;testSumOfDigits;945
+6b36b01b915e6699622925a14d422694d6194be0;2020-10-14T04_06_21.123Z;2020-10-14 04:06:21;java.lang.NullPointerException;sun;reflect;1;FingerExercisesTest;testLogInexactLarger;1516
+6b36b01b915e6699622925a14d422694d6194be0;2020-10-14T04_06_21.123Z;2020-10-14 04:06:21;java.lang.NullPointerException;sun;reflect;1;FingerExercisesTest;testSumOfDigitsSingle;898
+6b36b01b915e6699622925a14d422694d6194be0;2020-10-14T04_06_21.123Z;2020-10-14 04:06:21;java.lang.NullPointerException;sun;reflect;1;FingerExercisesTest;testSumOfDigitsTriple;1039
+6b36b01b915e6699622925a14d422694d6194be0;2020-10-14T04_06_21.123Z;2020-10-14 04:06:21;java.lang.NullPointerException;sun;reflect;1;FingerExercisesTest;testLog;1328
+6b36b01b915e6699622925a14d422694d6194be0;2020-10-14T04_06_21.123Z;2020-10-14 04:06:21;java.lang.NullPointerException;sun;reflect;1;FingerExercisesTest;testSumOfDigitsShort;992
+6b36b01b915e6699622925a14d422694d6194be0;2020-10-15T01_12_49.105Z;2020-10-15 01:12:49; java.lang.ArithmeticException;FingerExercises;gcd;26;;;
+6d5aaa9492af40790519b44d5062cc519c34f643;2020-10-14T03_46_19.570Z;2020-10-14 03:46:19; java.lang.StackOverflowError;FingerExercises;gcd;13;FingerExercisesTest;testGcdAZero;137
+6d5aaa9492af40790519b44d5062cc519c34f643;2020-10-14T03_46_19.570Z;2020-10-14 03:46:19; java.lang.StackOverflowError;FingerExercises;gcd;13;FingerExercisesTest;testGcdBZero;184
+6d5aaa9492af40790519b44d5062cc519c34f643;2020-10-14T06_23_41.136Z;2020-10-14 06:23:41; java.lang.StackOverflowError;FingerExercises;findSecondLargestHelper;67;FingerExercisesTest;testSecondLargestFirst;659
+6d5aaa9492af40790519b44d5062cc519c34f643;2020-10-14T06_23_41.136Z;2020-10-14 06:23:41; java.lang.StackOverflowError;FingerExercises;findSecondLargestHelper;67;FingerExercisesTest;testSecondLargestLast;707
+6d5aaa9492af40790519b44d5062cc519c34f643;2020-10-14T06_23_41.136Z;2020-10-14 06:23:41; java.lang.StackOverflowError;FingerExercises;findSecondLargestHelper;67;FingerExercisesTest;testSecondLargestSame;611
+6d5aaa9492af40790519b44d5062cc519c34f643;2020-10-14T06_23_41.136Z;2020-10-14 06:23:41; java.lang.StackOverflowError;FingerExercises;findSecondLargestHelper;67;FingerExercisesTest;testSecondLargestRepeats;803
+6d5aaa9492af40790519b44d5062cc519c34f643;2020-10-14T06_23_41.136Z;2020-10-14 06:23:41; java.lang.StackOverflowError;FingerExercises;findSecondLargestHelper;67;FingerExercisesTest;testSecondLargestMiddle;755
+6db5438b3419df449f02fef8ae541ad4c3e972cf;2020-10-15T18_49_26.032Z;2020-10-15 18:49:26; java.lang.StackOverflowError;FingerExercises;log;79;FingerExercisesTest;testLogInexact;1469
+6db5438b3419df449f02fef8ae541ad4c3e972cf;2020-10-15T18_49_26.032Z;2020-10-15 18:49:26; java.lang.StackOverflowError;FingerExercises;log;79;FingerExercisesTest;testLogExact;1422
+6db5438b3419df449f02fef8ae541ad4c3e972cf;2020-10-15T18_49_26.032Z;2020-10-15 18:49:26; java.lang.ArithmeticException;FingerExercises;gcd;67;FingerExercisesTest;testGcdAZero;137
+6db5438b3419df449f02fef8ae541ad4c3e972cf;2020-10-15T18_49_26.032Z;2020-10-15 18:49:26; java.lang.ArithmeticException;FingerExercises;gcd;67;;;
+6db5438b3419df449f02fef8ae541ad4c3e972cf;2020-10-15T18_49_26.032Z;2020-10-15 18:49:26; java.lang.StackOverflowError;FingerExercises;log;79;FingerExercisesTest;testLogInexactLarger;1516
+6db5438b3419df449f02fef8ae541ad4c3e972cf;2020-10-15T18_49_26.032Z;2020-10-15 18:49:26; java.lang.StackOverflowError;FingerExercises;log;79;FingerExercisesTest;testLog;1328
+6db5438b3419df449f02fef8ae541ad4c3e972cf;2020-10-15T19_02_53.868Z;2020-10-15 19:02:53; java.lang.StackOverflowError;FingerExercises;log;79;FingerExercisesTest;testLogInexact;1469
+6db5438b3419df449f02fef8ae541ad4c3e972cf;2020-10-15T19_02_53.868Z;2020-10-15 19:02:53; java.lang.ArithmeticException;FingerExercises;gcd;67;FingerExercisesTest;testGcdAZero;137
+6db5438b3419df449f02fef8ae541ad4c3e972cf;2020-10-15T19_02_53.868Z;2020-10-15 19:02:53; java.lang.ArithmeticException;FingerExercises;gcd;67;;;
+6db5438b3419df449f02fef8ae541ad4c3e972cf;2020-10-15T19_02_53.868Z;2020-10-15 19:02:53; java.lang.StackOverflowError;FingerExercises;log;79;FingerExercisesTest;testLogInexactLarger;1516
+6db5438b3419df449f02fef8ae541ad4c3e972cf;2020-10-15T19_02_53.868Z;2020-10-15 19:02:53; java.lang.StackOverflowError;FingerExercises;log;79;FingerExercisesTest;testLog;1328
+6db5438b3419df449f02fef8ae541ad4c3e972cf;2020-10-15T23_00_19.143Z;2020-10-15 23:00:19; java.lang.StackOverflowError;FingerExercises;countSubstrings;108;FingerExercisesTest;testSubstringDouble;1611
+6db5438b3419df449f02fef8ae541ad4c3e972cf;2020-10-15T23_00_19.143Z;2020-10-15 23:00:19; java.lang.StackOverflowError;FingerExercises;countSubstrings;108;FingerExercisesTest;testSubstringMiddle;1752
+6db5438b3419df449f02fef8ae541ad4c3e972cf;2020-10-15T23_00_19.143Z;2020-10-15 23:00:19; java.lang.StackOverflowError;FingerExercises;countSubstrings;108;FingerExercisesTest;testSubstringSingle;1564
+6db5438b3419df449f02fef8ae541ad4c3e972cf;2020-10-15T23_00_19.143Z;2020-10-15 23:00:19; java.lang.ArithmeticException;FingerExercises;gcd;70;FingerExercisesTest;testGcdAZero;137
+6db5438b3419df449f02fef8ae541ad4c3e972cf;2020-10-15T23_00_19.143Z;2020-10-15 23:00:19; java.lang.ArithmeticException;FingerExercises;gcd;70;;;
+6db5438b3419df449f02fef8ae541ad4c3e972cf;2020-10-15T23_00_19.143Z;2020-10-15 23:00:19; java.lang.StackOverflowError;FingerExercises;countSubstrings;108;FingerExercisesTest;testSubstringOverlap;1658
+6db5438b3419df449f02fef8ae541ad4c3e972cf;2020-10-15T23_00_19.143Z;2020-10-15 23:00:19; java.lang.StackOverflowError;FingerExercises;countSubstrings;108;FingerExercisesTest;testSubstringSame;1705
+6e187a8a1e51badcb72f58aa711583db4f2d3393;2020-10-15T06_20_07.035Z;2020-10-15 06:20:07; java.lang.StackOverflowError;FingerExercises;sumBetween;27;FingerExercisesTest;testSumBetween;467
+6e187a8a1e51badcb72f58aa711583db4f2d3393;2020-10-15T06_20_07.035Z;2020-10-15 06:20:07; java.lang.StackOverflowError;FingerExercises;sumBetween;27;FingerExercisesTest;testSumBetweenSame;420
+6e187a8a1e51badcb72f58aa711583db4f2d3393;2020-10-15T06_20_07.035Z;2020-10-15 06:20:07; java.lang.StackOverflowError;FingerExercises;sumBetween;27;FingerExercisesTest;testSumBetweenZero;373
+6e187a8a1e51badcb72f58aa711583db4f2d3393;2020-10-15T06_20_07.035Z;2020-10-15 06:20:07;java.lang.NullPointerException;FingerExercisesTest;testSumTo;524;FingerExercisesTest;testSumTo;562
+6e187a8a1e51badcb72f58aa711583db4f2d3393;2020-10-15T06_20_07.035Z;2020-10-15 06:20:07;java.lang.NullPointerException;FingerExercisesTest;testSumToOne;477;FingerExercisesTest;testSumToOne;515
+6e187a8a1e51badcb72f58aa711583db4f2d3393;2020-10-15T08_16_34.409Z;2020-10-15 08:16:34;java.lang.NullPointerException;FingerExercisesTest;testSumTo;524;FingerExercisesTest;testSumTo;562
+6e187a8a1e51badcb72f58aa711583db4f2d3393;2020-10-15T08_16_34.409Z;2020-10-15 08:16:34;java.lang.NullPointerException;FingerExercisesTest;testSumToOne;477;FingerExercisesTest;testSumToOne;515
+713c5dddd704f0ddc8f58ea00009c7aba94363f6;2020-10-12T03_11_37.883Z;2020-10-12 03:11:37; java.lang.ArithmeticException;FingerExercises;gcd;24;FingerExercisesTest;testGcdAZero;137
+713c5dddd704f0ddc8f58ea00009c7aba94363f6;2020-10-12T03_11_37.883Z;2020-10-12 03:11:37; java.lang.ArithmeticException;FingerExercises;gcd;24;;;
+713c5dddd704f0ddc8f58ea00009c7aba94363f6;2020-10-12T03_11_37.883Z;2020-10-12 03:11:37; java.lang.StackOverflowError;FingerExercises;sumOfDigits;81;FingerExercisesTest;testSumOfDigits;945
+713c5dddd704f0ddc8f58ea00009c7aba94363f6;2020-10-12T03_11_37.883Z;2020-10-12 03:11:37; java.lang.ArithmeticException;FingerExercises;gcd;24;FingerExercisesTest;testGcdLarger;325
+713c5dddd704f0ddc8f58ea00009c7aba94363f6;2020-10-12T03_11_37.883Z;2020-10-12 03:11:37; java.lang.StackOverflowError;FingerExercises;sumOfDigits;81;FingerExercisesTest;testSumOfDigitsTriple;1039
+713c5dddd704f0ddc8f58ea00009c7aba94363f6;2020-10-12T03_11_37.883Z;2020-10-12 03:11:37; java.lang.ArithmeticException;FingerExercises;gcd;24;FingerExercisesTest;testGcd;231
+713c5dddd704f0ddc8f58ea00009c7aba94363f6;2020-10-12T03_11_37.883Z;2020-10-12 03:11:37; java.lang.StackOverflowError;FingerExercises;sumOfDigits;81;FingerExercisesTest;testSumOfDigitsShort;992
+713c5dddd704f0ddc8f58ea00009c7aba94363f6;2020-10-12T16_31_09.984Z;2020-10-12 16:31:09; java.lang.StackOverflowError;FingerExercises;sumOfDigits;81;FingerExercisesTest;testSumOfDigits;945
+713c5dddd704f0ddc8f58ea00009c7aba94363f6;2020-10-12T16_31_09.984Z;2020-10-12 16:31:09; java.lang.StackOverflowError;FingerExercises;sumOfDigits;81;FingerExercisesTest;testSumOfDigitsTriple;1039
+713c5dddd704f0ddc8f58ea00009c7aba94363f6;2020-10-12T16_31_09.984Z;2020-10-12 16:31:09; java.lang.StackOverflowError;FingerExercises;sumOfDigits;81;FingerExercisesTest;testSumOfDigitsShort;992
+752ac65f19eb98c6987504a1382f382be9b25d76;2020-10-13T23_55_40.049Z;2020-10-13 23:55:40; java.lang.StackOverflowError;FingerExercises;countWaysToClimb;49;FingerExercisesTest;testClimbStairsZero;1092
+752ac65f19eb98c6987504a1382f382be9b25d76;2020-10-14T00_25_37.740Z;2020-10-14 00:25:37; java.lang.StackOverflowError;FingerExercises;countWaysToClimb;49;FingerExercisesTest;testClimbStairsZero;1092
+752ac65f19eb98c6987504a1382f382be9b25d76;2020-10-14T00_42_58.700Z;2020-10-14 00:42:58; java.lang.StackOverflowError;FingerExercises;countWaysToClimb;49;FingerExercisesTest;testClimbStairsLarger;1233
+752ac65f19eb98c6987504a1382f382be9b25d76;2020-10-14T00_42_58.700Z;2020-10-14 00:42:58; java.lang.StackOverflowError;FingerExercises;countWaysToClimb;49;FingerExercisesTest;testClimbStairsThree;1280
+752ac65f19eb98c6987504a1382f382be9b25d76;2020-10-14T00_42_58.700Z;2020-10-14 00:42:58; java.lang.StackOverflowError;FingerExercises;countWaysToClimb;49;FingerExercisesTest;testClimbStairsZero;1092
+752ac65f19eb98c6987504a1382f382be9b25d76;2020-10-14T00_42_58.700Z;2020-10-14 00:42:58; java.lang.ArithmeticException;FingerExercises;countWaysToClimb;49;;;
+76d73dd6aeff425bfefdd46f36c07ab5e12bc561;2020-10-16T00_45_26.985Z;2020-10-16 00:45:26; java.lang.StackOverflowError;FingerExercises;sumTo;42;FingerExercisesTest;testSumTo;562
+76e5bea3c4541fc766a846f0c38cf2039d386777;2020-10-15T19_35_21.532Z;2020-10-15 19:35:21; java.lang.StackOverflowError;FingerExercises;countSubstrings;84;FingerExercisesTest;testSubstringDouble;1611
+76e5bea3c4541fc766a846f0c38cf2039d386777;2020-10-15T19_35_21.532Z;2020-10-15 19:35:21; java.lang.StackOverflowError;FingerExercises;countSubstrings;84;FingerExercisesTest;testSubstringMiddle;1752
+76e5bea3c4541fc766a846f0c38cf2039d386777;2020-10-15T19_35_21.532Z;2020-10-15 19:35:21; java.lang.StackOverflowError;FingerExercises;countSubstrings;84;FingerExercisesTest;testSubstringSingle;1564
+76e5bea3c4541fc766a846f0c38cf2039d386777;2020-10-15T19_35_21.532Z;2020-10-15 19:35:21; java.lang.StackOverflowError;FingerExercises;countSubstrings;84;FingerExercisesTest;testSubstringOverlap;1658
+76e5bea3c4541fc766a846f0c38cf2039d386777;2020-10-15T19_35_21.532Z;2020-10-15 19:35:21; java.lang.StackOverflowError;FingerExercises;countSubstrings;84;FingerExercisesTest;testSubstringSame;1705
+7a42f9b84fd3650124336c71bb93e1a69d8185ca;2020-10-12T18_00_41.367Z;2020-10-12 18:00:41; java.lang.StackOverflowError;FingerExercises;countWaysToClimb;75;FingerExercisesTest;testClimbStairsZero;1092
+7a9afe398c11e435a6d7fd72619249adeb381e2f;2020-10-11T14_49_47.698Z;2020-10-11 14:49:47; java.lang.ArithmeticException;FingerExercises;gcd;12;;;
+7a9afe398c11e435a6d7fd72619249adeb381e2f;2020-10-14T14_48_03.244Z;2020-10-14 14:48:03; java.lang.StringIndexOutOfBoundsException;FingerExercises;howDifferent;254;FingerExercisesTest;testMoreSteps;1800
+7b882877d83362844ed860059e5e2274b5e1aa6a;2020-10-10T15_56_49.948Z;2020-10-10 15:56:49; java.lang.StackOverflowError;FingerExercises;gcd;25;FingerExercisesTest;testGcdAZero;137
+7b882877d83362844ed860059e5e2274b5e1aa6a;2020-10-10T15_56_49.948Z;2020-10-10 15:56:49; java.lang.StackOverflowError;FingerExercises;gcd;25;FingerExercisesTest;testGcdBZero;184
+7b882877d83362844ed860059e5e2274b5e1aa6a;2020-10-10T16_12_52.569Z;2020-10-10 16:12:52; java.lang.StackOverflowError;FingerExercises;gcd;29;FingerExercisesTest;testGcdAZero;137
+7b882877d83362844ed860059e5e2274b5e1aa6a;2020-10-10T16_12_52.569Z;2020-10-10 16:12:52; java.lang.StackOverflowError;FingerExercises;gcd;29;FingerExercisesTest;testGcdBZero;184
+7b882877d83362844ed860059e5e2274b5e1aa6a;2020-10-10T16_54_44.264Z;2020-10-10 16:54:44; java.lang.StackOverflowError;FingerExercises;gcd;35;FingerExercisesTest;testGcdAZero;137
+7b882877d83362844ed860059e5e2274b5e1aa6a;2020-10-10T16_54_44.264Z;2020-10-10 16:54:44; java.lang.StackOverflowError;FingerExercises;gcd;35;FingerExercisesTest;testGcdBZero;184
+7b882877d83362844ed860059e5e2274b5e1aa6a;2020-10-10T17_24_23.550Z;2020-10-10 17:24:23; java.lang.StackOverflowError;FingerExercises;gcd;40;FingerExercisesTest;testGcdAZero;137
+7b882877d83362844ed860059e5e2274b5e1aa6a;2020-10-10T17_24_23.550Z;2020-10-10 17:24:23; java.lang.StackOverflowError;FingerExercises;gcd;40;FingerExercisesTest;testGcdBZero;184
+7b882877d83362844ed860059e5e2274b5e1aa6a;2020-10-10T18_13_38.940Z;2020-10-10 18:13:38; java.lang.StackOverflowError;FingerExercises;gcd;46;FingerExercisesTest;testGcdAZero;137
+7b882877d83362844ed860059e5e2274b5e1aa6a;2020-10-10T18_13_38.940Z;2020-10-10 18:13:38; java.lang.StackOverflowError;FingerExercises;gcd;46;FingerExercisesTest;testGcdBZero;184
+7b882877d83362844ed860059e5e2274b5e1aa6a;2020-10-10T22_57_54.990Z;2020-10-10 22:57:54; java.lang.StackOverflowError;FingerExercises;gcd;46;FingerExercisesTest;testGcdAZero;137
+7b882877d83362844ed860059e5e2274b5e1aa6a;2020-10-10T22_57_54.990Z;2020-10-10 22:57:54; java.lang.StackOverflowError;FingerExercises;gcd;46;FingerExercisesTest;testGcdBZero;184
+7b882877d83362844ed860059e5e2274b5e1aa6a;2020-10-11T00_54_12.310Z;2020-10-11 00:54:12; java.lang.StackOverflowError;FingerExercises;gcd;56;FingerExercisesTest;testGcdAZero;137
+7b882877d83362844ed860059e5e2274b5e1aa6a;2020-10-11T00_54_12.310Z;2020-10-11 00:54:12; java.lang.StackOverflowError;FingerExercises;gcd;56;FingerExercisesTest;testGcdBZero;184
+7b882877d83362844ed860059e5e2274b5e1aa6a;2020-10-12T18_32_08.772Z;2020-10-12 18:32:08; java.lang.StackOverflowError;FingerExercises;gcd;58;FingerExercisesTest;testGcdAZero;137
+7b882877d83362844ed860059e5e2274b5e1aa6a;2020-10-12T18_32_08.772Z;2020-10-12 18:32:08; java.lang.StackOverflowError;FingerExercises;gcd;58;FingerExercisesTest;testGcdBZero;184
+7b882877d83362844ed860059e5e2274b5e1aa6a;2020-10-12T19_11_01.700Z;2020-10-12 19:11:01; java.lang.StackOverflowError;FingerExercises;gcd;58;FingerExercisesTest;testGcdAZero;137
+7b882877d83362844ed860059e5e2274b5e1aa6a;2020-10-12T19_11_01.700Z;2020-10-12 19:11:01; java.lang.StackOverflowError;FingerExercises;gcd;58;FingerExercisesTest;testGcdBZero;184
+7b882877d83362844ed860059e5e2274b5e1aa6a;2020-10-12T19_57_50.718Z;2020-10-12 19:57:50; java.lang.StackOverflowError;FingerExercises;gcd;58;FingerExercisesTest;testGcdAZero;137
+7b882877d83362844ed860059e5e2274b5e1aa6a;2020-10-12T19_57_50.718Z;2020-10-12 19:57:50; java.lang.StackOverflowError;FingerExercises;gcd;58;FingerExercisesTest;testGcdBZero;184
+7b882877d83362844ed860059e5e2274b5e1aa6a;2020-10-12T20_45_49.463Z;2020-10-12 20:45:49; java.lang.StackOverflowError;FingerExercises;gcd;58;FingerExercisesTest;testGcdAZero;137
+7b882877d83362844ed860059e5e2274b5e1aa6a;2020-10-12T20_45_49.463Z;2020-10-12 20:45:49; java.lang.StackOverflowError;FingerExercises;gcd;58;FingerExercisesTest;testGcdBZero;184
+7b882877d83362844ed860059e5e2274b5e1aa6a;2020-10-13T17_14_35.386Z;2020-10-13 17:14:35; java.lang.StackOverflowError;FingerExercises;gcd;58;FingerExercisesTest;testGcdAZero;137
+7b882877d83362844ed860059e5e2274b5e1aa6a;2020-10-13T17_14_35.386Z;2020-10-13 17:14:35; java.lang.StackOverflowError;FingerExercises;gcd;58;FingerExercisesTest;testGcdBZero;184
+7b882877d83362844ed860059e5e2274b5e1aa6a;2020-10-13T17_37_27.877Z;2020-10-13 17:37:27; java.lang.StackOverflowError;FingerExercises;gcd;59;FingerExercisesTest;testGcdAZero;137
+7b882877d83362844ed860059e5e2274b5e1aa6a;2020-10-13T17_37_27.877Z;2020-10-13 17:37:27; java.lang.StackOverflowError;FingerExercises;gcd;59;FingerExercisesTest;testGcdBZero;184
+7c8aacb1a1b8db047ada8a5e719c07f94ba911c0;2020-10-13T05_42_56.870Z;2020-10-13 05:42:56;java.lang.NullPointerException;FingerExercisesTest;testSumTo;524;FingerExercisesTest;testSumTo;562
+7c8aacb1a1b8db047ada8a5e719c07f94ba911c0;2020-10-13T05_42_56.870Z;2020-10-13 05:42:56;java.lang.NullPointerException;FingerExercisesTest;testSumToOne;477;FingerExercisesTest;testSumToOne;515
+7c8aacb1a1b8db047ada8a5e719c07f94ba911c0;2020-10-14T00_08_38.241Z;2020-10-14 00:08:38; java.lang.StringIndexOutOfBoundsException;java;lang;1963;FingerExercisesTest;testSubstringDouble;1611
+7c8aacb1a1b8db047ada8a5e719c07f94ba911c0;2020-10-14T00_08_38.241Z;2020-10-14 00:08:38; java.lang.StringIndexOutOfBoundsException;java;lang;1963;FingerExercisesTest;testSubstringMiddle;1752
+7c8aacb1a1b8db047ada8a5e719c07f94ba911c0;2020-10-14T00_08_38.241Z;2020-10-14 00:08:38; java.lang.StringIndexOutOfBoundsException;java;lang;1963;FingerExercisesTest;testSubstringSingle;1564
+7c8aacb1a1b8db047ada8a5e719c07f94ba911c0;2020-10-14T00_08_38.241Z;2020-10-14 00:08:38; java.lang.StringIndexOutOfBoundsException;java;lang;1963;FingerExercisesTest;testSubstringOverlap;1658
+7c8aacb1a1b8db047ada8a5e719c07f94ba911c0;2020-10-14T00_08_38.241Z;2020-10-14 00:08:38; java.lang.StringIndexOutOfBoundsException;FingerExercises;countSubstrings;56;FingerExercisesTest;testSubstringSame;1705
+7d0d034b66e61ddcb7f9c81b42fa9d6c790e2fe1;2020-10-14T08_44_42.592Z;2020-10-14 08:44:42; java.lang.ArithmeticException;FingerExercises;gcd;13;;;
+7d0d034b66e61ddcb7f9c81b42fa9d6c790e2fe1;2020-10-14T09_38_30.520Z;2020-10-14 09:38:30; java.lang.ArithmeticException;FingerExercises;gcd;13;;;
+7d0d034b66e61ddcb7f9c81b42fa9d6c790e2fe1;2020-10-15T10_36_07.612Z;2020-10-15 10:36:07; java.lang.StringIndexOutOfBoundsException;FingerExercises;countSubstrings;69;FingerExercisesTest;testSubstringDouble;1611
+7d0d034b66e61ddcb7f9c81b42fa9d6c790e2fe1;2020-10-15T10_36_07.612Z;2020-10-15 10:36:07; java.lang.StringIndexOutOfBoundsException;FingerExercises;countSubstrings;69;FingerExercisesTest;testSubstringMiddle;1752
+7d0d034b66e61ddcb7f9c81b42fa9d6c790e2fe1;2020-10-15T10_36_07.612Z;2020-10-15 10:36:07; java.lang.StringIndexOutOfBoundsException;FingerExercises;countSubstrings;69;FingerExercisesTest;testSubstringSingle;1564
+7dec407a0a131855a9137b0e04a6cc5b9cb8af66;2020-10-13T04_59_44.670Z;2020-10-13 04:59:44;java.lang.NullPointerException;FingerExercisesTest;testSumTo;524;FingerExercisesTest;testSumTo;562
+7dec407a0a131855a9137b0e04a6cc5b9cb8af66;2020-10-13T04_59_44.670Z;2020-10-13 04:59:44;java.lang.NullPointerException;FingerExercisesTest;testSumToOne;477;FingerExercisesTest;testSumToOne;515
+80ef8b175906556768725249bfe6689efaefc880;2020-10-16T00_02_59.637Z;2020-10-16 00:02:59; java.lang.StackOverflowError;FingerExercises;gcd;13;FingerExercisesTest;testGcdAZero;137
+80ef8b175906556768725249bfe6689efaefc880;2020-10-16T00_02_59.637Z;2020-10-16 00:02:59; java.lang.StackOverflowError;FingerExercises;gcd;13;FingerExercisesTest;testGcdLarger;325
+80ef8b175906556768725249bfe6689efaefc880;2020-10-16T00_02_59.637Z;2020-10-16 00:02:59; java.lang.StackOverflowError;FingerExercises;gcd;13;FingerExercisesTest;testGcd;231
+80ef8b175906556768725249bfe6689efaefc880;2020-10-16T00_22_43.170Z;2020-10-16 00:22:43; java.lang.StackOverflowError;FingerExercises;gcd;13;FingerExercisesTest;testGcdAZero;137
+80ef8b175906556768725249bfe6689efaefc880;2020-10-16T00_22_43.170Z;2020-10-16 00:22:43; java.lang.StackOverflowError;FingerExercises;gcd;13;FingerExercisesTest;testGcdLarger;325
+80ef8b175906556768725249bfe6689efaefc880;2020-10-16T00_22_43.170Z;2020-10-16 00:22:43; java.lang.StackOverflowError;FingerExercises;gcd;13;FingerExercisesTest;testGcd;231
+80ef8b175906556768725249bfe6689efaefc880;2020-10-16T00_58_21.063Z;2020-10-16 00:58:21; java.lang.StackOverflowError;FingerExercises;gcd;13;FingerExercisesTest;testGcdAZero;137
+80ef8b175906556768725249bfe6689efaefc880;2020-10-16T00_58_21.063Z;2020-10-16 00:58:21; java.lang.StackOverflowError;FingerExercises;gcd;13;FingerExercisesTest;testGcdLarger;325
+80ef8b175906556768725249bfe6689efaefc880;2020-10-16T00_58_21.063Z;2020-10-16 00:58:21; java.lang.StackOverflowError;FingerExercises;gcd;13;FingerExercisesTest;testGcd;231
+80ef8b175906556768725249bfe6689efaefc880;2020-10-16T01_23_53.550Z;2020-10-16 01:23:53; java.lang.StackOverflowError;FingerExercises;gcd;13;FingerExercisesTest;testGcdAZero;137
+80ef8b175906556768725249bfe6689efaefc880;2020-10-16T01_23_53.550Z;2020-10-16 01:23:53; java.lang.StackOverflowError;FingerExercises;gcd;13;FingerExercisesTest;testGcdLarger;325
+80ef8b175906556768725249bfe6689efaefc880;2020-10-16T01_23_53.550Z;2020-10-16 01:23:53; java.lang.StackOverflowError;FingerExercises;gcd;13;FingerExercisesTest;testGcd;231
+8104778b1bd1b77512ff9909d781ad3440108d84;2020-10-13T11_16_38.500Z;2020-10-13 11:16:38; java.lang.StackOverflowError;FingerExercises;sumOfDigits;46;FingerExercisesTest;testSumOfDigitsZero;851
+8104778b1bd1b77512ff9909d781ad3440108d84;2020-10-13T11_16_38.500Z;2020-10-13 11:16:38; java.lang.StackOverflowError;FingerExercises;countWaysToClimb;57;FingerExercisesTest;testClimbStairsZero;1092
+8104778b1bd1b77512ff9909d781ad3440108d84;2020-10-16T00_54_45.922Z;2020-10-16 00:54:45; java.lang.StackOverflowError;FingerExercises;sumOfDigits;48;FingerExercisesTest;testSumOfDigitsZero;851
+8104778b1bd1b77512ff9909d781ad3440108d84;2020-10-16T00_54_45.922Z;2020-10-16 00:54:45; java.lang.StackOverflowError;FingerExercises;countWaysToClimb;59;FingerExercisesTest;testClimbStairsZero;1092
+8104778b1bd1b77512ff9909d781ad3440108d84;2020-10-16T01_17_47.750Z;2020-10-16 01:17:47; java.lang.StackOverflowError;FingerExercises;sumOfDigits;51;FingerExercisesTest;testSumOfDigitsZero;851
+8104778b1bd1b77512ff9909d781ad3440108d84;2020-10-16T01_17_47.750Z;2020-10-16 01:17:47; java.lang.StackOverflowError;FingerExercises;countWaysToClimb;65;FingerExercisesTest;testClimbStairsZero;1092
+82090777057e5b8418e4c209a20c2928997d24cb;2020-10-15T17_58_10.635Z;2020-10-15 17:58:10; java.lang.StringIndexOutOfBoundsException;FingerExercises;countSubstrings;144;FingerExercisesTest;testSubstringDouble;1611
+82090777057e5b8418e4c209a20c2928997d24cb;2020-10-15T17_58_10.635Z;2020-10-15 17:58:10; java.lang.StringIndexOutOfBoundsException;FingerExercises;countSubstrings;144;FingerExercisesTest;testSubstringMiddle;1752
+82090777057e5b8418e4c209a20c2928997d24cb;2020-10-15T17_58_10.635Z;2020-10-15 17:58:10; java.lang.StringIndexOutOfBoundsException;FingerExercises;countSubstrings;144;FingerExercisesTest;testSubstringOverlap;1658
+82090777057e5b8418e4c209a20c2928997d24cb;2020-10-15T17_58_10.635Z;2020-10-15 17:58:10; java.lang.StringIndexOutOfBoundsException;FingerExercises;countSubstrings;137;FingerExercisesTest;testSubstringSame;1705
+842fbda27b35b29ea68ee1c0c3da3bd2be207210;2020-10-12T22_50_52.938Z;2020-10-12 22:50:52; java.lang.StackOverflowError;FingerExercises;log;48;FingerExercisesTest;testLogSelf;1375
+842fbda27b35b29ea68ee1c0c3da3bd2be207210;2020-10-12T23_01_31.177Z;2020-10-12 23:01:31; java.lang.ArithmeticException;FingerExercises;log;48;FingerExercisesTest;testLogInexact;1469
+842fbda27b35b29ea68ee1c0c3da3bd2be207210;2020-10-12T23_01_31.177Z;2020-10-12 23:01:31; java.lang.ArithmeticException;FingerExercises;log;48;FingerExercisesTest;testLogExact;1422
+842fbda27b35b29ea68ee1c0c3da3bd2be207210;2020-10-12T23_01_31.177Z;2020-10-12 23:01:31; java.lang.ArithmeticException;FingerExercises;log;48;FingerExercisesTest;testLogInexactLarger;1516
+842fbda27b35b29ea68ee1c0c3da3bd2be207210;2020-10-12T23_01_31.177Z;2020-10-12 23:01:31; java.lang.ArithmeticException;FingerExercises;log;48;FingerExercisesTest;testLog;1328
+89daac6f0b6f67287ebfb791365f69bb3fdaf8e7;2020-10-16T01_14_47.468Z;2020-10-16 01:14:47; java.lang.StackOverflowError;FingerExercises;log;74;FingerExercisesTest;testLogInexact;1469
+89daac6f0b6f67287ebfb791365f69bb3fdaf8e7;2020-10-16T01_14_47.468Z;2020-10-16 01:14:47; java.lang.StackOverflowError;FingerExercises;log;74;FingerExercisesTest;testLogExact;1422
+89daac6f0b6f67287ebfb791365f69bb3fdaf8e7;2020-10-16T01_14_47.468Z;2020-10-16 01:14:47; java.lang.StackOverflowError;FingerExercises;log;74;FingerExercisesTest;testLogInexactLarger;1516
+89daac6f0b6f67287ebfb791365f69bb3fdaf8e7;2020-10-16T01_14_47.468Z;2020-10-16 01:14:47; java.lang.StackOverflowError;FingerExercises;log;74;FingerExercisesTest;testLog;1328
+8f44159e06781fa522902f2d7f8f3174706f414e;2020-10-14T17_04_55.938Z;2020-10-14 17:04:55; java.lang.ArithmeticException;FingerExercises;log;85;FingerExercisesTest;testLogInexact;1469
+8f44159e06781fa522902f2d7f8f3174706f414e;2020-10-14T17_04_55.938Z;2020-10-14 17:04:55; java.lang.ArithmeticException;FingerExercises;log;85;FingerExercisesTest;testLogExact;1422
+8f44159e06781fa522902f2d7f8f3174706f414e;2020-10-14T17_04_55.938Z;2020-10-14 17:04:55; java.lang.StackOverflowError;FingerExercises;gcd;36;FingerExercisesTest;testGcdBZero;184
+8f44159e06781fa522902f2d7f8f3174706f414e;2020-10-14T17_04_55.938Z;2020-10-14 17:04:55; java.lang.ArithmeticException;FingerExercises;log;85;FingerExercisesTest;testLogInexactLarger;1516
+8f44159e06781fa522902f2d7f8f3174706f414e;2020-10-14T17_04_55.938Z;2020-10-14 17:04:55; java.lang.ArithmeticException;FingerExercises;log;85;FingerExercisesTest;testLog;1328
+8f44159e06781fa522902f2d7f8f3174706f414e;2020-10-14T17_35_26.271Z;2020-10-14 17:35:26; java.lang.ArithmeticException;FingerExercises;log;95;FingerExercisesTest;testLogInexact;1469
+8f44159e06781fa522902f2d7f8f3174706f414e;2020-10-14T17_35_26.271Z;2020-10-14 17:35:26; java.lang.ArithmeticException;FingerExercises;log;95;FingerExercisesTest;testLogExact;1422
+8f44159e06781fa522902f2d7f8f3174706f414e;2020-10-14T17_35_26.271Z;2020-10-14 17:35:26; java.lang.ArithmeticException;FingerExercises;log;95;FingerExercisesTest;testLogInexactLarger;1516
+8f44159e06781fa522902f2d7f8f3174706f414e;2020-10-14T17_35_26.271Z;2020-10-14 17:35:26; java.lang.ArithmeticException;FingerExercises;log;95;FingerExercisesTest;testLog;1328
+8f44159e06781fa522902f2d7f8f3174706f414e;2020-10-14T20_53_21.812Z;2020-10-14 20:53:21; java.lang.StackOverflowError;FingerExercises;countWaysToClimb;111;FingerExercisesTest;testClimbStairsLarger;1233
+8f44159e06781fa522902f2d7f8f3174706f414e;2020-10-14T20_53_21.812Z;2020-10-14 20:53:21; java.lang.StackOverflowError;FingerExercises;countWaysToClimb;111;FingerExercisesTest;testClimbStairsThree;1280
+8f44159e06781fa522902f2d7f8f3174706f414e;2020-10-14T20_53_21.812Z;2020-10-14 20:53:21; java.lang.StackOverflowError;FingerExercises;countWaysToClimb;111;FingerExercisesTest;testClimbStairsOne;1139
+8f44159e06781fa522902f2d7f8f3174706f414e;2020-10-14T20_53_21.812Z;2020-10-14 20:53:21; java.lang.StackOverflowError;FingerExercises;countWaysToClimb;111;FingerExercisesTest;testClimbStairsTwo;1186
+938b2ca6524c5956664ef117537fc37a8acbec18;2020-10-11T21_33_35.127Z;2020-10-11 21:33:35;java.lang.StringIndexOutOfBoundsException;java;lang;1967 (String.java;FingerExercisesTest;testSumOfDigitsZero;827
+938b2ca6524c5956664ef117537fc37a8acbec18;2020-10-11T21_33_35.127Z;2020-10-11 21:33:35;java.lang.StringIndexOutOfBoundsException;java;lang;1967 (String.java;FingerExercisesTest;testSumOfDigits;921
+938b2ca6524c5956664ef117537fc37a8acbec18;2020-10-11T21_33_35.127Z;2020-10-11 21:33:35;java.lang.StringIndexOutOfBoundsException;java;lang;1967 (String.java;FingerExercisesTest;testSumOfDigitsSingle;874
+938b2ca6524c5956664ef117537fc37a8acbec18;2020-10-11T21_33_35.127Z;2020-10-11 21:33:35;java.lang.StringIndexOutOfBoundsException;java;lang;1967 (String.java;FingerExercisesTest;testSumOfDigitsTriple;1015
+938b2ca6524c5956664ef117537fc37a8acbec18;2020-10-11T21_33_35.127Z;2020-10-11 21:33:35;java.lang.StringIndexOutOfBoundsException;java;lang;1967 (String.java;FingerExercisesTest;testSumOfDigitsShort;968
+938b2ca6524c5956664ef117537fc37a8acbec18;2020-10-14T22_54_29.534Z;2020-10-14 22:54:29;java.lang.StringIndexOutOfBoundsException;java;lang;1967 (String.java;FingerExercisesTest;testSumOfDigitsZero;827
+938b2ca6524c5956664ef117537fc37a8acbec18;2020-10-14T22_54_29.534Z;2020-10-14 22:54:29;java.lang.StringIndexOutOfBoundsException;java;lang;1967 (String.java;FingerExercisesTest;testSumOfDigits;921
+938b2ca6524c5956664ef117537fc37a8acbec18;2020-10-14T22_54_29.534Z;2020-10-14 22:54:29;java.lang.StringIndexOutOfBoundsException;java;lang;1967 (String.java;FingerExercisesTest;testSumOfDigitsSingle;874
+938b2ca6524c5956664ef117537fc37a8acbec18;2020-10-14T22_54_29.534Z;2020-10-14 22:54:29;java.lang.StringIndexOutOfBoundsException;java;lang;1967 (String.java;FingerExercisesTest;testSumOfDigitsTriple;1015
+938b2ca6524c5956664ef117537fc37a8acbec18;2020-10-14T22_54_29.534Z;2020-10-14 22:54:29;java.lang.StringIndexOutOfBoundsException;java;lang;1967 (String.java;FingerExercisesTest;testSumOfDigitsShort;968
+96eef9f178b631ed0e867941742c25f4b9f65da7;2020-10-15T08_32_13.125Z;2020-10-15 08:32:13; java.lang.StringIndexOutOfBoundsException;java;lang;1963;FingerExercisesTest;testSubstringDouble;1611
+96eef9f178b631ed0e867941742c25f4b9f65da7;2020-10-15T08_32_13.125Z;2020-10-15 08:32:13; java.lang.StringIndexOutOfBoundsException;java;lang;1963;FingerExercisesTest;testSubstringMiddle;1752
+96eef9f178b631ed0e867941742c25f4b9f65da7;2020-10-15T08_32_13.125Z;2020-10-15 08:32:13; java.lang.StringIndexOutOfBoundsException;java;lang;1963;FingerExercisesTest;testSubstringSingle;1564
+96eef9f178b631ed0e867941742c25f4b9f65da7;2020-10-15T08_32_13.125Z;2020-10-15 08:32:13; java.lang.StringIndexOutOfBoundsException;java;lang;1963;FingerExercisesTest;testSubstringOverlap;1658
+986b7ca95742aa90d2aeb25dff1d6a22d497659e;2020-10-16T03_03_19.944Z;2020-10-16 03:03:19; java.lang.StackOverflowError;FingerExercises;countWaysToClimb;53;FingerExercisesTest;testClimbStairsLarger;1233
+986b7ca95742aa90d2aeb25dff1d6a22d497659e;2020-10-16T03_03_19.944Z;2020-10-16 03:03:19; java.lang.StackOverflowError;FingerExercises;countWaysToClimb;53;FingerExercisesTest;testClimbStairsThree;1280
+986b7ca95742aa90d2aeb25dff1d6a22d497659e;2020-10-16T03_03_19.944Z;2020-10-16 03:03:19; java.lang.StackOverflowError;FingerExercises;countWaysToClimb;53;FingerExercisesTest;testClimbStairsOne;1139
+986b7ca95742aa90d2aeb25dff1d6a22d497659e;2020-10-16T03_03_19.944Z;2020-10-16 03:03:19; java.lang.StackOverflowError;FingerExercises;countWaysToClimb;53;FingerExercisesTest;testClimbStairsTwo;1186
+9b6c40db29604939621b861681b84e5cca9d1938;2020-10-15T23_28_18.770Z;2020-10-15 23:28:18; java.lang.StackOverflowError;FingerExercises;sumBetween;39;FingerExercisesTest;testSumBetweenSame;420
+9b6c40db29604939621b861681b84e5cca9d1938;2020-10-15T23_28_18.770Z;2020-10-15 23:28:18; java.lang.StackOverflowError;FingerExercises;sumBetween;39;FingerExercisesTest;testSumBetweenZero;373
+9b6c40db29604939621b861681b84e5cca9d1938;2020-10-15T23_28_18.770Z;2020-10-15 23:28:18;java.lang.NullPointerException;FingerExercisesTest;testSumTo;524;FingerExercisesTest;testSumTo;562
+9b6c40db29604939621b861681b84e5cca9d1938;2020-10-15T23_28_18.770Z;2020-10-15 23:28:18;java.lang.NullPointerException;FingerExercisesTest;testSumToOne;477;FingerExercisesTest;testSumToOne;515
+9e9976283823c7044a8ba42785855e9e16dc9134;2020-10-15T07_45_06.295Z;2020-10-15 07:45:06; java.lang.StringIndexOutOfBoundsException;FingerExercises;countSubstrings;67;FingerExercisesTest;testSubstringDouble;1611
+9e9976283823c7044a8ba42785855e9e16dc9134;2020-10-15T07_45_06.295Z;2020-10-15 07:45:06; java.lang.StringIndexOutOfBoundsException;FingerExercises;countSubstrings;67;FingerExercisesTest;testSubstringMiddle;1752
+9e9976283823c7044a8ba42785855e9e16dc9134;2020-10-15T07_45_06.295Z;2020-10-15 07:45:06; java.lang.StringIndexOutOfBoundsException;FingerExercises;countSubstrings;67;FingerExercisesTest;testSubstringSingle;1564
+9e9976283823c7044a8ba42785855e9e16dc9134;2020-10-15T07_45_06.295Z;2020-10-15 07:45:06; java.lang.StringIndexOutOfBoundsException;FingerExercises;countSubstrings;67;FingerExercisesTest;testSubstringOverlap;1658
+9e9976283823c7044a8ba42785855e9e16dc9134;2020-10-15T07_45_06.295Z;2020-10-15 07:45:06; java.lang.StringIndexOutOfBoundsException;FingerExercises;countSubstrings;67;FingerExercisesTest;testSubstringSame;1705
+9e9976283823c7044a8ba42785855e9e16dc9134;2020-10-15T08_22_54.603Z;2020-10-15 08:22:54; java.lang.StringIndexOutOfBoundsException;java;lang;1963;FingerExercisesTest;testSubstringDouble;1611
+9e9976283823c7044a8ba42785855e9e16dc9134;2020-10-15T08_22_54.603Z;2020-10-15 08:22:54; java.lang.StringIndexOutOfBoundsException;java;lang;1963;FingerExercisesTest;testSubstringMiddle;1752
+9e9976283823c7044a8ba42785855e9e16dc9134;2020-10-15T08_22_54.603Z;2020-10-15 08:22:54; java.lang.StringIndexOutOfBoundsException;java;lang;1963;FingerExercisesTest;testSubstringSingle;1564
+9e9976283823c7044a8ba42785855e9e16dc9134;2020-10-15T08_22_54.603Z;2020-10-15 08:22:54; java.lang.StringIndexOutOfBoundsException;java;lang;1963;FingerExercisesTest;testSubstringOverlap;1658
+9e9976283823c7044a8ba42785855e9e16dc9134;2020-10-15T08_22_54.603Z;2020-10-15 08:22:54; java.lang.StringIndexOutOfBoundsException;FingerExercises;countSubstrings;67;FingerExercisesTest;testSubstringSame;1705
+a2ed97ccae0bb30d89307c34d163ec2761a8eacd;2020-10-14T20_58_51.999Z;2020-10-14 20:58:51;java.lang.NullPointerException;FingerExercisesTest;testSumTo;524;FingerExercisesTest;testSumTo;562
+a2ed97ccae0bb30d89307c34d163ec2761a8eacd;2020-10-14T20_58_51.999Z;2020-10-14 20:58:51;java.lang.NullPointerException;FingerExercisesTest;testSumToOne;477;FingerExercisesTest;testSumToOne;515
+a301279665527c8fa4add8ad5a7d04c50fc2ea12;2020-10-13T18_27_21.084Z;2020-10-13 18:27:21; java.lang.ArithmeticException;FingerExercises;gcd;20;FingerExercisesTest;testGcdBZero;184
+a301279665527c8fa4add8ad5a7d04c50fc2ea12;2020-10-13T19_00_28.276Z;2020-10-13 19:00:28; java.lang.ArithmeticException;FingerExercises;gcd;20;FingerExercisesTest;testGcdBZero;184
+ac39e2fbeae46c23551eb54e9ffe6735af6ebbac;2020-10-13T02_27_36.106Z;2020-10-13 02:27:36; java.lang.StackOverflowError;FingerExercises;countWaysToClimb;69;FingerExercisesTest;testClimbStairsZero;1092
+ac39e2fbeae46c23551eb54e9ffe6735af6ebbac;2020-10-13T02_27_36.106Z;2020-10-13 02:27:36;java.lang.NullPointerException;FingerExercisesTest;testSumTo;524;FingerExercisesTest;testSumTo;562
+ac39e2fbeae46c23551eb54e9ffe6735af6ebbac;2020-10-13T02_27_36.106Z;2020-10-13 02:27:36;java.lang.NullPointerException;FingerExercisesTest;testSumToOne;477;FingerExercisesTest;testSumToOne;515
+af8848d505a376b4e59386d65856ccdd1ddf1afd;2020-10-10T02_40_13.671Z;2020-10-10 02:40:13; java.lang.StringIndexOutOfBoundsException;FingerExercises;howDifferent;156;FingerExercisesTest;testMoreSteps;1800
+af8848d505a376b4e59386d65856ccdd1ddf1afd;2020-10-10T05_07_21.346Z;2020-10-10 05:07:21; java.lang.StringIndexOutOfBoundsException;FingerExercises;howDifferent;156;FingerExercisesTest;testMoreSteps;1800
+af8848d505a376b4e59386d65856ccdd1ddf1afd;2020-10-10T23_24_49.026Z;2020-10-10 23:24:49; java.lang.StringIndexOutOfBoundsException;FingerExercises;howDifferent;169;FingerExercisesTest;testMoreSteps;1800
+b5cd0e6c19a855f779db1522e8aae08c8e5bef43;2020-10-16T03_35_13.128Z;2020-10-16 03:35:13; java.lang.StringIndexOutOfBoundsException;java;lang;1963;FingerExercisesTest;testSubstringDouble;1611
+b5cd0e6c19a855f779db1522e8aae08c8e5bef43;2020-10-16T03_35_13.128Z;2020-10-16 03:35:13;java.lang.NullPointerException;sun;reflect;1;FingerExercisesTest;testLogInexact;1469
+b5cd0e6c19a855f779db1522e8aae08c8e5bef43;2020-10-16T03_35_13.128Z;2020-10-16 03:35:13; java.lang.StringIndexOutOfBoundsException;java;lang;1963;FingerExercisesTest;testSubstringMiddle;1752
+b5cd0e6c19a855f779db1522e8aae08c8e5bef43;2020-10-16T03_35_13.128Z;2020-10-16 03:35:13; java.lang.StringIndexOutOfBoundsException;java;lang;1963;FingerExercisesTest;testSubstringSingle;1564
+b5cd0e6c19a855f779db1522e8aae08c8e5bef43;2020-10-16T03_35_13.128Z;2020-10-16 03:35:13;java.lang.NullPointerException;sun;reflect;1;FingerExercisesTest;testLogSelf;1375
+b5cd0e6c19a855f779db1522e8aae08c8e5bef43;2020-10-16T03_35_13.128Z;2020-10-16 03:35:13;java.lang.NullPointerException;sun;reflect;1;FingerExercisesTest;testLogExact;1422
+b5cd0e6c19a855f779db1522e8aae08c8e5bef43;2020-10-16T03_35_13.128Z;2020-10-16 03:35:13;java.lang.NullPointerException;sun;reflect;1;FingerExercisesTest;testLogInexactLarger;1516
+b5cd0e6c19a855f779db1522e8aae08c8e5bef43;2020-10-16T03_35_13.128Z;2020-10-16 03:35:13; java.lang.StringIndexOutOfBoundsException;java;lang;1963;FingerExercisesTest;testSubstringOverlap;1658
+b5cd0e6c19a855f779db1522e8aae08c8e5bef43;2020-10-16T03_35_13.128Z;2020-10-16 03:35:13;java.lang.NullPointerException;sun;reflect;1;FingerExercisesTest;testLog;1328
+b5cd0e6c19a855f779db1522e8aae08c8e5bef43;2020-10-16T03_35_13.128Z;2020-10-16 03:35:13; java.lang.StringIndexOutOfBoundsException;FingerExercises;countSubstrings;71;FingerExercisesTest;testSubstringSame;1705
+b5cd0e6c19a855f779db1522e8aae08c8e5bef43;2020-10-17T01_25_57.642Z;2020-10-17 01:25:57; java.lang.StringIndexOutOfBoundsException;java;lang;1963;FingerExercisesTest;testSubstringDouble;1611
+b5cd0e6c19a855f779db1522e8aae08c8e5bef43;2020-10-17T01_25_57.642Z;2020-10-17 01:25:57; java.lang.StringIndexOutOfBoundsException;java;lang;1963;FingerExercisesTest;testSubstringMiddle;1752
+b5cd0e6c19a855f779db1522e8aae08c8e5bef43;2020-10-17T01_25_57.642Z;2020-10-17 01:25:57; java.lang.StringIndexOutOfBoundsException;java;lang;1963;FingerExercisesTest;testSubstringSingle;1564
+b5cd0e6c19a855f779db1522e8aae08c8e5bef43;2020-10-17T01_25_57.642Z;2020-10-17 01:25:57; java.lang.StringIndexOutOfBoundsException;java;lang;1963;FingerExercisesTest;testSubstringOverlap;1658
+b5cd0e6c19a855f779db1522e8aae08c8e5bef43;2020-10-17T01_25_57.642Z;2020-10-17 01:25:57; java.lang.StringIndexOutOfBoundsException;FingerExercises;countSubstrings;71;FingerExercisesTest;testSubstringSame;1705
+b5e0812e60445d3fe7535f892e0b7735479b52fc;2020-10-15T16_12_09.289Z;2020-10-15 16:12:09;java.lang.NullPointerException;FingerExercisesTest;testSumTo;524;FingerExercisesTest;testSumTo;562
+b5e0812e60445d3fe7535f892e0b7735479b52fc;2020-10-15T16_12_09.289Z;2020-10-15 16:12:09;java.lang.NullPointerException;FingerExercisesTest;testSumToOne;477;FingerExercisesTest;testSumToOne;515
+b6ebdf3e5f0e4bbfda909dac06134289016c7359;2020-10-14T18_51_02.160Z;2020-10-14 18:51:02; java.lang.StackOverflowError;FingerExercises;countSubstrings;90;FingerExercisesTest;testSubstringSingle;1564
+b736d508e99ced70c414fb27044a0f8eef9cf0fc;2020-10-13T22_43_01.127Z;2020-10-13 22:43:01;java.lang.NullPointerException;sun;reflect;1;FingerExercisesTest;testSumOfDigitsZero;851
+b736d508e99ced70c414fb27044a0f8eef9cf0fc;2020-10-13T22_43_01.127Z;2020-10-13 22:43:01;java.lang.NullPointerException;sun;reflect;1;FingerExercisesTest;testSumOfDigits;945
+b736d508e99ced70c414fb27044a0f8eef9cf0fc;2020-10-13T22_43_01.127Z;2020-10-13 22:43:01;java.lang.NullPointerException;sun;reflect;1;FingerExercisesTest;testSumOfDigitsSingle;898
+b736d508e99ced70c414fb27044a0f8eef9cf0fc;2020-10-13T22_43_01.127Z;2020-10-13 22:43:01;java.lang.NullPointerException;sun;reflect;1;FingerExercisesTest;testSumOfDigitsTriple;1039
+b736d508e99ced70c414fb27044a0f8eef9cf0fc;2020-10-13T22_43_01.127Z;2020-10-13 22:43:01;java.lang.NullPointerException;sun;reflect;1;FingerExercisesTest;testSumOfDigitsShort;992
+b736d508e99ced70c414fb27044a0f8eef9cf0fc;2020-10-14T01_18_37.835Z;2020-10-14 01:18:37;java.lang.NullPointerException;sun;reflect;1;FingerExercisesTest;testSumOfDigitsZero;851
+b736d508e99ced70c414fb27044a0f8eef9cf0fc;2020-10-14T01_18_37.835Z;2020-10-14 01:18:37; java.lang.StringIndexOutOfBoundsException;FingerExercises;countSubstrings;70;FingerExercisesTest;testSubstringSingle;1564
+b736d508e99ced70c414fb27044a0f8eef9cf0fc;2020-10-14T01_18_37.835Z;2020-10-14 01:18:37;java.lang.NullPointerException;sun;reflect;1;FingerExercisesTest;testSumOfDigits;945
+b736d508e99ced70c414fb27044a0f8eef9cf0fc;2020-10-14T01_18_37.835Z;2020-10-14 01:18:37; java.lang.StringIndexOutOfBoundsException;FingerExercises;countSubstrings;68;FingerExercisesTest;testSubstringOverlap;1658
+b736d508e99ced70c414fb27044a0f8eef9cf0fc;2020-10-14T01_18_37.835Z;2020-10-14 01:18:37;java.lang.NullPointerException;sun;reflect;1;FingerExercisesTest;testSumOfDigitsSingle;898
+b736d508e99ced70c414fb27044a0f8eef9cf0fc;2020-10-14T01_18_37.835Z;2020-10-14 01:18:37;java.lang.NullPointerException;sun;reflect;1;FingerExercisesTest;testSumOfDigitsTriple;1039
+b736d508e99ced70c414fb27044a0f8eef9cf0fc;2020-10-14T01_18_37.835Z;2020-10-14 01:18:37;java.lang.NullPointerException;sun;reflect;1;FingerExercisesTest;testSumOfDigitsShort;992
+b736d508e99ced70c414fb27044a0f8eef9cf0fc;2020-10-14T03_51_55.573Z;2020-10-14 03:51:55;java.lang.NullPointerException;sun;reflect;1;FingerExercisesTest;testSumOfDigitsZero;851
+b736d508e99ced70c414fb27044a0f8eef9cf0fc;2020-10-14T03_51_55.573Z;2020-10-14 03:51:55; java.lang.StringIndexOutOfBoundsException;FingerExercises;countSubstrings;70;FingerExercisesTest;testSubstringSingle;1564
+b736d508e99ced70c414fb27044a0f8eef9cf0fc;2020-10-14T03_51_55.573Z;2020-10-14 03:51:55;java.lang.NullPointerException;sun;reflect;1;FingerExercisesTest;testSumOfDigits;945
+b736d508e99ced70c414fb27044a0f8eef9cf0fc;2020-10-14T03_51_55.573Z;2020-10-14 03:51:55; java.lang.StringIndexOutOfBoundsException;FingerExercises;countSubstrings;68;FingerExercisesTest;testSubstringOverlap;1658
+b736d508e99ced70c414fb27044a0f8eef9cf0fc;2020-10-14T03_51_55.573Z;2020-10-14 03:51:55;java.lang.NullPointerException;sun;reflect;1;FingerExercisesTest;testSumOfDigitsSingle;898
+b736d508e99ced70c414fb27044a0f8eef9cf0fc;2020-10-14T03_51_55.573Z;2020-10-14 03:51:55;java.lang.NullPointerException;sun;reflect;1;FingerExercisesTest;testSumOfDigitsTriple;1039
+b736d508e99ced70c414fb27044a0f8eef9cf0fc;2020-10-14T03_51_55.573Z;2020-10-14 03:51:55;java.lang.NullPointerException;sun;reflect;1;FingerExercisesTest;testSumOfDigitsShort;992
+b736d508e99ced70c414fb27044a0f8eef9cf0fc;2020-10-14T05_09_18.809Z;2020-10-14 05:09:18;java.lang.NullPointerException;sun;reflect;1;FingerExercisesTest;testSumOfDigitsZero;851
+b736d508e99ced70c414fb27044a0f8eef9cf0fc;2020-10-14T05_09_18.809Z;2020-10-14 05:09:18;java.lang.NullPointerException;sun;reflect;1;FingerExercisesTest;testSumOfDigits;945
+b736d508e99ced70c414fb27044a0f8eef9cf0fc;2020-10-14T05_09_18.809Z;2020-10-14 05:09:18; java.lang.StringIndexOutOfBoundsException;FingerExercises;countSubstrings;68;FingerExercisesTest;testSubstringOverlap;1658
+b736d508e99ced70c414fb27044a0f8eef9cf0fc;2020-10-14T05_09_18.809Z;2020-10-14 05:09:18;java.lang.NullPointerException;sun;reflect;1;FingerExercisesTest;testSumOfDigitsSingle;898
+b736d508e99ced70c414fb27044a0f8eef9cf0fc;2020-10-14T05_09_18.809Z;2020-10-14 05:09:18;java.lang.NullPointerException;sun;reflect;1;FingerExercisesTest;testSumOfDigitsTriple;1039
+b736d508e99ced70c414fb27044a0f8eef9cf0fc;2020-10-14T05_09_18.809Z;2020-10-14 05:09:18;java.lang.NullPointerException;sun;reflect;1;FingerExercisesTest;testSumOfDigitsShort;992
+b73f677e519a4bf4d446832eb58b3f0a04112b43;2020-10-13T23_10_46.374Z;2020-10-13 23:10:46; java.lang.StringIndexOutOfBoundsException;java;lang;1931;FingerExercisesTest;testSubstringDouble;1611
+b73f677e519a4bf4d446832eb58b3f0a04112b43;2020-10-13T23_10_46.374Z;2020-10-13 23:10:46; java.lang.StringIndexOutOfBoundsException;java;lang;1931;FingerExercisesTest;testSubstringMiddle;1752
+b73f677e519a4bf4d446832eb58b3f0a04112b43;2020-10-13T23_10_46.374Z;2020-10-13 23:10:46; java.lang.StringIndexOutOfBoundsException;java;lang;1931;FingerExercisesTest;testSubstringSingle;1564
+b73f677e519a4bf4d446832eb58b3f0a04112b43;2020-10-13T23_10_46.374Z;2020-10-13 23:10:46; java.lang.StringIndexOutOfBoundsException;java;lang;1931;FingerExercisesTest;testSubstringOverlap;1658
+b73f677e519a4bf4d446832eb58b3f0a04112b43;2020-10-14T00_44_24.406Z;2020-10-14 00:44:24; java.lang.StringIndexOutOfBoundsException;java;lang;1963;FingerExercisesTest;testSubstringDouble;1611
+b73f677e519a4bf4d446832eb58b3f0a04112b43;2020-10-14T00_44_24.406Z;2020-10-14 00:44:24; java.lang.StringIndexOutOfBoundsException;java;lang;1963;FingerExercisesTest;testSubstringMiddle;1752
+b73f677e519a4bf4d446832eb58b3f0a04112b43;2020-10-14T00_44_24.406Z;2020-10-14 00:44:24; java.lang.StringIndexOutOfBoundsException;java;lang;1963;FingerExercisesTest;testSubstringSingle;1564
+b73f677e519a4bf4d446832eb58b3f0a04112b43;2020-10-14T00_44_24.406Z;2020-10-14 00:44:24; java.lang.StringIndexOutOfBoundsException;java;lang;1963;FingerExercisesTest;testSubstringOverlap;1658
+b73f677e519a4bf4d446832eb58b3f0a04112b43;2020-10-14T01_05_50.809Z;2020-10-14 01:05:50; java.lang.StringIndexOutOfBoundsException;java;lang;1963;FingerExercisesTest;testSubstringDouble;1611
+b73f677e519a4bf4d446832eb58b3f0a04112b43;2020-10-14T01_05_50.809Z;2020-10-14 01:05:50; java.lang.StringIndexOutOfBoundsException;java;lang;1963;FingerExercisesTest;testSubstringMiddle;1752
+b73f677e519a4bf4d446832eb58b3f0a04112b43;2020-10-14T01_05_50.809Z;2020-10-14 01:05:50; java.lang.StringIndexOutOfBoundsException;java;lang;1963;FingerExercisesTest;testSubstringSingle;1564
+b73f677e519a4bf4d446832eb58b3f0a04112b43;2020-10-14T01_05_50.809Z;2020-10-14 01:05:50; java.lang.StringIndexOutOfBoundsException;java;lang;1963;FingerExercisesTest;testSubstringOverlap;1658
+b73f677e519a4bf4d446832eb58b3f0a04112b43;2020-10-14T09_28_09.535Z;2020-10-14 09:28:09; java.lang.StringIndexOutOfBoundsException;java;lang;1963;FingerExercisesTest;testSubstringDouble;1611
+b73f677e519a4bf4d446832eb58b3f0a04112b43;2020-10-14T09_28_09.535Z;2020-10-14 09:28:09; java.lang.StringIndexOutOfBoundsException;java;lang;1963;FingerExercisesTest;testSubstringMiddle;1752
+b73f677e519a4bf4d446832eb58b3f0a04112b43;2020-10-14T09_28_09.535Z;2020-10-14 09:28:09; java.lang.StringIndexOutOfBoundsException;java;lang;1963;FingerExercisesTest;testSubstringSingle;1564
+b73f677e519a4bf4d446832eb58b3f0a04112b43;2020-10-14T09_28_09.535Z;2020-10-14 09:28:09; java.lang.StringIndexOutOfBoundsException;java;lang;1963;FingerExercisesTest;testSubstringOverlap;1658
+b73f677e519a4bf4d446832eb58b3f0a04112b43;2020-10-14T10_16_33.508Z;2020-10-14 10:16:33; java.lang.StringIndexOutOfBoundsException;java;lang;1963;FingerExercisesTest;testSubstringDouble;1611
+b73f677e519a4bf4d446832eb58b3f0a04112b43;2020-10-14T10_16_33.508Z;2020-10-14 10:16:33; java.lang.StringIndexOutOfBoundsException;java;lang;1963;FingerExercisesTest;testSubstringMiddle;1752
+b73f677e519a4bf4d446832eb58b3f0a04112b43;2020-10-14T10_16_33.508Z;2020-10-14 10:16:33; java.lang.StringIndexOutOfBoundsException;java;lang;1963;FingerExercisesTest;testSubstringSingle;1564
+b73f677e519a4bf4d446832eb58b3f0a04112b43;2020-10-14T10_16_33.508Z;2020-10-14 10:16:33; java.lang.StringIndexOutOfBoundsException;java;lang;1963;FingerExercisesTest;testSubstringOverlap;1658
+b73f677e519a4bf4d446832eb58b3f0a04112b43;2020-10-14T11_03_36.121Z;2020-10-14 11:03:36; java.lang.StringIndexOutOfBoundsException;FingerExercises;countSubstrings;82;FingerExercisesTest;testSubstringDouble;1611
+b73f677e519a4bf4d446832eb58b3f0a04112b43;2020-10-14T11_03_36.121Z;2020-10-14 11:03:36; java.lang.StringIndexOutOfBoundsException;FingerExercises;countSubstrings;82;FingerExercisesTest;testSubstringMiddle;1752
+b73f677e519a4bf4d446832eb58b3f0a04112b43;2020-10-14T11_03_36.121Z;2020-10-14 11:03:36; java.lang.StringIndexOutOfBoundsException;FingerExercises;countSubstrings;82;FingerExercisesTest;testSubstringOverlap;1658
+b73f677e519a4bf4d446832eb58b3f0a04112b43;2020-10-14T11_03_36.121Z;2020-10-14 11:03:36; java.lang.StringIndexOutOfBoundsException;FingerExercises;countSubstrings;77;FingerExercisesTest;testSubstringSame;1705
+b73f677e519a4bf4d446832eb58b3f0a04112b43;2020-10-14T11_30_33.150Z;2020-10-14 11:30:33; java.lang.StringIndexOutOfBoundsException;FingerExercises;countSubstrings;81;FingerExercisesTest;testSubstringDouble;1611
+b73f677e519a4bf4d446832eb58b3f0a04112b43;2020-10-14T11_30_33.150Z;2020-10-14 11:30:33; java.lang.StringIndexOutOfBoundsException;FingerExercises;countSubstrings;81;FingerExercisesTest;testSubstringMiddle;1752
+b73f677e519a4bf4d446832eb58b3f0a04112b43;2020-10-14T11_30_33.150Z;2020-10-14 11:30:33; java.lang.StringIndexOutOfBoundsException;FingerExercises;countSubstrings;81;FingerExercisesTest;testSubstringOverlap;1658
+b73f677e519a4bf4d446832eb58b3f0a04112b43;2020-10-14T11_30_33.150Z;2020-10-14 11:30:33; java.lang.StringIndexOutOfBoundsException;FingerExercises;countSubstrings;77;FingerExercisesTest;testSubstringSame;1705
+b86d77222bb623cd350b6ffd4406591ce46dbbac;2020-10-14T06_17_37.809Z;2020-10-14 06:17:37;java.lang.NullPointerException;sun;reflect;1;FingerExercisesTest;testSumOfDigitsZero;851
+b86d77222bb623cd350b6ffd4406591ce46dbbac;2020-10-14T06_17_37.809Z;2020-10-14 06:17:37; java.lang.StackOverflowError;FingerExercises;sumBetween;39;FingerExercisesTest;testSumBetween;467
+b86d77222bb623cd350b6ffd4406591ce46dbbac;2020-10-14T06_17_37.809Z;2020-10-14 06:17:37; java.lang.StackOverflowError;FingerExercises;countWaysToClimb;96;FingerExercisesTest;testClimbStairsLarger;1233
+b86d77222bb623cd350b6ffd4406591ce46dbbac;2020-10-14T06_17_37.809Z;2020-10-14 06:17:37;java.lang.NullPointerException;sun;reflect;1;FingerExercisesTest;testSumOfDigits;945
+b86d77222bb623cd350b6ffd4406591ce46dbbac;2020-10-14T06_17_37.809Z;2020-10-14 06:17:37; java.lang.StackOverflowError;FingerExercises;countWaysToClimb;96;FingerExercisesTest;testClimbStairsThree;1280
+b86d77222bb623cd350b6ffd4406591ce46dbbac;2020-10-14T06_17_37.809Z;2020-10-14 06:17:37; java.lang.StackOverflowError;FingerExercises;sumBetween;39;FingerExercisesTest;testSumBetweenSame;420
+b86d77222bb623cd350b6ffd4406591ce46dbbac;2020-10-14T06_17_37.809Z;2020-10-14 06:17:37;java.lang.NullPointerException;sun;reflect;1;FingerExercisesTest;testSumOfDigitsSingle;898
+b86d77222bb623cd350b6ffd4406591ce46dbbac;2020-10-14T06_17_37.809Z;2020-10-14 06:17:37;java.lang.NullPointerException;sun;reflect;1;FingerExercisesTest;testSumOfDigitsTriple;1039
+b86d77222bb623cd350b6ffd4406591ce46dbbac;2020-10-14T06_17_37.809Z;2020-10-14 06:17:37;java.lang.NullPointerException;sun;reflect;1;FingerExercisesTest;testSumTo;562
+b86d77222bb623cd350b6ffd4406591ce46dbbac;2020-10-14T06_17_37.809Z;2020-10-14 06:17:37;java.lang.NullPointerException;sun;reflect;1;FingerExercisesTest;testSumToOne;515
+b86d77222bb623cd350b6ffd4406591ce46dbbac;2020-10-14T06_17_37.809Z;2020-10-14 06:17:37;java.lang.NullPointerException;sun;reflect;1;FingerExercisesTest;testSumOfDigitsShort;992
+b9c2d0d2342a353dad6ddd8bb452466719b8f726;2020-10-11T02_43_52.829Z;2020-10-11 02:43:52; java.lang.StackOverflowError;FingerExercises;sumOfDigits;28;FingerExercisesTest;testSumOfDigits;945
+ba15266164841b505d1d1ae06d5932e085308ec2;2020-10-15T23_17_40.733Z;2020-10-15 23:17:40;java.lang.NullPointerException;sun;reflect;1;FingerExercisesTest;testLogInexact;1469
+ba15266164841b505d1d1ae06d5932e085308ec2;2020-10-15T23_17_40.733Z;2020-10-15 23:17:40;java.lang.NullPointerException;sun;reflect;1;FingerExercisesTest;testLogSelf;1375
+ba15266164841b505d1d1ae06d5932e085308ec2;2020-10-15T23_17_40.733Z;2020-10-15 23:17:40;java.lang.NullPointerException;sun;reflect;1;FingerExercisesTest;testLogExact;1422
+ba15266164841b505d1d1ae06d5932e085308ec2;2020-10-15T23_17_40.733Z;2020-10-15 23:17:40;java.lang.NullPointerException;sun;reflect;1;FingerExercisesTest;testLogInexactLarger;1516
+ba15266164841b505d1d1ae06d5932e085308ec2;2020-10-15T23_17_40.733Z;2020-10-15 23:17:40;java.lang.NullPointerException;sun;reflect;1;FingerExercisesTest;testLog;1328
+ba3b42be44a09ab0db64b811784be57512ecf985;2020-10-13T02_32_40.260Z;2020-10-13 02:32:40;java.lang.NullPointerException;FingerExercisesTest;testSumTo;524;FingerExercisesTest;testSumTo;562
+ba3b42be44a09ab0db64b811784be57512ecf985;2020-10-13T02_32_40.260Z;2020-10-13 02:32:40;java.lang.NullPointerException;FingerExercisesTest;testSumToOne;477;FingerExercisesTest;testSumToOne;515
+ba3b42be44a09ab0db64b811784be57512ecf985;2020-10-13T02_42_49.954Z;2020-10-13 02:42:49;java.lang.NullPointerException;FingerExercisesTest;testSumTo;524;FingerExercisesTest;testSumTo;562
+ba3b42be44a09ab0db64b811784be57512ecf985;2020-10-13T02_42_49.954Z;2020-10-13 02:42:49;java.lang.NullPointerException;FingerExercisesTest;testSumToOne;477;FingerExercisesTest;testSumToOne;515
+ba3b42be44a09ab0db64b811784be57512ecf985;2020-10-13T03_29_13.122Z;2020-10-13 03:29:13;java.lang.NullPointerException;FingerExercisesTest;testSumTo;524;FingerExercisesTest;testSumTo;562
+ba3b42be44a09ab0db64b811784be57512ecf985;2020-10-13T03_29_13.122Z;2020-10-13 03:29:13;java.lang.NullPointerException;FingerExercisesTest;testSumToOne;477;FingerExercisesTest;testSumToOne;515
+ba5871e0c8d519c35c818eb8cee94c7f49e7eaa4;2020-10-13T20_40_05.232Z;2020-10-13 20:40:05; java.lang.ArithmeticException;FingerExercises;gcd;8;FingerExercisesTest;testGcdAZero;137
+ba5871e0c8d519c35c818eb8cee94c7f49e7eaa4;2020-10-13T22_07_34.039Z;2020-10-13 22:07:34; java.lang.ArithmeticException;FingerExercises;gcd;19;FingerExercisesTest;testGcdAZero;137
+ba5871e0c8d519c35c818eb8cee94c7f49e7eaa4;2020-10-14T02_11_57.982Z;2020-10-14 02:11:57; java.lang.ArithmeticException;FingerExercises;gcd;19;FingerExercisesTest;testGcdAZero;137
+bcecca23914ff5e3b78d6f043dac4e641bf1592e;2020-10-16T02_13_05.526Z;2020-10-16 02:13:05; java.lang.ArithmeticException;FingerExercises;gcd;12;FingerExercisesTest;testGcdSame;278
+bcecca23914ff5e3b78d6f043dac4e641bf1592e;2020-10-16T02_13_05.526Z;2020-10-16 02:13:05; java.lang.ArithmeticException;FingerExercises;gcd;12;;;
+bcecca23914ff5e3b78d6f043dac4e641bf1592e;2020-10-16T02_13_05.526Z;2020-10-16 02:13:05; java.lang.ArithmeticException;FingerExercises;gcd;12;FingerExercisesTest;testGcdLarger;325
+bcecca23914ff5e3b78d6f043dac4e641bf1592e;2020-10-16T02_13_05.526Z;2020-10-16 02:13:05; java.lang.ArithmeticException;FingerExercises;gcd;12;FingerExercisesTest;testGcd;231
+c090aea6396949a3e236f180d10c0a6d2c0830c2;2020-10-15T23_19_49.492Z;2020-10-15 23:19:49; java.lang.StackOverflowError;FingerExercises;sumBetween;28;FingerExercisesTest;testSumBetween;467
+c090aea6396949a3e236f180d10c0a6d2c0830c2;2020-10-15T23_19_49.492Z;2020-10-15 23:19:49;java.lang.NullPointerException;FingerExercisesTest;testSumTo;524;FingerExercisesTest;testSumTo;562
+c090aea6396949a3e236f180d10c0a6d2c0830c2;2020-10-15T23_19_49.492Z;2020-10-15 23:19:49;java.lang.NullPointerException;FingerExercisesTest;testSumToOne;477;FingerExercisesTest;testSumToOne;515
+c090aea6396949a3e236f180d10c0a6d2c0830c2;2020-10-15T23_37_58.126Z;2020-10-15 23:37:58; java.lang.StackOverflowError;FingerExercises;sumBetween;28;FingerExercisesTest;testSumBetween;467
+c090aea6396949a3e236f180d10c0a6d2c0830c2;2020-10-15T23_37_58.126Z;2020-10-15 23:37:58;java.lang.NullPointerException;FingerExercisesTest;testSumTo;524;FingerExercisesTest;testSumTo;562
+c090aea6396949a3e236f180d10c0a6d2c0830c2;2020-10-15T23_37_58.126Z;2020-10-15 23:37:58;java.lang.NullPointerException;FingerExercisesTest;testSumToOne;477;FingerExercisesTest;testSumToOne;515
+c0c9189b7b9396f01b6da23677de6c1f2ca8bba7;2020-10-14T20_54_12.918Z;2020-10-14 20:54:12;java.lang.NullPointerException;FingerExercisesTest;testSumTo;524;FingerExercisesTest;testSumTo;562
+c0c9189b7b9396f01b6da23677de6c1f2ca8bba7;2020-10-14T20_54_12.918Z;2020-10-14 20:54:12;java.lang.NullPointerException;FingerExercisesTest;testSumToOne;477;FingerExercisesTest;testSumToOne;515
+c0c9189b7b9396f01b6da23677de6c1f2ca8bba7;2020-10-14T23_08_04.055Z;2020-10-14 23:08:04; java.lang.ArithmeticException;FingerExercises;gcd;17;;;
+c0c9189b7b9396f01b6da23677de6c1f2ca8bba7;2020-10-14T23_08_04.055Z;2020-10-14 23:08:04; java.lang.ArithmeticException;FingerExercises;gcdHelper;5;FingerExercisesTest;testGcdBZero;184
+c0c9189b7b9396f01b6da23677de6c1f2ca8bba7;2020-10-14T23_08_04.055Z;2020-10-14 23:08:04; java.lang.ArithmeticException;FingerExercises;gcdHelper;5;FingerExercisesTest;testGcdLarger;325
+c0c9189b7b9396f01b6da23677de6c1f2ca8bba7;2020-10-15T00_59_07.406Z;2020-10-15 00:59:07; java.lang.ArithmeticException;FingerExercises;gcd;17;;;
+c0c9189b7b9396f01b6da23677de6c1f2ca8bba7;2020-10-15T00_59_07.406Z;2020-10-15 00:59:07; java.lang.ArithmeticException;FingerExercises;gcdHelper;5;FingerExercisesTest;testGcdBZero;184
+c0c9189b7b9396f01b6da23677de6c1f2ca8bba7;2020-10-15T00_59_07.406Z;2020-10-15 00:59:07; java.lang.ArithmeticException;FingerExercises;gcdHelper;5;FingerExercisesTest;testGcdLarger;325
+c0c9189b7b9396f01b6da23677de6c1f2ca8bba7;2020-10-15T21_08_04.637Z;2020-10-15 21:08:04; java.lang.StringIndexOutOfBoundsException;FingerExercises;howDifferent;125;FingerExercisesTest;testMoreSteps;1800
+c3fc16e36541476612e0bb0f315be56cc89f2256;2020-10-16T03_13_12.972Z;2020-10-16 03:13:12; java.lang.StackOverflowError;FingerExercises;countSubstrings;83;FingerExercisesTest;testSubstringDouble;1611
+c3fc16e36541476612e0bb0f315be56cc89f2256;2020-10-16T03_13_12.972Z;2020-10-16 03:13:12; java.lang.StackOverflowError;FingerExercises;countSubstrings;83;FingerExercisesTest;testSubstringMiddle;1752
+c3fc16e36541476612e0bb0f315be56cc89f2256;2020-10-16T03_13_12.972Z;2020-10-16 03:13:12; java.lang.StackOverflowError;FingerExercises;countSubstrings;83;FingerExercisesTest;testSubstringSingle;1564
+c3fc16e36541476612e0bb0f315be56cc89f2256;2020-10-16T03_13_12.972Z;2020-10-16 03:13:12; java.lang.StackOverflowError;FingerExercises;countSubstrings;83;FingerExercisesTest;testSubstringOverlap;1658
+c3fc16e36541476612e0bb0f315be56cc89f2256;2020-10-16T03_13_12.972Z;2020-10-16 03:13:12;java.lang.NullPointerException;FingerExercisesTest;testSumTo;524;FingerExercisesTest;testSumTo;562
+c3fc16e36541476612e0bb0f315be56cc89f2256;2020-10-16T03_13_12.972Z;2020-10-16 03:13:12; java.lang.StackOverflowError;FingerExercises;countSubstrings;83;FingerExercisesTest;testSubstringSame;1705
+c3fc16e36541476612e0bb0f315be56cc89f2256;2020-10-16T03_13_12.972Z;2020-10-16 03:13:12;java.lang.NullPointerException;FingerExercisesTest;testSumToOne;477;FingerExercisesTest;testSumToOne;515
+c3fc16e36541476612e0bb0f315be56cc89f2256;2020-10-16T03_41_13.986Z;2020-10-16 03:41:13;java.lang.NullPointerException;FingerExercisesTest;testSumTo;524;FingerExercisesTest;testSumTo;562
+c3fc16e36541476612e0bb0f315be56cc89f2256;2020-10-16T03_41_13.986Z;2020-10-16 03:41:13;java.lang.NullPointerException;FingerExercisesTest;testSumToOne;477;FingerExercisesTest;testSumToOne;515
+c42a26e12767fd486062cdf3ac84420acbc71766;2020-10-09T22_35_50.755Z;2020-10-09 22:35:50; java.lang.StringIndexOutOfBoundsException;FingerExercises;countSubstringsHelper;253;FingerExercisesTest;testSubstringDouble;1611
+c42a26e12767fd486062cdf3ac84420acbc71766;2020-10-09T22_35_50.755Z;2020-10-09 22:35:50; java.lang.StringIndexOutOfBoundsException;FingerExercises;countSubstringsHelper;253;FingerExercisesTest;testSubstringMiddle;1752
+c42a26e12767fd486062cdf3ac84420acbc71766;2020-10-09T22_35_50.755Z;2020-10-09 22:35:50; java.lang.StringIndexOutOfBoundsException;FingerExercises;countSubstringsHelper;253;FingerExercisesTest;testSubstringSingle;1564
+c8644b4cd562816bcc1a3c5dd236ec0d1a178ee1;2020-10-12T16_16_46.071Z;2020-10-12 16:16:46; java.lang.StackOverflowError;FingerExercises;countWaysToClimb;123;FingerExercisesTest;testClimbStairsLarger;1233
+c8644b4cd562816bcc1a3c5dd236ec0d1a178ee1;2020-10-12T16_16_46.071Z;2020-10-12 16:16:46; java.lang.StackOverflowError;FingerExercises;countWaysToClimb;123;FingerExercisesTest;testClimbStairsThree;1280
+ce441af47af87f111d102b2233f3d9a5072e1add;2020-10-12T20_21_30.742Z;2020-10-12 20:21:30; java.lang.StackOverflowError;FingerExercises;gcd;23;FingerExercisesTest;testGcdBZero;184
+ce441af47af87f111d102b2233f3d9a5072e1add;2020-10-14T13_41_00.846Z;2020-10-14 13:41:00; java.lang.StackOverflowError;FingerExercises;gcd;24;FingerExercisesTest;testGcdBZero;184
+ce441af47af87f111d102b2233f3d9a5072e1add;2020-10-15T15_00_19.547Z;2020-10-15 15:00:19; java.lang.StackOverflowError;FingerExercises;gcd;25;FingerExercisesTest;testGcdBZero;184
+d148af6f7dbcd9232375295c6a1cd1b08e885dd5;2020-10-15T23_21_15.966Z;2020-10-15 23:21:15; java.lang.StackOverflowError;FingerExercises;gcd;46;FingerExercisesTest;testGcdAZero;137
+d22db1196fa0ac6d2dcc909f62b7cc18b7780057;2020-10-13T13_42_36.129Z;2020-10-13 13:42:36; java.lang.ArrayIndexOutOfBoundsException;FingerExercises;findSecondLargestHelper;61;FingerExercisesTest;testSecondLargestFirst;659
+d22db1196fa0ac6d2dcc909f62b7cc18b7780057;2020-10-13T13_42_36.129Z;2020-10-13 13:42:36; java.lang.ArrayIndexOutOfBoundsException;FingerExercises;findSecondLargestHelper;61;FingerExercisesTest;testSecondLargestLast;707
+d3a589e84b30e55239a8008d6282b647a1e62e92;2020-10-15T06_35_58.993Z;2020-10-15 06:35:58; java.lang.StackOverflowError;FingerExercises;gcd;101;FingerExercisesTest;testGcdAZero;137
+d3a589e84b30e55239a8008d6282b647a1e62e92;2020-10-15T06_35_58.993Z;2020-10-15 06:35:58; java.lang.StackOverflowError;FingerExercises;gcd;97;FingerExercisesTest;testGcdBZero;184
+d3a589e84b30e55239a8008d6282b647a1e62e92;2020-10-15T17_07_50.995Z;2020-10-15 17:07:50; java.lang.StackOverflowError;FingerExercises;gcd;66;FingerExercisesTest;testGcdAZero;137
+d3a589e84b30e55239a8008d6282b647a1e62e92;2020-10-15T17_07_50.995Z;2020-10-15 17:07:50; java.lang.StackOverflowError;FingerExercises;gcd;62;FingerExercisesTest;testGcdBZero;184
+d3a589e84b30e55239a8008d6282b647a1e62e92;2020-10-15T19_36_33.665Z;2020-10-15 19:36:33; java.lang.StackOverflowError;FingerExercises;gcd;66;FingerExercisesTest;testGcdAZero;137
+d3a589e84b30e55239a8008d6282b647a1e62e92;2020-10-15T19_36_33.665Z;2020-10-15 19:36:33; java.lang.StackOverflowError;FingerExercises;gcd;62;FingerExercisesTest;testGcdBZero;184
+d4389a01a42868ac533884b4b8b94af7a65121a6;2020-10-13T01_24_01.706Z;2020-10-13 01:24:01;java.lang.NullPointerException;FingerExercisesTest;testSumTo;524;FingerExercisesTest;testSumTo;562
+d4389a01a42868ac533884b4b8b94af7a65121a6;2020-10-13T01_24_01.706Z;2020-10-13 01:24:01;java.lang.NullPointerException;FingerExercisesTest;testSumToOne;477;FingerExercisesTest;testSumToOne;515
+d4389a01a42868ac533884b4b8b94af7a65121a6;2020-10-13T03_53_48.317Z;2020-10-13 03:53:48;java.lang.NullPointerException;FingerExercisesTest;testSumTo;524;FingerExercisesTest;testSumTo;562
+d4389a01a42868ac533884b4b8b94af7a65121a6;2020-10-13T03_53_48.317Z;2020-10-13 03:53:48;java.lang.NullPointerException;FingerExercisesTest;testSumToOne;477;FingerExercisesTest;testSumToOne;515
+d5cc740e95c44f2dbaeae9e413a3837747409278;2020-10-13T05_19_38.737Z;2020-10-13 05:19:38;java.lang.NullPointerException;FingerExercisesTest;testSumTo;524;FingerExercisesTest;testSumTo;562
+d5cc740e95c44f2dbaeae9e413a3837747409278;2020-10-13T05_19_38.737Z;2020-10-13 05:19:38;java.lang.NullPointerException;FingerExercisesTest;testSumToOne;477;FingerExercisesTest;testSumToOne;515
+d5cc740e95c44f2dbaeae9e413a3837747409278;2020-10-13T05_43_59.046Z;2020-10-13 05:43:59;java.lang.NullPointerException;FingerExercisesTest;testSumTo;524;FingerExercisesTest;testSumTo;562
+d5cc740e95c44f2dbaeae9e413a3837747409278;2020-10-13T05_43_59.046Z;2020-10-13 05:43:59;java.lang.NullPointerException;FingerExercisesTest;testSumToOne;477;FingerExercisesTest;testSumToOne;515
+d5cc740e95c44f2dbaeae9e413a3837747409278;2020-10-14T01_25_55.785Z;2020-10-14 01:25:55; java.lang.StringIndexOutOfBoundsException;java;lang;1963;FingerExercisesTest;testSubstringDouble;1611
+d5cc740e95c44f2dbaeae9e413a3837747409278;2020-10-14T01_25_55.785Z;2020-10-14 01:25:55; java.lang.StringIndexOutOfBoundsException;java;lang;1963;FingerExercisesTest;testSubstringMiddle;1752
+d5cc740e95c44f2dbaeae9e413a3837747409278;2020-10-14T01_25_55.785Z;2020-10-14 01:25:55; java.lang.StringIndexOutOfBoundsException;java;lang;1963;FingerExercisesTest;testSubstringSingle;1564
+d5cc740e95c44f2dbaeae9e413a3837747409278;2020-10-14T01_25_55.785Z;2020-10-14 01:25:55; java.lang.StringIndexOutOfBoundsException;java;lang;1963;FingerExercisesTest;testSubstringOverlap;1658
+d66d29ea031cc5b849475d74a16fba15e284c0b1;2020-10-14T04_02_26.659Z;2020-10-14 04:02:26; java.lang.ArithmeticException;FingerExercises;countSubstrings;70;FingerExercisesTest;testSubstringSame;1705
+d6e9814a3868b71061aca4eae8273d857b125994;2020-10-13T16_40_02.833Z;2020-10-13 16:40:02; java.lang.StringIndexOutOfBoundsException;java;lang;1963;FingerExercisesTest;testSubstringSame;1705
+d855caf029466d356572dd2ba8ccdebee0e2227e;2020-10-13T22_51_43.929Z;2020-10-13 22:51:43;java.lang.NullPointerException;FingerExercisesTest;testSumTo;524;FingerExercisesTest;testSumTo;562
+d855caf029466d356572dd2ba8ccdebee0e2227e;2020-10-13T22_51_43.929Z;2020-10-13 22:51:43;java.lang.NullPointerException;FingerExercisesTest;testSumToOne;477;FingerExercisesTest;testSumToOne;515
+de363e10e402f868d57db34f57576b700edc7c2b;2020-10-15T14_38_51.793Z;2020-10-15 14:38:51; java.lang.ArrayIndexOutOfBoundsException;FingerExercises;countWaysToClimbHelper;134;FingerExercisesTest;testClimbStairsLarger;1233
+de363e10e402f868d57db34f57576b700edc7c2b;2020-10-15T14_38_51.793Z;2020-10-15 14:38:51; java.lang.ArrayIndexOutOfBoundsException;FingerExercises;countWaysToClimbHelper;134;FingerExercisesTest;testClimbStairsThree;1280
+de363e10e402f868d57db34f57576b700edc7c2b;2020-10-15T14_38_51.793Z;2020-10-15 14:38:51; java.lang.StackOverflowError;FingerExercises;countWaysToClimbHelper;134;FingerExercisesTest;testClimbStairsOne;1139
+de363e10e402f868d57db34f57576b700edc7c2b;2020-10-15T14_38_51.793Z;2020-10-15 14:38:51; java.lang.ArrayIndexOutOfBoundsException;FingerExercises;countWaysToClimbHelper;134;FingerExercisesTest;testClimbStairsTwo;1186
+dec8062b7eab8a96c95b9d4fedbd62dce2e25925;2020-10-10T17_58_20.549Z;2020-10-10 17:58:20; java.lang.StackOverflowError;FingerExercises;gcd;21;FingerExercisesTest;testGcdAZero;137
+dec8062b7eab8a96c95b9d4fedbd62dce2e25925;2020-10-10T17_58_20.549Z;2020-10-10 17:58:20; java.lang.StackOverflowError;FingerExercises;gcd;21;FingerExercisesTest;testGcdLarger;325
+dec8062b7eab8a96c95b9d4fedbd62dce2e25925;2020-10-10T17_58_20.549Z;2020-10-10 17:58:20; java.lang.StackOverflowError;FingerExercises;gcd;21;FingerExercisesTest;testGcd;231
+dec8062b7eab8a96c95b9d4fedbd62dce2e25925;2020-10-10T18_43_40.175Z;2020-10-10 18:43:40; java.lang.StackOverflowError;FingerExercises;gcd;21;FingerExercisesTest;testGcdAZero;137
+dec8062b7eab8a96c95b9d4fedbd62dce2e25925;2020-10-10T18_43_40.175Z;2020-10-10 18:43:40; java.lang.StackOverflowError;FingerExercises;gcd;21;FingerExercisesTest;testGcdLarger;325
+dec8062b7eab8a96c95b9d4fedbd62dce2e25925;2020-10-10T18_43_40.175Z;2020-10-10 18:43:40; java.lang.StackOverflowError;FingerExercises;gcd;21;FingerExercisesTest;testGcd;231
+dec8062b7eab8a96c95b9d4fedbd62dce2e25925;2020-10-10T20_13_41.779Z;2020-10-10 20:13:41; java.lang.StackOverflowError;FingerExercises;gcd;21;FingerExercisesTest;testGcdAZero;137
+dec8062b7eab8a96c95b9d4fedbd62dce2e25925;2020-10-10T20_13_41.779Z;2020-10-10 20:13:41; java.lang.StackOverflowError;FingerExercises;gcd;21;FingerExercisesTest;testGcdLarger;325
+dec8062b7eab8a96c95b9d4fedbd62dce2e25925;2020-10-10T20_13_41.779Z;2020-10-10 20:13:41; java.lang.StackOverflowError;FingerExercises;gcd;21;FingerExercisesTest;testGcd;231
+dec8062b7eab8a96c95b9d4fedbd62dce2e25925;2020-10-10T21_00_52.322Z;2020-10-10 21:00:52; java.lang.StackOverflowError;FingerExercises;gcd;21;FingerExercisesTest;testGcdAZero;137
+dec8062b7eab8a96c95b9d4fedbd62dce2e25925;2020-10-10T21_00_52.322Z;2020-10-10 21:00:52; java.lang.StackOverflowError;FingerExercises;gcd;21;FingerExercisesTest;testGcdLarger;325
+dec8062b7eab8a96c95b9d4fedbd62dce2e25925;2020-10-10T21_00_52.322Z;2020-10-10 21:00:52; java.lang.StackOverflowError;FingerExercises;gcd;21;FingerExercisesTest;testGcd;231
+dec8062b7eab8a96c95b9d4fedbd62dce2e25925;2020-10-10T23_20_15.988Z;2020-10-10 23:20:15; java.lang.StackOverflowError;FingerExercises;gcd;21;FingerExercisesTest;testGcdAZero;137
+dec8062b7eab8a96c95b9d4fedbd62dce2e25925;2020-10-10T23_20_15.988Z;2020-10-10 23:20:15; java.lang.StackOverflowError;FingerExercises;gcd;21;FingerExercisesTest;testGcdLarger;325
+dec8062b7eab8a96c95b9d4fedbd62dce2e25925;2020-10-10T23_20_15.988Z;2020-10-10 23:20:15; java.lang.StackOverflowError;FingerExercises;gcd;21;FingerExercisesTest;testGcd;231
+dec8062b7eab8a96c95b9d4fedbd62dce2e25925;2020-10-11T00_39_13.155Z;2020-10-11 00:39:13; java.lang.ArrayIndexOutOfBoundsException;FingerExercises;findSecondLargestHelper;80;FingerExercisesTest;testSecondLargestFirst;659
+dec8062b7eab8a96c95b9d4fedbd62dce2e25925;2020-10-11T00_39_13.155Z;2020-10-11 00:39:13; java.lang.StackOverflowError;FingerExercises;gcd;19;FingerExercisesTest;testGcdAZero;137
+dec8062b7eab8a96c95b9d4fedbd62dce2e25925;2020-10-11T00_39_13.155Z;2020-10-11 00:39:13; java.lang.ArrayIndexOutOfBoundsException;FingerExercises;findSecondLargestHelper;80;FingerExercisesTest;testSecondLargestLast;707
+dec8062b7eab8a96c95b9d4fedbd62dce2e25925;2020-10-11T00_39_13.155Z;2020-10-11 00:39:13; java.lang.ArrayIndexOutOfBoundsException;FingerExercises;findSecondLargestHelper;80;FingerExercisesTest;testSecondLargestSame;611
+dec8062b7eab8a96c95b9d4fedbd62dce2e25925;2020-10-11T00_39_13.155Z;2020-10-11 00:39:13; java.lang.StackOverflowError;FingerExercises;countWaysToClimb;128;FingerExercisesTest;testClimbStairsThree;1280
+dec8062b7eab8a96c95b9d4fedbd62dce2e25925;2020-10-11T00_39_13.155Z;2020-10-11 00:39:13; java.lang.StackOverflowError;FingerExercises;gcd;19;FingerExercisesTest;testGcdLarger;325
+dec8062b7eab8a96c95b9d4fedbd62dce2e25925;2020-10-11T00_39_13.155Z;2020-10-11 00:39:13; java.lang.StackOverflowError;FingerExercises;countWaysToClimb;128;FingerExercisesTest;testClimbStairsOne;1139
+dec8062b7eab8a96c95b9d4fedbd62dce2e25925;2020-10-11T00_39_13.155Z;2020-10-11 00:39:13; java.lang.ArrayIndexOutOfBoundsException;FingerExercises;findSecondLargestHelper;80;FingerExercisesTest;testSecondLargestRepeats;803
+dec8062b7eab8a96c95b9d4fedbd62dce2e25925;2020-10-11T00_39_13.155Z;2020-10-11 00:39:13; java.lang.ArrayIndexOutOfBoundsException;FingerExercises;findSecondLargestHelper;80;FingerExercisesTest;testSecondLargestMiddle;755
+dec8062b7eab8a96c95b9d4fedbd62dce2e25925;2020-10-11T00_39_13.155Z;2020-10-11 00:39:13; java.lang.StackOverflowError;FingerExercises;gcd;19;FingerExercisesTest;testGcd;231
+dec8062b7eab8a96c95b9d4fedbd62dce2e25925;2020-10-11T01_16_34.214Z;2020-10-11 01:16:34; java.lang.ArrayIndexOutOfBoundsException;FingerExercises;findSecondLargestHelper;81;FingerExercisesTest;testSecondLargestFirst;659
+dec8062b7eab8a96c95b9d4fedbd62dce2e25925;2020-10-11T01_16_34.214Z;2020-10-11 01:16:34; java.lang.StackOverflowError;FingerExercises;gcd;19;FingerExercisesTest;testGcdAZero;137
+dec8062b7eab8a96c95b9d4fedbd62dce2e25925;2020-10-11T01_16_34.214Z;2020-10-11 01:16:34; java.lang.ArrayIndexOutOfBoundsException;FingerExercises;findSecondLargestHelper;81;FingerExercisesTest;testSecondLargestLast;707
+dec8062b7eab8a96c95b9d4fedbd62dce2e25925;2020-10-11T01_16_34.214Z;2020-10-11 01:16:34; java.lang.ArrayIndexOutOfBoundsException;FingerExercises;findSecondLargestHelper;81;FingerExercisesTest;testSecondLargestSame;611
+dec8062b7eab8a96c95b9d4fedbd62dce2e25925;2020-10-11T01_16_34.214Z;2020-10-11 01:16:34; java.lang.StackOverflowError;FingerExercises;countWaysToClimb;132;FingerExercisesTest;testClimbStairsThree;1280
+dec8062b7eab8a96c95b9d4fedbd62dce2e25925;2020-10-11T01_16_34.214Z;2020-10-11 01:16:34; java.lang.StackOverflowError;FingerExercises;gcd;19;FingerExercisesTest;testGcdLarger;325
+dec8062b7eab8a96c95b9d4fedbd62dce2e25925;2020-10-11T01_16_34.214Z;2020-10-11 01:16:34; java.lang.StackOverflowError;FingerExercises;countWaysToClimb;132;FingerExercisesTest;testClimbStairsOne;1139
+dec8062b7eab8a96c95b9d4fedbd62dce2e25925;2020-10-11T01_16_34.214Z;2020-10-11 01:16:34; java.lang.ArrayIndexOutOfBoundsException;FingerExercises;findSecondLargestHelper;81;FingerExercisesTest;testSecondLargestRepeats;803
+dec8062b7eab8a96c95b9d4fedbd62dce2e25925;2020-10-11T01_16_34.214Z;2020-10-11 01:16:34; java.lang.ArrayIndexOutOfBoundsException;FingerExercises;findSecondLargestHelper;81;FingerExercisesTest;testSecondLargestMiddle;755
+dec8062b7eab8a96c95b9d4fedbd62dce2e25925;2020-10-11T01_16_34.214Z;2020-10-11 01:16:34; java.lang.StackOverflowError;FingerExercises;gcd;19;FingerExercisesTest;testGcd;231
+dec8062b7eab8a96c95b9d4fedbd62dce2e25925;2020-10-13T12_35_51.556Z;2020-10-13 12:35:51; java.lang.ArrayIndexOutOfBoundsException;FingerExercises;findSecondLargestHelper;81;FingerExercisesTest;testSecondLargestFirst;659
+dec8062b7eab8a96c95b9d4fedbd62dce2e25925;2020-10-13T12_35_51.556Z;2020-10-13 12:35:51; java.lang.ArrayIndexOutOfBoundsException;FingerExercises;findSecondLargestHelper;81;FingerExercisesTest;testSecondLargestLast;707
+dec8062b7eab8a96c95b9d4fedbd62dce2e25925;2020-10-13T12_35_51.556Z;2020-10-13 12:35:51; java.lang.ArrayIndexOutOfBoundsException;FingerExercises;findSecondLargestHelper;81;FingerExercisesTest;testSecondLargestSame;611
+dec8062b7eab8a96c95b9d4fedbd62dce2e25925;2020-10-13T12_35_51.556Z;2020-10-13 12:35:51; java.lang.ArrayIndexOutOfBoundsException;FingerExercises;findSecondLargestHelper;81;FingerExercisesTest;testSecondLargestRepeats;803
+dec8062b7eab8a96c95b9d4fedbd62dce2e25925;2020-10-13T12_35_51.556Z;2020-10-13 12:35:51; java.lang.ArrayIndexOutOfBoundsException;FingerExercises;findSecondLargestHelper;81;FingerExercisesTest;testSecondLargestMiddle;755
+e136194611ec53c12b1a683367697ae6bbbc25a9;2020-10-15T15_30_10.325Z;2020-10-15 15:30:10; java.lang.StringIndexOutOfBoundsException;FingerExercises;countSubstringsHelper;99;FingerExercisesTest;testSubstringDouble;1611
+e136194611ec53c12b1a683367697ae6bbbc25a9;2020-10-15T15_30_10.325Z;2020-10-15 15:30:10; java.lang.StringIndexOutOfBoundsException;FingerExercises;countSubstringsHelper;99;FingerExercisesTest;testSubstringMiddle;1752
+e136194611ec53c12b1a683367697ae6bbbc25a9;2020-10-15T15_30_10.325Z;2020-10-15 15:30:10; java.lang.StringIndexOutOfBoundsException;FingerExercises;countSubstringsHelper;99;FingerExercisesTest;testSubstringSingle;1564
+e136194611ec53c12b1a683367697ae6bbbc25a9;2020-10-15T15_30_10.325Z;2020-10-15 15:30:10; java.lang.StringIndexOutOfBoundsException;FingerExercises;countSubstringsHelper;99;FingerExercisesTest;testSubstringOverlap;1658
+e136194611ec53c12b1a683367697ae6bbbc25a9;2020-10-15T15_30_10.325Z;2020-10-15 15:30:10; java.lang.StringIndexOutOfBoundsException;FingerExercises;countSubstringsHelper;99;FingerExercisesTest;testSubstringSame;1705
+e1b5834a6e396f55d9255e1f9f33f66d3a4b6a0f;2020-10-15T08_17_34.983Z;2020-10-15 08:17:34; java.lang.StringIndexOutOfBoundsException;FingerExercises;howDifferent;106;FingerExercisesTest;testMoreSteps;1800
+e5cdcd71dda149bde72346d66d3caf28024f99ea;2020-10-13T18_49_12.296Z;2020-10-13 18:49:12; java.lang.StackOverflowError;FingerExercises;gcd;38;FingerExercisesTest;testGcdAZero;137
+e5cdcd71dda149bde72346d66d3caf28024f99ea;2020-10-13T18_49_12.296Z;2020-10-13 18:49:12; java.lang.StackOverflowError;FingerExercises;gcd;30;FingerExercisesTest;testGcdBZero;184
+e761b3497fcd3266080b6cfa1e7ec2eeda61b25e;2020-10-14T13_46_47.572Z;2020-10-14 13:46:47; java.lang.StackOverflowError;FingerExercises;gcd;13;FingerExercisesTest;testGcdLarger;325
+e761b3497fcd3266080b6cfa1e7ec2eeda61b25e;2020-10-14T13_46_47.572Z;2020-10-14 13:46:47; java.lang.StackOverflowError;FingerExercises;gcd;13;FingerExercisesTest;testGcd;231
+e761b3497fcd3266080b6cfa1e7ec2eeda61b25e;2020-10-14T17_28_37.825Z;2020-10-14 17:28:37; java.lang.StackOverflowError;FingerExercises;gcd;10;FingerExercisesTest;testGcdAZero;137
+e761b3497fcd3266080b6cfa1e7ec2eeda61b25e;2020-10-14T18_29_53.262Z;2020-10-14 18:29:53; java.lang.StackOverflowError;FingerExercises;gcd;11;FingerExercisesTest;testGcdAZero;137
+e761b3497fcd3266080b6cfa1e7ec2eeda61b25e;2020-10-14T18_29_53.262Z;2020-10-14 18:29:53; java.lang.StackOverflowError;FingerExercises;countWaysToClimb;48;FingerExercisesTest;testClimbStairsZero;1092
+ea75f49943d3ecd813163f096f0f21ccbd4ef8c9;2020-10-12T20_35_32.573Z;2020-10-12 20:35:32; java.lang.StringIndexOutOfBoundsException;java;lang;1963;FingerExercisesTest;testSubstringDouble;1611
+ea75f49943d3ecd813163f096f0f21ccbd4ef8c9;2020-10-12T20_35_32.573Z;2020-10-12 20:35:32; java.lang.StringIndexOutOfBoundsException;java;lang;1963;FingerExercisesTest;testSubstringMiddle;1752
+ea75f49943d3ecd813163f096f0f21ccbd4ef8c9;2020-10-12T20_35_32.573Z;2020-10-12 20:35:32; java.lang.StringIndexOutOfBoundsException;java;lang;1963;FingerExercisesTest;testSubstringSingle;1564
+ea75f49943d3ecd813163f096f0f21ccbd4ef8c9;2020-10-12T20_35_32.573Z;2020-10-12 20:35:32; java.lang.StringIndexOutOfBoundsException;java;lang;1963;FingerExercisesTest;testSubstringOverlap;1658
+ea75f49943d3ecd813163f096f0f21ccbd4ef8c9;2020-10-12T20_35_32.573Z;2020-10-12 20:35:32; java.lang.StringIndexOutOfBoundsException;FingerExercises;countSubstrings;65;FingerExercisesTest;testSubstringSame;1705
+ea75f49943d3ecd813163f096f0f21ccbd4ef8c9;2020-10-15T06_17_21.102Z;2020-10-15 06:17:21; java.lang.StringIndexOutOfBoundsException;java;lang;1963;FingerExercisesTest;testSubstringDouble;1611
+ea75f49943d3ecd813163f096f0f21ccbd4ef8c9;2020-10-15T06_17_21.102Z;2020-10-15 06:17:21; java.lang.StringIndexOutOfBoundsException;java;lang;1963;FingerExercisesTest;testSubstringMiddle;1752
+ea75f49943d3ecd813163f096f0f21ccbd4ef8c9;2020-10-15T06_17_21.102Z;2020-10-15 06:17:21; java.lang.StringIndexOutOfBoundsException;java;lang;1963;FingerExercisesTest;testSubstringSingle;1564
+ea75f49943d3ecd813163f096f0f21ccbd4ef8c9;2020-10-15T06_17_21.102Z;2020-10-15 06:17:21; java.lang.StringIndexOutOfBoundsException;java;lang;1963;FingerExercisesTest;testSubstringOverlap;1658
+ea75f49943d3ecd813163f096f0f21ccbd4ef8c9;2020-10-15T06_17_21.102Z;2020-10-15 06:17:21; java.lang.StringIndexOutOfBoundsException;FingerExercises;countSubstrings;86;FingerExercisesTest;testSubstringSame;1705
+ebc37c14dc0482e6748865ab0d58358e89be63a2;2020-10-14T02_39_00.431Z;2020-10-14 02:39:00;java.lang.NullPointerException;FingerExercisesTest;testSumTo;524;FingerExercisesTest;testSumTo;562
+ebc37c14dc0482e6748865ab0d58358e89be63a2;2020-10-14T02_39_00.431Z;2020-10-14 02:39:00;java.lang.NullPointerException;FingerExercisesTest;testSumToOne;477;FingerExercisesTest;testSumToOne;515
+f2bb2b3fe03f459960fc0f061ca7251557340fd5;2020-10-15T02_16_17.963Z;2020-10-15 02:16:17; java.lang.StackOverflowError;FingerExercises;sumOfDigits;68;FingerExercisesTest;testSumOfDigitsZero;851
+f2bb2b3fe03f459960fc0f061ca7251557340fd5;2020-10-15T02_16_17.963Z;2020-10-15 02:16:17; java.lang.StackOverflowError;FingerExercises;sumOfDigits;68;FingerExercisesTest;testSumOfDigits;945
+f2bb2b3fe03f459960fc0f061ca7251557340fd5;2020-10-15T02_16_17.963Z;2020-10-15 02:16:17; java.lang.StackOverflowError;FingerExercises;sumOfDigits;68;FingerExercisesTest;testSumOfDigitsSingle;898
+f2bb2b3fe03f459960fc0f061ca7251557340fd5;2020-10-15T02_16_17.963Z;2020-10-15 02:16:17; java.lang.StackOverflowError;FingerExercises;sumOfDigits;68;FingerExercisesTest;testSumOfDigitsTriple;1039
+f2bb2b3fe03f459960fc0f061ca7251557340fd5;2020-10-15T02_16_17.963Z;2020-10-15 02:16:17; java.lang.StackOverflowError;FingerExercises;sumOfDigits;68;FingerExercisesTest;testSumOfDigitsShort;992
+f2bb2b3fe03f459960fc0f061ca7251557340fd5;2020-10-15T05_12_18.265Z;2020-10-15 05:12:18; java.lang.StackOverflowError;FingerExercises;sumOfDigits;68;FingerExercisesTest;testSumOfDigitsZero;851
+f2bb2b3fe03f459960fc0f061ca7251557340fd5;2020-10-15T05_12_18.265Z;2020-10-15 05:12:18; java.lang.StackOverflowError;FingerExercises;countWaysToClimb;82;FingerExercisesTest;testClimbStairsLarger;1233
+f2bb2b3fe03f459960fc0f061ca7251557340fd5;2020-10-15T05_12_18.265Z;2020-10-15 05:12:18; java.lang.StackOverflowError;FingerExercises;sumOfDigits;68;FingerExercisesTest;testSumOfDigits;945
+f2bb2b3fe03f459960fc0f061ca7251557340fd5;2020-10-15T05_12_18.265Z;2020-10-15 05:12:18; java.lang.StackOverflowError;FingerExercises;countWaysToClimb;82;FingerExercisesTest;testClimbStairsThree;1280
+f2bb2b3fe03f459960fc0f061ca7251557340fd5;2020-10-15T05_12_18.265Z;2020-10-15 05:12:18; java.lang.StackOverflowError;FingerExercises;countWaysToClimb;82;FingerExercisesTest;testClimbStairsOne;1139
+f2bb2b3fe03f459960fc0f061ca7251557340fd5;2020-10-15T05_12_18.265Z;2020-10-15 05:12:18; java.lang.StackOverflowError;FingerExercises;sumOfDigits;68;FingerExercisesTest;testSumOfDigitsSingle;898
+f2bb2b3fe03f459960fc0f061ca7251557340fd5;2020-10-15T05_12_18.265Z;2020-10-15 05:12:18; java.lang.StackOverflowError;FingerExercises;sumOfDigits;68;FingerExercisesTest;testSumOfDigitsTriple;1039
+f2bb2b3fe03f459960fc0f061ca7251557340fd5;2020-10-15T05_12_18.265Z;2020-10-15 05:12:18; java.lang.StackOverflowError;FingerExercises;countWaysToClimb;82;FingerExercisesTest;testClimbStairsTwo;1186
+f2bb2b3fe03f459960fc0f061ca7251557340fd5;2020-10-15T05_12_18.265Z;2020-10-15 05:12:18; java.lang.StackOverflowError;FingerExercises;sumOfDigits;68;FingerExercisesTest;testSumOfDigitsShort;992
+f2bb2b3fe03f459960fc0f061ca7251557340fd5;2020-10-15T13_56_31.924Z;2020-10-15 13:56:31; java.lang.StackOverflowError;FingerExercises;sumOfDigits;68;FingerExercisesTest;testSumOfDigitsZero;851
+f2bb2b3fe03f459960fc0f061ca7251557340fd5;2020-10-15T13_56_31.924Z;2020-10-15 13:56:31; java.lang.StackOverflowError;FingerExercises;sumOfDigits;68;FingerExercisesTest;testSumOfDigits;945
+f2bb2b3fe03f459960fc0f061ca7251557340fd5;2020-10-15T13_56_31.924Z;2020-10-15 13:56:31; java.lang.StackOverflowError;FingerExercises;sumOfDigits;68;FingerExercisesTest;testSumOfDigitsSingle;898
+f2bb2b3fe03f459960fc0f061ca7251557340fd5;2020-10-15T13_56_31.924Z;2020-10-15 13:56:31; java.lang.StackOverflowError;FingerExercises;sumOfDigits;68;FingerExercisesTest;testSumOfDigitsTriple;1039
+f2bb2b3fe03f459960fc0f061ca7251557340fd5;2020-10-15T13_56_31.924Z;2020-10-15 13:56:31; java.lang.StackOverflowError;FingerExercises;sumOfDigits;68;FingerExercisesTest;testSumOfDigitsShort;992
+f2bb2b3fe03f459960fc0f061ca7251557340fd5;2020-10-15T14_16_33.750Z;2020-10-15 14:16:33; java.lang.StackOverflowError;FingerExercises;sumOfDigits;68;FingerExercisesTest;testSumOfDigitsZero;851
+f2bb2b3fe03f459960fc0f061ca7251557340fd5;2020-10-15T14_16_33.750Z;2020-10-15 14:16:33;java.lang.NullPointerException;sun;reflect;1;FingerExercisesTest;testLogInexact;1469
+f2bb2b3fe03f459960fc0f061ca7251557340fd5;2020-10-15T14_16_33.750Z;2020-10-15 14:16:33;java.lang.NullPointerException;sun;reflect;1;FingerExercisesTest;testLogSelf;1375
+f2bb2b3fe03f459960fc0f061ca7251557340fd5;2020-10-15T14_16_33.750Z;2020-10-15 14:16:33;java.lang.NullPointerException;sun;reflect;1;FingerExercisesTest;testLogExact;1422
+f2bb2b3fe03f459960fc0f061ca7251557340fd5;2020-10-15T14_16_33.750Z;2020-10-15 14:16:33; java.lang.StackOverflowError;FingerExercises;sumOfDigits;68;FingerExercisesTest;testSumOfDigits;945
+f2bb2b3fe03f459960fc0f061ca7251557340fd5;2020-10-15T14_16_33.750Z;2020-10-15 14:16:33;java.lang.NullPointerException;sun;reflect;1;FingerExercisesTest;testLogInexactLarger;1516
+f2bb2b3fe03f459960fc0f061ca7251557340fd5;2020-10-15T14_16_33.750Z;2020-10-15 14:16:33; java.lang.StackOverflowError;FingerExercises;sumOfDigits;68;FingerExercisesTest;testSumOfDigitsSingle;898
+f2bb2b3fe03f459960fc0f061ca7251557340fd5;2020-10-15T14_16_33.750Z;2020-10-15 14:16:33; java.lang.StackOverflowError;FingerExercises;sumOfDigits;68;FingerExercisesTest;testSumOfDigitsTriple;1039
+f2bb2b3fe03f459960fc0f061ca7251557340fd5;2020-10-15T14_16_33.750Z;2020-10-15 14:16:33;java.lang.NullPointerException;sun;reflect;1;FingerExercisesTest;testLog;1328
+f2bb2b3fe03f459960fc0f061ca7251557340fd5;2020-10-15T14_16_33.750Z;2020-10-15 14:16:33; java.lang.StackOverflowError;FingerExercises;sumOfDigits;68;FingerExercisesTest;testSumOfDigitsShort;992
+f2bb2b3fe03f459960fc0f061ca7251557340fd5;2020-10-15T15_10_04.112Z;2020-10-15 15:10:04; java.lang.StackOverflowError;FingerExercises;sumOfDigits;90;FingerExercisesTest;testSumOfDigitsZero;851
+f2bb2b3fe03f459960fc0f061ca7251557340fd5;2020-10-15T15_10_04.112Z;2020-10-15 15:10:04; java.lang.StackOverflowError;FingerExercises;sumOfDigits;90;FingerExercisesTest;testSumOfDigits;945
+f2bb2b3fe03f459960fc0f061ca7251557340fd5;2020-10-15T15_10_04.112Z;2020-10-15 15:10:04; java.lang.StackOverflowError;FingerExercises;sumOfDigits;90;FingerExercisesTest;testSumOfDigitsSingle;898
+f2bb2b3fe03f459960fc0f061ca7251557340fd5;2020-10-15T15_10_04.112Z;2020-10-15 15:10:04; java.lang.StackOverflowError;FingerExercises;sumOfDigits;90;FingerExercisesTest;testSumOfDigitsTriple;1039
+f2bb2b3fe03f459960fc0f061ca7251557340fd5;2020-10-15T15_10_04.112Z;2020-10-15 15:10:04; java.lang.StackOverflowError;FingerExercises;sumOfDigits;90;FingerExercisesTest;testSumOfDigitsShort;992
+f2bb2b3fe03f459960fc0f061ca7251557340fd5;2020-10-15T15_34_04.507Z;2020-10-15 15:34:04; java.lang.StackOverflowError;FingerExercises;sumOfDigits;90;FingerExercisesTest;testSumOfDigitsZero;851
+f2bb2b3fe03f459960fc0f061ca7251557340fd5;2020-10-15T15_34_04.507Z;2020-10-15 15:34:04; java.lang.StackOverflowError;FingerExercises;sumOfDigits;90;FingerExercisesTest;testSumOfDigits;945
+f2bb2b3fe03f459960fc0f061ca7251557340fd5;2020-10-15T15_34_04.507Z;2020-10-15 15:34:04; java.lang.StackOverflowError;FingerExercises;sumOfDigits;90;FingerExercisesTest;testSumOfDigitsSingle;898
+f2bb2b3fe03f459960fc0f061ca7251557340fd5;2020-10-15T15_34_04.507Z;2020-10-15 15:34:04; java.lang.StackOverflowError;FingerExercises;sumOfDigits;90;FingerExercisesTest;testSumOfDigitsTriple;1039
+f2bb2b3fe03f459960fc0f061ca7251557340fd5;2020-10-15T15_34_04.507Z;2020-10-15 15:34:04; java.lang.StackOverflowError;FingerExercises;sumOfDigits;90;FingerExercisesTest;testSumOfDigitsShort;992
+f2bb2b3fe03f459960fc0f061ca7251557340fd5;2020-10-15T16_58_36.124Z;2020-10-15 16:58:36; java.lang.StackOverflowError;FingerExercises;sumOfDigits;90;FingerExercisesTest;testSumOfDigitsZero;851
+f2bb2b3fe03f459960fc0f061ca7251557340fd5;2020-10-15T16_58_36.124Z;2020-10-15 16:58:36; java.lang.StackOverflowError;FingerExercises;sumOfDigits;90;FingerExercisesTest;testSumOfDigits;945
+f2bb2b3fe03f459960fc0f061ca7251557340fd5;2020-10-15T16_58_36.124Z;2020-10-15 16:58:36; java.lang.StackOverflowError;FingerExercises;sumOfDigits;90;FingerExercisesTest;testSumOfDigitsSingle;898
+f2bb2b3fe03f459960fc0f061ca7251557340fd5;2020-10-15T16_58_36.124Z;2020-10-15 16:58:36; java.lang.StackOverflowError;FingerExercises;sumOfDigits;90;FingerExercisesTest;testSumOfDigitsTriple;1039
+f2bb2b3fe03f459960fc0f061ca7251557340fd5;2020-10-15T16_58_36.124Z;2020-10-15 16:58:36; java.lang.StackOverflowError;FingerExercises;sumOfDigits;90;FingerExercisesTest;testSumOfDigitsShort;992
+f2bb2b3fe03f459960fc0f061ca7251557340fd5;2020-10-15T17_49_08.709Z;2020-10-15 17:49:08; java.lang.StackOverflowError;FingerExercises;sumOfDigits;90;FingerExercisesTest;testSumOfDigitsZero;851
+f2bb2b3fe03f459960fc0f061ca7251557340fd5;2020-10-15T17_49_08.709Z;2020-10-15 17:49:08; java.lang.StackOverflowError;FingerExercises;sumOfDigits;90;FingerExercisesTest;testSumOfDigits;945
+f2bb2b3fe03f459960fc0f061ca7251557340fd5;2020-10-15T17_49_08.709Z;2020-10-15 17:49:08; java.lang.StackOverflowError;FingerExercises;sumOfDigits;90;FingerExercisesTest;testSumOfDigitsSingle;898
+f2bb2b3fe03f459960fc0f061ca7251557340fd5;2020-10-15T17_49_08.709Z;2020-10-15 17:49:08; java.lang.StackOverflowError;FingerExercises;sumOfDigits;90;FingerExercisesTest;testSumOfDigitsTriple;1039
+f2bb2b3fe03f459960fc0f061ca7251557340fd5;2020-10-15T17_49_08.709Z;2020-10-15 17:49:08; java.lang.StackOverflowError;FingerExercises;sumOfDigits;90;FingerExercisesTest;testSumOfDigitsShort;992
+f904cf4af455a40289408485efcc117e1a9b60ad;2020-10-15T03_46_13.516Z;2020-10-15 03:46:13;java.lang.NullPointerException;FingerExercisesTest;testSumTo;524;FingerExercisesTest;testSumTo;562
+f904cf4af455a40289408485efcc117e1a9b60ad;2020-10-15T03_46_13.516Z;2020-10-15 03:46:13;java.lang.NullPointerException;FingerExercisesTest;testSumToOne;477;FingerExercisesTest;testSumToOne;515
+f9b3517060098c41fc220990ba51263fa76c34c5;2020-10-14T17_09_48.765Z;2020-10-14 17:09:48;java.lang.NullPointerException;FingerExercisesTest;testSumTo;524;FingerExercisesTest;testSumTo;562
+f9b3517060098c41fc220990ba51263fa76c34c5;2020-10-14T17_09_48.765Z;2020-10-14 17:09:48;java.lang.NullPointerException;FingerExercisesTest;testSumToOne;477;FingerExercisesTest;testSumToOne;515
+f9bca1aec5accded1070638cdde237bb8c81c301;2020-10-12T14_09_29.364Z;2020-10-12 14:09:29;java.lang.NullPointerException;FingerExercisesTest;testSumTo;524;FingerExercisesTest;testSumTo;562
+f9bca1aec5accded1070638cdde237bb8c81c301;2020-10-12T14_09_29.364Z;2020-10-12 14:09:29;java.lang.NullPointerException;FingerExercisesTest;testSumToOne;477;FingerExercisesTest;testSumToOne;515
+f9bca1aec5accded1070638cdde237bb8c81c301;2020-10-14T01_39_34.412Z;2020-10-14 01:39:34;java.lang.NullPointerException;sun;reflect;1;FingerExercisesTest;testLogInexact;1469
+f9bca1aec5accded1070638cdde237bb8c81c301;2020-10-14T01_39_34.412Z;2020-10-14 01:39:34;java.lang.NullPointerException;sun;reflect;1;FingerExercisesTest;testLogSelf;1375
+f9bca1aec5accded1070638cdde237bb8c81c301;2020-10-14T01_39_34.412Z;2020-10-14 01:39:34;java.lang.NullPointerException;sun;reflect;1;FingerExercisesTest;testLogExact;1422
+f9bca1aec5accded1070638cdde237bb8c81c301;2020-10-14T01_39_34.412Z;2020-10-14 01:39:34;java.lang.NullPointerException;sun;reflect;1;FingerExercisesTest;testLogInexactLarger;1516
+f9bca1aec5accded1070638cdde237bb8c81c301;2020-10-14T01_39_34.412Z;2020-10-14 01:39:34;java.lang.NullPointerException;sun;reflect;1;FingerExercisesTest;testLog;1328
+f9bca1aec5accded1070638cdde237bb8c81c301;2020-10-14T01_58_32.885Z;2020-10-14 01:58:32;java.lang.NullPointerException;sun;reflect;1;FingerExercisesTest;testLogInexact;1469
+f9bca1aec5accded1070638cdde237bb8c81c301;2020-10-14T01_58_32.885Z;2020-10-14 01:58:32;java.lang.NullPointerException;sun;reflect;1;FingerExercisesTest;testLogSelf;1375
+f9bca1aec5accded1070638cdde237bb8c81c301;2020-10-14T01_58_32.885Z;2020-10-14 01:58:32;java.lang.NullPointerException;sun;reflect;1;FingerExercisesTest;testLogExact;1422
+f9bca1aec5accded1070638cdde237bb8c81c301;2020-10-14T01_58_32.885Z;2020-10-14 01:58:32;java.lang.NullPointerException;sun;reflect;1;FingerExercisesTest;testLogInexactLarger;1516
+f9bca1aec5accded1070638cdde237bb8c81c301;2020-10-14T01_58_32.885Z;2020-10-14 01:58:32;java.lang.NullPointerException;sun;reflect;1;FingerExercisesTest;testLog;1328
+f9fbdcf24195ad559c966a8f75610043b7cdf377;2020-10-12T23_33_38.361Z;2020-10-12 23:33:38;java.lang.NullPointerException;FingerExercisesTest;testSumTo;524;FingerExercisesTest;testSumTo;562
+f9fbdcf24195ad559c966a8f75610043b7cdf377;2020-10-12T23_33_38.361Z;2020-10-12 23:33:38;java.lang.NullPointerException;FingerExercisesTest;testSumToOne;477;FingerExercisesTest;testSumToOne;515
+f9fbdcf24195ad559c966a8f75610043b7cdf377;2020-10-14T16_43_55.426Z;2020-10-14 16:43:55;java.lang.NullPointerException;FingerExercisesTest;testSumTo;524;FingerExercisesTest;testSumTo;562
+f9fbdcf24195ad559c966a8f75610043b7cdf377;2020-10-14T16_43_55.426Z;2020-10-14 16:43:55;java.lang.NullPointerException;FingerExercisesTest;testSumToOne;477;FingerExercisesTest;testSumToOne;515
+f9fbdcf24195ad559c966a8f75610043b7cdf377;2020-10-14T17_02_05.901Z;2020-10-14 17:02:05;java.lang.NullPointerException;FingerExercisesTest;testSumTo;524;FingerExercisesTest;testSumTo;562
+f9fbdcf24195ad559c966a8f75610043b7cdf377;2020-10-14T17_02_05.901Z;2020-10-14 17:02:05;java.lang.NullPointerException;FingerExercisesTest;testSumToOne;477;FingerExercisesTest;testSumToOne;515
+f9fbdcf24195ad559c966a8f75610043b7cdf377;2020-10-14T17_23_08.886Z;2020-10-14 17:23:08;java.lang.NullPointerException;FingerExercisesTest;testSumTo;524;FingerExercisesTest;testSumTo;562
+f9fbdcf24195ad559c966a8f75610043b7cdf377;2020-10-14T17_23_08.886Z;2020-10-14 17:23:08;java.lang.NullPointerException;FingerExercisesTest;testSumToOne;477;FingerExercisesTest;testSumToOne;515
+f9fbdcf24195ad559c966a8f75610043b7cdf377;2020-10-14T17_51_49.017Z;2020-10-14 17:51:49;java.lang.NullPointerException;FingerExercisesTest;testSumTo;524;FingerExercisesTest;testSumTo;562
+f9fbdcf24195ad559c966a8f75610043b7cdf377;2020-10-14T17_51_49.017Z;2020-10-14 17:51:49;java.lang.NullPointerException;FingerExercisesTest;testSumToOne;477;FingerExercisesTest;testSumToOne;515
+f9fbdcf24195ad559c966a8f75610043b7cdf377;2020-10-14T18_13_19.741Z;2020-10-14 18:13:19;java.lang.NullPointerException;FingerExercisesTest;testSumTo;524;FingerExercisesTest;testSumTo;562
+f9fbdcf24195ad559c966a8f75610043b7cdf377;2020-10-14T18_13_19.741Z;2020-10-14 18:13:19;java.lang.NullPointerException;FingerExercisesTest;testSumToOne;477;FingerExercisesTest;testSumToOne;515
+f9fbdcf24195ad559c966a8f75610043b7cdf377;2020-10-14T19_24_32.768Z;2020-10-14 19:24:32;java.lang.NullPointerException;FingerExercisesTest;testSumTo;524;FingerExercisesTest;testSumTo;562
+f9fbdcf24195ad559c966a8f75610043b7cdf377;2020-10-14T19_24_32.768Z;2020-10-14 19:24:32;java.lang.NullPointerException;FingerExercisesTest;testSumToOne;477;FingerExercisesTest;testSumToOne;515
+fe2e08430cd89089761b57c837a57065a1f7c07f;2020-10-11T05_53_48.125Z;2020-10-11 05:53:48; java.lang.StackOverflowError;FingerExercises;gcd;19;FingerExercisesTest;testGcdLarger;325
+fe2e08430cd89089761b57c837a57065a1f7c07f;2020-10-11T05_53_48.125Z;2020-10-11 05:53:48; java.lang.StackOverflowError;FingerExercises;gcd;19;FingerExercisesTest;testGcd;231
+feed1621d6e46f3100522dadfbb9ecec17fe8ba4;2020-10-13T23_01_02.165Z;2020-10-13 23:01:02; java.lang.ArithmeticException;FingerExercises;gcd;3;FingerExercisesTest;testGcdBZero;184
+feed1621d6e46f3100522dadfbb9ecec17fe8ba4;2020-10-13T23_01_26.588Z;2020-10-13 23:01:26; java.lang.ArithmeticException;FingerExercises;gcd;3;FingerExercisesTest;testGcdBZero;184
+feed1621d6e46f3100522dadfbb9ecec17fe8ba4;2020-10-14T21_24_06.777Z;2020-10-14 21:24:06; java.lang.ArithmeticException;FingerExercises;gcd;5;FingerExercisesTest;testGcdBZero;184
