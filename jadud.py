@@ -44,7 +44,7 @@ def prepare_data_row(row, error_category):
     """
     Process a single line from a CSV file with compiler errors OR runtime errors.
 
-    Called only from the function process_data_errors_exceptions() below.
+    This function is called only from the function process_data_errors_exceptions() below.
 
     :param row: obj. Pointer to a line from a CSV reader.
     :param error_category: str. Compiler errors ('compiler-errors') or runtime errors ('exceptions').
@@ -68,7 +68,7 @@ def prepare_data_row(row, error_category):
 
 def process_data_errors_exceptions(hw_name, error_category):
     """
-    Read a single CSV file from the folder `data-errors` or 'data-exceptions' for one homework,
+    Read a single CSV file from the folder `data-compiler-errors` or 'data-exceptions' for one homework,
     and process this file to represent it in a dictionary with the following structure:
     { student_id : { timestamp : [errors] } }, where all entries are of type str.
     This dictionary represents all unique errors/exceptions a given student made at a given time.
@@ -79,7 +79,7 @@ def process_data_errors_exceptions(hw_name, error_category):
         'student_B' : { 't1' : ['error_X', 'error_X', 'error_Z'], 't2' : ['error_Y'] }
     }
 
-    Called only from the function process_data_snapshots() below.
+    This function is called only from the function process_data_snapshots() below.
 
     :param hw_name: str. Number of the homework assignment, e.g. '03'.
     :param error_category: str. Compiler errors ('compiler-errors') or runtime errors ('exceptions').
@@ -114,7 +114,7 @@ def process_data_snapshots(hw_name, error_category):
         * [compilation_events] is a list of lists representing compilation events, where:
             * [] is a successful compilation event (without any errors), and
             * a non-empty list contains strings that indicate errors occurring during that compilation event.
-    Together, each list represents the whole student compilation session.
+    Together, each list represents the whole student programming session.
 
     For example:
     {
@@ -122,7 +122,7 @@ def process_data_snapshots(hw_name, error_category):
         'student_B' : [ ['error_X', 'error_X', 'error_Z'], ['error_Y'], [], [], ['error_Z'] ]
     }
 
-    Called only from the function compute_jadud_eq() below.
+    This function is called only from the function compute_jadud_eq() below.
 
     :param hw_name: str. Number of the homework assignment, e.g. '03'.
     :param error_category: str. Compiler errors ('compiler-errors') or runtime errors ('exceptions').
@@ -157,7 +157,7 @@ def compute_jadud_eq(hw_name='03', error_category='compiler-errors'):
         ACM, New York, NY, USA, 73–84. https://dl.acm.org/doi/pdf/10.1145/1151588.1151600
 
     :param hw_name: str. Number of the homework assignment, e.g. '03'.
-    :param error_category: str. Compiler errors ('errors') or runtime errors ('exceptions').
+    :param error_category: str. Compiler errors ('compiler-errors') or runtime errors ('exceptions').
     :return: dict. Dictionary with the structure { student_id : jadud_eq_for_this_hw }.
     """
     all_students = process_data_snapshots(hw_name, error_category)
@@ -191,7 +191,7 @@ def get_results(error_category='compiler-errors'):
     """
     Compute Jadud's EQs for all students in all log files and export the EQs into CSV files.
 
-    :param error_category: str. Compiler errors ('errors') or runtime errors ('exceptions').
+    :param error_category: str. Compiler errors ('compiler-errors') or runtime errors ('exceptions').
     :return: None.
     """
     df_all = pd.DataFrame(columns=['student_id']).set_index('student_id')
