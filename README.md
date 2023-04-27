@@ -7,7 +7,7 @@ Compute error metrics in the logs of student compilation events.
 ## Folders
 
 * `data-snapshots`: Complete snapshots of all compilation events. *Author: Maciej Pankiewicz.*
-* `data-snapshot-summary`: **TODO Joyce: How is this different from data-snapshots?**
+* `data-snapshot-summary`: A summary of snapshots that shows the number of runtime errors *Author: Maciej Pankiewicz.*
 * `data-errors`: All compilation errors. *Author: Maciej Pankiewicz.*
 * `data-exceptions`: All runtime errors. *Author: Maciej Pankiewicz.*
 * `data-repeated-error-density`: **TODO Maciek: Should this be a subfolder of results? I tried to keep the prefix 'data-' for input source files from which something is computed.**
