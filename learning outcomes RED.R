@@ -2,11 +2,11 @@ library(dplyr)
 library(Rfit)
 # setwd("~/IdeaProjects/error-analysis") # set working directory
 
-RED <- read.csv("./results/RED.csv", sep = ";")
+RED <- read.csv("./results/repeated-error-density/RED.csv", sep = ";")
 
-courseGrades <- read.csv("./grades/CourseGrades.csv")
-midterm1 <- read.csv("./grades/Midterm1_Fall_2020.csv")
-midterm2 <- read.csv("./grades/Midterm2_Fall_2020.csv")
+courseGrades <- read.csv("./data/grades/CourseGrades.csv")
+midterm1 <- read.csv("./data/grades/Midterm1_Fall_2020.csv")
+midterm2 <- read.csv("./data/grades/Midterm2_Fall_2020.csv")
 
 names(courseGrades) <- c("student", "grade")
 names(midterm1) <- c("student", "midterm1")
