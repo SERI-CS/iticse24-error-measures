@@ -68,7 +68,7 @@ def prepare_data_row(row, error_category):
 
 def process_data_errors_exceptions(hw_name, error_category):
     """
-    Read a single CSV file from the folder `data-compiler-errors` or 'data-exceptions' for one homework,
+    Read a single CSV file from the folder `data/compiler-errors` or 'data/exceptions' for one homework,
     and process this file to represent it in a dictionary with the following structure:
     { student_id : { timestamp : [errors] } }, where all entries are of type str.
     This dictionary represents all unique errors/exceptions a given student made at a given time.
@@ -86,7 +86,7 @@ def process_data_errors_exceptions(hw_name, error_category):
     :return: dict. Dictionary with the structure described above.
     """
     assert error_category in ['compiler-errors', 'exceptions']
-    filename = 'data-' + error_category + '/hw' + hw_name + '-' + error_category + '.csv'
+    filename = 'data/' + error_category + '/hw' + hw_name + '-' + error_category + '.csv'
     file_handle = open(filename, encoding='latin-1')
     reader = csv.reader(file_handle, delimiter=';')
     next(reader)  # Skip the CSV header
@@ -107,7 +107,7 @@ def process_data_errors_exceptions(hw_name, error_category):
 
 def process_data_snapshots(hw_name, error_category):
     """
-    Read a single CSV file from the folder `data-snapshots` for one particular homework,
+    Read a single CSV file from the folder `data/snapshots` for one particular homework,
     and process this file to represent it in a dictionary with the following structure:
     { student_id : [compilation_events] }, where:
         * student_id is of type str, and
@@ -130,7 +130,7 @@ def process_data_snapshots(hw_name, error_category):
     """
     assert error_category in ['compiler-errors', 'exceptions']
     all_errors = process_data_errors_exceptions(hw_name, error_category)
-    filename = 'data-snapshots/hw' + hw_name + '-complete_snapshots.csv'
+    filename = 'data/snapshots/hw' + hw_name + '-complete_snapshots.csv'
     file_handle = open(filename)
     reader = csv.reader(file_handle, delimiter=';')
     next(reader)  # Skip the CSV header
@@ -201,7 +201,7 @@ def get_results(error_category='compiler-errors'):
         df_all = df_all.join(df_hw, how='outer')
 
     # Output results and compute descriptive statistics
-    filename = 'results/jadud-' + error_category
+    filename = 'results/jadud/' + error_category
     df_all.to_csv(filename + '.csv', encoding='utf-8', index_label='student_id')
     df_all.describe().to_csv(filename + '-per-homework.csv', encoding='utf-8')
     df_all.apply(pd.Series.describe, axis=1).to_csv(filename + '-per-student.csv', encoding='utf-8')
