@@ -1,8 +1,9 @@
 """
 Purpose: Compute Jadud's error quotient (EQ) for every student based on their compilation logs and errors.
 
-Input/prerequisites: 2 CSV files, one with all compilation events, the other with all compilation errors. Join attribute: student_id.
-Output: Jadud's EQ for every individual student_id in the logs.
+* Input/prerequisites: CSV files, one with all compilation events, the other with all compilation errors and/or
+runtime exceptions. Join attribute: student_id.
+* Output: Jadud's EQ for every individual student_id in the logs.
 
 Author: Valdemar Švábenský <valdemar@upenn.edu>, University of Pennsylvania, 2023.
 Reviewed by: TODO: We need to assign a code reviewer.
@@ -39,12 +40,38 @@ import csv
 import pandas as pd
 
 
-def process_data_errors(hw_name='03'):
+def prepare_data_row(row, error_category):
     """
-    Read a single CSV file from the folder `data-errors` for one particular homework,
+    Process a single line from a CSV file with compiler errors OR runtime errors.
+
+    Called only from the function process_data_errors_exceptions() below.
+
+    :param row: obj. Pointer to a line from a CSV reader.
+    :param error_category: str. Compiler errors ('compiler-errors') or runtime errors ('exceptions').
+    :return: tuple. Unique error defined by the student ID, timestamp, and the full error message.
+    """
+    assert error_category in ['compiler-errors', 'exceptions']
+    student_id = row[0]
+    timestamp = row[1].replace('_', ':')  # For compatibility with a different timestamp format in the snapshot files
+    error = None
+
+    if error_category == 'compiler-errors':
+        error_message = row[4]
+        linebreak_index_in_error_message = error_message.find('\n')  # Error messages may span multiple lines, we want only the first
+        if linebreak_index_in_error_message == -1:  # There is no new line, the message fits a single line
+            linebreak_index_in_error_message = len(error_message)
+        error = error_message[:linebreak_index_in_error_message].strip()
+    elif error_category == 'exceptions':
+        error = row[3] + ' ' + row[4] + ' ' + row[5] + ' ' + row[6]  # Exception is uniquely identified by these fields
+    return student_id, timestamp, error
+
+
+def process_data_errors_exceptions(hw_name, error_category):
+    """
+    Read a single CSV file from the folder `data-errors` or 'data-exceptions' for one homework,
     and process this file to represent it in a dictionary with the following structure:
-    { student_id : { timestamp : [error_types] } }, where all entries are of type str.
-    This dictionary represents all compiler error types a given student made at a given time.
+    { student_id : { timestamp : [errors] } }, where all entries are of type str.
+    This dictionary represents all unique errors/exceptions a given student made at a given time.
 
     For example:
     {
@@ -52,35 +79,33 @@ def process_data_errors(hw_name='03'):
         'student_B' : { 't1' : ['error_X', 'error_X', 'error_Z'], 't2' : ['error_Y'] }
     }
 
-    :param hw_name: str. Number of the homework assignment.
+    Called only from the function process_data_snapshots() below.
+
+    :param hw_name: str. Number of the homework assignment, e.g. '03'.
+    :param error_category: str. Compiler errors ('compiler-errors') or runtime errors ('exceptions').
     :return: dict. Dictionary with the structure described above.
     """
-    filename = 'data-errors/hw' + hw_name + '-compiler-errors.csv'
+    assert error_category in ['compiler-errors', 'exceptions']
+    filename = 'data-' + error_category + '/hw' + hw_name + '-' + error_category + '.csv'
     file_handle = open(filename, encoding='latin-1')
     reader = csv.reader(file_handle, delimiter=';')
     next(reader)  # Skip the CSV header
     all_errors = {}  # The dictionary
+
     for row in reader:
-        student_id, timestamp, error_message = row[0], row[1], row[4]
-        timestamp = timestamp.replace('_',
-                                      ':')  # For compatibility with the different timestamp format in the snapshots file
-        linebreak_index_in_error_message = error_message.find(
-            '\n')  # The messages span multiple lines, we want only the first line
-        if linebreak_index_in_error_message == -1:
-            linebreak_index_in_error_message = len(error_message)
-        error_type = error_message[:linebreak_index_in_error_message].strip()
+        student_id, timestamp, error = prepare_data_row(row, error_category)
         if student_id not in all_errors:
             all_errors[student_id] = {}
-            all_errors[student_id][timestamp] = [error_type]
+            all_errors[student_id][timestamp] = [error]
         elif timestamp not in all_errors[student_id]:
-            all_errors[student_id][timestamp] = [error_type]
+            all_errors[student_id][timestamp] = [error]
         else:
-            all_errors[student_id][timestamp].append(error_type)
+            all_errors[student_id][timestamp].append(error)
     file_handle.close()
     return all_errors
 
 
-def process_data_snapshots(hw_name='03'):
+def process_data_snapshots(hw_name, error_category):
     """
     Read a single CSV file from the folder `data-snapshots` for one particular homework,
     and process this file to represent it in a dictionary with the following structure:
@@ -88,7 +113,7 @@ def process_data_snapshots(hw_name='03'):
         * student_id is of type str, and
         * [compilation_events] is a list of lists representing compilation events, where:
             * [] is a successful compilation event (without any errors), and
-            * a non-empty list contains strings that indicate error types occurring during that compilation event.
+            * a non-empty list contains strings that indicate errors occurring during that compilation event.
     Together, each list represents the whole student compilation session.
 
     For example:
@@ -97,15 +122,20 @@ def process_data_snapshots(hw_name='03'):
         'student_B' : [ ['error_X', 'error_X', 'error_Z'], ['error_Y'], [], [], ['error_Z'] ]
     }
 
-    :param hw_name: str. Number of the homework assignment.
+    Called only from the function compute_jadud_eq() below.
+
+    :param hw_name: str. Number of the homework assignment, e.g. '03'.
+    :param error_category: str. Compiler errors ('compiler-errors') or runtime errors ('exceptions').
     :return: dict. Dictionary with the structure described above.
     """
-    all_errors = process_data_errors(hw_name)
+    assert error_category in ['compiler-errors', 'exceptions']
+    all_errors = process_data_errors_exceptions(hw_name, error_category)
     filename = 'data-snapshots/hw' + hw_name + '-complete_snapshots.csv'
     file_handle = open(filename)
     reader = csv.reader(file_handle, delimiter=';')
     next(reader)  # Skip the CSV header
     all_students = {}  # The dictionary
+
     for row in reader:
         student_id, timestamp = row[0], row[1]
         errors = []  # Empty list indicates a successful compilation event (i.e., no errors)
@@ -118,7 +148,7 @@ def process_data_snapshots(hw_name='03'):
     return all_students
 
 
-def compute_jadud_eq(hw_name='03'):
+def compute_jadud_eq(hw_name='03', error_category='compiler-errors'):
     """
     Calculate the Jadud's error quotient (EQ) for each student in the logs for the given homework files.
     The algorithm is described in the following publication on page 6:
@@ -126,10 +156,11 @@ def compute_jadud_eq(hw_name='03'):
         In Proceedings of the second international workshop on Computing education research (ICER '06).
         ACM, New York, NY, USA, 73–84. https://dl.acm.org/doi/pdf/10.1145/1151588.1151600
 
-    :param hw_name: str. Number of the homework assignment.
+    :param hw_name: str. Number of the homework assignment, e.g. '03'.
+    :param error_category: str. Compiler errors ('errors') or runtime errors ('exceptions').
     :return: dict. Dictionary with the structure { student_id : jadud_eq_for_this_hw }.
     """
-    all_students = process_data_snapshots(hw_name)
+    all_students = process_data_snapshots(hw_name, error_category)
     all_scores_per_student = {}
     for student_id, student_session in all_students.items():
         student_total_eq = 0
@@ -156,45 +187,26 @@ def compute_jadud_eq(hw_name='03'):
     return all_scores_per_student
 
 
-def get_results():
+def get_results(error_category='compiler-errors'):
     """
     Compute Jadud's EQs for all students in all log files and export the EQs into CSV files.
+
+    :param error_category: str. Compiler errors ('errors') or runtime errors ('exceptions').
     :return: None.
     """
     df_all = pd.DataFrame(columns=['student_id']).set_index('student_id')
     for hw_name in ['03', '04', '05', '06', '07', '08']:
-        all_scores_per_student = compute_jadud_eq(hw_name)
+        all_scores_per_student = compute_jadud_eq(hw_name, error_category)
         df_hw = pd.DataFrame.from_dict(all_scores_per_student, columns=['jadud_hw_' + hw_name], orient='index')
         df_all = df_all.join(df_hw, how='outer')
-    df_all.to_csv('results/jadud.csv', encoding='utf-8', index_label='student_id')
 
-    # Compute descriptive statistics
-    df_all.describe().to_csv('results/jadud-per-homework.csv', encoding='utf-8')
-    df_all.apply(pd.Series.describe, axis=1).to_csv('results/jadud-per-student.csv', encoding='utf-8')
-
-
-def correlate_results_to_grades(results_filename='results/jadud-correlations.csv'):
-    """
-    Compute the correlations of EQs to student grades per each student.
-    :param results_filename: str. Name of the output file with the computed results of the analysis.
-    :return: None.
-    """
-    # TODO finish this function if necessary, doesn't seem to be needed at this moment.
-    exit()
-    df_all = pd.read_csv('results/jadud.csv', index_col=0).dropna()
-
-    for student_id, scores in all_scores_per_student.items():
-        all_scores_per_student[student_id] = [mean(scores)]  # Get average homework score for each student
-    df_all_scores_per_student = pd.DataFrame.from_dict(all_scores_per_student, orient='index')
-    df_all_scores_per_student.columns = ['avg_hw_eq']
-
-    df_midterm1 = pd.read_csv('grades/Midterm1_Fall_2020.csv', index_col=0).dropna()
-    df_midterm1.columns = ['midterm1']
-
-    df_final = df_all_scores_per_student.join(df_midterm1, how='inner')
-    print(df_final)
+    # Output results and compute descriptive statistics
+    filename = 'results/jadud-' + error_category
+    df_all.to_csv(filename + '.csv', encoding='utf-8', index_label='student_id')
+    df_all.describe().to_csv(filename + '-per-homework.csv', encoding='utf-8')
+    df_all.apply(pd.Series.describe, axis=1).to_csv(filename + '-per-student.csv', encoding='utf-8')
 
 
 if __name__ == '__main__':
-    get_results()
-    correlate_results_to_grades()
+    get_results('compiler-errors')
+    get_results('exceptions')
