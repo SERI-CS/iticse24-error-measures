@@ -1,4 +1,5 @@
-
+library(dplyr)
+library(Rfit)
 # setwd("~/IdeaProjects/error-analysis") # set working directory
 
 RED <- read.csv("./results/RED.csv", sep = ";")
@@ -26,7 +27,7 @@ f20_data <- na.omit(f20_data)
 print("MIDTERM1 - RED runtime + compiler 03 04")
 
 summary(
-  lm(
+  rfit(
     f20_data$midterm1 ~
       f20_data$RED.compiler.hw03 +
         f20_data$RED.compiler.hw04 +
@@ -37,7 +38,7 @@ summary(
 print("MIDTERM1 - AVG RED runtime + compiler 03 04")
 
 summary(
-  lm(
+  rfit(
     f20_data$midterm1 ~
       f20_data$AvgREDCompiler_HW04 +
         f20_data$AvgREDRuntime_HW04
@@ -45,7 +46,7 @@ summary(
 print("MIDTERM1 - SUM RED runtime + compiler 03 04")
 
 summary(
-  lm(
+  rfit(
     f20_data$midterm1 ~
       f20_data$SumREDCompiler_HW04 +
         f20_data$SumREDRuntime_HW04
@@ -54,7 +55,7 @@ summary(
 print("MIDTERM2 - RED runtime + compiler 03-08")
 
 summary(
-  lm(
+  rfit(
     f20_data$midterm2 ~
       f20_data$RED.compiler.hw03 +
         f20_data$RED.compiler.hw04 +
@@ -73,7 +74,7 @@ summary(
 print("MIDTERM2 - AVG RED runtime + compiler 03-08")
 
 summary(
-  lm(
+  rfit(
     f20_data$midterm2 ~
       f20_data$AvgREDCompiler_HW08 +
         f20_data$AvgREDRuntime_HW08
@@ -81,7 +82,7 @@ summary(
 print("MIDTERM2 - SUM RED runtime + compiler 03-08")
 
 summary(
-  lm(
+  rfit(
     f20_data$midterm2 ~
       f20_data$SumREDCompiler_HW08 +
         f20_data$SumREDRuntime_HW08
@@ -90,7 +91,7 @@ summary(
 print("FINAL GRADE - RED runtime + compiler 03-08")
 
 summary(
-  lm(
+  rfit(
     f20_data$grade ~
       f20_data$RED.compiler.hw03 +
         f20_data$RED.compiler.hw04 +
@@ -109,7 +110,7 @@ summary(
 print("FINAL GRADE - AVG RED runtime + compiler 03-08")
 
 summary(
-  lm(
+  rfit(
     f20_data$grade ~
       f20_data$AvgREDCompiler_HW08 +
         f20_data$AvgREDRuntime_HW08
@@ -117,7 +118,7 @@ summary(
 print("FINAL GRADE - SUM RED runtime + compiler 03-08")
 
 summary(
-  lm(
+  rfit(
     f20_data$grade ~
       f20_data$SumREDCompiler_HW08 +
         f20_data$SumREDRuntime_HW08
