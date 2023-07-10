@@ -2,7 +2,9 @@
 title: "error count and jadud regression"
 author: "XXX"
 date: '2023-07-08'
-output: html_document
+output:
+  pdf_document: default
+  html_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -162,27 +164,26 @@ jadud_df <- left_join(midterm,jadud, by = c("HASH_ID" = "student_id"))
 ## use jadud  to predict midterm 1 grades
 ```{r use jadud to predict midterm 1 grade, echo=TRUE}
 # predict midterm1 with both compiler and runtime jadud measures
-summary(rfit(Midterm1 ~ jadud_hw_03_c + jadud_hw_04_c + jadud_hw_03_r + jadud_hw_04_r, data = jadud_df))
+summary(rfit(Midterm1 ~ jadud_hw_03_c + jadud_hw_04_c + jadud_hw_03_r + jadud_hw_04_r, data = jadud_df, scores = bentscores3))
 ```
 
 ```{r use jadud to predict midterm 1 grade compiler, echo=TRUE}
 # predict midterm1 with only compiler jadud measures
-summary(rfit(Midterm1 ~ jadud_hw_03_c + jadud_hw_04_c, data = jadud_df))
+summary(rfit(Midterm1 ~ jadud_hw_03_c + jadud_hw_04_c, data = jadud_df, scores = bentscores3))
 
 ```
 
 ## 3.2 use  jadud to predict midterm 2 grades
 ```{r use jadud to predict midterm 2 grades, echo=TRUE}
 # predict midterm2 with both compiler and runtime jadud measures
-summary(rfit(Midterm2 ~ jadud_hw_03_c + jadud_hw_04_c + jadud_hw_05_c + jadud_hw_06_c + jadud_hw_07_c + jadud_hw_08_c + jadud_hw_03_r + jadud_hw_04_r + jadud_hw_05_r + jadud_hw_06_r + jadud_hw_07_r + jadud_hw_08_r, data = jadud_df))
+summary(rfit(Midterm2 ~ jadud_hw_03_c + jadud_hw_04_c + jadud_hw_05_c + jadud_hw_06_c + jadud_hw_07_c + jadud_hw_08_c + jadud_hw_03_r + jadud_hw_04_r + jadud_hw_05_r + jadud_hw_06_r + jadud_hw_07_r + jadud_hw_08_r, data = jadud_df, scores = bentscores3))
 ```
 
 ```{r use jadud to predict midterm 2 grades compiler, echo=TRUE}
 # predict midterm2 with only compiler jadud measures
-summary(rfit(Midterm2 ~ jadud_hw_03_c + jadud_hw_04_c + jadud_hw_05_c + jadud_hw_06_c + jadud_hw_07_c + jadud_hw_08_c, data = jadud_df))
+summary(rfit(Midterm2 ~ jadud_hw_03_c + jadud_hw_04_c + jadud_hw_05_c + jadud_hw_06_c + jadud_hw_07_c + jadud_hw_08_c, data = jadud_df, scores = bentscores3))
 
 ```
-
 
 # HW grades
 ```{r}
