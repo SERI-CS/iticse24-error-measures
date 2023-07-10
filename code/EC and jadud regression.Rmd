@@ -218,12 +218,12 @@ summary(rfit(Midterm1 ~ RED_hw_03_c + RED_hw_04_c + RED_hw_03_r + RED_hw_04_r, d
 ## use RED to predict midterm 2 grades
 
 ```{r use RED to predict midterm 2 grades, echo=TRUE}
-# predict midterm2 with only compiler jadud measures
+# predict midterm2 with only compiler RED measures
 summary(rfit(Midterm2 ~
                      RED_hw_03_c + RED_hw_04_c + RED_hw_05_c +
                              RED_hw_06_c + RED_hw_07_c + RED_hw_08_c, data = RED_df, scores = bentscores3))
 
-# predict midterm2 with both compiler and runtime jadud measures
+# predict midterm2 with both compiler and runtime RED measures
 summary(rfit(Midterm2 ~
                      RED_hw_03_c + RED_hw_04_c + RED_hw_05_c +
                              RED_hw_06_c + RED_hw_07_c + RED_hw_08_c +
