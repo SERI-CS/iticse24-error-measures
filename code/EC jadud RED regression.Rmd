@@ -1,0 +1,249 @@
+---
+title: "error count and jadud regression"
+author: "XXX"
+date: '2023-07-08'
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(warning = FALSE, message = FALSE, echo = FALSE)
+
+library(dplyr)
+library(reshape2)
+library(stats)
+library(moments)
+library(tidyr)
+library(kableExtra)
+library(data.table)
+library(ggplot2)
+library(Rfit)
+
+Sys.setlocale( 'LC_ALL','C' ) 
+```
+
+```{r import runtime errors, warning=FALSE}
+df <- 
+  rbind(read.csv("data/data-snapshot-summary/hw00-snapshot-summary.csv") %>% mutate(HW = "HW0"),
+        read.csv("data/data-snapshot-summary/hw03-snapshot-summary.csv") %>% mutate(HW = "HW3"),
+        read.csv("data/data-snapshot-summary/hw04-snapshot-summary.csv") %>% mutate(HW = "HW4"),
+        read.csv("data/data-snapshot-summary/hw05-snapshot-summary.csv") %>% mutate(HW = "HW5"),
+        read.csv("data/data-snapshot-summary/hw06-snapshot-summary.csv") %>% mutate(HW = "HW6"),
+        read.csv("data/data-snapshot-summary/hw07-snapshot-summary.csv") %>% mutate(HW = "HW7"),
+        read.csv("data/data-snapshot-summary/hw08-snapshot-summary.csv") %>% mutate(HW = "HW8"))
+
+colnames(df)[1] <- "colName"
+
+df <- 
+  separate(
+    df,
+    colName,
+    c("student","snapshot","c_error","r_error","t_failed","t_success"),
+    sep = ";")
+
+df[3:6] <- apply(df[3:6],2,as.character)
+df[3:6] <- apply(df[3:6],2,as.numeric)
+
+# agggregate df to student level
+df_r_student <- 
+  df %>% 
+  group_by(student,HW) %>% 
+  summarise(
+    R_totalError = sum(r_error)
+  )
+
+```
+
+```{r import compiler errors, warning=FALSE}
+
+df_c <- 
+  rbind(
+    read.csv("data/compiler-errors/hw00-compiler-errors.csv") %>% mutate(HW = "HW0"),
+    read.csv("data/compiler-errors/hw03-compiler-errors.csv") %>% mutate(HW = "HW3"),
+    read.csv("data/compiler-errors/hw04-compiler-errors.csv") %>% mutate(HW = "HW4"),
+    read.csv("data/compiler-errors/hw05-compiler-errors.csv") %>% mutate(HW = "HW5"),
+    read.csv("data/compiler-errors/hw06-compiler-errors.csv") %>% mutate(HW = "HW6"),
+    read.csv("data/compiler-errors/hw07-compiler-errors.csv") %>% mutate(HW = "HW7"),
+    read.csv("data/compiler-errors/hw08-compiler-errors.csv") %>% mutate(HW = "HW8"))
+
+colnames(df_c)[1] <- "colName"
+
+df_c <- 
+  separate(
+    df_c,
+    colName,
+    c("student","snapshot","file","line","error"),
+    sep = ";")
+
+df_c_student <- 
+  df_c %>% 
+  group_by(HW,student) %>% 
+  summarise(C_totalError = n())
+
+# combine df_r_student with df_c_student
+df_error <- left_join(df_r_student, df_c_student, by = c("student","HW"))
+```
+
+```{r import mid-term grades}
+
+midterm <- 
+  inner_join(
+    read.csv("data/grades/Midterm1_Fall_2020.csv"),
+    read.csv("data/grades/Midterm2_Fall_2020.csv"), 
+    by = "HASH_ID") %>% 
+  rename(Midterm1= Total.Score.x, Midterm2 = Total.Score.y) %>% 
+  subset(!is.na(Midterm1) & !is.na(Midterm2))
+
+df_error <- 
+  df_error %>% 
+  select(student, HW, R_totalError, C_totalError) %>% 
+  pivot_wider(
+    id_cols = student,
+    names_from = HW,
+    values_from = c("R_totalError", "C_totalError")
+  )
+
+# combine midterm and errors
+allError <- left_join(midterm,df_error, by = c("HASH_ID" = "student"))
+
+```
+
+# Error count
+## use error count to predict midterm 1
+```{r, echo=TRUE}
+# predict midterm1 with only compiler errors
+summary(rfit(Midterm1 ~
+             C_totalError_HW3+C_totalError_HW4,
+           data = allError))
+
+# predict midterm1 with both compiler and runtime errors
+summary(rfit(Midterm1 ~
+             R_totalError_HW3+R_totalError_HW4+
+             C_totalError_HW3+C_totalError_HW4,
+           data = allError))
+
+```
+
+## use error count to predict midterm 2
+```{r echo=TRUE}
+# predict midterm2 with compiler errors
+summary(rfit(Midterm2 ~
+             C_totalError_HW3+C_totalError_HW4+
+             C_totalError_HW5+C_totalError_HW6+
+             C_totalError_HW7++C_totalError_HW8,
+           data = allError))
+
+# predict midterm2 with both compiler and runtime errors
+summary(rfit(Midterm2 ~
+             R_totalError_HW3+R_totalError_HW4 +
+             R_totalError_HW5+R_totalError_HW6+
+             R_totalError_HW7+R_totalError_HW8+
+             C_totalError_HW3+C_totalError_HW4+
+             C_totalError_HW5+C_totalError_HW6+
+             C_totalError_HW7++C_totalError_HW8,
+           data = allError))
+
+```
+
+\newpage
+
+# Jadud
+```{r import jadud csv, warning=FALSE}
+
+jadud <- read.csv("results/jadud/compiler-errors.csv")
+jadud_runtime = read.csv("results/jadud/exceptions.csv")
+
+jadud <- full_join(jadud,jadud_runtime,by = "student_id")
+colnames(jadud)[2:13] = 
+  c("jadud_hw_03_c","jadud_hw_04_c","jadud_hw_05_c","jadud_hw_06_c","jadud_hw_07_c","jadud_hw_08_c","jadud_hw_03_r","jadud_hw_04_r","jadud_hw_05_r","jadud_hw_06_r","jadud_hw_07_r","jadud_hw_08_r")
+
+jadud_df <- left_join(midterm,jadud, by = c("HASH_ID" = "student_id"))
+```
+
+## use jadud to predict midterm 1 grades
+```{r use jadud to predict midterm 1 grade, echo=TRUE}
+# predict midterm1 with only compiler jadud measures
+summary(rfit(Midterm1 ~ jadud_hw_03_c + jadud_hw_04_c, data = jadud_df))
+
+# predict midterm1 with both compiler and runtime jadud measures
+summary(rfit(Midterm1 ~ jadud_hw_03_c + jadud_hw_04_c + jadud_hw_03_r + jadud_hw_04_r, data = jadud_df))
+
+```
+
+## use  jadud to predict midterm 2 grades
+```{r use jadud to predict midterm 2 grades, echo=TRUE}
+# predict midterm2 with only compiler jadud measures
+summary(rfit(Midterm2 ~ 
+               jadud_hw_03_c + jadud_hw_04_c + jadud_hw_05_c + 
+               jadud_hw_06_c + jadud_hw_07_c + jadud_hw_08_c, data = jadud_df))
+
+# predict midterm2 with both compiler and runtime jadud measures
+summary(rfit(Midterm2 ~ 
+               jadud_hw_03_c + jadud_hw_04_c + jadud_hw_05_c + 
+               jadud_hw_06_c + jadud_hw_07_c + jadud_hw_08_c + 
+               jadud_hw_03_r + jadud_hw_04_r + jadud_hw_05_r + 
+               jadud_hw_06_r + jadud_hw_07_r + jadud_hw_08_r, data = jadud_df))
+```
+
+
+
+
+\newpage
+
+# RED
+```{r import RED csv, warning=FALSE}
+
+RED <- read.csv("results/repeated-error-density/RED.csv", sep = ";")
+
+colnames(RED)[2:13] =
+        c("RED_hw_03_r","RED_hw_04_r","RED_hw_05_r","RED_hw_06_r","RED_hw_07_r","RED_hw_08_r", "RED_hw_03_c","RED_hw_04_c","RED_hw_05_c","RED_hw_06_c","RED_hw_07_c","RED_hw_08_c")
+
+
+RED_df <- left_join(midterm,RED, by = c("HASH_ID" = "student"))
+```
+
+## use RED to predict midterm 1 grades
+```{r use RED to predict midterm 1 grade, echo=TRUE}
+# predict midterm1 with only compiler RED measures
+summary(rfit(Midterm1 ~ RED_hw_03_c + RED_hw_04_c, data = RED_df))
+
+# predict midterm1 with both compiler and runtime RED measures
+summary(rfit(Midterm1 ~ RED_hw_03_c + RED_hw_04_c + RED_hw_03_r + RED_hw_04_r, data = RED_df))
+
+```
+
+
+
+## use RED to predict midterm 2 grades
+
+```{r use RED to predict midterm 2 grades, echo=TRUE}
+# predict midterm2 with only compiler RED measures
+summary(rfit(Midterm2 ~
+                     RED_hw_03_c + RED_hw_04_c + RED_hw_05_c +
+                             RED_hw_06_c + RED_hw_07_c + RED_hw_08_c, data = RED_df))
+
+# predict midterm2 with both compiler and runtime RED measures
+summary(rfit(Midterm2 ~
+                     RED_hw_03_c + RED_hw_04_c + RED_hw_05_c +
+                             RED_hw_06_c + RED_hw_07_c + RED_hw_08_c +
+                             RED_hw_03_r + RED_hw_04_r + RED_hw_05_r +
+                             RED_hw_06_r + RED_hw_07_r + RED_hw_08_r, data = RED_df))
+```
+\newpage
+
+# HW grades
+```{r}
+grade <- read.csv("data/grades/df_HWGrades_grade.csv") 
+grade <- left_join(midterm,grade, by = c("HASH_ID" = "HashedId"))
+
+```
+## use HW grades to predict midterm 1
+```{r use HW rank to predict midterm 1, echo= TRUE}
+summary(rfit(Midterm1 ~ HW3 + HW4, data = grade))
+```
+
+## use HW grades to predict midterm 2
+```{r}
+summary(rfit(Midterm2 ~ HW3+HW4+HW5+HW6+HW7+HW8, data = grade))
+```
