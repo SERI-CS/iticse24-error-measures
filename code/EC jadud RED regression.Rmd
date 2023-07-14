@@ -10,15 +10,17 @@ output:
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(warning = FALSE, message = FALSE, echo = FALSE)
 
-library(dplyr)
-library(reshape2)
-library(stats)
-library(moments)
-library(tidyr)
-library(kableExtra)
-library(data.table)
-library(ggplot2)
-library(Rfit)
+# Names of required packages
+packages <- c("dplyr","reshape2","stats","tidyr","Rfit")
+
+# Install packages not yet installed
+installed_packages <- packages %in% rownames(installed.packages())
+if (any(installed_packages == FALSE)) {
+install.packages(packages[!installed_packages])
+}
+
+# Packages loading
+invisible(lapply(packages, library, character.only = TRUE))
 
 Sys.setlocale( 'LC_ALL','C' ) 
 ```
