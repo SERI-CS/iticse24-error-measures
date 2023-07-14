@@ -21,7 +21,6 @@ The software computes error measures in the logs of student compilation events a
 ### Code
 
 * `jadud.py`: Compute Jadud's EQ for each student using `data/snapshots` and either `data/compiler-errors` or `data/exceptions`.
-* `red.R`: Rank-based regression analysis with RED values as predictors of the exam 1 and exam 2 grades. 
 * `EC jadud RED regression.Rmd`: SRL-use total error counts to predict learning outcomes. 
 
 ### Results
