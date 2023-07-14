@@ -27,13 +27,13 @@ Sys.setlocale( 'LC_ALL','C' )
 
 ```{r import runtime errors, warning=FALSE}
 df <- 
-  rbind(read.csv("data/data-snapshot-summary/hw00-snapshot-summary.csv") %>% mutate(HW = "HW0"),
-        read.csv("data/data-snapshot-summary/hw03-snapshot-summary.csv") %>% mutate(HW = "HW3"),
-        read.csv("data/data-snapshot-summary/hw04-snapshot-summary.csv") %>% mutate(HW = "HW4"),
-        read.csv("data/data-snapshot-summary/hw05-snapshot-summary.csv") %>% mutate(HW = "HW5"),
-        read.csv("data/data-snapshot-summary/hw06-snapshot-summary.csv") %>% mutate(HW = "HW6"),
-        read.csv("data/data-snapshot-summary/hw07-snapshot-summary.csv") %>% mutate(HW = "HW7"),
-        read.csv("data/data-snapshot-summary/hw08-snapshot-summary.csv") %>% mutate(HW = "HW8"))
+  rbind(read.csv("data/snapshots-summary/hw00-snapshot-summary.csv") %>% mutate(HW = "HW0"),
+        read.csv("data/snapshots-summary/hw03-snapshot-summary.csv") %>% mutate(HW = "HW3"),
+        read.csv("data/snapshots-summary/hw04-snapshot-summary.csv") %>% mutate(HW = "HW4"),
+        read.csv("data/snapshots-summary/hw05-snapshot-summary.csv") %>% mutate(HW = "HW5"),
+        read.csv("data/snapshots-summary/hw06-snapshot-summary.csv") %>% mutate(HW = "HW6"),
+        read.csv("data/snapshots-summary/hw07-snapshot-summary.csv") %>% mutate(HW = "HW7"),
+        read.csv("data/snapshots-summary/hw08-snapshot-summary.csv") %>% mutate(HW = "HW8"))
 
 colnames(df)[1] <- "colName"
 

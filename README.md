@@ -1,26 +1,33 @@
-# Purpose of the software
+# Overview
 
-Compute error metrics in the logs of student compilation events.
+This repository contains supplementary materials for the following conference paper:
 
-# Repository structure
+[Anonymous authors]
+**Evaluation and Comparison of Three Programming Error Measures for Explaining Course Grades.**
+Submitted to ACM SIGCSE 2024 conference.
 
-## Folders
+The software computes error measures in the logs of student compilation events and builds regression models to explain students' course grades.
+
+## File structure
 
 ### Data
 
-* `compiler-errors`: All compilation errors. *Author: Maciej Pankiewicz.*
-* `exceptions`: All runtime errors. *Author: Maciej Pankiewicz.*
-* `grades`: Student grades from the [Fall 2020 GDrive](https://drive.google.com/drive/u/0/folders/1eh1Vf5ACLN-tuK9S20iOSHv9_PAN4MKX). *Author: Eric Fouh?*
-* `snapshots`: Complete snapshots of all compilation events. *Author: Maciej Pankiewicz.*
+* `compiler-errors`: All compilation errors. 
+* `exceptions`: All runtime errors. 
+* `grades`: Student grades from the [Fall 2020 GDrive](https://drive.google.com/drive/u/0/folders/1eh1Vf5ACLN-tuK9S20iOSHv9_PAN4MKX).
+* `snapshots`: Complete snapshots of all compilation events.
+* `snapshots-summary`: For each snapshot, indicates the number of compiler and runtime errors, as well as passed and failed test cases.
 
 ### Code
 
-* `jadud.py`: Compute Jadud's EQ for each student using `data/snapshots` and either `data/compiler-errors` or `data/exceptions`. *Author: Valdemar Švábenský.*
-* `red.R`: Rank-based regression analysis with RED values as predictors of the midterm1, midterm2 and final grade. *Author: Maciej Pankiewicz.*
-* `use error count to pred grades.Rmd`: SRL-use total error counts to predict learning outcomes. *Author: Joyce Zhang.*
+* `jadud.py`: Compute Jadud's EQ for each student using `data/snapshots` and either `data/compiler-errors` or `data/exceptions`.
+* `red.R`: Rank-based regression analysis with RED values as predictors of the exam 1 and exam 2 grades. 
+* `EC jadud RED regression.Rmd`: SRL-use total error counts to predict learning outcomes. 
 
 ### Results
 
-* `error-count`: Contains files with computed number of compiler and runtime errors (exceptions) for each student snapshot *Author: Maciej Pankiewicz.*
-* `jadud`: Output of `jadud.py`. Contains files with computed *Jadud's error quotient* (EQ) values for compiler and runtime errors (exceptions) *Author: Valdemar Švábenský.*
-* `repeated-error-density`: Contains files with computed *repeated error density* (RED) values for compiler and runtime errors (exceptions) *Author: Maciej Pankiewicz.*
+* `error-count`: Computed number of compiler and runtime errors (exceptions) for each student snapshot.
+* `jadud`: Output of `jadud.py`. Computed *Jadud's error quotient* (EQ) values for compiler and runtime errors (exceptions).
+* `repeated-error-density`: Computed *repeated error density* (RED) values for compiler and runtime errors (exceptions).
+* `descriptive stats.pdf`: Descriptive statistics of the variables used in the regression models.
+* `EC-jadud-RED-regression.pdf`: Full regression modeling results.
