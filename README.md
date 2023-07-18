@@ -15,8 +15,8 @@ The software computes error measures in the logs of student compilation events a
 * `compiler-errors`: All compilation errors. 
 * `exceptions`: All runtime errors. 
 * `grades`: Student grades from the [Fall 2020 GDrive](https://drive.google.com/drive/u/0/folders/1eh1Vf5ACLN-tuK9S20iOSHv9_PAN4MKX).
-* `snapshots`: Complete snapshots of all compilation events.
-* `snapshots-summary`: For each snapshot, indicates the number of compiler and runtime errors, as well as passed and failed test cases.
+* `snapshots`: Complete snapshots of all compilation events (before autograder evaluation).
+* `snapshots-summary`: For each snapshot (after autograder evaluation), indicates the number of compiler and runtime errors, as well as passed and failed test cases.
 
 ### Code
 
