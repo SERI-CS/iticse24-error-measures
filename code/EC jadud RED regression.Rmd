@@ -249,3 +249,47 @@ summary(rfit(Midterm1 ~ HW3 + HW4, data = grade))
 ```{r}
 summary(rfit(Midterm2 ~ HW3+HW4+HW5+HW6+HW7+HW8, data = grade))
 ```
+
+\newpage
+## intercorrelation between the three error measures
+### compiler errors
+```{r}
+ErrorMeasures = 
+  full_join(allError[,c(1,5:10,12:17)], jadud_df[,-c(2:3)], by = "HASH_ID") %>%
+  full_join(RED_df[,c(1,4:15)], by = "HASH_ID")
+
+# Compiler error
+for (i in c(3:8)) {
+  E_type = "C"
+  EC = select(ErrorMeasures,paste0(E_type,'_totalError_HW',i))
+  Jadud = select(ErrorMeasures,paste0("jadud_hw_0",i,"_",tolower(E_type)))
+  RED = select(ErrorMeasures,paste0("RED_hw_0",i,"_",tolower(E_type)))
+
+  print(paste0("HW",i))
+  print(cor(EC,Jadud,use = "complete.obs"))
+  print(cor(EC,RED,use = "complete.obs"))
+  print(cor(Jadud,RED,use = "complete.obs"))
+  
+}
+
+```
+
+\newpage
+### runtime errors
+```{r}
+# Runtime error
+for (i in c(3:8)) {
+  E_type = "R"
+  EC = select(ErrorMeasures,paste0(E_type,'_totalError_HW',i))
+  Jadud = select(ErrorMeasures,paste0("jadud_hw_0",i,"_",tolower(E_type)))
+  RED = select(ErrorMeasures,paste0("RED_hw_0",i,"_",tolower(E_type)))
+
+  print(paste0("HW",i))
+  print(cor(EC,Jadud,use = "complete.obs"))
+  print(cor(EC,RED,use = "complete.obs"))
+  print(cor(Jadud,RED,use = "complete.obs"))
+  
+}
+```
+
+
