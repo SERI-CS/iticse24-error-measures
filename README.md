@@ -3,7 +3,7 @@
 This repository contains supplementary materials for the following conference paper:
 
 [Anonymous authors]\
-**Evaluation and Comparison of Three Programming Error Measures for Explaining Course Grades.**\
+**Comparison of Three Programming Error Measures for Determining Grades in CS1**\
 Submitted to ACM SIGCSE 2024 conference.
 
 The software computes error measures in the logs of student compilation events and builds regression models to explain students' course grades.
@@ -16,8 +16,8 @@ Folders:
 
 * `compiler-errors`: All compilation errors. 
 * `exceptions`: All runtime errors. 
-* `grades`: Student grades from the [Fall 2020 GDrive](https://drive.google.com/drive/u/0/folders/1eh1Vf5ACLN-tuK9S20iOSHv9_PAN4MKX).
-* `snapshots`: Complete snapshots of all compilation events (before autograder evaluation).
+* `grades`: Student grades.
+* `snapshots`: List of snapshots (before autograder evaluation) collected during the study.
 * `snapshots-summary`: For each snapshot (after autograder evaluation), indicates the number of compiler and runtime errors, as well as passed and failed test cases.
 
 ### Code
