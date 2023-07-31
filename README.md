@@ -14,10 +14,10 @@ The software computes error measures in the logs of student compilation events a
 
 Folders:
 
-* `compiler-errors`: All compilation errors. 
+* `compiler-errors`: All compilation errors. Also includes a test file used by `jadud.py` that can be ignored.
 * `exceptions`: All runtime errors. 
 * `grades`: Student grades.
-* `snapshots`: List of snapshots (before autograder evaluation) collected during the study.
+* `snapshots`: List of snapshots (before autograder evaluation) collected during the study. Also includes a test file used by `jadud.py` that can be ignored.
 * `snapshots-summary`: For each snapshot (after autograder evaluation), indicates the number of compiler and runtime errors, as well as passed and failed test cases.
 
 ### Code
@@ -25,7 +25,7 @@ Folders:
 Files:
 
 * `jadud.py`: Compute Jadud's EQ for each student using `data/snapshots` and either `data/compiler-errors` or `data/exceptions`.
-* `EC jadud RED regression.Rmd`: SRL-use total error counts to predict learning outcomes. 
+* `EC jadud RED regression.Rmd`: Use error metrics to predict learning outcomes. 
 
 ### Results
 
