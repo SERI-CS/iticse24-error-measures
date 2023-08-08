@@ -25,6 +25,7 @@ Folders:
 Files:
 
 * `jadud.py`: Compute Jadud's EQ for each student using `data/snapshots` and either `data/compiler-errors` or `data/exceptions`.
+* `repeated-error-density-process-errors.xml`: Compute RED for each student using `data/snapshots` and either `data/compiler-errors` or `data/exceptions`.
 * `EC jadud RED regression.Rmd`: Use error metrics to predict learning outcomes. 
 
 ### Results
