@@ -1,0 +1,807 @@
+<?xml version="1.0" encoding="UTF-8"?><process version="9.10.011">
+  <context>
+    <input/>
+    <output/>
+    <macros>
+      <macro>
+        <key>hw</key>
+        <value>3</value>
+      </macro>
+      <macro>
+        <key>absolute_path_to_cloned_repository</key>
+        <value>your\path\to\error-analysis</value>
+      </macro>
+    </macros>
+  </context>
+  <operator activated="true" class="process" compatibility="9.10.011" expanded="true" name="Process">
+    <parameter key="logverbosity" value="init"/>
+    <parameter key="random_seed" value="2001"/>
+    <parameter key="send_mail" value="never"/>
+    <parameter key="notification_email" value=""/>
+    <parameter key="process_duration_for_mail" value="30"/>
+    <parameter key="encoding" value="SYSTEM"/>
+    <process expanded="true">
+      <operator activated="true" class="read_csv" compatibility="9.10.011" expanded="true" height="68" name="read exceptions" width="90" x="45" y="391">
+        <parameter key="csv_file" value="%{absolute_path_to_cloned_repository}\data\exceptions\hw0%{hw}-exceptions.csv"/>
+        <parameter key="column_separators" value=";"/>
+        <parameter key="trim_lines" value="false"/>
+        <parameter key="use_quotes" value="true"/>
+        <parameter key="quotes_character" value="&quot;"/>
+        <parameter key="escape_character" value="\"/>
+        <parameter key="skip_comments" value="true"/>
+        <parameter key="comment_characters" value="#"/>
+        <parameter key="starting_row" value="1"/>
+        <parameter key="parse_numbers" value="true"/>
+        <parameter key="decimal_character" value="."/>
+        <parameter key="grouped_digits" value="false"/>
+        <parameter key="grouping_character" value=","/>
+        <parameter key="infinity_representation" value=""/>
+        <parameter key="date_format" value="yyyy-MM-dd HH:mm:ss"/>
+        <parameter key="first_row_as_names" value="true"/>
+        <list key="annotations"/>
+        <parameter key="time_zone" value="SYSTEM"/>
+        <parameter key="locale" value="English (United States)"/>
+        <parameter key="encoding" value="windows-1250"/>
+        <parameter key="read_all_values_as_polynominal" value="true"/>
+        <list key="data_set_meta_data_information">
+          <parameter key="0" value="student.true.polynominal.attribute"/>
+          <parameter key="1" value="snapshot.true.polynominal.attribute"/>
+          <parameter key="2" value="datetime.true.date_time.attribute"/>
+          <parameter key="3" value="exception.true.polynominal.attribute"/>
+          <parameter key="4" value="class.true.polynominal.attribute"/>
+          <parameter key="5" value="method.true.polynominal.attribute"/>
+          <parameter key="6" value="line.true.integer.attribute"/>
+          <parameter key="7" value="secondary_class.true.polynominal.attribute"/>
+          <parameter key="8" value="secondary_method.true.polynominal.attribute"/>
+          <parameter key="9" value="secondary_line.true.integer.attribute"/>
+        </list>
+        <parameter key="read_not_matching_values_as_missings" value="false"/>
+      </operator>
+      <operator activated="true" class="generate_attributes" compatibility="9.10.011" expanded="true" height="82" name="Generate Attributes (5)" width="90" x="447" y="391">
+        <list key="function_descriptions">
+          <parameter key="error" value="exception+&quot;&quot;+class+&quot;&quot;+method"/>
+          <parameter key="error_hash" value="error"/>
+          <parameter key="hw" value="7"/>
+        </list>
+        <parameter key="keep_all" value="true"/>
+      </operator>
+      <operator activated="true" class="read_csv" compatibility="9.10.011" expanded="true" height="68" name="read complete snapshots" width="90" x="45" y="238">
+        <parameter key="csv_file" value="%{absolute_path_to_cloned_repository}\data\snapshots\hw0%{hw}-complete_snapshots.csv"/>
+        <parameter key="column_separators" value=";"/>
+        <parameter key="trim_lines" value="false"/>
+        <parameter key="use_quotes" value="true"/>
+        <parameter key="quotes_character" value="&quot;"/>
+        <parameter key="escape_character" value="\"/>
+        <parameter key="skip_comments" value="true"/>
+        <parameter key="comment_characters" value="#"/>
+        <parameter key="starting_row" value="1"/>
+        <parameter key="parse_numbers" value="true"/>
+        <parameter key="decimal_character" value="."/>
+        <parameter key="grouped_digits" value="false"/>
+        <parameter key="grouping_character" value=","/>
+        <parameter key="infinity_representation" value=""/>
+        <parameter key="date_format" value="yyyy-MM-dd HH:mm:ss"/>
+        <parameter key="first_row_as_names" value="true"/>
+        <list key="annotations"/>
+        <parameter key="time_zone" value="SYSTEM"/>
+        <parameter key="locale" value="English (United States)"/>
+        <parameter key="encoding" value="windows-1250"/>
+        <parameter key="read_all_values_as_polynominal" value="false"/>
+        <list key="data_set_meta_data_information">
+          <parameter key="0" value="student.true.polynominal.attribute"/>
+          <parameter key="1" value="snapshot.true.polynominal.attribute"/>
+          <parameter key="2" value="datetime.true.date_time.attribute"/>
+        </list>
+        <parameter key="read_not_matching_values_as_missings" value="false"/>
+      </operator>
+      <operator activated="true" class="free_memory" compatibility="9.10.011" expanded="true" height="82" name="Free Memory (3)" width="90" x="179" y="238"/>
+      <operator activated="true" class="subprocess" compatibility="9.10.011" expanded="true" height="82" name="Process complete snapshots" width="90" x="313" y="238">
+        <process expanded="true">
+          <operator activated="true" class="filter_example_range" compatibility="9.10.011" expanded="true" height="82" name="Filter Example Range" width="90" x="112" y="85">
+            <parameter key="first_example" value="1"/>
+            <parameter key="last_example" value="50000"/>
+            <parameter key="invert_filter" value="false"/>
+          </operator>
+          <operator activated="true" class="replace" compatibility="9.10.011" expanded="true" height="82" name="Replace" width="90" x="246" y="85">
+            <parameter key="attribute_filter_type" value="single"/>
+            <parameter key="attribute" value="snapshot"/>
+            <parameter key="attributes" value=""/>
+            <parameter key="use_except_expression" value="false"/>
+            <parameter key="value_type" value="nominal"/>
+            <parameter key="use_value_type_exception" value="false"/>
+            <parameter key="except_value_type" value="file_path"/>
+            <parameter key="block_type" value="single_value"/>
+            <parameter key="use_block_type_exception" value="false"/>
+            <parameter key="except_block_type" value="single_value"/>
+            <parameter key="invert_selection" value="false"/>
+            <parameter key="include_special_attributes" value="false"/>
+            <parameter key="replace_what" value=":"/>
+            <parameter key="replace_by" value="_"/>
+          </operator>
+          <operator activated="true" class="generate_attributes" compatibility="9.10.011" expanded="true" height="82" name="Generate Attributes (3)" width="90" x="380" y="85">
+            <list key="function_descriptions">
+              <parameter key="snapshot_id" value="0"/>
+            </list>
+            <parameter key="keep_all" value="true"/>
+          </operator>
+          <operator activated="true" class="set_macro" compatibility="9.10.011" expanded="true" height="82" name="Set Macro (2)" width="90" x="514" y="85">
+            <parameter key="macro" value="snapshot_number"/>
+            <parameter key="value" value="0"/>
+          </operator>
+          <operator activated="true" class="concurrency:loop_values" compatibility="9.10.011" expanded="true" height="82" name="Loop Values (3)" width="90" x="648" y="85">
+            <parameter key="attribute" value="student"/>
+            <parameter key="iteration_macro" value="loop_student"/>
+            <parameter key="reuse_results" value="false"/>
+            <parameter key="enable_parallel_execution" value="false"/>
+            <process expanded="true">
+              <operator activated="true" class="filter_examples" compatibility="9.10.011" expanded="true" height="103" name="Filter Examples (3)" width="90" x="45" y="34">
+                <parameter key="parameter_expression" value=""/>
+                <parameter key="condition_class" value="custom_filters"/>
+                <parameter key="invert_filter" value="false"/>
+                <list key="filters_list">
+                  <parameter key="filters_entry_key" value="student.equals.%{loop_student}"/>
+                </list>
+                <parameter key="filters_logic_and" value="true"/>
+                <parameter key="filters_check_metadata" value="true"/>
+              </operator>
+              <operator activated="true" class="generate_macro" compatibility="9.10.011" expanded="true" height="82" name="Generate Macro (4)" width="90" x="179" y="34">
+                <list key="function_descriptions">
+                  <parameter key="snapshot_number" value="0"/>
+                </list>
+              </operator>
+              <operator activated="true" class="concurrency:loop_values" compatibility="9.10.011" expanded="true" height="82" name="Loop Values (4)" width="90" x="380" y="34">
+                <parameter key="attribute" value="snapshot"/>
+                <parameter key="iteration_macro" value="loop_snapshot"/>
+                <parameter key="reuse_results" value="false"/>
+                <parameter key="enable_parallel_execution" value="false"/>
+                <process expanded="true">
+                  <operator activated="true" class="filter_examples" compatibility="9.10.011" expanded="true" height="103" name="Filter Examples (4)" width="90" x="45" y="34">
+                    <parameter key="parameter_expression" value=""/>
+                    <parameter key="condition_class" value="custom_filters"/>
+                    <parameter key="invert_filter" value="false"/>
+                    <list key="filters_list">
+                      <parameter key="filters_entry_key" value="snapshot.equals.%{loop_snapshot}"/>
+                    </list>
+                    <parameter key="filters_logic_and" value="true"/>
+                    <parameter key="filters_check_metadata" value="true"/>
+                  </operator>
+                  <operator activated="true" class="set_data" compatibility="9.10.011" expanded="true" height="82" name="Set Data" width="90" x="246" y="34">
+                    <parameter key="example_index" value="1"/>
+                    <parameter key="count_backwards" value="false"/>
+                    <parameter key="attribute_name" value="snapshot_id"/>
+                    <parameter key="value" value="%{snapshot_number}"/>
+                    <list key="additional_values"/>
+                  </operator>
+                  <operator activated="false" class="generate_attributes" compatibility="9.10.011" expanded="true" height="82" name="Generate Attributes (4)" width="90" x="313" y="136">
+                    <list key="function_descriptions">
+                      <parameter key="snapshot_id" value="%{snapshot_number}"/>
+                    </list>
+                    <parameter key="keep_all" value="true"/>
+                  </operator>
+                  <operator activated="true" class="generate_macro" compatibility="9.10.011" expanded="true" height="82" name="Generate Macro (3)" width="90" x="648" y="34">
+                    <list key="function_descriptions">
+                      <parameter key="snapshot_number" value="eval(%{snapshot_number})+1"/>
+                    </list>
+                  </operator>
+                  <connect from_port="input 1" to_op="Filter Examples (4)" to_port="example set input"/>
+                  <connect from_op="Filter Examples (4)" from_port="example set output" to_op="Set Data" to_port="example set input"/>
+                  <connect from_op="Set Data" from_port="example set output" to_op="Generate Macro (3)" to_port="through 1"/>
+                  <connect from_op="Generate Macro (3)" from_port="through 1" to_port="output 1"/>
+                  <portSpacing port="source_input 1" spacing="0"/>
+                  <portSpacing port="source_input 2" spacing="0"/>
+                  <portSpacing port="sink_output 1" spacing="0"/>
+                  <portSpacing port="sink_output 2" spacing="0"/>
+                </process>
+              </operator>
+              <operator activated="true" class="append" compatibility="9.10.011" expanded="true" height="82" name="Append (4)" width="90" x="514" y="34">
+                <parameter key="datamanagement" value="double_array"/>
+                <parameter key="data_management" value="auto"/>
+                <parameter key="merge_type" value="all"/>
+              </operator>
+              <connect from_port="input 1" to_op="Filter Examples (3)" to_port="example set input"/>
+              <connect from_op="Filter Examples (3)" from_port="example set output" to_op="Generate Macro (4)" to_port="through 1"/>
+              <connect from_op="Generate Macro (4)" from_port="through 1" to_op="Loop Values (4)" to_port="input 1"/>
+              <connect from_op="Loop Values (4)" from_port="output 1" to_op="Append (4)" to_port="example set 1"/>
+              <connect from_op="Append (4)" from_port="merged set" to_port="output 1"/>
+              <portSpacing port="source_input 1" spacing="0"/>
+              <portSpacing port="source_input 2" spacing="0"/>
+              <portSpacing port="sink_output 1" spacing="0"/>
+              <portSpacing port="sink_output 2" spacing="0"/>
+            </process>
+          </operator>
+          <operator activated="true" class="append" compatibility="9.10.011" expanded="true" height="82" name="Append (3)" width="90" x="782" y="85">
+            <parameter key="datamanagement" value="double_array"/>
+            <parameter key="data_management" value="auto"/>
+            <parameter key="merge_type" value="all"/>
+          </operator>
+          <connect from_port="in 1" to_op="Filter Example Range" to_port="example set input"/>
+          <connect from_op="Filter Example Range" from_port="example set output" to_op="Replace" to_port="example set input"/>
+          <connect from_op="Replace" from_port="example set output" to_op="Generate Attributes (3)" to_port="example set input"/>
+          <connect from_op="Generate Attributes (3)" from_port="example set output" to_op="Set Macro (2)" to_port="through 1"/>
+          <connect from_op="Set Macro (2)" from_port="through 1" to_op="Loop Values (3)" to_port="input 1"/>
+          <connect from_op="Loop Values (3)" from_port="output 1" to_op="Append (3)" to_port="example set 1"/>
+          <connect from_op="Append (3)" from_port="merged set" to_port="out 1"/>
+          <portSpacing port="source_in 1" spacing="0"/>
+          <portSpacing port="source_in 2" spacing="0"/>
+          <portSpacing port="sink_out 1" spacing="0"/>
+          <portSpacing port="sink_out 2" spacing="0"/>
+        </process>
+      </operator>
+      <operator activated="true" class="multiply" compatibility="9.10.011" expanded="true" height="103" name="Multiply (3)" width="90" x="447" y="238"/>
+      <operator activated="true" class="free_memory" compatibility="9.10.011" expanded="true" height="82" name="Free Memory (2)" width="90" x="715" y="187"/>
+      <operator activated="true" class="concurrency:join" compatibility="9.10.011" expanded="true" height="82" name="Join (3)" width="90" x="581" y="289">
+        <parameter key="remove_double_attributes" value="false"/>
+        <parameter key="join_type" value="left"/>
+        <parameter key="use_id_attribute_as_key" value="false"/>
+        <list key="key_attributes">
+          <parameter key="student" value="student"/>
+          <parameter key="snapshot" value="snapshot"/>
+        </list>
+        <parameter key="keep_both_join_attributes" value="false"/>
+      </operator>
+      <operator activated="true" class="append" compatibility="9.10.011" expanded="true" height="82" name="Append (5)" width="90" x="715" y="289">
+        <parameter key="datamanagement" value="double_array"/>
+        <parameter key="data_management" value="auto"/>
+        <parameter key="merge_type" value="all"/>
+      </operator>
+      <operator activated="true" class="r_scripting:execute_r" compatibility="9.6.000" expanded="true" height="103" name="hash exception data" width="90" x="849" y="289">
+        <parameter key="script" value="# rm_main is a mandatory function, &#10;# the number of arguments has to be the number of input ports (can be none)&#10;rm_main = function(data)&#10;{&#10;&#9;library(digest)&#10;&#9;data$error_hash &lt;- sapply(data$error_hash, digest, algo=&quot;md5&quot;)&#10;&#10;&#9;return(list(data))&#10;}&#10;"/>
+        <parameter key="use_default_R" value="true"/>
+        <parameter key="Rscript_executable" value="C:/R/Rscript.exe"/>
+        <parameter key="use_default_R_LIBS_paths" value="true"/>
+        <enumeration key="R_LIBS_paths"/>
+      </operator>
+      <operator activated="true" class="generate_attributes" compatibility="9.10.011" expanded="true" height="82" name="Generate Attributes (7)" width="90" x="983" y="289">
+        <list key="function_descriptions">
+          <parameter key="error_hash" value="if(MISSING_NOMINAL==error, &quot;&quot;,error_hash)"/>
+        </list>
+        <parameter key="keep_all" value="true"/>
+      </operator>
+      <operator activated="true" class="multiply" compatibility="9.10.011" expanded="true" height="82" name="Multiply (2)" width="90" x="1117" y="289"/>
+      <operator activated="true" class="concurrency:loop_values" compatibility="9.10.011" expanded="true" height="103" name="Loop Values (7)" width="90" x="1251" y="187">
+        <parameter key="attribute" value="student"/>
+        <parameter key="iteration_macro" value="loop_student"/>
+        <parameter key="reuse_results" value="false"/>
+        <parameter key="enable_parallel_execution" value="false"/>
+        <process expanded="true">
+          <operator activated="true" class="filter_examples" compatibility="9.10.011" expanded="true" height="103" name="Filter Examples (7)" width="90" x="112" y="34">
+            <parameter key="parameter_expression" value=""/>
+            <parameter key="condition_class" value="custom_filters"/>
+            <parameter key="invert_filter" value="false"/>
+            <list key="filters_list">
+              <parameter key="filters_entry_key" value="student.equals.%{loop_student}"/>
+            </list>
+            <parameter key="filters_logic_and" value="true"/>
+            <parameter key="filters_check_metadata" value="true"/>
+          </operator>
+          <operator activated="true" class="filter_examples" compatibility="9.10.011" expanded="true" height="103" name="Filter Examples (9)" width="90" x="112" y="136">
+            <parameter key="parameter_expression" value=""/>
+            <parameter key="condition_class" value="custom_filters"/>
+            <parameter key="invert_filter" value="false"/>
+            <list key="filters_list">
+              <parameter key="filters_entry_key" value="student.equals.%{loop_student}"/>
+            </list>
+            <parameter key="filters_logic_and" value="true"/>
+            <parameter key="filters_check_metadata" value="true"/>
+          </operator>
+          <operator activated="true" class="concurrency:loop_values" compatibility="9.10.011" expanded="true" height="103" name="Loop Values (8)" width="90" x="313" y="34">
+            <parameter key="attribute" value="error_hash"/>
+            <parameter key="iteration_macro" value="loop_hash"/>
+            <parameter key="reuse_results" value="false"/>
+            <parameter key="enable_parallel_execution" value="false"/>
+            <process expanded="true">
+              <operator activated="true" class="filter_examples" compatibility="9.10.011" expanded="true" height="103" name="Filter Examples (8)" width="90" x="179" y="34">
+                <parameter key="parameter_expression" value=""/>
+                <parameter key="condition_class" value="custom_filters"/>
+                <parameter key="invert_filter" value="false"/>
+                <list key="filters_list">
+                  <parameter key="filters_entry_key" value="error_hash.equals.%{loop_hash}"/>
+                </list>
+                <parameter key="filters_logic_and" value="true"/>
+                <parameter key="filters_check_metadata" value="true"/>
+              </operator>
+              <operator activated="true" class="extract_macro" compatibility="9.10.011" expanded="true" height="68" name="Extract Macro" width="90" x="313" y="34">
+                <parameter key="macro" value="error_message"/>
+                <parameter key="macro_type" value="data_value"/>
+                <parameter key="statistics" value="average"/>
+                <parameter key="attribute_name" value="error"/>
+                <parameter key="example_index" value="1"/>
+                <list key="additional_macros"/>
+              </operator>
+              <operator activated="true" class="concurrency:join" compatibility="9.10.011" expanded="true" height="82" name="Join (2)" width="90" x="380" y="136">
+                <parameter key="remove_double_attributes" value="false"/>
+                <parameter key="join_type" value="left"/>
+                <parameter key="use_id_attribute_as_key" value="false"/>
+                <list key="key_attributes">
+                  <parameter key="student" value="student"/>
+                  <parameter key="snapshot_id" value="snapshot_id"/>
+                </list>
+                <parameter key="keep_both_join_attributes" value="true"/>
+              </operator>
+              <operator activated="true" class="remove_duplicates" compatibility="9.10.011" expanded="true" height="103" name="Remove Duplicates" width="90" x="514" y="136">
+                <parameter key="attribute_filter_type" value="single"/>
+                <parameter key="attribute" value="snapshot_id"/>
+                <parameter key="attributes" value=""/>
+                <parameter key="use_except_expression" value="false"/>
+                <parameter key="value_type" value="attribute_value"/>
+                <parameter key="use_value_type_exception" value="false"/>
+                <parameter key="except_value_type" value="time"/>
+                <parameter key="block_type" value="attribute_block"/>
+                <parameter key="use_block_type_exception" value="false"/>
+                <parameter key="except_block_type" value="value_matrix_row_start"/>
+                <parameter key="invert_selection" value="false"/>
+                <parameter key="include_special_attributes" value="false"/>
+                <parameter key="treat_missing_values_as_duplicates" value="false"/>
+              </operator>
+              <operator activated="true" class="generate_attributes" compatibility="9.10.011" expanded="true" height="82" name="Generate Attributes (8)" width="90" x="648" y="136">
+                <list key="function_descriptions">
+                  <parameter key="error_mark" value="if(length(error_hash) &gt; 2, &quot;x&quot;, &quot;-&quot;)"/>
+                  <parameter key="error_hash" value="if(MISSING_NOMINAL==error, &quot;&quot;,error_hash)"/>
+                </list>
+                <parameter key="keep_all" value="true"/>
+              </operator>
+              <operator activated="true" class="aggregate" compatibility="9.10.011" expanded="true" height="82" name="Aggregate (2)" width="90" x="782" y="136">
+                <parameter key="use_default_aggregation" value="false"/>
+                <parameter key="attribute_filter_type" value="all"/>
+                <parameter key="attribute" value=""/>
+                <parameter key="attributes" value=""/>
+                <parameter key="use_except_expression" value="false"/>
+                <parameter key="value_type" value="attribute_value"/>
+                <parameter key="use_value_type_exception" value="false"/>
+                <parameter key="except_value_type" value="time"/>
+                <parameter key="block_type" value="attribute_block"/>
+                <parameter key="use_block_type_exception" value="false"/>
+                <parameter key="except_block_type" value="value_matrix_row_start"/>
+                <parameter key="invert_selection" value="false"/>
+                <parameter key="include_special_attributes" value="false"/>
+                <parameter key="default_aggregation_function" value="average"/>
+                <list key="aggregation_attributes">
+                  <parameter key="error_mark" value="concatenation"/>
+                </list>
+                <parameter key="group_by_attributes" value="student"/>
+                <parameter key="count_all_combinations" value="false"/>
+                <parameter key="only_distinct" value="false"/>
+                <parameter key="ignore_missings" value="true"/>
+              </operator>
+              <operator activated="true" class="generate_attributes" compatibility="9.10.011" expanded="true" height="82" name="Generate Attributes (9)" width="90" x="916" y="136">
+                <list key="function_descriptions">
+                  <parameter key="error_message" value="%{error_message}"/>
+                </list>
+                <parameter key="keep_all" value="true"/>
+              </operator>
+              <connect from_port="input 1" to_op="Filter Examples (8)" to_port="example set input"/>
+              <connect from_port="input 2" to_op="Join (2)" to_port="left"/>
+              <connect from_op="Filter Examples (8)" from_port="example set output" to_op="Extract Macro" to_port="example set"/>
+              <connect from_op="Extract Macro" from_port="example set" to_op="Join (2)" to_port="right"/>
+              <connect from_op="Join (2)" from_port="join" to_op="Remove Duplicates" to_port="example set input"/>
+              <connect from_op="Remove Duplicates" from_port="example set output" to_op="Generate Attributes (8)" to_port="example set input"/>
+              <connect from_op="Generate Attributes (8)" from_port="example set output" to_op="Aggregate (2)" to_port="example set input"/>
+              <connect from_op="Aggregate (2)" from_port="example set output" to_op="Generate Attributes (9)" to_port="example set input"/>
+              <connect from_op="Generate Attributes (9)" from_port="example set output" to_port="output 1"/>
+              <portSpacing port="source_input 1" spacing="0"/>
+              <portSpacing port="source_input 2" spacing="0"/>
+              <portSpacing port="source_input 3" spacing="0"/>
+              <portSpacing port="sink_output 1" spacing="0"/>
+              <portSpacing port="sink_output 2" spacing="0"/>
+            </process>
+          </operator>
+          <operator activated="true" class="append" compatibility="9.10.011" expanded="true" height="82" name="Append (6)" width="90" x="447" y="34">
+            <parameter key="datamanagement" value="double_array"/>
+            <parameter key="data_management" value="auto"/>
+            <parameter key="merge_type" value="all"/>
+          </operator>
+          <connect from_port="input 1" to_op="Filter Examples (7)" to_port="example set input"/>
+          <connect from_port="input 2" to_op="Filter Examples (9)" to_port="example set input"/>
+          <connect from_op="Filter Examples (7)" from_port="example set output" to_op="Loop Values (8)" to_port="input 1"/>
+          <connect from_op="Filter Examples (9)" from_port="example set output" to_op="Loop Values (8)" to_port="input 2"/>
+          <connect from_op="Loop Values (8)" from_port="output 1" to_op="Append (6)" to_port="example set 1"/>
+          <connect from_op="Append (6)" from_port="merged set" to_port="output 1"/>
+          <portSpacing port="source_input 1" spacing="0"/>
+          <portSpacing port="source_input 2" spacing="0"/>
+          <portSpacing port="source_input 3" spacing="0"/>
+          <portSpacing port="sink_output 1" spacing="0"/>
+          <portSpacing port="sink_output 2" spacing="0"/>
+        </process>
+      </operator>
+      <operator activated="true" class="subprocess" compatibility="9.10.011" expanded="true" height="82" name="process exceptions" width="90" x="1385" y="136">
+        <process expanded="true">
+          <operator activated="true" class="free_memory" compatibility="9.10.011" expanded="true" height="82" name="Free Memory" width="90" x="45" y="187"/>
+          <operator activated="true" class="append" compatibility="9.10.011" expanded="true" height="82" name="Append (7)" width="90" x="179" y="187">
+            <parameter key="datamanagement" value="double_array"/>
+            <parameter key="data_management" value="auto"/>
+            <parameter key="merge_type" value="all"/>
+          </operator>
+          <operator activated="true" class="replace" compatibility="9.10.011" expanded="true" height="82" name="Replace (2)" width="90" x="313" y="187">
+            <parameter key="attribute_filter_type" value="single"/>
+            <parameter key="attribute" value="concat(error_mark)"/>
+            <parameter key="attributes" value=""/>
+            <parameter key="use_except_expression" value="false"/>
+            <parameter key="value_type" value="nominal"/>
+            <parameter key="use_value_type_exception" value="false"/>
+            <parameter key="except_value_type" value="file_path"/>
+            <parameter key="block_type" value="single_value"/>
+            <parameter key="use_block_type_exception" value="false"/>
+            <parameter key="except_block_type" value="single_value"/>
+            <parameter key="invert_selection" value="false"/>
+            <parameter key="include_special_attributes" value="false"/>
+            <parameter key="replace_what" value="[|]"/>
+          </operator>
+          <operator activated="true" class="blending:rename" compatibility="9.10.011" expanded="true" height="82" name="Rename" width="90" x="447" y="187">
+            <list key="rename attributes">
+              <parameter key="concat(error_mark)" value="error_mark"/>
+            </list>
+            <parameter key="from_attribute" value=""/>
+            <parameter key="to_attribute" value=""/>
+          </operator>
+          <operator activated="true" class="python_scripting:execute_python" compatibility="9.10.002" expanded="true" height="103" name="Execute Python" width="90" x="581" y="187">
+            <parameter key="script" value="import pandas&#10;import re&#10;# rm_main is a mandatory function, &#10;# the number of arguments has to be the number of input ports (can be none),&#10;#     or the number of input ports plus one if &quot;use macros&quot; parameter is set&#10;# if you want to use macros, use this instead and check &quot;use macros&quot; parameter:&#10;#def rm_main(data,macros):&#10;def rm_main(df):&#10;&#9;#your code goes here&#10;&#9;# Define a lambda function to find the length of all consecutive occurrences of &quot;x&quot; in a given string&#10;&#9;find_x_lengths = lambda x: [len(match) for match in re.findall(r'x+', x)]&#10;&#9;&#10;&#9;# Apply the lambda function to the &quot;sequences&quot; column and store the result in a new &quot;x_lengths&quot; column&#10;&#9;df['x_lengths'] = df['error_mark'].apply(find_x_lengths)&#10;&#9;return df"/>
+            <parameter key="notebook_cell_tag_filter" value=""/>
+            <parameter key="use_default_python" value="true"/>
+            <parameter key="package_manager" value="conda (anaconda)"/>
+            <parameter key="use_macros" value="false"/>
+          </operator>
+          <operator activated="true" class="replace" compatibility="9.10.011" expanded="true" height="82" name="Replace (3)" width="90" x="45" y="340">
+            <parameter key="attribute_filter_type" value="single"/>
+            <parameter key="attribute" value="x_lengths"/>
+            <parameter key="attributes" value=""/>
+            <parameter key="use_except_expression" value="false"/>
+            <parameter key="value_type" value="nominal"/>
+            <parameter key="use_value_type_exception" value="false"/>
+            <parameter key="except_value_type" value="file_path"/>
+            <parameter key="block_type" value="single_value"/>
+            <parameter key="use_block_type_exception" value="false"/>
+            <parameter key="except_block_type" value="single_value"/>
+            <parameter key="invert_selection" value="false"/>
+            <parameter key="include_special_attributes" value="false"/>
+            <parameter key="replace_what" value="[\[\]]"/>
+          </operator>
+          <operator activated="true" class="split" compatibility="9.10.011" expanded="true" height="82" name="Split" width="90" x="179" y="340">
+            <parameter key="attribute_filter_type" value="single"/>
+            <parameter key="attribute" value="x_lengths"/>
+            <parameter key="attributes" value=""/>
+            <parameter key="use_except_expression" value="false"/>
+            <parameter key="value_type" value="nominal"/>
+            <parameter key="use_value_type_exception" value="false"/>
+            <parameter key="except_value_type" value="file_path"/>
+            <parameter key="block_type" value="single_value"/>
+            <parameter key="use_block_type_exception" value="false"/>
+            <parameter key="except_block_type" value="single_value"/>
+            <parameter key="invert_selection" value="false"/>
+            <parameter key="include_special_attributes" value="false"/>
+            <parameter key="split_pattern" value=","/>
+            <parameter key="split_mode" value="ordered_split"/>
+          </operator>
+          <operator activated="true" class="trim" compatibility="9.10.011" expanded="true" height="82" name="Trim" width="90" x="313" y="340">
+            <parameter key="attribute_filter_type" value="subset"/>
+            <parameter key="attribute" value=""/>
+            <parameter key="attributes" value="|student|error_message|error_mark"/>
+            <parameter key="regular_expression" value="x_lengths_[12345678]"/>
+            <parameter key="use_except_expression" value="false"/>
+            <parameter key="value_type" value="nominal"/>
+            <parameter key="use_value_type_exception" value="false"/>
+            <parameter key="except_value_type" value="file_path"/>
+            <parameter key="block_type" value="single_value"/>
+            <parameter key="use_block_type_exception" value="false"/>
+            <parameter key="except_block_type" value="single_value"/>
+            <parameter key="invert_selection" value="true"/>
+            <parameter key="include_special_attributes" value="false"/>
+          </operator>
+          <operator activated="true" class="parse_numbers" compatibility="9.10.011" expanded="true" height="82" name="Parse Numbers (3)" width="90" x="447" y="340">
+            <parameter key="attribute_filter_type" value="subset"/>
+            <parameter key="attribute" value=""/>
+            <parameter key="attributes" value="|error_mark|error_message|student"/>
+            <parameter key="regular_expression" value="x_lengths_[12345678]"/>
+            <parameter key="use_except_expression" value="false"/>
+            <parameter key="value_type" value="nominal"/>
+            <parameter key="use_value_type_exception" value="false"/>
+            <parameter key="except_value_type" value="file_path"/>
+            <parameter key="block_type" value="single_value"/>
+            <parameter key="use_block_type_exception" value="false"/>
+            <parameter key="except_block_type" value="single_value"/>
+            <parameter key="invert_selection" value="true"/>
+            <parameter key="include_special_attributes" value="false"/>
+            <parameter key="decimal_character" value="."/>
+            <parameter key="grouped_digits" value="false"/>
+            <parameter key="grouping_character" value=","/>
+            <parameter key="infinity_representation" value=""/>
+            <parameter key="unparsable_value_handling" value="replace with missing values"/>
+          </operator>
+          <operator activated="true" class="replace_missing_values" compatibility="9.10.011" expanded="true" height="103" name="Replace Missing Values" width="90" x="581" y="340">
+            <parameter key="return_preprocessing_model" value="false"/>
+            <parameter key="create_view" value="false"/>
+            <parameter key="attribute_filter_type" value="subset"/>
+            <parameter key="attribute" value=""/>
+            <parameter key="attributes" value="error_mark|error_message|student"/>
+            <parameter key="use_except_expression" value="false"/>
+            <parameter key="value_type" value="attribute_value"/>
+            <parameter key="use_value_type_exception" value="false"/>
+            <parameter key="except_value_type" value="time"/>
+            <parameter key="block_type" value="attribute_block"/>
+            <parameter key="use_block_type_exception" value="false"/>
+            <parameter key="except_block_type" value="value_matrix_row_start"/>
+            <parameter key="invert_selection" value="true"/>
+            <parameter key="include_special_attributes" value="false"/>
+            <parameter key="default" value="zero"/>
+            <list key="columns"/>
+          </operator>
+          <operator activated="true" class="set_macro" compatibility="9.10.011" expanded="true" height="82" name="Set Macro (3)" width="90" x="715" y="340">
+            <parameter key="macro" value="RED"/>
+            <parameter key="value" value="0"/>
+          </operator>
+          <operator activated="true" class="generate_attributes" compatibility="9.10.011" expanded="true" height="82" name="Generate Attributes (16)" width="90" x="849" y="340">
+            <list key="function_descriptions">
+              <parameter key="RED" value="0"/>
+            </list>
+            <parameter key="keep_all" value="true"/>
+          </operator>
+          <operator activated="true" class="select_subprocess" compatibility="9.10.011" expanded="true" height="82" name="Select hw" width="90" x="983" y="289">
+            <parameter key="select_which" value="%{hw}"/>
+            <process expanded="true">
+              <portSpacing port="source_input 1" spacing="0"/>
+              <portSpacing port="source_input 2" spacing="0"/>
+              <portSpacing port="sink_output 1" spacing="0"/>
+              <portSpacing port="sink_output 2" spacing="0"/>
+            </process>
+            <process expanded="true">
+              <portSpacing port="source_input 1" spacing="0"/>
+              <portSpacing port="source_input 2" spacing="0"/>
+              <portSpacing port="sink_output 1" spacing="0"/>
+              <portSpacing port="sink_output 2" spacing="0"/>
+            </process>
+            <process expanded="true">
+              <operator activated="true" class="generate_attributes" compatibility="9.10.011" expanded="true" height="82" name="Generate Att 1" width="90" x="45" y="85">
+                <list key="function_descriptions">
+                  <parameter key="x_lengths" value="if(x_lengths==0,1,x_lengths)"/>
+                </list>
+                <parameter key="keep_all" value="true"/>
+              </operator>
+              <operator activated="true" class="generate_attributes" compatibility="9.10.011" expanded="true" height="82" name="Generate Attributes (12)" width="90" x="179" y="85">
+                <list key="function_descriptions">
+                  <parameter key="RED" value="((x_lengths - 1)*(x_lengths - 1))/x_lengths"/>
+                </list>
+                <parameter key="keep_all" value="true"/>
+              </operator>
+              <connect from_port="input 1" to_op="Generate Att 1" to_port="example set input"/>
+              <connect from_op="Generate Att 1" from_port="example set output" to_op="Generate Attributes (12)" to_port="example set input"/>
+              <connect from_op="Generate Attributes (12)" from_port="example set output" to_port="output 1"/>
+              <portSpacing port="source_input 1" spacing="0"/>
+              <portSpacing port="source_input 2" spacing="0"/>
+              <portSpacing port="sink_output 1" spacing="0"/>
+              <portSpacing port="sink_output 2" spacing="0"/>
+            </process>
+            <process expanded="true">
+              <operator activated="true" class="generate_attributes" compatibility="9.10.011" expanded="true" height="82" name="Generate Att 4" width="90" x="45" y="85">
+                <list key="function_descriptions">
+                  <parameter key="x_lengths_1" value="if(x_lengths_1==0,1,x_lengths_1)"/>
+                  <parameter key="x_lengths_2" value="if(x_lengths_2==0,1,x_lengths_2)"/>
+                  <parameter key="x_lengths_3" value="if(x_lengths_3==0,1,x_lengths_3)"/>
+                  <parameter key="x_lengths_4" value="if(x_lengths_4==0,1,x_lengths_4)"/>
+                </list>
+                <parameter key="keep_all" value="true"/>
+              </operator>
+              <operator activated="true" class="generate_attributes" compatibility="9.10.011" expanded="true" height="82" name="Generate Attributes (19)" width="90" x="179" y="85">
+                <list key="function_descriptions">
+                  <parameter key="RED" value="((x_lengths_1 - 1)*(x_lengths_1 - 1))/x_lengths_1 + &#10;((x_lengths_2 - 1)*(x_lengths_2 - 1))/x_lengths_2 + &#10;((x_lengths_3 - 1)*(x_lengths_3 - 1))/x_lengths_3 +&#10;((x_lengths_4 - 1)*(x_lengths_4 - 1))/x_lengths_4"/>
+                </list>
+                <parameter key="keep_all" value="true"/>
+              </operator>
+              <connect from_port="input 1" to_op="Generate Att 4" to_port="example set input"/>
+              <connect from_op="Generate Att 4" from_port="example set output" to_op="Generate Attributes (19)" to_port="example set input"/>
+              <connect from_op="Generate Attributes (19)" from_port="example set output" to_port="output 1"/>
+              <portSpacing port="source_input 1" spacing="0"/>
+              <portSpacing port="source_input 2" spacing="0"/>
+              <portSpacing port="sink_output 1" spacing="0"/>
+              <portSpacing port="sink_output 2" spacing="0"/>
+            </process>
+            <process expanded="true">
+              <operator activated="true" class="generate_attributes" compatibility="9.10.011" expanded="true" height="82" name="Generate Att 7" width="90" x="45" y="85">
+                <list key="function_descriptions">
+                  <parameter key="x_lengths_1" value="if(x_lengths_1==0,1,x_lengths_1)"/>
+                  <parameter key="x_lengths_2" value="if(x_lengths_2==0,1,x_lengths_2)"/>
+                  <parameter key="x_lengths_3" value="if(x_lengths_3==0,1,x_lengths_3)"/>
+                  <parameter key="x_lengths_4" value="if(x_lengths_4==0,1,x_lengths_4)"/>
+                  <parameter key="x_lengths_5" value="if(x_lengths_5==0,1,x_lengths_5)"/>
+                  <parameter key="x_lengths_6" value="if(x_lengths_6==0,1,x_lengths_6)"/>
+                  <parameter key="x_lengths_7" value="if(x_lengths_7==0,1,x_lengths_7)"/>
+                </list>
+                <parameter key="keep_all" value="true"/>
+              </operator>
+              <operator activated="true" class="generate_attributes" compatibility="9.10.011" expanded="true" height="82" name="Generate Attributes (25)" width="90" x="179" y="85">
+                <list key="function_descriptions">
+                  <parameter key="RED" value="((x_lengths_1 - 1)*(x_lengths_1 - 1))/x_lengths_1 + &#10;((x_lengths_2 - 1)*(x_lengths_2 - 1))/x_lengths_2 + &#10;((x_lengths_3 - 1)*(x_lengths_3 - 1))/x_lengths_3 +&#10;((x_lengths_4 - 1)*(x_lengths_4 - 1))/x_lengths_4 +&#10;((x_lengths_5 - 1)*(x_lengths_5 - 1))/x_lengths_5 +&#10;((x_lengths_6 - 1)*(x_lengths_6 - 1))/x_lengths_6 +&#10;((x_lengths_7 - 1)*(x_lengths_7 - 1))/x_lengths_7"/>
+                </list>
+                <parameter key="keep_all" value="true"/>
+              </operator>
+              <connect from_port="input 1" to_op="Generate Att 7" to_port="example set input"/>
+              <connect from_op="Generate Att 7" from_port="example set output" to_op="Generate Attributes (25)" to_port="example set input"/>
+              <connect from_op="Generate Attributes (25)" from_port="example set output" to_port="output 1"/>
+              <portSpacing port="source_input 1" spacing="0"/>
+              <portSpacing port="source_input 2" spacing="0"/>
+              <portSpacing port="sink_output 1" spacing="0"/>
+              <portSpacing port="sink_output 2" spacing="0"/>
+            </process>
+            <process expanded="true">
+              <operator activated="true" class="generate_attributes" compatibility="9.10.011" expanded="true" height="82" name="Generate Att 21 (2)" width="90" x="45" y="85">
+                <list key="function_descriptions">
+                  <parameter key="x_lengths_1" value="if(x_lengths_1==0,1,x_lengths_1)"/>
+                  <parameter key="x_lengths_2" value="if(x_lengths_2==0,1,x_lengths_2)"/>
+                  <parameter key="x_lengths_3" value="if(x_lengths_3==0,1,x_lengths_3)"/>
+                  <parameter key="x_lengths_4" value="if(x_lengths_4==0,1,x_lengths_4)"/>
+                  <parameter key="x_lengths_5" value="if(x_lengths_5==0,1,x_lengths_5)"/>
+                  <parameter key="x_lengths_6" value="if(x_lengths_6==0,1,x_lengths_6)"/>
+                  <parameter key="x_lengths_7" value="if(x_lengths_7==0,1,x_lengths_7)"/>
+                  <parameter key="x_lengths_8" value="if(x_lengths_8==0,1,x_lengths_8)"/>
+                  <parameter key="x_lengths_9" value="if(x_lengths_9==0,1,x_lengths_9)"/>
+                  <parameter key="x_lengths_10" value="if(x_lengths_10==0,1,x_lengths_10)"/>
+                  <parameter key="x_lengths_11" value="if(x_lengths_11==0,1,x_lengths_11)"/>
+                  <parameter key="x_lengths_12" value="if(x_lengths_12==0,1,x_lengths_12)"/>
+                  <parameter key="x_lengths_13" value="if(x_lengths_13==0,1,x_lengths_13)"/>
+                  <parameter key="x_lengths_14" value="if(x_lengths_14==0,1,x_lengths_14)"/>
+                  <parameter key="x_lengths_15" value="if(x_lengths_15==0,1,x_lengths_15)"/>
+                  <parameter key="x_lengths_16" value="if(x_lengths_16==0,1,x_lengths_16)"/>
+                  <parameter key="x_lengths_17" value="if(x_lengths_17==0,1,x_lengths_17)"/>
+                  <parameter key="x_lengths_18" value="if(x_lengths_18==0,1,x_lengths_18)"/>
+                  <parameter key="x_lengths_19" value="if(x_lengths_19==0,1,x_lengths_19)"/>
+                  <parameter key="x_lengths_20" value="if(x_lengths_20==0,1,x_lengths_20)"/>
+                  <parameter key="x_lengths_21" value="if(x_lengths_21==0,1,x_lengths_21)"/>
+                </list>
+                <parameter key="keep_all" value="true"/>
+              </operator>
+              <operator activated="true" class="generate_attributes" compatibility="9.10.011" expanded="true" height="82" name="Generate Attributes (24)" width="90" x="179" y="85">
+                <list key="function_descriptions">
+                  <parameter key="RED" value="((x_lengths_1 - 1)*(x_lengths_1 - 1))/x_lengths_1 + &#10;((x_lengths_2 - 1)*(x_lengths_2 - 1))/x_lengths_2 + &#10;((x_lengths_3 - 1)*(x_lengths_3 - 1))/x_lengths_3 +&#10;((x_lengths_4 - 1)*(x_lengths_4 - 1))/x_lengths_4 +&#10;((x_lengths_5 - 1)*(x_lengths_5 - 1))/x_lengths_5 +&#10;((x_lengths_6 - 1)*(x_lengths_6 - 1))/x_lengths_6 +&#10;((x_lengths_7 - 1)*(x_lengths_7 - 1))/x_lengths_7 +&#10;((x_lengths_8 - 1)*(x_lengths_8 - 1))/x_lengths_8 +&#10;((x_lengths_9 - 1)*(x_lengths_9 - 1))/x_lengths_9 +&#10;((x_lengths_10 - 1)*(x_lengths_10 - 1))/x_lengths_10 +&#10;((x_lengths_11 - 1)*(x_lengths_11 - 1))/x_lengths_11 +&#10;((x_lengths_12 - 1)*(x_lengths_12 - 1))/x_lengths_12 +&#10;((x_lengths_13 - 1)*(x_lengths_13 - 1))/x_lengths_13 +&#10;((x_lengths_14 - 1)*(x_lengths_14 - 1))/x_lengths_14 +&#10;((x_lengths_15 - 1)*(x_lengths_15 - 1))/x_lengths_15 +&#10;((x_lengths_16 - 1)*(x_lengths_16 - 1))/x_lengths_16 +&#10;((x_lengths_17 - 1)*(x_lengths_17 - 1))/x_lengths_17 +&#10;((x_lengths_18 - 1)*(x_lengths_18 - 1))/x_lengths_18 +&#10;((x_lengths_19 - 1)*(x_lengths_19 - 1))/x_lengths_19 +&#10;((x_lengths_20 - 1)*(x_lengths_20 - 1))/x_lengths_20 +&#10;((x_lengths_21 - 1)*(x_lengths_21 - 1))/x_lengths_21"/>
+                </list>
+                <parameter key="keep_all" value="true"/>
+              </operator>
+              <connect from_port="input 1" to_op="Generate Att 21 (2)" to_port="example set input"/>
+              <connect from_op="Generate Att 21 (2)" from_port="example set output" to_op="Generate Attributes (24)" to_port="example set input"/>
+              <connect from_op="Generate Attributes (24)" from_port="example set output" to_port="output 1"/>
+              <portSpacing port="source_input 1" spacing="0"/>
+              <portSpacing port="source_input 2" spacing="0"/>
+              <portSpacing port="sink_output 1" spacing="0"/>
+              <portSpacing port="sink_output 2" spacing="0"/>
+            </process>
+            <process expanded="true">
+              <operator activated="true" class="generate_attributes" compatibility="9.10.011" expanded="true" height="82" name="Generate Att 8 (2)" width="90" x="45" y="85">
+                <list key="function_descriptions">
+                  <parameter key="x_lengths_1" value="if(x_lengths_1==0,1,x_lengths_1)"/>
+                  <parameter key="x_lengths_2" value="if(x_lengths_2==0,1,x_lengths_2)"/>
+                  <parameter key="x_lengths_3" value="if(x_lengths_3==0,1,x_lengths_3)"/>
+                  <parameter key="x_lengths_4" value="if(x_lengths_4==0,1,x_lengths_4)"/>
+                  <parameter key="x_lengths_5" value="if(x_lengths_5==0,1,x_lengths_5)"/>
+                </list>
+                <parameter key="keep_all" value="true"/>
+              </operator>
+              <operator activated="true" class="generate_attributes" compatibility="9.10.011" expanded="true" height="82" name="Generate Attributes (17)" width="90" x="179" y="85">
+                <list key="function_descriptions">
+                  <parameter key="RED" value="((x_lengths_1 - 1)*(x_lengths_1 - 1))/x_lengths_1 + &#10;((x_lengths_2 - 1)*(x_lengths_2 - 1))/x_lengths_2 + &#10;((x_lengths_3 - 1)*(x_lengths_3 - 1))/x_lengths_3 +&#10;((x_lengths_4 - 1)*(x_lengths_4 - 1))/x_lengths_4 +&#10;((x_lengths_5 - 1)*(x_lengths_5 - 1))/x_lengths_5"/>
+                </list>
+                <parameter key="keep_all" value="true"/>
+              </operator>
+              <connect from_port="input 1" to_op="Generate Att 8 (2)" to_port="example set input"/>
+              <connect from_op="Generate Att 8 (2)" from_port="example set output" to_op="Generate Attributes (17)" to_port="example set input"/>
+              <connect from_op="Generate Attributes (17)" from_port="example set output" to_port="output 1"/>
+              <portSpacing port="source_input 1" spacing="0"/>
+              <portSpacing port="source_input 2" spacing="0"/>
+              <portSpacing port="sink_output 1" spacing="0"/>
+              <portSpacing port="sink_output 2" spacing="0"/>
+            </process>
+            <process expanded="true">
+              <operator activated="true" class="generate_attributes" compatibility="9.10.011" expanded="true" height="82" name="Generate Att 11" width="90" x="45" y="136">
+                <list key="function_descriptions">
+                  <parameter key="x_lengths_1" value="if(x_lengths_1==0,1,x_lengths_1)"/>
+                  <parameter key="x_lengths_2" value="if(x_lengths_2==0,1,x_lengths_2)"/>
+                  <parameter key="x_lengths_3" value="if(x_lengths_3==0,1,x_lengths_3)"/>
+                  <parameter key="x_lengths_4" value="if(x_lengths_4==0,1,x_lengths_4)"/>
+                  <parameter key="x_lengths_5" value="if(x_lengths_5==0,1,x_lengths_5)"/>
+                  <parameter key="x_lengths_6" value="if(x_lengths_6==0,1,x_lengths_6)"/>
+                  <parameter key="x_lengths_7" value="if(x_lengths_7==0,1,x_lengths_7)"/>
+                  <parameter key="x_lengths_8" value="if(x_lengths_8==0,1,x_lengths_8)"/>
+                  <parameter key="x_lengths_9" value="if(x_lengths_9==0,1,x_lengths_9)"/>
+                  <parameter key="x_lengths_10" value="if(x_lengths_10==0,1,x_lengths_10)"/>
+                  <parameter key="x_lengths_11" value="if(x_lengths_11==0,1,x_lengths_11)"/>
+                </list>
+                <parameter key="keep_all" value="true"/>
+              </operator>
+              <operator activated="true" class="generate_attributes" compatibility="9.10.011" expanded="true" height="82" name="Generate Attributes (22)" width="90" x="179" y="136">
+                <list key="function_descriptions">
+                  <parameter key="RED" value="((x_lengths_1 - 1)*(x_lengths_1 - 1))/x_lengths_1 + &#10;((x_lengths_2 - 1)*(x_lengths_2 - 1))/x_lengths_2 + &#10;((x_lengths_3 - 1)*(x_lengths_3 - 1))/x_lengths_3 +&#10;((x_lengths_4 - 1)*(x_lengths_4 - 1))/x_lengths_4 +&#10;((x_lengths_5 - 1)*(x_lengths_5 - 1))/x_lengths_5 +&#10;((x_lengths_6 - 1)*(x_lengths_6 - 1))/x_lengths_6 +&#10;((x_lengths_7 - 1)*(x_lengths_7 - 1))/x_lengths_7 +&#10;((x_lengths_8 - 1)*(x_lengths_8 - 1))/x_lengths_8 +&#10;((x_lengths_9 - 1)*(x_lengths_9 - 1))/x_lengths_9 +&#10;((x_lengths_10 - 1)*(x_lengths_10 - 1))/x_lengths_10 +&#10;((x_lengths_11 - 1)*(x_lengths_11 - 1))/x_lengths_11"/>
+                </list>
+                <parameter key="keep_all" value="true"/>
+              </operator>
+              <connect from_port="input 1" to_op="Generate Att 11" to_port="example set input"/>
+              <connect from_op="Generate Att 11" from_port="example set output" to_op="Generate Attributes (22)" to_port="example set input"/>
+              <connect from_op="Generate Attributes (22)" from_port="example set output" to_port="output 1"/>
+              <portSpacing port="source_input 1" spacing="0"/>
+              <portSpacing port="source_input 2" spacing="0"/>
+              <portSpacing port="sink_output 1" spacing="0"/>
+              <portSpacing port="sink_output 2" spacing="0"/>
+            </process>
+          </operator>
+          <operator activated="true" class="multiply" compatibility="9.10.011" expanded="true" height="82" name="Multiply (4)" width="90" x="1117" y="289"/>
+          <operator activated="true" class="aggregate" compatibility="9.10.011" expanded="true" height="82" name="Aggregate (3)" width="90" x="849" y="34">
+            <parameter key="use_default_aggregation" value="false"/>
+            <parameter key="attribute_filter_type" value="all"/>
+            <parameter key="attribute" value=""/>
+            <parameter key="attributes" value=""/>
+            <parameter key="use_except_expression" value="false"/>
+            <parameter key="value_type" value="attribute_value"/>
+            <parameter key="use_value_type_exception" value="false"/>
+            <parameter key="except_value_type" value="time"/>
+            <parameter key="block_type" value="attribute_block"/>
+            <parameter key="use_block_type_exception" value="false"/>
+            <parameter key="except_block_type" value="value_matrix_row_start"/>
+            <parameter key="invert_selection" value="false"/>
+            <parameter key="include_special_attributes" value="false"/>
+            <parameter key="default_aggregation_function" value="average"/>
+            <list key="aggregation_attributes">
+              <parameter key="RED" value="sum"/>
+            </list>
+            <parameter key="group_by_attributes" value="student"/>
+            <parameter key="count_all_combinations" value="false"/>
+            <parameter key="only_distinct" value="false"/>
+            <parameter key="ignore_missings" value="true"/>
+          </operator>
+          <operator activated="true" class="blending:rename" compatibility="9.10.011" expanded="true" height="82" name="Rename (2)" width="90" x="983" y="34">
+            <list key="rename attributes">
+              <parameter key="sum(RED)" value="RED"/>
+            </list>
+            <parameter key="from_attribute" value=""/>
+            <parameter key="to_attribute" value=""/>
+          </operator>
+          <connect from_port="in 1" to_op="Free Memory" to_port="through 1"/>
+          <connect from_op="Free Memory" from_port="through 1" to_op="Append (7)" to_port="example set 1"/>
+          <connect from_op="Append (7)" from_port="merged set" to_op="Replace (2)" to_port="example set input"/>
+          <connect from_op="Replace (2)" from_port="example set output" to_op="Rename" to_port="example set input"/>
+          <connect from_op="Rename" from_port="example set output" to_op="Execute Python" to_port="input 1"/>
+          <connect from_op="Execute Python" from_port="output 1" to_op="Replace (3)" to_port="example set input"/>
+          <connect from_op="Replace (3)" from_port="example set output" to_op="Split" to_port="example set input"/>
+          <connect from_op="Split" from_port="example set output" to_op="Trim" to_port="example set input"/>
+          <connect from_op="Trim" from_port="example set output" to_op="Parse Numbers (3)" to_port="example set input"/>
+          <connect from_op="Parse Numbers (3)" from_port="example set output" to_op="Replace Missing Values" to_port="example set input"/>
+          <connect from_op="Replace Missing Values" from_port="example set output" to_op="Set Macro (3)" to_port="through 1"/>
+          <connect from_op="Set Macro (3)" from_port="through 1" to_op="Generate Attributes (16)" to_port="example set input"/>
+          <connect from_op="Generate Attributes (16)" from_port="example set output" to_op="Select hw" to_port="input 1"/>
+          <connect from_op="Select hw" from_port="output 1" to_op="Multiply (4)" to_port="input"/>
+          <connect from_op="Multiply (4)" from_port="output 1" to_op="Aggregate (3)" to_port="example set input"/>
+          <connect from_op="Aggregate (3)" from_port="example set output" to_op="Rename (2)" to_port="example set input"/>
+          <connect from_op="Rename (2)" from_port="example set output" to_port="out 1"/>
+          <portSpacing port="source_in 1" spacing="0"/>
+          <portSpacing port="source_in 2" spacing="0"/>
+          <portSpacing port="sink_out 1" spacing="0"/>
+          <portSpacing port="sink_out 2" spacing="0"/>
+        </process>
+      </operator>
+      <operator activated="true" class="write_csv" compatibility="9.10.011" expanded="true" height="82" name="Write RED csv file" width="90" x="1519" y="136">
+        <parameter key="csv_file" value="%{absolute_path_to_cloned_repository}\results\repeated-error-density\RED-exceptions-hw0%{hw}.csv"/>
+        <parameter key="column_separator" value=";"/>
+        <parameter key="write_attribute_names" value="true"/>
+        <parameter key="quote_nominal_values" value="true"/>
+        <parameter key="format_date_attributes" value="true"/>
+        <parameter key="date_format" value="yyyy-MM-dd HH:mm:ss"/>
+        <parameter key="append_to_file" value="false"/>
+        <parameter key="encoding" value="SYSTEM"/>
+      </operator>
+      <connect from_op="read exceptions" from_port="output" to_op="Generate Attributes (5)" to_port="example set input"/>
+      <connect from_op="Generate Attributes (5)" from_port="example set output" to_op="Join (3)" to_port="right"/>
+      <connect from_op="read complete snapshots" from_port="output" to_op="Free Memory (3)" to_port="through 1"/>
+      <connect from_op="Free Memory (3)" from_port="through 1" to_op="Process complete snapshots" to_port="in 1"/>
+      <connect from_op="Process complete snapshots" from_port="out 1" to_op="Multiply (3)" to_port="input"/>
+      <connect from_op="Multiply (3)" from_port="output 1" to_op="Free Memory (2)" to_port="through 1"/>
+      <connect from_op="Multiply (3)" from_port="output 2" to_op="Join (3)" to_port="left"/>
+      <connect from_op="Free Memory (2)" from_port="through 1" to_op="Loop Values (7)" to_port="input 2"/>
+      <connect from_op="Join (3)" from_port="join" to_op="Append (5)" to_port="example set 1"/>
+      <connect from_op="Append (5)" from_port="merged set" to_op="hash exception data" to_port="input 1"/>
+      <connect from_op="hash exception data" from_port="output 1" to_op="Generate Attributes (7)" to_port="example set input"/>
+      <connect from_op="Generate Attributes (7)" from_port="example set output" to_op="Multiply (2)" to_port="input"/>
+      <connect from_op="Multiply (2)" from_port="output 1" to_op="Loop Values (7)" to_port="input 1"/>
+      <connect from_op="Loop Values (7)" from_port="output 1" to_op="process exceptions" to_port="in 1"/>
+      <connect from_op="process exceptions" from_port="out 1" to_op="Write RED csv file" to_port="input"/>
+      <connect from_op="Write RED csv file" from_port="through" to_port="result 1"/>
+      <portSpacing port="source_input 1" spacing="0"/>
+      <portSpacing port="sink_result 1" spacing="0"/>
+      <portSpacing port="sink_result 2" spacing="0"/>
+      <description align="center" color="yellow" colored="false" height="135" resized="true" width="498" x="10" y="10">Processing exceptions to generate the Repeated Error Density. &lt;br/&gt;Before executing:&lt;br&gt;1. Clone the repository from GitHub&lt;br&gt;2. In the Context tab, update the absolute path to the cloned repository.&lt;br&gt;3. In the Context tab, update the hw value to calculate the RED values for selected homework.</description>
+    </process>
+  </operator>
+</process>
