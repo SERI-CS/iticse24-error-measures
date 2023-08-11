@@ -1,709 +1,709 @@
 "student";"snapshot";"file";"line";"error"
-"0de822bddc1dd72a3230320f51b10b9f7a509869";"2020-10-05T14_46_20.883Z";"HelloWorld.java";"19";" class Scratch is public, should be declared in a file named Scratch.java
+"0de822bddc1dd72a3230320f51b10b9f7a509869";"2020-10-05T14_46_20.883Z";"hw0.java";"19";" class Scratch is public, should be declared in a file named [ANONYMIZED].java
 public class Scratch {
        ^
 /"
-"0fc86b6a1afaad8cc203fac7e27c55097c310937";"2020-10-23T11_11_39.580Z";"HelloWorld.java";"10";" class, interface, or enum expected
+"0fc86b6a1afaad8cc203fac7e27c55097c310937";"2020-10-23T11_11_39.580Z";"hw0.java";"10";" class, interface, or enum expected
 public static void mystery(int x, int y) {
               ^
 /"
-"0fc86b6a1afaad8cc203fac7e27c55097c310937";"2020-10-23T11_11_39.580Z";"HelloWorld.java";"13";" class, interface, or enum expected
+"0fc86b6a1afaad8cc203fac7e27c55097c310937";"2020-10-23T11_11_39.580Z";"hw0.java";"13";" class, interface, or enum expected
         if (x < 0) {
         ^
 /"
-"0fc86b6a1afaad8cc203fac7e27c55097c310937";"2020-10-23T11_11_39.580Z";"HelloWorld.java";"15";" class, interface, or enum expected
+"0fc86b6a1afaad8cc203fac7e27c55097c310937";"2020-10-23T11_11_39.580Z";"hw0.java";"15";" class, interface, or enum expected
         } else if (y < 0) {
         ^
 /"
-"0fc86b6a1afaad8cc203fac7e27c55097c310937";"2020-10-23T11_11_39.580Z";"HelloWorld.java";"17";" class, interface, or enum expected
+"0fc86b6a1afaad8cc203fac7e27c55097c310937";"2020-10-23T11_11_39.580Z";"hw0.java";"17";" class, interface, or enum expected
         } else if (x < 10) {
         ^
 /"
-"0fc86b6a1afaad8cc203fac7e27c55097c310937";"2020-10-23T11_11_39.580Z";"HelloWorld.java";"19";" class, interface, or enum expected
+"0fc86b6a1afaad8cc203fac7e27c55097c310937";"2020-10-23T11_11_39.580Z";"hw0.java";"19";" class, interface, or enum expected
         } else {
         ^
 /"
-"0fc86b6a1afaad8cc203fac7e27c55097c310937";"2020-10-23T11_11_39.580Z";"HelloWorld.java";"21";" class, interface, or enum expected
+"0fc86b6a1afaad8cc203fac7e27c55097c310937";"2020-10-23T11_11_39.580Z";"hw0.java";"21";" class, interface, or enum expected
                mystery(x / 10 + y % 10, x % y);
                ^
 /"
-"0fc86b6a1afaad8cc203fac7e27c55097c310937";"2020-10-23T11_11_39.580Z";"HelloWorld.java";"22";" class, interface, or enum expected
+"0fc86b6a1afaad8cc203fac7e27c55097c310937";"2020-10-23T11_11_39.580Z";"hw0.java";"22";" class, interface, or enum expected
                System.out.print(x + y + ']');
                ^
 /"
-"0fc86b6a1afaad8cc203fac7e27c55097c310937";"2020-10-23T11_11_39.580Z";"HelloWorld.java";"23";" class, interface, or enum expected
+"0fc86b6a1afaad8cc203fac7e27c55097c310937";"2020-10-23T11_11_39.580Z";"hw0.java";"23";" class, interface, or enum expected
         }
         ^
 8 errors
 "
-"107e619e6f2a5a39e729d6ffaa91b43d2be99edf";"2020-09-09T01_26_30.985Z";"HelloWorld.java";"15";" ';' expected
+"107e619e6f2a5a39e729d6ffaa91b43d2be99edf";"2020-09-09T01_26_30.985Z";"hw0.java";"15";" ';' expected
         char citizen ='y'
                          ^
 1 error
 "
-"4542f79f46c1e57daf32196b082986d08d6addda";"2020-09-09T05_10_49.611Z";"HelloWorld.java";"12";" cannot find symbol
+"4542f79f46c1e57daf32196b082986d08d6addda";"2020-09-09T05_10_49.611Z";"hw0.java";"12";" cannot find symbol
         System.out.prntln('Hello, World!');
                   ^
   symbol"
-"4b8cafbb2f0acbe010290da14340378e9c684d75";"2020-09-05T18_40_54.348Z";"HelloWorld.java";"10";" reached end of file while parsing
+"4b8cafbb2f0acbe010290da14340378e9c684d75";"2020-09-05T18_40_54.348Z";"hw0.java";"10";" reached end of file while parsing
 public class HelloWorld {
                          ^
 1 error
 "
-"4b8cafbb2f0acbe010290da14340378e9c684d75";"2020-09-13T21_16_48.931Z";"HelloWorld.java";"15";" reached end of file while parsing
+"4b8cafbb2f0acbe010290da14340378e9c684d75";"2020-09-13T21_16_48.931Z";"hw0.java";"15";" reached end of file while parsing
 }
  ^
 1 error
 "
-"4b8cafbb2f0acbe010290da14340378e9c684d75";"2020-09-13T21_35_36.182Z";"HelloWorld.java";"14";" reached end of file while parsing
+"4b8cafbb2f0acbe010290da14340378e9c684d75";"2020-09-13T21_35_36.182Z";"hw0.java";"14";" reached end of file while parsing
 }
  ^
 1 error
 "
-"585e11bbcd145d378d188bde0220988e63005f64";"2020-09-05T18_54_41.072Z";"HelloWorld.java";"13";" illegal start of expression
+"585e11bbcd145d378d188bde0220988e63005f64";"2020-09-05T18_54_41.072Z";"hw0.java";"13";" illegal start of expression
     { public static void main(string[] args) system.out.println('HelloWorld!');}
       ^
 /"
-"585e11bbcd145d378d188bde0220988e63005f64";"2020-09-05T18_54_41.072Z";"HelloWorld.java";"13";" illegal start of expression
+"585e11bbcd145d378d188bde0220988e63005f64";"2020-09-05T18_54_41.072Z";"hw0.java";"13";" illegal start of expression
     { public static void main(string[] args) system.out.println('HelloWorld!');}
              ^
 /"
-"585e11bbcd145d378d188bde0220988e63005f64";"2020-09-05T18_54_41.072Z";"HelloWorld.java";"13";" ';' expected
+"585e11bbcd145d378d188bde0220988e63005f64";"2020-09-05T18_54_41.072Z";"hw0.java";"13";" ';' expected
     { public static void main(string[] args) system.out.println('HelloWorld!');}
                    ^
 /"
-"585e11bbcd145d378d188bde0220988e63005f64";"2020-09-05T18_54_41.072Z";"HelloWorld.java";"13";" '.class' expected
+"585e11bbcd145d378d188bde0220988e63005f64";"2020-09-05T18_54_41.072Z";"hw0.java";"13";" '.class' expected
     { public static void main(string[] args) system.out.println('HelloWorld!');}
                                        ^
 /"
-"585e11bbcd145d378d188bde0220988e63005f64";"2020-09-05T18_54_41.072Z";"HelloWorld.java";"13";" ';' expected
+"585e11bbcd145d378d188bde0220988e63005f64";"2020-09-05T18_54_41.072Z";"hw0.java";"13";" ';' expected
     { public static void main(string[] args) system.out.println('HelloWorld!');}
                                            ^
 /"
-"585e11bbcd145d378d188bde0220988e63005f64";"2020-09-05T18_54_41.072Z";"HelloWorld.java";"13";" reached end of file while parsing
+"585e11bbcd145d378d188bde0220988e63005f64";"2020-09-05T18_54_41.072Z";"hw0.java";"13";" reached end of file while parsing
     { public static void main(string[] args) system.out.println('HelloWorld!');}
                                                                                 ^
 6 errors
 "
-"585e11bbcd145d378d188bde0220988e63005f64";"2020-09-08T16_03_58.989Z";"HelloWorld.java";"10";" class, interface, or enum expected
+"585e11bbcd145d378d188bde0220988e63005f64";"2020-09-08T16_03_58.989Z";"hw0.java";"10";" class, interface, or enum expected
 }class HelloWorld {
 ^
 /"
-"585e11bbcd145d378d188bde0220988e63005f64";"2020-09-08T16_03_58.989Z";"HelloWorld.java";"15";" <identifier> expected
+"585e11bbcd145d378d188bde0220988e63005f64";"2020-09-08T16_03_58.989Z";"hw0.java";"15";" <identifier> expected
     System.out.println('Hello, World!');
                       ^
 /"
-"585e11bbcd145d378d188bde0220988e63005f64";"2020-09-08T16_03_58.989Z";"HelloWorld.java";"15";" illegal start of type
+"585e11bbcd145d378d188bde0220988e63005f64";"2020-09-08T16_03_58.989Z";"hw0.java";"15";" illegal start of type
     System.out.println('Hello, World!');
                        ^
 /"
-"585e11bbcd145d378d188bde0220988e63005f64";"2020-09-08T16_03_58.989Z";"HelloWorld.java";"15";" reached end of file while parsing
+"585e11bbcd145d378d188bde0220988e63005f64";"2020-09-08T16_03_58.989Z";"hw0.java";"15";" reached end of file while parsing
     System.out.println('Hello, World!');
                                         ^
 4 errors
 "
-"5950ad0df7ed21fc66a3af04ed8cb667e6051a02";"2020-09-12T03_26_38.534Z";"HelloWorld.java";"1";" class, interface, or enum expected
+"5950ad0df7ed21fc66a3af04ed8cb667e6051a02";"2020-09-12T03_26_38.534Z";"hw0.java";"1";" class, interface, or enum expected
 dd/*  Name"
-"5950ad0df7ed21fc66a3af04ed8cb667e6051a02";"2020-09-14T21_20_58.792Z";"HelloWorld.java";"1";" class, interface, or enum expected
+"5950ad0df7ed21fc66a3af04ed8cb667e6051a02";"2020-09-14T21_20_58.792Z";"hw0.java";"1";" class, interface, or enum expected
 dd/*  Name"
-"5e2ba60bf6ae614bec98f4bde693868ba49a559e";"2020-09-09T16_06_48.164Z";"HelloWorld.java";"13";" illegal start of type
+"5e2ba60bf6ae614bec98f4bde693868ba49a559e";"2020-09-09T16_06_48.164Z";"hw0.java";"13";" illegal start of type
     public.static void main(String[] args){
           ^
 /"
-"5e2ba60bf6ae614bec98f4bde693868ba49a559e";"2020-09-09T16_06_48.164Z";"HelloWorld.java";"13";" ';' expected
+"5e2ba60bf6ae614bec98f4bde693868ba49a559e";"2020-09-09T16_06_48.164Z";"hw0.java";"13";" ';' expected
     public.static void main(String[] args){
            ^
 2 errors
 "
-"6605b28f4160ac2ecd5ed4dec5a815d066f309b3";"2020-12-18T20_42_21.437Z";"HelloWorld.java";"26";" reached end of file while parsing
+"6605b28f4160ac2ecd5ed4dec5a815d066f309b3";"2020-12-18T20_42_21.437Z";"hw0.java";"26";" reached end of file while parsing
 }
  ^
 1 error
 "
-"69b307789e8a056939d00817344cff7b2c6a801f";"2020-09-09T03_51_50.186Z";"HelloWorld.java";"10";" class MySketch is public, should be declared in a file named MySketch.java
+"69b307789e8a056939d00817344cff7b2c6a801f";"2020-09-09T03_51_50.186Z";"hw0.java";"10";" class MySketch is public, should be declared in a file named [ANONYMIZED].java
 public class MySketch {
        ^
 /"
-"6c461bf548b9c9d93287748945b41d2251965d93";"2020-11-19T22_48_09.100Z";"HelloWorld.java";"23";" class, interface, or enum expected
+"6c461bf548b9c9d93287748945b41d2251965d93";"2020-11-19T22_48_09.100Z";"hw0.java";"23";" class, interface, or enum expected
 }
 ^
 1 error
 "
-"6c461bf548b9c9d93287748945b41d2251965d93";"2020-11-25T19_50_02.315Z";"HelloWorld.java";"17";" cannot find symbol
+"6c461bf548b9c9d93287748945b41d2251965d93";"2020-11-25T19_50_02.315Z";"hw0.java";"17";" cannot find symbol
     char letter = str.charAt(i);
                              ^
   symbol"
-"6c461bf548b9c9d93287748945b41d2251965d93";"2020-11-25T19_50_02.315Z";"HelloWorld.java";"17";" cannot find symbol
+"6c461bf548b9c9d93287748945b41d2251965d93";"2020-11-25T19_50_02.315Z";"hw0.java";"17";" cannot find symbol
     char letter = str.charAt(i);
                   ^
   symbol"
-"6c461bf548b9c9d93287748945b41d2251965d93";"2020-11-25T22_27_51.650Z";"HelloWorld.java";"18";" illegal start of type
+"6c461bf548b9c9d93287748945b41d2251965d93";"2020-11-25T22_27_51.650Z";"hw0.java";"18";" illegal start of type
     for (int i = 0; i<numbers.length(); i++){
     ^
 /"
-"6c461bf548b9c9d93287748945b41d2251965d93";"2020-11-25T22_27_51.650Z";"HelloWorld.java";"18";" ')' expected
+"6c461bf548b9c9d93287748945b41d2251965d93";"2020-11-25T22_27_51.650Z";"hw0.java";"18";" ')' expected
     for (int i = 0; i<numbers.length(); i++){
               ^
 /"
-"6c461bf548b9c9d93287748945b41d2251965d93";"2020-11-25T22_27_51.650Z";"HelloWorld.java";"18";" illegal start of type
+"6c461bf548b9c9d93287748945b41d2251965d93";"2020-11-25T22_27_51.650Z";"hw0.java";"18";" illegal start of type
     for (int i = 0; i<numbers.length(); i++){
                  ^
 /"
-"6c461bf548b9c9d93287748945b41d2251965d93";"2020-11-25T22_27_51.650Z";"HelloWorld.java";"18";" <identifier> expected
+"6c461bf548b9c9d93287748945b41d2251965d93";"2020-11-25T22_27_51.650Z";"hw0.java";"18";" <identifier> expected
     for (int i = 0; i<numbers.length(); i++){
                   ^
 /"
-"6c461bf548b9c9d93287748945b41d2251965d93";"2020-11-25T22_27_51.650Z";"HelloWorld.java";"18";" ';' expected
+"6c461bf548b9c9d93287748945b41d2251965d93";"2020-11-25T22_27_51.650Z";"hw0.java";"18";" ';' expected
     for (int i = 0; i<numbers.length(); i++){
                    ^
 /"
-"6c461bf548b9c9d93287748945b41d2251965d93";"2020-11-25T22_27_51.650Z";"HelloWorld.java";"18";" > expected
+"6c461bf548b9c9d93287748945b41d2251965d93";"2020-11-25T22_27_51.650Z";"hw0.java";"18";" > expected
     for (int i = 0; i<numbers.length(); i++){
                              ^
 /"
-"6c461bf548b9c9d93287748945b41d2251965d93";"2020-11-25T22_27_51.650Z";"HelloWorld.java";"18";" <identifier> expected
+"6c461bf548b9c9d93287748945b41d2251965d93";"2020-11-25T22_27_51.650Z";"hw0.java";"18";" <identifier> expected
     for (int i = 0; i<numbers.length(); i++){
                                          ^
 /"
-"6c461bf548b9c9d93287748945b41d2251965d93";"2020-11-25T22_27_51.650Z";"HelloWorld.java";"18";" illegal start of type
+"6c461bf548b9c9d93287748945b41d2251965d93";"2020-11-25T22_27_51.650Z";"hw0.java";"18";" illegal start of type
     for (int i = 0; i<numbers.length(); i++){
                                            ^
 /"
-"6c461bf548b9c9d93287748945b41d2251965d93";"2020-11-25T22_27_51.650Z";"HelloWorld.java";"18";" <identifier> expected
+"6c461bf548b9c9d93287748945b41d2251965d93";"2020-11-25T22_27_51.650Z";"hw0.java";"18";" <identifier> expected
     for (int i = 0; i<numbers.length(); i++){
                                             ^
 /"
-"6c461bf548b9c9d93287748945b41d2251965d93";"2020-11-25T22_27_51.650Z";"HelloWorld.java";"18";" ';' expected
+"6c461bf548b9c9d93287748945b41d2251965d93";"2020-11-25T22_27_51.650Z";"hw0.java";"18";" ';' expected
     for (int i = 0; i<numbers.length(); i++){
                                              ^
 /"
-"6c461bf548b9c9d93287748945b41d2251965d93";"2020-11-25T22_27_51.650Z";"HelloWorld.java";"19";" illegal start of type
+"6c461bf548b9c9d93287748945b41d2251965d93";"2020-11-25T22_27_51.650Z";"hw0.java";"19";" illegal start of type
     System.out.println(numbers.charAt(i));
           ^
 /"
-"6c461bf548b9c9d93287748945b41d2251965d93";"2020-11-25T22_27_51.650Z";"HelloWorld.java";"19";" ';' expected
+"6c461bf548b9c9d93287748945b41d2251965d93";"2020-11-25T22_27_51.650Z";"hw0.java";"19";" ';' expected
     System.out.println(numbers.charAt(i));
               ^
 /"
-"6c461bf548b9c9d93287748945b41d2251965d93";"2020-11-25T22_27_51.650Z";"HelloWorld.java";"19";" invalid method declaration; return type required
+"6c461bf548b9c9d93287748945b41d2251965d93";"2020-11-25T22_27_51.650Z";"hw0.java";"19";" invalid method declaration; return type required
     System.out.println(numbers.charAt(i));
                ^
 /"
-"6c461bf548b9c9d93287748945b41d2251965d93";"2020-11-25T22_27_51.650Z";"HelloWorld.java";"19";" <identifier> expected
+"6c461bf548b9c9d93287748945b41d2251965d93";"2020-11-25T22_27_51.650Z";"hw0.java";"19";" <identifier> expected
     System.out.println(numbers.charAt(i));
                                      ^
 /"
-"6c461bf548b9c9d93287748945b41d2251965d93";"2020-11-25T22_27_51.650Z";"HelloWorld.java";"19";" ';' expected
+"6c461bf548b9c9d93287748945b41d2251965d93";"2020-11-25T22_27_51.650Z";"hw0.java";"19";" ';' expected
     System.out.println(numbers.charAt(i));
                                       ^
 /"
-"6c461bf548b9c9d93287748945b41d2251965d93";"2020-11-25T22_27_51.650Z";"HelloWorld.java";"19";" illegal start of type
+"6c461bf548b9c9d93287748945b41d2251965d93";"2020-11-25T22_27_51.650Z";"hw0.java";"19";" illegal start of type
     System.out.println(numbers.charAt(i));
                                        ^
 /"
-"6c461bf548b9c9d93287748945b41d2251965d93";"2020-11-25T22_27_51.650Z";"HelloWorld.java";"19";" <identifier> expected
+"6c461bf548b9c9d93287748945b41d2251965d93";"2020-11-25T22_27_51.650Z";"hw0.java";"19";" <identifier> expected
     System.out.println(numbers.charAt(i));
                                         ^
 /"
-"6c461bf548b9c9d93287748945b41d2251965d93";"2020-11-25T22_27_51.650Z";"HelloWorld.java";"23";" class, interface, or enum expected
+"6c461bf548b9c9d93287748945b41d2251965d93";"2020-11-25T22_27_51.650Z";"hw0.java";"23";" class, interface, or enum expected
     }
     ^
 18 errors
 "
-"6c461bf548b9c9d93287748945b41d2251965d93";"2020-12-08T01_46_08.297Z";"HelloWorld.java";"1";" <identifier> expected
+"6c461bf548b9c9d93287748945b41d2251965d93";"2020-12-08T01_46_08.297Z";"hw0.java";"1";" <identifier> expected
 @/*  Name"
-"7dec407a0a131855a9137b0e04a6cc5b9cb8af66";"2020-09-10T02_15_24.089Z";"HelloWorld.java";"12";" <identifier> expected
+"7dec407a0a131855a9137b0e04a6cc5b9cb8af66";"2020-09-10T02_15_24.089Z";"hw0.java";"12";" <identifier> expected
     System.out.println('Hello, World!');
                       ^
 /"
-"7dec407a0a131855a9137b0e04a6cc5b9cb8af66";"2020-09-10T02_15_24.089Z";"HelloWorld.java";"12";" illegal start of type
+"7dec407a0a131855a9137b0e04a6cc5b9cb8af66";"2020-09-10T02_15_24.089Z";"hw0.java";"12";" illegal start of type
     System.out.println('Hello, World!');
                        ^
 2 errors
 "
-"7dec407a0a131855a9137b0e04a6cc5b9cb8af66";"2020-09-16T02_38_45.742Z";"HelloWorld.java";"12";" <identifier> expected
+"7dec407a0a131855a9137b0e04a6cc5b9cb8af66";"2020-09-16T02_38_45.742Z";"hw0.java";"12";" <identifier> expected
     System.out.println('Hello, World!');
                       ^
 /"
-"7dec407a0a131855a9137b0e04a6cc5b9cb8af66";"2020-09-16T02_38_45.742Z";"HelloWorld.java";"12";" illegal start of type
+"7dec407a0a131855a9137b0e04a6cc5b9cb8af66";"2020-09-16T02_38_45.742Z";"hw0.java";"12";" illegal start of type
     System.out.println('Hello, World!');
                        ^
 2 errors
 "
-"80ef8b175906556768725249bfe6689efaefc880";"2020-10-21T23_53_51.551Z";"HelloWorld.java";"1";" class, interface, or enum expected
+"80ef8b175906556768725249bfe6689efaefc880";"2020-10-21T23_53_51.551Z";"hw0.java";"1";" class, interface, or enum expected
 public static boolean HelloWorld (char c) {
               ^
 1 error
 "
-"80ef8b175906556768725249bfe6689efaefc880";"2020-10-22T21_57_33.768Z";"HelloWorld.java";"1";" class, interface, or enum expected
+"80ef8b175906556768725249bfe6689efaefc880";"2020-10-22T21_57_33.768Z";"hw0.java";"1";" class, interface, or enum expected
 public static boolean HelloWorld (char c) {
               ^
 1 error
 "
-"80ef8b175906556768725249bfe6689efaefc880";"2020-10-22T23_41_00.544Z";"HelloWorld.java";"2";" class, interface, or enum expected
+"80ef8b175906556768725249bfe6689efaefc880";"2020-10-22T23_41_00.544Z";"hw0.java";"2";" class, interface, or enum expected
 public static int[] divisibleArray(int[], int outLength) {
               ^
 /"
-"80ef8b175906556768725249bfe6689efaefc880";"2020-10-22T23_41_00.544Z";"HelloWorld.java";"4";" class, interface, or enum expected
+"80ef8b175906556768725249bfe6689efaefc880";"2020-10-22T23_41_00.544Z";"hw0.java";"4";" class, interface, or enum expected
     output[0] = 0; // at 0th index of output array, just put 0th
     ^
 /"
-"80ef8b175906556768725249bfe6689efaefc880";"2020-10-22T23_41_00.544Z";"HelloWorld.java";"5";" class, interface, or enum expected
+"80ef8b175906556768725249bfe6689efaefc880";"2020-10-22T23_41_00.544Z";"hw0.java";"5";" class, interface, or enum expected
     for(int i = 1; i < output.length; i++) { // i start at 1 because 0th index is already full with 0
     ^
 /"
-"80ef8b175906556768725249bfe6689efaefc880";"2020-10-22T23_41_00.544Z";"HelloWorld.java";"5";" class, interface, or enum expected
+"80ef8b175906556768725249bfe6689efaefc880";"2020-10-22T23_41_00.544Z";"hw0.java";"5";" class, interface, or enum expected
     for(int i = 1; i < output.length; i++) { // i start at 1 because 0th index is already full with 0
                    ^
 /"
-"80ef8b175906556768725249bfe6689efaefc880";"2020-10-22T23_41_00.544Z";"HelloWorld.java";"5";" class, interface, or enum expected
+"80ef8b175906556768725249bfe6689efaefc880";"2020-10-22T23_41_00.544Z";"hw0.java";"5";" class, interface, or enum expected
     for(int i = 1; i < output.length; i++) { // i start at 1 because 0th index is already full with 0
                                       ^
 /"
-"80ef8b175906556768725249bfe6689efaefc880";"2020-10-22T23_41_00.544Z";"HelloWorld.java";"6";" class, interface, or enum expected
+"80ef8b175906556768725249bfe6689efaefc880";"2020-10-22T23_41_00.544Z";"hw0.java";"6";" class, interface, or enum expected
         for(int j = 0; j < arr.length; j++) {
                        ^
 /"
-"80ef8b175906556768725249bfe6689efaefc880";"2020-10-22T23_41_00.544Z";"HelloWorld.java";"6";" class, interface, or enum expected
+"80ef8b175906556768725249bfe6689efaefc880";"2020-10-22T23_41_00.544Z";"hw0.java";"6";" class, interface, or enum expected
         for(int j = 0; j < arr.length; j++) {
                                        ^
 /"
-"80ef8b175906556768725249bfe6689efaefc880";"2020-10-22T23_41_00.544Z";"HelloWorld.java";"9";" class, interface, or enum expected
+"80ef8b175906556768725249bfe6689efaefc880";"2020-10-22T23_41_00.544Z";"hw0.java";"9";" class, interface, or enum expected
             }
             ^
 /"
-"80ef8b175906556768725249bfe6689efaefc880";"2020-10-22T23_41_00.544Z";"HelloWorld.java";"13";" class, interface, or enum expected
+"80ef8b175906556768725249bfe6689efaefc880";"2020-10-22T23_41_00.544Z";"hw0.java";"13";" class, interface, or enum expected
 }
 ^
 9 errors
 "
-"80ef8b175906556768725249bfe6689efaefc880";"2020-10-23T00_03_26.766Z";"HelloWorld.java";"3";" class, interface, or enum expected
+"80ef8b175906556768725249bfe6689efaefc880";"2020-10-23T00_03_26.766Z";"hw0.java";"3";" class, interface, or enum expected
 public static boolean ericVsFouh(String[] guestList) {
               ^
 /"
-"80ef8b175906556768725249bfe6689efaefc880";"2020-10-23T00_03_26.766Z";"HelloWorld.java";"5";" class, interface, or enum expected
+"80ef8b175906556768725249bfe6689efaefc880";"2020-10-23T00_03_26.766Z";"hw0.java";"5";" class, interface, or enum expected
     int fouhCount = 0;
     ^
 /"
-"80ef8b175906556768725249bfe6689efaefc880";"2020-10-23T00_03_26.766Z";"HelloWorld.java";"6";" class, interface, or enum expected
+"80ef8b175906556768725249bfe6689efaefc880";"2020-10-23T00_03_26.766Z";"hw0.java";"6";" class, interface, or enum expected
     for (int i = 0; i < guestList.length; i++) {
     ^
 /"
-"80ef8b175906556768725249bfe6689efaefc880";"2020-10-23T00_03_26.766Z";"HelloWorld.java";"6";" class, interface, or enum expected
+"80ef8b175906556768725249bfe6689efaefc880";"2020-10-23T00_03_26.766Z";"hw0.java";"6";" class, interface, or enum expected
     for (int i = 0; i < guestList.length; i++) {
                     ^
 /"
-"80ef8b175906556768725249bfe6689efaefc880";"2020-10-23T00_03_26.766Z";"HelloWorld.java";"6";" class, interface, or enum expected
+"80ef8b175906556768725249bfe6689efaefc880";"2020-10-23T00_03_26.766Z";"hw0.java";"6";" class, interface, or enum expected
     for (int i = 0; i < guestList.length; i++) {
                                           ^
 /"
-"80ef8b175906556768725249bfe6689efaefc880";"2020-10-23T00_03_26.766Z";"HelloWorld.java";"8";" class, interface, or enum expected
+"80ef8b175906556768725249bfe6689efaefc880";"2020-10-23T00_03_26.766Z";"hw0.java";"8";" class, interface, or enum expected
         if (name.charAt(0 == 'e' || name.charAt(0) == 'r' || name.charAt(0) == 'i' || name.charAt(0) == 'c') {
         ^
 /"
-"80ef8b175906556768725249bfe6689efaefc880";"2020-10-23T00_03_26.766Z";"HelloWorld.java";"10";" class, interface, or enum expected
+"80ef8b175906556768725249bfe6689efaefc880";"2020-10-23T00_03_26.766Z";"hw0.java";"10";" class, interface, or enum expected
         } else if (name.charAt(0) == 'f' || name.charAt(0) == 'o' || name.charAt(0) == 'u' || name.charAt(0) == 'h') {
         ^
 /"
-"80ef8b175906556768725249bfe6689efaefc880";"2020-10-23T00_03_26.766Z";"HelloWorld.java";"12";" class, interface, or enum expected
+"80ef8b175906556768725249bfe6689efaefc880";"2020-10-23T00_03_26.766Z";"hw0.java";"12";" class, interface, or enum expected
         }
         ^
 8 errors
 "
-"91fbcb21c14a7530f2f3ef869853a53622ed7334";"2020-09-05T21_31_34.328Z";"HelloWorld.java";"27";" <identifier> expected
+"91fbcb21c14a7530f2f3ef869853a53622ed7334";"2020-09-05T21_31_34.328Z";"hw0.java";"27";" <identifier> expected
 Name"
-"91fbcb21c14a7530f2f3ef869853a53622ed7334";"2020-09-05T21_31_34.328Z";"HelloWorld.java";"27";" illegal start of type
+"91fbcb21c14a7530f2f3ef869853a53622ed7334";"2020-09-05T21_31_34.328Z";"hw0.java";"27";" illegal start of type
 Name"
-"91fbcb21c14a7530f2f3ef869853a53622ed7334";"2020-09-05T21_31_34.328Z";"HelloWorld.java";"27";" ';' expected
+"91fbcb21c14a7530f2f3ef869853a53622ed7334";"2020-09-05T21_31_34.328Z";"hw0.java";"27";" ';' expected
 Name"
-"91fbcb21c14a7530f2f3ef869853a53622ed7334";"2020-09-05T21_31_34.328Z";"HelloWorld.java";"29";" <identifier> expected
-PennKey username (e.g. paulmcb)"
-"91fbcb21c14a7530f2f3ef869853a53622ed7334";"2020-09-05T21_31_34.328Z";"HelloWorld.java";"29";" ';' expected
-PennKey username (e.g. paulmcb)"
-"91fbcb21c14a7530f2f3ef869853a53622ed7334";"2020-09-05T21_44_22.690Z";"HelloWorld.java";"27";" <identifier> expected
+"91fbcb21c14a7530f2f3ef869853a53622ed7334";"2020-09-05T21_31_34.328Z";"hw0.java";"29";" <identifier> expected
+username (e.g. paulmcb)"
+"91fbcb21c14a7530f2f3ef869853a53622ed7334";"2020-09-05T21_31_34.328Z";"hw0.java";"29";" ';' expected
+username (e.g. paulmcb)"
+"91fbcb21c14a7530f2f3ef869853a53622ed7334";"2020-09-05T21_44_22.690Z";"hw0.java";"27";" <identifier> expected
 Name"
-"91fbcb21c14a7530f2f3ef869853a53622ed7334";"2020-09-05T21_44_22.690Z";"HelloWorld.java";"27";" illegal start of type
+"91fbcb21c14a7530f2f3ef869853a53622ed7334";"2020-09-05T21_44_22.690Z";"hw0.java";"27";" illegal start of type
 Name"
-"91fbcb21c14a7530f2f3ef869853a53622ed7334";"2020-09-05T21_44_22.690Z";"HelloWorld.java";"27";" ';' expected
+"91fbcb21c14a7530f2f3ef869853a53622ed7334";"2020-09-05T21_44_22.690Z";"hw0.java";"27";" ';' expected
 Name"
-"91fbcb21c14a7530f2f3ef869853a53622ed7334";"2020-09-05T21_44_22.690Z";"HelloWorld.java";"29";" <identifier> expected
-PennKey username (e.g. paulmcb)"
-"91fbcb21c14a7530f2f3ef869853a53622ed7334";"2020-09-05T21_44_22.690Z";"HelloWorld.java";"29";" ';' expected
-PennKey username (e.g. paulmcb)"
-"91fbcb21c14a7530f2f3ef869853a53622ed7334";"2020-09-16T01_33_27.614Z";"HelloWorld.java";"24";" <identifier> expected
+"91fbcb21c14a7530f2f3ef869853a53622ed7334";"2020-09-05T21_44_22.690Z";"hw0.java";"29";" <identifier> expected
+username (e.g. paulmcb)"
+"91fbcb21c14a7530f2f3ef869853a53622ed7334";"2020-09-05T21_44_22.690Z";"hw0.java";"29";" ';' expected
+username (e.g. paulmcb)"
+"91fbcb21c14a7530f2f3ef869853a53622ed7334";"2020-09-16T01_33_27.614Z";"hw0.java";"24";" <identifier> expected
 Name"
-"91fbcb21c14a7530f2f3ef869853a53622ed7334";"2020-09-16T01_33_27.614Z";"HelloWorld.java";"24";" illegal start of type
+"91fbcb21c14a7530f2f3ef869853a53622ed7334";"2020-09-16T01_33_27.614Z";"hw0.java";"24";" illegal start of type
 Name"
-"91fbcb21c14a7530f2f3ef869853a53622ed7334";"2020-09-16T01_33_27.614Z";"HelloWorld.java";"24";" ';' expected
+"91fbcb21c14a7530f2f3ef869853a53622ed7334";"2020-09-16T01_33_27.614Z";"hw0.java";"24";" ';' expected
 Name"
-"91fbcb21c14a7530f2f3ef869853a53622ed7334";"2020-09-16T01_33_27.614Z";"HelloWorld.java";"26";" <identifier> expected
-PennKey username (e.g. paulmcb)"
-"91fbcb21c14a7530f2f3ef869853a53622ed7334";"2020-09-16T01_33_27.614Z";"HelloWorld.java";"26";" ';' expected
-PennKey username (e.g. paulmcb)"
-"c1628523a89e117f0d7a76d14a1620df270e8677";"2020-09-07T21_12_04.909Z";"HelloWorld.java";"20";" reached end of file while parsing
+"91fbcb21c14a7530f2f3ef869853a53622ed7334";"2020-09-16T01_33_27.614Z";"hw0.java";"26";" <identifier> expected
+username (e.g. paulmcb)"
+"91fbcb21c14a7530f2f3ef869853a53622ed7334";"2020-09-16T01_33_27.614Z";"hw0.java";"26";" ';' expected
+username (e.g. paulmcb)"
+"c1628523a89e117f0d7a76d14a1620df270e8677";"2020-09-07T21_12_04.909Z";"hw0.java";"20";" reached end of file while parsing
 }
  ^
 1 error
 "
-"c1628523a89e117f0d7a76d14a1620df270e8677";"2020-09-23T23_37_50.436Z";"HelloWorld.java";"14";" class ClickArt is public, should be declared in a file named ClickArt.java
+"c1628523a89e117f0d7a76d14a1620df270e8677";"2020-09-23T23_37_50.436Z";"hw0.java";"14";" class ClickArt is public, should be declared in a file named [ANONYMIZED].java
 public class ClickArt {
        ^
 /"
-"c1628523a89e117f0d7a76d14a1620df270e8677";"2020-09-23T23_37_50.436Z";"HelloWorld.java";"43";" continue outside of loop
+"c1628523a89e117f0d7a76d14a1620df270e8677";"2020-09-23T23_37_50.436Z";"hw0.java";"43";" continue outside of loop
                     continue;
                     ^
 /"
-"c1628523a89e117f0d7a76d14a1620df270e8677";"2020-09-26T17_05_44.869Z";"HelloWorld.java";"14";" class CommandLineArguments is public, should be declared in a file named CommandLineArguments.java
+"c1628523a89e117f0d7a76d14a1620df270e8677";"2020-09-26T17_05_44.869Z";"hw0.java";"14";" class CommandLineArguments is public, should be declared in a file named [ANONYMIZED].java
 public class CommandLineArguments {
        ^
 /"
-"c1628523a89e117f0d7a76d14a1620df270e8677";"2020-09-28T21_29_41.067Z";"HelloWorld.java";"14";" class BouncingBallN is public, should be declared in a file named BouncingBallN.java
+"c1628523a89e117f0d7a76d14a1620df270e8677";"2020-09-28T21_29_41.067Z";"hw0.java";"14";" class BouncingBallN is public, should be declared in a file named [ANONYMIZED].java
 public class BouncingBallN {
        ^
 /"
-"c1628523a89e117f0d7a76d14a1620df270e8677";"2020-09-28T21_29_41.067Z";"HelloWorld.java";"63";" incompatible types"
-"c1628523a89e117f0d7a76d14a1620df270e8677";"2020-09-28T21_29_41.067Z";"HelloWorld.java";"78";" bad operand types for binary operator '>='
+"c1628523a89e117f0d7a76d14a1620df270e8677";"2020-09-28T21_29_41.067Z";"hw0.java";"63";" incompatible types"
+"c1628523a89e117f0d7a76d14a1620df270e8677";"2020-09-28T21_29_41.067Z";"hw0.java";"78";" bad operand types for binary operator '>='
                 if (x[i] <= ballRadius || x >= (100 - ballRadius)) {
                                             ^
   first type"
-"c1628523a89e117f0d7a76d14a1620df270e8677";"2020-09-28T21_29_41.067Z";"HelloWorld.java";"82";" bad operand types for binary operator '+'
+"c1628523a89e117f0d7a76d14a1620df270e8677";"2020-09-28T21_29_41.067Z";"hw0.java";"82";" bad operand types for binary operator '+'
             x = x + dx;
                   ^
   first type"
-"c1628523a89e117f0d7a76d14a1620df270e8677";"2020-09-28T21_29_41.067Z";"HelloWorld.java";"83";" bad operand types for binary operator '-'
+"c1628523a89e117f0d7a76d14a1620df270e8677";"2020-09-28T21_29_41.067Z";"hw0.java";"83";" bad operand types for binary operator '-'
             y = y - dy;
                   ^
   first type"
-"c1628523a89e117f0d7a76d14a1620df270e8677";"2020-09-28T21_29_41.067Z";"HelloWorld.java";"84";" bad operand types for binary operator '+'
+"c1628523a89e117f0d7a76d14a1620df270e8677";"2020-09-28T21_29_41.067Z";"hw0.java";"84";" bad operand types for binary operator '+'
             dy = dy + accel;
                     ^
   first type"
-"c1628523a89e117f0d7a76d14a1620df270e8677";"2020-09-28T21_29_41.067Z";"HelloWorld.java";"87";" bad operand types for binary operator '<='
+"c1628523a89e117f0d7a76d14a1620df270e8677";"2020-09-28T21_29_41.067Z";"hw0.java";"87";" bad operand types for binary operator '<='
             if (y <= ballRadius && dy > 0) {
                   ^
   first type"
-"c1628523a89e117f0d7a76d14a1620df270e8677";"2020-09-28T21_29_41.067Z";"HelloWorld.java";"87";" bad operand types for binary operator '>'
+"c1628523a89e117f0d7a76d14a1620df270e8677";"2020-09-28T21_29_41.067Z";"hw0.java";"87";" bad operand types for binary operator '>'
             if (y <= ballRadius && dy > 0) {
                                       ^
   first type"
-"c1628523a89e117f0d7a76d14a1620df270e8677";"2020-09-28T21_29_41.067Z";"HelloWorld.java";"88";" bad operand types for binary operator '*'
+"c1628523a89e117f0d7a76d14a1620df270e8677";"2020-09-28T21_29_41.067Z";"hw0.java";"88";" bad operand types for binary operator '*'
                 dy = -0.9 * dy;
                           ^
   first type"
-"c1628523a89e117f0d7a76d14a1620df270e8677";"2020-09-28T21_29_41.067Z";"HelloWorld.java";"92";" bad operand types for binary operator '<='
+"c1628523a89e117f0d7a76d14a1620df270e8677";"2020-09-28T21_29_41.067Z";"hw0.java";"92";" bad operand types for binary operator '<='
             if (x <= ballRadius || x >= (100 - ballRadius)) {
                   ^
   first type"
-"c1628523a89e117f0d7a76d14a1620df270e8677";"2020-09-28T21_29_41.067Z";"HelloWorld.java";"92";" bad operand types for binary operator '>='
+"c1628523a89e117f0d7a76d14a1620df270e8677";"2020-09-28T21_29_41.067Z";"hw0.java";"92";" bad operand types for binary operator '>='
             if (x <= ballRadius || x >= (100 - ballRadius)) {
                                      ^
   first type"
-"c1628523a89e117f0d7a76d14a1620df270e8677";"2020-09-28T21_29_41.067Z";"HelloWorld.java";"93";" bad operand type double[] for unary operator '---'
+"c1628523a89e117f0d7a76d14a1620df270e8677";"2020-09-28T21_29_41.067Z";"hw0.java";"93";" bad operand type double[] for unary operator '---'
                 dx = -dx;
                      ^
 /"
-"c7daed73009c0d31a410be0d1212d298cf9b7f92";"2020-09-15T13_12_09.389Z";"HelloWorld.java";"10";" not a statement
+"c7daed73009c0d31a410be0d1212d298cf9b7f92";"2020-09-15T13_12_09.389Z";"hw0.java";"10";" not a statement
         System
         ^
 /"
-"c7daed73009c0d31a410be0d1212d298cf9b7f92";"2020-09-15T13_12_09.389Z";"HelloWorld.java";"10";" ';' expected
+"c7daed73009c0d31a410be0d1212d298cf9b7f92";"2020-09-15T13_12_09.389Z";"hw0.java";"10";" ';' expected
         System
               ^
 2 errors
 "
-"d3a589e84b30e55239a8008d6282b647a1e62e92";"2020-11-18T07_46_44.033Z";"HelloWorld.java";"15";" ';' expected
+"d3a589e84b30e55239a8008d6282b647a1e62e92";"2020-11-18T07_46_44.033Z";"hw0.java";"15";" ';' expected
         Integer.parseInt(binaryString,2))
                                         ^
 1 error
 "
-"d4389a01a42868ac533884b4b8b94af7a65121a6";"2020-10-23T03_48_20.956Z";"HelloWorld.java";"13";" <identifier> expected
+"d4389a01a42868ac533884b4b8b94af7a65121a6";"2020-10-23T03_48_20.956Z";"hw0.java";"13";" <identifier> expected
         int[] arr = 1, 2, 3;
                       ^
 /"
-"d4389a01a42868ac533884b4b8b94af7a65121a6";"2020-10-23T03_48_20.956Z";"HelloWorld.java";"13";" illegal start of expression
+"d4389a01a42868ac533884b4b8b94af7a65121a6";"2020-10-23T03_48_20.956Z";"hw0.java";"13";" illegal start of expression
         int[] arr = 1, 2, 3;
                         ^
 /"
-"d4389a01a42868ac533884b4b8b94af7a65121a6";"2020-10-23T03_48_20.956Z";"HelloWorld.java";"13";" ';' expected
+"d4389a01a42868ac533884b4b8b94af7a65121a6";"2020-10-23T03_48_20.956Z";"hw0.java";"13";" ';' expected
         int[] arr = 1, 2, 3;
                          ^
 3 errors
 "
-"d6e9814a3868b71061aca4eae8273d857b125994";"2020-09-16T17_08_50.267Z";"HelloWorld.java";"13";" ';' expected
+"d6e9814a3868b71061aca4eae8273d857b125994";"2020-09-16T17_08_50.267Z";"hw0.java";"13";" ';' expected
         System.out.println('Hello World!')
                                           ^
 1 error
 "
-"de363e10e402f868d57db34f57576b700edc7c2b";"2020-10-02T21_17_32.491Z";"HelloWorld.java";"19";" bad operand types for binary operator '^'
+"de363e10e402f868d57db34f57576b700edc7c2b";"2020-10-02T21_17_32.491Z";"hw0.java";"19";" bad operand types for binary operator '^'
         System.out.println(a ^ a);
                              ^
   first type"
-"de363e10e402f868d57db34f57576b700edc7c2b";"2020-10-02T21_17_32.491Z";"HelloWorld.java";"20";" bad operand types for binary operator '^'
+"de363e10e402f868d57db34f57576b700edc7c2b";"2020-10-02T21_17_32.491Z";"hw0.java";"20";" bad operand types for binary operator '^'
         System.out.println(a ^ (b));
                              ^
   first type"
-"e761b3497fcd3266080b6cfa1e7ec2eeda61b25e";"2020-09-10T22_55_41.831Z";"HelloWorld.java";"14";" ';' expected
+"e761b3497fcd3266080b6cfa1e7ec2eeda61b25e";"2020-09-10T22_55_41.831Z";"hw0.java";"14";" ';' expected
         System.out.println('Hello, World!')
                                            ^
 1 error
 "
-"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T19_19_54.974Z";"HelloWorld.java";"14";" cannot find symbol
+"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T19_19_54.974Z";"hw0.java";"14";" cannot find symbol
         double[] dictionaryFrequency = getDictionaryFrequencies(english);
                                                                 ^
   symbol"
-"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T19_19_54.974Z";"HelloWorld.java";"19";" cannot find symbol
+"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T19_19_54.974Z";"hw0.java";"19";" cannot find symbol
             message[i] = decrypt(cipher, key);
                                  ^
   symbol"
-"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T19_19_54.974Z";"HelloWorld.java";"20";" cannot find symbol
+"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T19_19_54.974Z";"hw0.java";"20";" cannot find symbol
             int[] symbols = stringToSymbolArray(message[i]);
                             ^
   symbol"
-"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T19_19_54.974Z";"HelloWorld.java";"22";" cannot find symbol
+"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T19_19_54.974Z";"hw0.java";"22";" cannot find symbol
             double scoreFreq = scoreFrequencies(dictionaryFrequency, currentFreqs);
                                ^
   symbol"
-"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T19_19_54.974Z";"HelloWorld.java";"49";" cannot find symbol
+"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T19_19_54.974Z";"hw0.java";"49";" cannot find symbol
         int[] symbols = stringToSymbolArray(message);
                         ^
   symbol"
-"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T19_19_54.974Z";"HelloWorld.java";"51";" cannot find symbol
+"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T19_19_54.974Z";"hw0.java";"51";" cannot find symbol
             symbols[i] = shift(symbols[i], key);
                          ^
   symbol"
-"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T19_19_54.974Z";"HelloWorld.java";"53";" cannot find symbol
+"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T19_19_54.974Z";"hw0.java";"53";" cannot find symbol
         String newMessage = symbolArrayToString(symbols);
                             ^
   symbol"
-"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T19_58_58.061Z";"HelloWorld.java";"40";" cannot find symbol
+"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T19_58_58.061Z";"hw0.java";"40";" cannot find symbol
         int[] symbols = stringToSymbolArray(message);
                         ^
   symbol"
-"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T19_58_58.061Z";"HelloWorld.java";"42";" cannot find symbol
+"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T19_58_58.061Z";"hw0.java";"42";" cannot find symbol
             symbols[i] = shift(symbols[i], key);
                          ^
   symbol"
-"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T19_58_58.061Z";"HelloWorld.java";"44";" cannot find symbol
+"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T19_58_58.061Z";"hw0.java";"44";" cannot find symbol
         String newMessage = symbolArrayToString(symbols);
                             ^
   symbol"
-"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T20_36_38.808Z";"HelloWorld.java";"4";" class, interface, or enum expected
+"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T20_36_38.808Z";"hw0.java";"4";" class, interface, or enum expected
             case 'crack' "
-"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T20_36_38.808Z";"HelloWorld.java";"11";" class, interface, or enum expected
+"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T20_36_38.808Z";"hw0.java";"11";" class, interface, or enum expected
     public static double[] getDictionaryFrequencies(String filename) {
                   ^
 /"
-"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T20_36_38.808Z";"HelloWorld.java";"13";" class, interface, or enum expected
+"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T20_36_38.808Z";"hw0.java";"13";" class, interface, or enum expected
         double[] dictionaryFrequency = new double[26];
         ^
 /"
-"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T20_36_38.808Z";"HelloWorld.java";"15";" class, interface, or enum expected
+"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T20_36_38.808Z";"hw0.java";"15";" class, interface, or enum expected
         for (int i = 0; i < 26; i++) {
         ^
 /"
-"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T20_36_38.808Z";"HelloWorld.java";"15";" class, interface, or enum expected
+"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T20_36_38.808Z";"hw0.java";"15";" class, interface, or enum expected
         for (int i = 0; i < 26; i++) {
                         ^
 /"
-"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T20_36_38.808Z";"HelloWorld.java";"15";" class, interface, or enum expected
+"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T20_36_38.808Z";"hw0.java";"15";" class, interface, or enum expected
         for (int i = 0; i < 26; i++) {
                                 ^
 /"
-"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T20_36_38.808Z";"HelloWorld.java";"17";" class, interface, or enum expected
+"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T20_36_38.808Z";"hw0.java";"17";" class, interface, or enum expected
         }
         ^
 /"
-"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T20_36_38.808Z";"HelloWorld.java";"19";" class, interface, or enum expected
+"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T20_36_38.808Z";"hw0.java";"19";" class, interface, or enum expected
     }
     ^
 /"
-"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T20_36_38.808Z";"HelloWorld.java";"24";" class, interface, or enum expected
+"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T20_36_38.808Z";"hw0.java";"24";" class, interface, or enum expected
     public static double[] findFrequencies(int[] symbols) {
                   ^
 /"
-"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T20_36_38.808Z";"HelloWorld.java";"26";" class, interface, or enum expected
+"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T20_36_38.808Z";"hw0.java";"26";" class, interface, or enum expected
         int totalLetterCount = 0;
         ^
 /"
-"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T20_36_38.808Z";"HelloWorld.java";"27";" class, interface, or enum expected
+"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T20_36_38.808Z";"hw0.java";"27";" class, interface, or enum expected
         double[] currentFreqs = new double[26];
         ^
 /"
-"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T20_36_38.808Z";"HelloWorld.java";"28";" class, interface, or enum expected
+"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T20_36_38.808Z";"hw0.java";"28";" class, interface, or enum expected
         for (int i = 0; i < 26; i++){
         ^
 /"
-"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T20_36_38.808Z";"HelloWorld.java";"28";" class, interface, or enum expected
+"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T20_36_38.808Z";"hw0.java";"28";" class, interface, or enum expected
         for (int i = 0; i < 26; i++){
                         ^
 /"
-"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T20_36_38.808Z";"HelloWorld.java";"28";" class, interface, or enum expected
+"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T20_36_38.808Z";"hw0.java";"28";" class, interface, or enum expected
         for (int i = 0; i < 26; i++){
                                 ^
 /"
-"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T20_36_38.808Z";"HelloWorld.java";"29";" class, interface, or enum expected
+"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T20_36_38.808Z";"hw0.java";"29";" class, interface, or enum expected
             for (int j = 0; j < symbols.length ; j++){
                             ^
 /"
-"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T20_36_38.808Z";"HelloWorld.java";"29";" class, interface, or enum expected
+"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T20_36_38.808Z";"hw0.java";"29";" class, interface, or enum expected
             for (int j = 0; j < symbols.length ; j++){
                                                  ^
 /"
-"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T20_36_38.808Z";"HelloWorld.java";"32";" class, interface, or enum expected
+"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T20_36_38.808Z";"hw0.java";"32";" class, interface, or enum expected
                 totalLetterCount +=1;
                 ^
 /"
-"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T20_36_38.808Z";"HelloWorld.java";"33";" class, interface, or enum expected
+"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T20_36_38.808Z";"hw0.java";"33";" class, interface, or enum expected
                 }
                 ^
 /"
-"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T20_36_38.808Z";"HelloWorld.java";"36";" class, interface, or enum expected
+"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T20_36_38.808Z";"hw0.java";"36";" class, interface, or enum expected
         for (int i = 0; i < 26; i++){
                         ^
 /"
-"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T20_36_38.808Z";"HelloWorld.java";"36";" class, interface, or enum expected
+"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T20_36_38.808Z";"hw0.java";"36";" class, interface, or enum expected
         for (int i = 0; i < 26; i++){
                                 ^
 /"
-"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T20_36_38.808Z";"HelloWorld.java";"38";" class, interface, or enum expected
+"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T20_36_38.808Z";"hw0.java";"38";" class, interface, or enum expected
         }
         ^
 /"
-"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T20_36_38.808Z";"HelloWorld.java";"40";" class, interface, or enum expected
+"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T20_36_38.808Z";"hw0.java";"40";" class, interface, or enum expected
     }
     ^
 /"
-"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T20_36_38.808Z";"HelloWorld.java";"45";" class, interface, or enum expected
+"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T20_36_38.808Z";"hw0.java";"45";" class, interface, or enum expected
     public static double scoreFrequencies(double[] english, double[] currentFreqs) {
                   ^
 /"
-"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T20_36_38.808Z";"HelloWorld.java";"48";" class, interface, or enum expected
+"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T20_36_38.808Z";"hw0.java";"48";" class, interface, or enum expected
         for (int i = 0; i < 26; i++){
         ^
 /"
-"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T20_36_38.808Z";"HelloWorld.java";"48";" class, interface, or enum expected
+"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T20_36_38.808Z";"hw0.java";"48";" class, interface, or enum expected
         for (int i = 0; i < 26; i++){
                         ^
 /"
-"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T20_36_38.808Z";"HelloWorld.java";"48";" class, interface, or enum expected
+"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T20_36_38.808Z";"hw0.java";"48";" class, interface, or enum expected
         for (int i = 0; i < 26; i++){
                                 ^
 /"
-"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T20_36_38.808Z";"HelloWorld.java";"51";" class, interface, or enum expected
+"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T20_36_38.808Z";"hw0.java";"51";" class, interface, or enum expected
         }
         ^
 /"
-"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T20_36_38.808Z";"HelloWorld.java";"53";" class, interface, or enum expected
+"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T20_36_38.808Z";"hw0.java";"53";" class, interface, or enum expected
         return scoreFreqs;
         ^
 /"
-"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T20_36_38.808Z";"HelloWorld.java";"54";" class, interface, or enum expected
+"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T20_36_38.808Z";"hw0.java";"54";" class, interface, or enum expected
     }
     ^
 /"
-"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T20_36_38.808Z";"HelloWorld.java";"56";" class, interface, or enum expected
+"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T20_36_38.808Z";"hw0.java";"56";" class, interface, or enum expected
     public static String crack(String cipher, String english){
                   ^
 /"
-"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T20_36_38.808Z";"HelloWorld.java";"58";" class, interface, or enum expected
+"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T20_36_38.808Z";"hw0.java";"58";" class, interface, or enum expected
         String message = '';
         ^
 /"
-"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T20_36_38.808Z";"HelloWorld.java";"59";" class, interface, or enum expected
+"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T20_36_38.808Z";"hw0.java";"59";" class, interface, or enum expected
         int min = 27;
         ^
 /"
-"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T20_36_38.808Z";"HelloWorld.java";"60";" class, interface, or enum expected
+"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T20_36_38.808Z";"hw0.java";"60";" class, interface, or enum expected
         int i = 0;
         ^
 /"
-"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T20_36_38.808Z";"HelloWorld.java";"61";" class, interface, or enum expected
+"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T20_36_38.808Z";"hw0.java";"61";" class, interface, or enum expected
         for ( i = 0; i < 26; i++){
         ^
 /"
-"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T20_36_38.808Z";"HelloWorld.java";"61";" class, interface, or enum expected
+"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T20_36_38.808Z";"hw0.java";"61";" class, interface, or enum expected
         for ( i = 0; i < 26; i++){
                      ^
 /"
-"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T20_36_38.808Z";"HelloWorld.java";"61";" class, interface, or enum expected
+"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T20_36_38.808Z";"hw0.java";"61";" class, interface, or enum expected
         for ( i = 0; i < 26; i++){
                              ^
 /"
-"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T20_36_38.808Z";"HelloWorld.java";"63";" class, interface, or enum expected
+"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T20_36_38.808Z";"hw0.java";"63";" class, interface, or enum expected
             int[] symbols = stringToSymbolArray(message);
             ^
 /"
-"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T20_36_38.808Z";"HelloWorld.java";"64";" class, interface, or enum expected
+"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T20_36_38.808Z";"hw0.java";"64";" class, interface, or enum expected
             double[] currentFreqs = findFrequencies(symbols);
             ^
 /"
-"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T20_36_38.808Z";"HelloWorld.java";"65";" class, interface, or enum expected
+"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T20_36_38.808Z";"hw0.java";"65";" class, interface, or enum expected
             double scoreFreq = scoreFrequencies(dictionaryFrequency, currentFreqs);
             ^
 /"
-"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T20_36_38.808Z";"HelloWorld.java";"66";" class, interface, or enum expected
+"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T20_36_38.808Z";"hw0.java";"66";" class, interface, or enum expected
             System.out.println(scoreFreq);
             ^
 /"
-"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T20_36_38.808Z";"HelloWorld.java";"67";" class, interface, or enum expected
+"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T20_36_38.808Z";"hw0.java";"67";" class, interface, or enum expected
             if (scoreFreq < min) {
             ^
 /"
-"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T20_36_38.808Z";"HelloWorld.java";"69";" class, interface, or enum expected
+"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T20_36_38.808Z";"hw0.java";"69";" class, interface, or enum expected
             }   
             ^
 /"
-"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T20_36_38.808Z";"HelloWorld.java";"72";" class, interface, or enum expected
+"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-08T20_36_38.808Z";"hw0.java";"72";" class, interface, or enum expected
     }
     ^
 43 errors
 "
-"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-23T18_52_54.824Z";"HelloWorld.java";"3";" class PennDrawScaleTest is public, should be declared in a file named PennDrawScaleTest.java
-    public class PennDrawScaleTest {
+"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-23T18_52_54.824Z";"hw0.java";"3";" class DrawScaleTest is public, should be declared in a file named [ANONYMIZED].java
+    public class DrawScaleTest {
            ^
 /"
-"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-23T18_52_54.824Z";"HelloWorld.java";"9";" cannot find symbol
-        PennDraw.setCanvasSize(width, height);
+"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-23T18_52_54.824Z";"hw0.java";"9";" cannot find symbol
+        Draw.setCanvasSize(width, height);
                                ^
   symbol"
-"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-23T18_52_54.824Z";"HelloWorld.java";"9";" cannot find symbol
-        PennDraw.setCanvasSize(width, height);
+"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-23T18_52_54.824Z";"hw0.java";"9";" cannot find symbol
+        Draw.setCanvasSize(width, height);
                                       ^
   symbol"
-"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-23T18_52_54.824Z";"HelloWorld.java";"10";" cannot find symbol
-        PennDraw.setPenColor(color);
+"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-23T18_52_54.824Z";"hw0.java";"10";" cannot find symbol
+        Draw.setPenColor(color);
                              ^
   symbol"
-"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-23T18_52_54.824Z";"HelloWorld.java";"11";" cannot find symbol
-        PennDraw.setPenColor(red, green, blue);
+"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-23T18_52_54.824Z";"hw0.java";"11";" cannot find symbol
+        Draw.setPenColor(red, green, blue);
                              ^
   symbol"
-"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-23T18_52_54.824Z";"HelloWorld.java";"11";" cannot find symbol
-        PennDraw.setPenColor(red, green, blue);
+"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-23T18_52_54.824Z";"hw0.java";"11";" cannot find symbol
+        Draw.setPenColor(red, green, blue);
                                   ^
   symbol"
-"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-23T18_52_54.824Z";"HelloWorld.java";"11";" cannot find symbol
-        PennDraw.setPenColor(red, green, blue);
+"f789e70e136b898f3580af7fe3fc63c5b741991b";"2020-10-23T18_52_54.824Z";"hw0.java";"11";" cannot find symbol
+        Draw.setPenColor(red, green, blue);
                                          ^
   symbol"
-"f9b3517060098c41fc220990ba51263fa76c34c5";"2021-02-13T02_25_42.936Z";"HelloWorld.java";"11";" <identifier> expected
+"f9b3517060098c41fc220990ba51263fa76c34c5";"2021-02-13T02_25_42.936Z";"hw0.java";"11";" <identifier> expected
 public class 
             ^
 /"
-"f9b3517060098c41fc220990ba51263fa76c34c5";"2021-02-13T02_25_42.936Z";"HelloWorld.java";"17";" reached end of file while parsing
+"f9b3517060098c41fc220990ba51263fa76c34c5";"2021-02-13T02_25_42.936Z";"hw0.java";"17";" reached end of file while parsing
 }
  ^
 2 errors
 "
-"ff3a194928159b2440a0a89750ae23fbf55f279c";"2020-09-09T15_11_57.748Z";"HelloWorld.java";"12";" <identifier> expected
+"ff3a194928159b2440a0a89750ae23fbf55f279c";"2020-09-09T15_11_57.748Z";"hw0.java";"12";" <identifier> expected
     System.out.println('Hello, World!')
                       ^
 /"
-"ff3a194928159b2440a0a89750ae23fbf55f279c";"2020-09-09T15_11_57.748Z";"HelloWorld.java";"12";" illegal start of type
+"ff3a194928159b2440a0a89750ae23fbf55f279c";"2020-09-09T15_11_57.748Z";"hw0.java";"12";" illegal start of type
     System.out.println('Hello, World!')
                        ^
 /"
-"ff3a194928159b2440a0a89750ae23fbf55f279c";"2020-09-09T15_11_57.748Z";"HelloWorld.java";"12";" ';' expected
+"ff3a194928159b2440a0a89750ae23fbf55f279c";"2020-09-09T15_11_57.748Z";"hw0.java";"12";" ';' expected
     System.out.println('Hello, World!')
                                        ^
 3 errors
