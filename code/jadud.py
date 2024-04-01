@@ -5,6 +5,9 @@ Purpose: Compute Jadud's error quotient (EQ) for every student based on their co
 runtime exceptions. Join attribute: student_id.
 * Output: Jadud's EQ for every individual student_id in the logs.
 
+Author: Valdemar Švábenský, University of Pennsylvania, 2023.
+Reviewed by: Jiayi Zhang, University of Pennsylvania, 2023.
+
 License: MIT.
 
 ===== UNIT TEST DOCUMENTATION =====
