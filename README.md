@@ -2,9 +2,11 @@
 
 This repository contains supplementary materials for the following conference paper:
 
-[Anonymous authors]\
-**Comparison of Three Programming Error Measures for Determining Grades in CS1**\
-Submitted to ACM SIGCSE 2024 conference.
+Valdemar Švábenský, Maciej Pankiewicz, Jiayi Zhang, Elizabeth B. Cloude, Ryan S. Baker, and Eric Fouh.\
+**Comparison of Three Programming Error Measures for Explaining Variability in CS1 Grades**\
+In Proceedings of the 29th Conference on Innovation and Technology in Computer Science Education (ITiCSE 2024).
+
+# Contents of the repository
 
 The software computes error measures in the logs of student compilation events and builds regression models to explain students' course grades.
 
@@ -42,3 +44,22 @@ Files:
 * `correlation between error measures.pdf`: Correlations of the feature variables used in the regression models.
 * `EC-jadud-RED-regression.pdf`: Full regression modeling results.
 * `BIC.xlsx`: Computation of the BIC' for the regression models.
+
+# How to cite
+
+If you use or build upon the materials, please use the BibTeX entry below to cite the original paper (not only this web link).
+
+```
+@inproceedings{Svabensky2024comparison,
+    author    = {\v{S}v\'{a}bensk\'{y}, Valdemar and Pankiewicz, Maciej and Zhang, Jiayi and Cloude, Elizabeth B. and Baker, Ryan S. and Fouh, Eric},
+    title     = {{Comparison of Three Programming Error Measures for Explaining Variability in CS1 Grades}},
+    booktitle = {Proceedings of the 29th Conference on Innovation and Technology in Computer Science Education},
+    series    = {ITiCSE '24},
+    publisher = {Association for Computing Machinery},
+    year      = {2024},
+    numpages  = {7},
+    isbn      = {},
+    url       = {},
+    doi       = {},
+}
+```
