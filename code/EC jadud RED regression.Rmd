@@ -1,6 +1,6 @@
 ---
 title: "Regression using three error measures"
-author: "Anonymized"
+author: "Jiayi Zhang, University of Pennsylvania"
 date: '2023-07-22'
 output:
   pdf_document: default
