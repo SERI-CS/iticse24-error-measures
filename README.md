@@ -4,7 +4,8 @@ This repository contains supplementary materials for the following conference pa
 
 Valdemar Švábenský, Maciej Pankiewicz, Jiayi Zhang, Elizabeth B. Cloude, Ryan S. Baker, and Eric Fouh.\
 **Comparison of Three Programming Error Measures for Explaining Variability in CS1 Grades**\
-In Proceedings of the 29th Conference on Innovation and Technology in Computer Science Education (ITiCSE 2024).
+In Proceedings of the 29th Conference on Innovation and Technology in Computer Science Education (ITiCSE 2024).\
+https://doi.org/10.1145/3649217.3653563
 
 # Contents of the repository
 
@@ -58,8 +59,8 @@ If you use or build upon the materials, please use the BibTeX entry below to cit
     publisher = {Association for Computing Machinery},
     year      = {2024},
     numpages  = {7},
-    isbn      = {},
-    url       = {},
-    doi       = {},
+    isbn      = {979-8-4007-0600-4/24/07},
+    url       = {https://doi.org/10.1145/3649217.3653563},
+    doi       = {10.1145/3649217.3653563},
 }
 ```
