@@ -7,6 +7,8 @@ Valdemar Švábenský, Maciej Pankiewicz, Jiayi Zhang, Elizabeth B. Cloude, Ryan
 In Proceedings of the 29th Conference on Innovation and Technology in Computer Science Education (ITiCSE 2024).\
 https://doi.org/10.1145/3649217.3653563
 
+Preprint available at: https://arxiv.org/abs/2404.05988
+
 # Contents of the repository
 
 The software computes error measures in the logs of student compilation events and builds regression models to explain students' course grades.
