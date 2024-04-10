@@ -59,6 +59,7 @@ If you use or build upon the materials, please use the BibTeX entry below to cit
     booktitle = {Proceedings of the 29th Conference on Innovation and Technology in Computer Science Education},
     series    = {ITiCSE '24},
     publisher = {Association for Computing Machinery},
+    address   = {New York, NY, USA},
     year      = {2024},
     numpages  = {7},
     isbn      = {979-8-4007-0600-4/24/07},
