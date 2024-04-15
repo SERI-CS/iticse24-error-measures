@@ -39,6 +39,7 @@ I 0.7272727272727273
 
 import csv
 import pandas as pd
+from typing import Dict, List, Set
 
 
 def prepare_data_row(row, error_category):
@@ -149,43 +150,37 @@ def process_data_snapshots(hw_name, error_category):
     return all_students
 
 
-def compute_jadud_eq(hw_name='03', error_category='compiler-errors'):
-    """
-    Calculate the Jadud's error quotient (EQ) for each student in the logs for the given homework files.
-    The algorithm is described in the following publication on page 6:
-        Matthew C. Jadud. 2006. Methods and tools for exploring novice compilation behaviour.
-        In Proceedings of the second international workshop on Computing education research (ICER '06).
-        ACM, New York, NY, USA, 73–84. https://dl.acm.org/doi/pdf/10.1145/1151588.1151600
-
-    :param hw_name: str. Number of the homework assignment, e.g. '03'.
-    :param error_category: str. Compiler errors ('compiler-errors') or runtime errors ('exceptions').
-    :return: dict. Dictionary with the structure { student_id : jadud_eq_for_this_hw }.
-    """
+def compute_jadud_eq(hw_name, error_category):
     all_students = process_data_snapshots(hw_name, error_category)
-    all_scores_per_student = {}
-    for student_id, student_session in all_students.items():
-        student_total_eq = 0
-        num_event_pairs_per_student = 0
-        for i in range(len(student_session) - 1):  # 1. COLLATE: Create consecutive pairs from the events in the session
-            num_event_pairs_per_student += 1
-            current_event_errors = set(student_session[i])  # Create a set to ignore multiple errors of the same type
-            next_event_errors = set(student_session[i + 1])
+    scores_per_student = {}
 
-            eq_per_event_pair = 0  # Error score (quotient) for the pair of the current and next event
-            if current_event_errors and next_event_errors:  # 2. CALCULATE: Score the event pair according to the algorithm
-                eq_per_event_pair += 8  # Both events ended in (at least one) error
-                if not current_event_errors.isdisjoint(next_event_errors):
-                    eq_per_event_pair += 3  # Both events included the same error type
-                eq_per_event_pair /= 11  # 3. NORMALIZE: Divide the score assigned to each pair by 11
+    for student_id, sessions in all_students.items():
+        total_eq = 0.0
+        num_pairs = len(sessions) - 1
 
-            student_total_eq += eq_per_event_pair  # 4a. AVERAGE: Sum the scores...
+        if num_pairs <= 0:
+            scores_per_student[student_id] = 0.0
+            continue
 
-        assert num_event_pairs_per_student > 0, 'This should not happen because it indicates no compilation events.'
-        student_total_eq /= num_event_pairs_per_student  # 4b. AVERAGE: ... and divide by the number of pairs
-        assert 0 <= student_total_eq <= 1, 'The EQ must be between 0 and 1'
-        all_scores_per_student[student_id] = student_total_eq
+        for i in range(num_pairs):
+            current_errors = set(sessions[i])
+            next_errors = set(sessions[i + 1])
+            eq_score = calculate_pair_eq(current_errors, next_errors)
+            total_eq += eq_score
 
-    return all_scores_per_student
+        average_eq = total_eq / num_pairs
+        scores_per_student[student_id] = max(0, min(average_eq, 1))  # Ensure EQ is within bounds [0, 1]
+
+    return scores_per_student
+
+
+def calculate_pair_eq(current_errors: Set[str], next_errors: Set[str]) -> float:
+    if not current_errors or not next_errors:
+        return 0.0
+
+    base_score = 8
+    additional_score = 3 if not current_errors.isdisjoint(next_errors) else 0
+    return (base_score + additional_score) / 11
 
 
 def get_results(error_category='compiler-errors'):
