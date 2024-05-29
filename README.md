@@ -52,7 +52,7 @@ Files:
 
 If you use or build upon the materials, please use the BibTeX entry below to cite the original paper (not only this web link).
 
-```
+```bibtex
 @inproceedings{Svabensky2024comparison,
     author    = {\v{S}v\'{a}bensk\'{y}, Valdemar and Pankiewicz, Maciej and Zhang, Jiayi and Cloude, Elizabeth B. and Baker, Ryan S. and Fouh, Eric},
     title     = {{Comparison of Three Programming Error Measures for Explaining Variability in CS1 Grades}},
