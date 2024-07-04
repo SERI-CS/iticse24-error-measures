@@ -7,7 +7,7 @@ Valdemar Švábenský, Maciej Pankiewicz, Jiayi Zhang, Elizabeth B. Cloude, Ryan
 In Proceedings of the 29th Conference on Innovation and Technology in Computer Science Education (ITiCSE 2024).\
 https://doi.org/10.1145/3649217.3653563
 
-Preprint available at: https://arxiv.org/abs/2404.05988
+Preprint: https://arxiv.org/abs/2404.05988
 
 # Contents of the repository
 
@@ -61,8 +61,9 @@ If you use or build upon the materials, please use the BibTeX entry below to cit
     publisher = {Association for Computing Machinery},
     address   = {New York, NY, USA},
     year      = {2024},
+    pages     = {87--93},
     numpages  = {7},
-    isbn      = {979-8-4007-0600-4/24/07},
+    isbn      = {979-8-4007-0600-4},
     url       = {https://doi.org/10.1145/3649217.3653563},
     doi       = {10.1145/3649217.3653563},
 }
